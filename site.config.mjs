@@ -1,7 +1,7 @@
 export const site = {
   name: "Immigration Pathways",
   description: "Find immigration policies, official sources, and reviewed eligibility information by country.",
-  url: "https://example.com",
+  url: "https://pathwaystoabroad.com",
   defaultLocale: "en",
   advertising: {
     provider: "google-adsense",
