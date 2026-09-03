@@ -1,7 +1,7 @@
 {
-  "name": "葡萄牙", "nameEn": "Portugal", "region": "Europe", "coverage": "directory",
-  "summary": "葡萄牙政府入境签证与居留许可官方指南。详细项目资料尚待逐项核验。",
-  "summaryEn": "The Portuguese government's official guide to entry visas and residence permits. Detailed program information is pending review.",
+  "name": "葡萄牙", "nameEn": "Portugal", "region": "Europe", "coverage": "overview",
+  "summary": "已复核受雇工作及高技能活动居留许可；签证、劳动关系、资格和一般文件须向 AIMA 确认。",
+  "summaryEn": "Reviewed employed-work and highly qualified activity residence permits; confirm visa, employment, qualification and general-document requirements with AIMA.",
   "reviewedAt": "2026-09-03",
   "sources": [{ "authority": "Portuguese Republic", "title": "Migrants: visas and permits to enter and live in Portugal", "url": "https://www.gov.pt/guias/migrantes-vistos-e-autorizacoes-para-entrar-e-viver-em-portugal", "reviewedAt": "2026-09-03" }]
 }

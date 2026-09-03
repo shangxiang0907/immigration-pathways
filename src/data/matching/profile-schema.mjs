@@ -13,5 +13,6 @@ export const applicantProfileSchema = {
     lowerEligible: { type: "answer" }, over45First: { type: "answer" }, pension: { type: "answer" }, formalQualification: { type: "answer" }, sixPoints: { type: "answer" },
     age55: { type: "answer" }, nzJob: { type: "answer" }, nzEnglish: { type: "answer" }, nzSmcPathway: { type: "answer" }, nzAccredited: { type: "answer" }, nzTier1: { type: "answer" }, nzTier2: { type: "answer" }, nzWork24: { type: "answer" }, nzRoleRequirements: { type: "answer" },
     adult: { type: "answer" }, ukJob: { type: "answer" }, ukSponsor: { type: "answer" }, ukOccupation: { type: "answer" }, ukSalary: { type: "answer" }, ukEnglish: { type: "answer" }, ukTalentRoute: { type: "answer" }, ukScaleUpSponsor: { type: "answer" }, ukSixMonths: { type: "answer" },
+    ieJob:{type:"answer"},ieCriticalOccupation:{type:"answer"},ieGeneralOccupation:{type:"answer"},ieSalary:{type:"answer"},ieTwoYears:{type:"answer"},ieLabourMarket:{type:"answer"},nlJob:{type:"answer"},nlSponsor:{type:"answer"},nlIncome:{type:"answer"},nlBlueQualification:{type:"answer"},frJob:{type:"answer"},frQualification:{type:"answer"},frBlueQualification:{type:"answer"},frSalary:{type:"answer"},ptJob:{type:"answer"},ptWorkVisa:{type:"answer"},ptGeneral:{type:"answer"},ptQualification:{type:"answer"},ptQualifiedVisa:{type:"answer"},ptActivity:{type:"answer"},
   },
 };

@@ -1,7 +1,7 @@
 {
-  "name": "爱尔兰", "nameEn": "Ireland", "region": "Europe", "coverage": "directory",
-  "summary": "爱尔兰政府移民制度官方入口。详细项目资料尚待逐项核验。",
-  "summaryEn": "The Irish government's official immigration-system entry point. Detailed program information is pending review.",
+  "name": "爱尔兰", "nameEn": "Ireland", "region": "Europe", "coverage": "overview",
+  "summary": "已复核关键技能及一般就业许可；职业清单、薪酬和劳动力市场测试须按申请时官方规则确认。",
+  "summaryEn": "Reviewed Critical Skills and General Employment Permits; confirm occupation lists, remuneration and labour-market testing under the rules in force when applying.",
   "reviewedAt": "2026-09-03",
   "sources": [{ "authority": "Department of Justice, Home Affairs and Migration", "title": "How our immigration system works", "url": "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/collections/how-our-immigration-system-works/", "reviewedAt": "2026-09-03" }]
 }

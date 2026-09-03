@@ -1,7 +1,7 @@
 {
-  "name": "法国", "nameEn": "France", "region": "Europe", "coverage": "directory",
-  "summary": "法国政府签证事务官方入口。详细项目资料尚待逐项核验。",
-  "summaryEn": "The French government's official visa entry point. Detailed program information is pending review.",
+  "name": "法国", "nameEn": "France", "region": "Europe", "coverage": "overview",
+  "summary": "已复核人才居留卡的合格雇员及欧盟蓝卡路线；学历、合同和薪酬须按申请时法国官方规则确认。",
+  "summaryEn": "Reviewed the qualified-employee and EU Blue Card talent routes; confirm qualification, contract and pay rules with French authorities when applying.",
   "reviewedAt": "2026-09-03",
   "sources": [{ "authority": "Government of France", "title": "France-Visas", "url": "https://www.france-visas.gouv.fr/en/", "reviewedAt": "2026-09-03" }]
 }

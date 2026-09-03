@@ -11,6 +11,10 @@ export function projectProfile(profile) {
     germany: { recognized:profile.qualification, job:offer("germany"), sixMonths:"unknown", salary:"unknown", lowerEligible:"unknown", over45First:"unknown", pension:"unknown", formalQualification:profile.education === "postsecondary" ? "yes" : "unknown", language:"unknown", sixPoints:"unknown", funds:profile.funds },
     "new-zealand": { age55:profile.age === "under45" ? "yes" : "unknown", nzJob:offer("new-zealand"), nzEnglish:profile.english, nzSmcPathway:"unknown", nzAccredited:"unknown", nzTier1:"unknown", nzTier2:"unknown", nzWork24:"unknown", nzRoleRequirements:"unknown" },
     "united-kingdom": { adult:profile.age === "unknown" ? "unknown" : "yes", ukJob:offer("united-kingdom"), ukSponsor:"unknown", ukOccupation:"unknown", ukSalary:"unknown", ukEnglish:profile.english, ukTalentRoute:"unknown", ukScaleUpSponsor:"unknown", ukSixMonths:"unknown" },
+    ireland:{ieJob:offer("ireland"),ieCriticalOccupation:"unknown",ieGeneralOccupation:"unknown",ieSalary:"unknown",ieTwoYears:"unknown",ieLabourMarket:"unknown"},
+    netherlands:{nlJob:offer("netherlands"),nlSponsor:"unknown",nlIncome:"unknown",nlBlueQualification:"unknown"},
+    france:{frJob:offer("france"),frQualification:"unknown",frBlueQualification:"unknown",frSalary:"unknown"},
+    portugal:{ptJob:offer("portugal"),ptWorkVisa:"unknown",ptGeneral:"unknown",ptQualification:"unknown",ptQualifiedVisa:"unknown",ptActivity:"unknown"},
   };
 }
 

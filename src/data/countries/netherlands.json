@@ -2,9 +2,9 @@
   "name": "荷兰",
   "nameEn": "Netherlands",
   "region": "Europe",
-  "coverage": "directory",
-  "summary": "荷兰移民与归化局居留许可信息入口。详细项目资料尚待逐项核验。",
-  "summaryEn": "The Dutch Immigration and Naturalisation Service residence permit entry point. Detailed program information is pending review.",
+  "coverage": "overview",
+  "summary": "已复核高技术移民及欧盟蓝卡；担保人、学历和收入标准须按申请时 IND 规则确认。",
+  "summaryEn": "Reviewed the highly skilled migrant and European Blue Card permits; confirm sponsor, qualification and income rules with the IND when applying.",
   "reviewedAt": "2026-09-03",
   "sources": [
     {
