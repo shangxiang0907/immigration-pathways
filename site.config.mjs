@@ -3,6 +3,16 @@ export const site = {
   description: "Find immigration policies, official sources, and reviewed eligibility information by country.",
   url: "https://example.com",
   defaultLocale: "en",
+  advertising: {
+    provider: "google-adsense",
+    enabled: false,
+    consentReady: false,
+    publisherId: "",
+    slots: {
+      content: "",
+      results: "",
+    },
+  },
   locales: {
     en: {
       htmlLang: "en-US",

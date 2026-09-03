@@ -53,8 +53,8 @@ M2/M3 — Expand verified country coverage while connecting reviewed paths to un
 
 ## Next
 
-- [ ] Finish the planned country-directory expansion and principal-path coverage
-- [ ] Add production-gated, configurable Google AdSense support after country coverage
+- [x] Finish the planned 33-country directory expansion and principal-path coverage
+- [x] Add production-gated, configurable Google AdSense support after country coverage (disabled pending production configuration)
 - [ ] Define the free-result boundary and low-priced report contents
 - [ ] After AdSense support, draft the grounded report data contract before choosing an LLM or backend
 

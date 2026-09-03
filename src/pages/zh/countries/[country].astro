@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import SiteLayout from "../../../layouts/SiteLayout.astro";
 import { site } from "../../../../site.config.mjs";
+import AdSlot from "../../../components/AdSlot.astro";
 export async function getStaticPaths() { const countries = await getCollection("countries"); const programs = await getCollection("programs"); return countries.map((country) => ({ params: { country: country.id }, props: { country, programs: programs.filter((program) => program.data.countryId === country.id) } })); }
 interface Props { country: CollectionEntry<"countries">; programs: CollectionEntry<"programs">[]; }
 const { country, programs } = Astro.props;
@@ -12,6 +13,7 @@ const format = new Intl.DateTimeFormat("zh-CN", { dateStyle: "long", timeZone: "
   <article class="prose country-detail"><nav class="breadcrumbs" aria-label="面包屑导航"><a href="/zh/countries">国家与地区</a><span aria-hidden="true">/</span><span>{country.data.name}</span></nav><p class="eyebrow">{country.data.nameEn}</p><h1>{country.data.name}</h1><div class="card-meta"><span class={`status status-${country.data.coverage}`}>{labels[country.data.coverage]}</span><span>复核于 {format.format(country.data.reviewedAt)}</span></div><p class="lede">{country.data.summary}</p>
     {country.data.coverage === "directory" && <aside class="notice" aria-labelledby="coverage-notice"><h2 id="coverage-notice">当前仅提供官方入口</h2><p>本站尚未完成该国具体项目的资格、费用、期限和流程核验。请直接查阅下方政府来源，不要把本页视为资格判断。</p></aside>}
     {programs.length > 0 && <section aria-labelledby="programs-heading"><h2 id="programs-heading">已复核项目</h2><ul>{programs.map((program) => <li><a href={`/zh/programs/${program.id}`}>{program.data.name}</a> — {program.data.summary}</li>)}</ul></section>}
+    <AdSlot placement="content" locale="zh" />
     <section aria-labelledby="sources-heading"><h2 id="sources-heading">官方来源</h2><ul class="source-list">{country.data.sources.map((source) => <li><a href={source.url} rel="external noreferrer">{source.title}</a><span>{source.authority} · 复核于 {format.format(source.reviewedAt)}</span></li>)}</ul></section><p class="disclaimer">本页提供一般教育信息，不构成个性化移民或法律建议。申请前请以主管政府机构公布的最新要求为准。</p>
   </article>
 </SiteLayout>

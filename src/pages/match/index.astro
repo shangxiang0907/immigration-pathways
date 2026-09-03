@@ -1,4 +1,4 @@
 ---
-import SiteLayout from "../../layouts/SiteLayout.astro"; import UnifiedMatcher from "../../components/UnifiedMatcher.astro"; import { site } from "../../../site.config.mjs";
+import SiteLayout from "../../layouts/SiteLayout.astro"; import UnifiedMatcher from "../../components/UnifiedMatcher.astro"; import AdSlot from "../../components/AdSlot.astro"; import { site } from "../../../site.config.mjs";
 ---
-<SiteLayout title={`Check immigration options — ${site.name}`} description="Fill one short profile to compare covered countries and reviewed pathways."><UnifiedMatcher /></SiteLayout>
+<SiteLayout title={`Check immigration options — ${site.name}`} description="Fill one short profile to compare covered countries and reviewed pathways."><UnifiedMatcher /><AdSlot placement="results" /></SiteLayout>

@@ -94,6 +94,8 @@ fieldset.question { grid-template-columns: repeat(3, max-content); }
 .text-button { border: 0; padding: .7rem 0; background: transparent; color: var(--accent); font: inherit; font-weight: 800; text-decoration: underline; cursor: pointer; }
 .disclaimer { margin-top: 3rem; border-top: 1px solid var(--line); padding-top: 1rem; color: var(--muted); font-size: .9rem; }
 .footer-inner nav { display: flex; gap: 1rem; }
+.ad-placement { width: 100%; min-height: 7rem; margin-block: 3rem; border-block: 1px solid var(--line); padding-block: 1rem; overflow: hidden; background: var(--surface); }
+.ad-label { display: block; margin-bottom: .5rem; color: var(--muted); font-size: .7rem; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
 
 @media (max-width: 44rem) {
   .header-inner, .footer-inner { align-items: flex-start; flex-direction: column; padding-block: 1rem; }

@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import SiteLayout from "../../../layouts/SiteLayout.astro";
 import { site } from "../../../../site.config.mjs";
+import AdSlot from "../../../components/AdSlot.astro";
 export async function getStaticPaths() { const programs = await getCollection("programs"); const countries = await getCollection("countries"); return programs.map((program) => ({ params: { program: program.id }, props: { program, country: countries.find((country) => country.id === program.data.countryId)! } })); }
 interface Props { program: CollectionEntry<"programs">; country: CollectionEntry<"countries">; }
 const { program, country } = Astro.props;
@@ -12,4 +13,5 @@ const format = new Intl.DateTimeFormat("zh-CN", { dateStyle: "long", timeZone: "
 ---
 <SiteLayout locale="zh" title={`${program.data.name} — ${site.name}`} description={program.data.summary}>
   <article class="prose country-detail"><nav class="breadcrumbs" aria-label="面包屑导航"><a href="/zh/programs">移民项目</a><span aria-hidden="true">/</span><span>{program.data.name}</span></nav><p class="eyebrow">{country.data.name}</p><h1>{program.data.name}</h1><div class="card-meta"><span class="status status-overview">政策概览</span><span>复核于 {format.format(program.data.reviewedAt)}</span></div><p class="lede">{program.data.summary}</p><aside class="notice"><h2>使用本概览前请注意</h2><p>以下内容是项目最低条件，不是获批预测。满足最低条件并不保证获得提名、邀请或批准。</p></aside><section><h2>核心条件</h2><div class="requirement-list">{Object.entries(program.data.requirements).map(([key, requirement]) => <article class="requirement"><div class="card-meta"><strong>{labels[key] ?? key}</strong><span class={`requirement-status requirement-${requirement.status}`}>{statuses[requirement.status]}</span></div><p>{requirement.summary}</p></article>)}</div></section><section><h2>官方来源</h2><ul class="source-list">{program.data.sources.map((source) => <li><a href={source.url} rel="external noreferrer">{source.title}</a><span>{source.authority} · 复核于 {format.format(source.reviewedAt)}</span></li>)}</ul></section><p class="disclaimer">本页仅提供一般教育信息，不构成个性化移民或法律建议。要求可能变化，行动前请向负责该项目的政府机构确认。下次计划复核：{format.format(program.data.nextReviewAt)}。</p></article>
+  <AdSlot placement="content" locale="zh" />
 </SiteLayout>

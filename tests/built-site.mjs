@@ -5,6 +5,8 @@ import { resolve } from "node:path";
 const root = resolve("dist");
 const read = (path) => readFile(resolve(root, path), "utf8");
 const fields = ["age", "education", "experience", "english", "jobOffer", "funds", "regional", "qualification"];
+const previewHome = await read("index.html");
+assert.doesNotMatch(previewHome, /pagead2\.googlesyndication\.com|adsbygoogle|data-ad-placement/, "preview must not emit advertising code");
 
 for (const [path, language, heading] of [["match/index.html", "en-US", "Fill once, compare countries"], ["zh/match/index.html", "zh-CN", "一次填写，比较多个国家"]]) {
   const html = await read(path);

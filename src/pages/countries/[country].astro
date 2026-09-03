@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from "astro:content";
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import { site } from "../../../site.config.mjs";
+import AdSlot from "../../components/AdSlot.astro";
 
 export async function getStaticPaths() {
   const countries = await getCollection("countries");
@@ -41,6 +42,7 @@ const coverageLabels = {
     )}
 
     {programs.length > 0 && <section aria-labelledby="programs-heading"><h2 id="programs-heading">Reviewed programs</h2><ul>{programs.map((program) => <li><a href={`/programs/${program.id}`}>{program.data.nameEn}</a> — {program.data.summaryEn}</li>)}</ul></section>}
+    <AdSlot placement="content" />
 
     <section aria-labelledby="sources-heading">
       <h2 id="sources-heading">Official sources</h2>

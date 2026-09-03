@@ -1,0 +1,16 @@
+---
+import { site } from "../../site.config.mjs";
+import { isAdvertisingActive, isAdSlotId } from "../lib/adsense.mjs";
+interface Props { placement: "content" | "results"; locale?: "en" | "zh"; }
+const { placement, locale = "en" } = Astro.props;
+const active = isAdvertisingActive(site.advertising, import.meta.env.SITE_BUILD_MODE === "production");
+const slot = site.advertising.slots[placement];
+const show = active && isAdSlotId(slot);
+---
+{show && (
+  <aside class="ad-placement" aria-label={locale === "zh" ? "广告" : "Advertisement"} data-ad-placement={placement}>
+    <span class="ad-label">{locale === "zh" ? "广告" : "Advertisement"}</span>
+    <ins class="adsbygoogle" style="display:block" data-ad-client={site.advertising.publisherId} data-ad-slot={slot} data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script is:inline>window.adsbygoogle = window.adsbygoogle || []; window.adsbygoogle.push({});</script>
+  </aside>
+)}

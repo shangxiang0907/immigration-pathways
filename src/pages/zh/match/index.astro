@@ -1,4 +1,4 @@
 ---
-import SiteLayout from "../../../layouts/SiteLayout.astro"; import UnifiedMatcher from "../../../components/UnifiedMatcher.astro"; import { site } from "../../../../site.config.mjs";
+import SiteLayout from "../../../layouts/SiteLayout.astro"; import UnifiedMatcher from "../../../components/UnifiedMatcher.astro"; import AdSlot from "../../../components/AdSlot.astro"; import { site } from "../../../../site.config.mjs";
 ---
-<SiteLayout locale="zh" title={`查询移民选项 — ${site.name}`} description="填写一份简短资料，比较已收录国家和已复核路径。"><UnifiedMatcher locale="zh" /></SiteLayout>
+<SiteLayout locale="zh" title={`查询移民选项 — ${site.name}`} description="填写一份简短资料，比较已收录国家和已复核路径。"><UnifiedMatcher locale="zh" /><AdSlot placement="results" locale="zh" /></SiteLayout>

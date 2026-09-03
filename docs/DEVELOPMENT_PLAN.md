@@ -90,6 +90,8 @@ must be rechecked against the responsible government authority before publicatio
 
 Owner approved this milestone on 2026-09-03, to start after the planned country-directory expansion and before any LLM work.
 
+Implementation completed locally on 2026-09-04. It remains disabled pending real account identifiers, consent configuration, and explicit production activation.
+
 - Optional publisher ID and ad-slot settings in site configuration
 - Reusable responsive ad component with reserved space to limit layout shift
 - Load the AdSense script only when a real publisher ID is configured and the build is explicitly production
