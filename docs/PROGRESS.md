@@ -29,6 +29,7 @@ M3 — Comparison and matching
 - [x] Program keyword, country, and category filters
 - [x] Browser-only Australia 189/190/491 pre-screen and boundary tests
 - [x] First reviewed Germany batch: EU Blue Card, qualified-professional visa, and opportunity card
+- [x] Browser-only Germany pathway pre-screen and boundary tests
 
 ## In progress
 

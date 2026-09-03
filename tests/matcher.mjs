@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { evaluateCanadaPrograms, resultStatus } from "../src/lib/matcher.mjs";
 import { evaluateAustraliaPrograms } from "../src/lib/australia-matcher.mjs";
+import { evaluateGermanyPrograms } from "../src/lib/germany-matcher.mjs";
 const r = new Proxy({}, { get: (_, key) => String(key) });
 const base = { work: "canada", years: "two", recency: "within3", teer: "01", language: "7", education: "canadian", offer: "yes", certificate: "no", funds: "yes", outsideQuebec: "yes" };
 
@@ -37,3 +38,14 @@ australia = evaluateAustraliaPrograms({ ...australiaBase, stateNomination: "yes"
 assert.equal(resultStatus(australia.visa190), "likely", "regional intent is not a subclass 190 minimum");
 assert.equal(resultStatus(australia.visa491), "fail", "491 requires regional residence intent");
 console.log("Australia matcher boundary tests passed");
+
+const germanyBase = { recognized:"yes", job:"yes", sixMonths:"yes", salary:"general", lowerEligible:"no", over45First:"no", pension:"no", formalQualification:"yes", language:"yes", sixPoints:"yes", funds:"yes" };
+let germany = evaluateGermanyPrograms(germanyBase, r);
+assert.deepEqual(Object.values(germany).map(resultStatus), ["likely","likely","likely"]);
+germany = evaluateGermanyPrograms({ ...germanyBase, recognized:"no", job:"no" }, r);
+assert.equal(resultStatus(germany.blue), "fail"); assert.equal(resultStatus(germany.qualified), "fail"); assert.equal(resultStatus(germany.opportunity), "likely", "points route may work without German recognition");
+germany = evaluateGermanyPrograms({ ...germanyBase, salary:"lower", lowerEligible:"unknown" }, r);
+assert.equal(resultStatus(germany.blue), "unknown");
+germany = evaluateGermanyPrograms({ ...germanyBase, over45First:"yes", salary:"general", pension:"no" }, r);
+assert.equal(resultStatus(germany.qualified), "fail");
+console.log("Germany matcher boundary tests passed");
