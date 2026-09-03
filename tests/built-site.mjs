@@ -10,9 +10,16 @@ assert.doesNotMatch(previewHome, /pagead2\.googlesyndication\.com|adsbygoogle|da
 assert.match(previewHome, /<body data-detect-locale="true">/);
 assert.match(previewHome, /navigator\.languages\?\.\[0\] \?\? navigator\.language/);
 assert.match(previewHome, /preferredLocale !== "zh"/);
+assert.match(previewHome, /Reviewed coverage across 33 countries/);
+assert.match(previewHome, /Compare 71 reviewed immigration and work-residence pathways/);
+assert.doesNotMatch(previewHome, /This preview remains unavailable|Canada now includes three reviewed/);
 const previewCountries = await read("countries/index.html");
 assert.match(previewCountries, /<body data-detect-locale="false">/);
 assert.doesNotMatch(previewHome, /navigator\.languages\?\.some/);
+const previewZhHome = await read("zh/index.html");
+assert.match(previewZhHome, /已复核覆盖 33 个国家/);
+assert.match(previewZhHome, /比较 71 条经过复核的移民及工作居留路径/);
+assert.doesNotMatch(previewZhHome, /预览站不会被搜索引擎索引|加拿大现有三项/);
 
 for (const [path, language, heading] of [["match/index.html", "en-US", "Fill once, compare countries"], ["zh/match/index.html", "zh-CN", "一次填写，比较多个国家"]]) {
   const html = await read(path);
