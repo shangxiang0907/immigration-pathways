@@ -14,4 +14,5 @@ for(const country of ["spain","japan","singapore","united-states"]){const result
 for(const country of ["austria","denmark","finland","norway"]){const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
 for(const country of ["belgium","sweden","switzerland","italy"]){const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
 for(const country of ["czechia","poland","greece","malta"]){const projected=projectProfile({...profile,jobOffer:country});assert.equal(Object.values(projected[country])[0],"yes");const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
+for(const country of ["estonia","latvia","lithuania","luxembourg"]){const projected=projectProfile({...profile,jobOffer:country});assert.equal(Object.values(projected[country])[0],"yes");const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
 console.log("unified profile tests passed");

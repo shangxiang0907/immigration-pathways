@@ -23,6 +23,10 @@ import { czechiaRules } from "./czechia.mjs";
 import { polandRules } from "./poland.mjs";
 import { greeceRules } from "./greece.mjs";
 import { maltaRules } from "./malta.mjs";
+import { estoniaRules } from "./estonia.mjs";
+import { latviaRules } from "./latvia.mjs";
+import { lithuaniaRules } from "./lithuania.mjs";
+import { luxembourgRules } from "./luxembourg.mjs";
 
-export const matchingRuleSets = [australiaRules, canadaRules, germanyRules, newZealandRules, unitedKingdomRules, irelandRules, netherlandsRules, franceRules, portugalRules, spainRules, japanRules, singaporeRules, unitedStatesRules, austriaRules, denmarkRules, finlandRules, norwayRules, belgiumRules, swedenRules, switzerlandRules, italyRules, czechiaRules, polandRules, greeceRules, maltaRules];
+export const matchingRuleSets = [australiaRules, canadaRules, germanyRules, newZealandRules, unitedKingdomRules, irelandRules, netherlandsRules, franceRules, portugalRules, spainRules, japanRules, singaporeRules, unitedStatesRules, austriaRules, denmarkRules, finlandRules, norwayRules, belgiumRules, swedenRules, switzerlandRules, italyRules, czechiaRules, polandRules, greeceRules, maltaRules, estoniaRules, latviaRules, lithuaniaRules, luxembourgRules];
 export const matchingRulesByCountry = Object.fromEntries(matchingRuleSets.map((rules) => [rules.countryId, rules]));
