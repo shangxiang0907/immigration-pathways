@@ -34,9 +34,6 @@ M3 — Comparison and matching
 - [x] First declarative rule migration: Australia
 - [x] Declarative rule migrations for all nine reviewed Canada, Australia, and Germany programs
 - [x] Central matching registry and build-time rule/profile schema validation
-- [x] Generic configuration-driven questionnaire component and first Australia migration
-- [x] Cross-validation between questionnaires, profile fields, programs, and bilingual result reasons
-- [x] Canada migration to the generic questionnaire with reusable select questions
 - [x] Lightweight unified eight-question profile and cross-country comparison
 - [x] Opt-in, versioned browser-only profile storage and clear control
 - [x] Replaced unused goal input with a qualification-assessment signal used by country rules
@@ -49,7 +46,14 @@ M3 — Comparison and matching
 
 ## Next
 
-- [ ] Validate the unified flow in a real browser at representative mobile and desktop widths (browser unavailable locally)
+- [ ] Select and research the next authoritative country/program content batch
+- [ ] Connect each newly reviewed program to the shared profile and country ranking
+- [ ] Define the free-result boundary and low-priced report contents
+- [ ] Draft the grounded report data contract before choosing an LLM or backend
+
+## Secondary validation
+
+- [ ] Validate the unified flow in a real browser at representative mobile and desktop widths when a browser is available
 
 ## Blocked until owner authorization
 

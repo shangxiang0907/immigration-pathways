@@ -1,11 +1,23 @@
 # Immigration Pathways development plan
 
+## Product principles
+
+- Serve people who do not know immigration systems well or do not want to research many government sites themselves.
+- Keep the product lightweight: a static information site plus one short browser-based comparison flow, not an application-management platform.
+- Ask for shared information once. Do not create a separate questionnaire for every country.
+- Return a quick, conservative shortlist of countries and reviewed pathways, with official links and clear missing-information notes.
+- Show a useful free preliminary result. A more complete, low-priced report may be offered later, but its price and scope must be validated before implementation.
+- Prefer simple static and browser-only features. Add a backend only when report generation, payment, or delivery genuinely requires one.
+- Focus development on verified country data, matching quality, official-source links, and the report proposition. Defer nonessential polish and infrastructure.
+
 ## Product sequence
 
 1. Build a verified immigration-policy directory with official sources.
 2. Add deterministic filtering and side-by-side comparison.
 3. Add LLM-written reports grounded only in verified structured data.
 4. Add payment and email delivery only after the report has been validated.
+
+Email is optional, not a default requirement. A paid report should be available immediately on the web; email may later send an access link if owner research shows users want it.
 
 ## Language behavior
 
@@ -58,8 +70,10 @@ must be rechecked against the responsible government authority before publicatio
 - One versioned applicant-profile schema shared by every country
 - Declarative program rules stored as data, not country-specific UI code
 - One generic evaluator producing `pass`, `fail`, or `unknown` per requirement
-- One adaptive questionnaire that asks shared fields once and reveals relevant follow-ups
-- Country-specific rules may extend the schema but must not create another standalone engine
+- One short shared questionnaire that compares all covered countries in one submission
+- Country-specific facts that cannot be derived safely remain `unknown` and are explained in results; they do not create another questionnaire in the primary flow
+- Optional profile persistence is opt-in and browser-only, with a visible clear control
+- Country-specific rules may extend internal rule data but must not create standalone UI or another engine
 - Field-level source URL, review date, rule version, and dynamic-value expiry
 
 ### M4 — Grounded report prototype
@@ -87,3 +101,10 @@ Requires explicit owner authorization before implementation.
 - No comparison field is inferred from prose when a structured value is required.
 - LLM output cannot add facts or sources that are absent from verified input.
 - Production domain, indexing, analytics, payment, and email require owner approval.
+
+## Product decisions still open
+
+- Exact free-result boundary and paid-report contents
+- Low-price report tier or tiers
+- Whether users prefer immediate web access only or an optional email access link
+- Which authoritative country/program batch should be added next
