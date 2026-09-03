@@ -4,7 +4,7 @@ Last updated: 2026-09-03
 
 ## Current milestone
 
-M1 — Information foundation
+M2 — Verified content batches
 
 ## Completed
 
@@ -20,16 +20,17 @@ M1 — Information foundation
 - [x] Localized production canonical and `hreflang` metadata
 - [x] Multilingual routing quality review
 - [x] Directory-only government entry points for 13 countries
+- [x] First reviewed batch: Canada's three federal Express Entry programs
+- [x] English and Chinese program directories and detail pages
 
 ## In progress
 
-- [ ] First detailed immigration-program research batch awaiting scope approval
+- [ ] Review the next country/program batch
 
 ## Next
 
-- [ ] Approve the first country/program research batch
-- [ ] Enable the verified program collection
-- [ ] Add the first normalized program records
+- [ ] Add deterministic program filters using normalized requirements
+- [ ] Select the next small authoritative-source research batch
 
 ## Blocked until owner authorization
 

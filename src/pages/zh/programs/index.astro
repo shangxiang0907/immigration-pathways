@@ -1,5 +1,7 @@
 ---
+import { getCollection } from "astro:content";
 import SiteLayout from "../../../layouts/SiteLayout.astro";
 import { site } from "../../../../site.config.mjs";
+const programs = (await getCollection("programs")).sort((a, b) => a.data.name.localeCompare(b.data.name, "zh-CN"));
 ---
-<SiteLayout locale="zh" title={`移民项目 — ${site.name}`} description="按标准化字段查询经过来源核验的移民项目。"><header class="page-heading"><p class="eyebrow">Immigration programs</p><h1>移民项目</h1><p class="lede">项目资料将在官方来源、复核日期与结构化条件齐备后按批次加入。</p></header><section class="notice" aria-labelledby="program-status"><h2 id="program-status">首批项目正在准备</h2><p>当前先开放国家官方入口查询。详细资格、费用、期限与比较功能将在完成事实核验后上线。</p><p><a href="/zh/countries">查看国家与地区</a></p></section></SiteLayout>
+<SiteLayout locale="zh" title={`移民项目 — ${site.name}`} description="查询附有官方来源和标准化资格字段的移民项目概览。"><header class="page-heading"><p class="eyebrow">Immigration programs</p><h1>移民项目</h1><p class="lede">这里提供依据政府来源复核的项目概览，帮助你理解主要条件；行动前仍须向主管机构确认每项最新要求。</p></header><section class="directory-tools" aria-labelledby="program-heading"><h2 id="program-heading">现有项目</h2><p class="result-count">{programs.length} 个已复核项目概览</p><div class="card-grid directory-grid">{programs.map((program) => <article class="card"><div class="card-meta"><span class="status status-overview">概览</span><span>加拿大</span></div><h2><a href={`/zh/programs/${program.id}`}>{program.data.name}</a></h2><p>{program.data.summary}</p></article>)}</div></section></SiteLayout>

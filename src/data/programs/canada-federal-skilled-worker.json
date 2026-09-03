@@ -1,0 +1,50 @@
+{
+  "name": "联邦技术工人计划",
+  "nameEn": "Federal Skilled Worker Program",
+  "countryId": "canada",
+  "category": "skilled-work",
+  "status": "active",
+  "coverage": "overview",
+  "summary": "面向具有加拿大境内或境外技术工作经验的申请人。满足最低门槛后还须在六项甄选因素中达到 67 分，进入 Express Entry 候选池也不保证获得邀请。",
+  "summaryEn": "For skilled workers with Canadian or foreign work experience. Applicants who meet the minimum requirements must also score at least 67 points across six selection factors; entering the Express Entry pool does not guarantee an invitation.",
+  "requirements": {
+    "workExperience": {
+      "status": "required",
+      "summary": "最近 10 年内，在同一主要职业 NOC 的 TEER 0、1、2 或 3 类中，至少完成连续 1 年、合计 1,560 小时的有偿工作，并符合该 NOC 的职责要求。",
+      "summaryEn": "At least 1 continuous year (1,560 hours) of paid work within the last 10 years in the same primary NOC, in TEER 0, 1, 2 or 3, while meeting the NOC duty requirements.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html"]
+    },
+    "language": {
+      "status": "required",
+      "summary": "经认可的英语或法语考试，第一官方语言四项能力均至少达到 CLB 7 或 NCLC 7。",
+      "summaryEn": "An approved English or French test with at least CLB 7 or NCLC 7 in all four abilities for the first official language.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html"]
+    },
+    "education": {
+      "status": "required",
+      "summary": "须有加拿大高中或高等教育证书、文凭或学位；境外学历须提供完成的学历证书和移民用途学历认证（ECA）。",
+      "summaryEn": "A Canadian secondary or post-secondary credential is required; foreign education requires both a completed credential and an Educational Credential Assessment for immigration purposes.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html"]
+    },
+    "jobOffer": {
+      "status": "not-required",
+      "summary": "工作邀请不是最低资格条件，但符合要求的工作邀请可计入该计划的甄选因素。自 2025 年 3 月 25 日起，工作邀请不再获得 CRS 加分。",
+      "summaryEn": "A job offer is not a minimum eligibility requirement, though a valid offer may count toward the program's selection factors. Job-offer CRS points were removed on March 25, 2025.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/job-offer.html"]
+    },
+    "settlementFunds": {
+      "status": "conditional",
+      "summary": "通常需要资金证明；如获授权在加拿大工作且有有效工作邀请，则无需提供。金额会定期更新，应在申请时查询官网。",
+      "summaryEn": "Proof of funds is generally required, unless the applicant is authorized to work in Canada and has a valid job offer. Amounts change periodically and should be checked at application time.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html"]
+    }
+  },
+  "sources": [
+    {"authority":"Immigration, Refugees and Citizenship Canada","title":"Federal Skilled Worker Program","url":"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html","reviewedAt":"2026-09-03"},
+    {"authority":"Immigration, Refugees and Citizenship Canada","title":"Express Entry language test results","url":"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html","reviewedAt":"2026-09-03"},
+    {"authority":"Immigration, Refugees and Citizenship Canada","title":"Express Entry proof of funds","url":"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html","reviewedAt":"2026-09-03"}
+  ],
+  "reviewedAt": "2026-09-03",
+  "nextReviewAt": "2026-12-03",
+  "disclaimer": "本资料仅供一般教育用途，不构成个性化移民或法律建议。"
+}

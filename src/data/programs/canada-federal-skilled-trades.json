@@ -1,0 +1,50 @@
+{
+  "name": "联邦技工计划",
+  "nameEn": "Federal Skilled Trades Program",
+  "countryId": "canada",
+  "category": "skilled-work",
+  "status": "active",
+  "coverage": "overview",
+  "summary": "面向具备指定技术行业资历的技术工人。申请人还须拥有至少一年的有效全职工作邀请，或加拿大主管机构签发的技工资格证书。",
+  "summaryEn": "For workers qualified in designated skilled trades. Applicants must also hold either a valid full-time job offer for at least one year or a Canadian certificate of qualification in the trade.",
+  "requirements": {
+    "workExperience": {
+      "status": "required",
+      "summary": "申请前 5 年内，在同一合资格技工 NOC 中至少有 2 年、合计 3,120 小时的有偿工作经验，并满足该职业职责及当地执业资格要求。全日制学习期间的工作不计入最低要求。",
+      "summaryEn": "At least 2 years (3,120 hours) of paid experience within the last 5 years in the same eligible skilled-trade NOC, meeting its duties and local qualification requirements. Work gained while studying full-time does not count toward the minimum.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-trades.html"]
+    },
+    "language": {
+      "status": "required",
+      "summary": "认可的英语考试须口语和听力至少 CLB 5、阅读和写作至少 CLB 4；法语对应 NCLC 5 和 NCLC 4。",
+      "summaryEn": "An approved test requires at least CLB/NCLC 5 for speaking and listening, and CLB/NCLC 4 for reading and writing.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html"]
+    },
+    "education": {
+      "status": "not-required",
+      "summary": "该项目没有最低学历要求；学历仍可能提高 Express Entry 排名。",
+      "summaryEn": "There is no minimum education requirement, though education may improve Express Entry ranking.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-trades.html"]
+    },
+    "jobOfferOrCertificate": {
+      "status": "required",
+      "summary": "须有总计至少一年的有效全职工作邀请，或由加拿大省、地区或联邦主管机构签发的相应技工资格证书。",
+      "summaryEn": "Either a valid offer of full-time employment for at least one year or a certificate of qualification in the trade from a Canadian provincial, territorial or federal authority is required.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-trades.html"]
+    },
+    "settlementFunds": {
+      "status": "conditional",
+      "summary": "通常需要资金证明；如获授权在加拿大工作且有有效工作邀请，则无需提供。金额会定期更新，应在申请时查询官网。",
+      "summaryEn": "Proof of funds is generally required, unless the applicant is authorized to work in Canada and has a valid job offer. Amounts change periodically and should be checked at application time.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html"]
+    }
+  },
+  "sources": [
+    {"authority":"Immigration, Refugees and Citizenship Canada","title":"Federal Skilled Trades Program","url":"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-trades.html","reviewedAt":"2026-09-03"},
+    {"authority":"Immigration, Refugees and Citizenship Canada","title":"Express Entry language test results","url":"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html","reviewedAt":"2026-09-03"},
+    {"authority":"Immigration, Refugees and Citizenship Canada","title":"Express Entry proof of funds","url":"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html","reviewedAt":"2026-09-03"}
+  ],
+  "reviewedAt": "2026-09-03",
+  "nextReviewAt": "2026-12-03",
+  "disclaimer": "本资料仅供一般教育用途，不构成个性化移民或法律建议。"
+}

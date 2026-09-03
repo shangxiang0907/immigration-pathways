@@ -1,0 +1,50 @@
+{
+  "name": "加拿大经验类",
+  "nameEn": "Canadian Experience Class",
+  "countryId": "canada",
+  "category": "skilled-work",
+  "status": "active",
+  "coverage": "overview",
+  "summary": "面向具有近期合资格加拿大技术工作经验的申请人。满足项目最低条件后进入 Express Entry 候选池，并不保证获得永久居民申请邀请。",
+  "summaryEn": "For applicants with recent qualifying skilled work experience in Canada. Meeting the program minimums permits entry to the Express Entry pool but does not guarantee an invitation to apply for permanent residence.",
+  "requirements": {
+    "workExperience": {
+      "status": "required",
+      "summary": "申请前 3 年内，在加拿大获授权完成至少 1 年、合计 1,560 小时的 TEER 0、1、2 或 3 类有偿工作。一般情况下，自雇和全日制学习期间的工作不计入最低要求。",
+      "summaryEn": "At least 1 year (1,560 hours) of authorized, paid Canadian work in TEER 0, 1, 2 or 3 within the 3 years before applying. Self-employment and work gained as a full-time student generally do not count toward the minimum.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html"]
+    },
+    "language": {
+      "status": "required",
+      "summary": "须参加认可的英语或法语考试。TEER 0 或 1 的四项能力至少 CLB/NCLC 7；TEER 2 或 3 至少 CLB/NCLC 5。",
+      "summaryEn": "An approved English or French test is required. TEER 0 or 1 requires CLB/NCLC 7 in all four abilities; TEER 2 or 3 requires CLB/NCLC 5.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html"]
+    },
+    "education": {
+      "status": "not-required",
+      "summary": "该项目没有最低学历要求；学历仍可能影响 Express Entry 排名。",
+      "summaryEn": "There is no minimum education requirement, though education may still affect Express Entry ranking.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html"]
+    },
+    "jobOffer": {
+      "status": "not-required",
+      "summary": "无需工作邀请。",
+      "summaryEn": "A job offer is not required.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply.html"]
+    },
+    "settlementFunds": {
+      "status": "not-required",
+      "summary": "加拿大经验类无需满足资金证明最低要求；系统如要求上传文件，可按官网说明提交解释信。",
+      "summaryEn": "Canadian Experience Class applicants do not need to meet the proof-of-funds minimum; if the system requests a document, follow the official instructions for an explanatory letter.",
+      "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html"]
+    }
+  },
+  "sources": [
+    {"authority":"Immigration, Refugees and Citizenship Canada","title":"Canadian Experience Class","url":"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html","reviewedAt":"2026-09-03"},
+    {"authority":"Immigration, Refugees and Citizenship Canada","title":"Express Entry language test results","url":"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html","reviewedAt":"2026-09-03"},
+    {"authority":"Immigration, Refugees and Citizenship Canada","title":"Express Entry proof of funds","url":"https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html","reviewedAt":"2026-09-03"}
+  ],
+  "reviewedAt": "2026-09-03",
+  "nextReviewAt": "2026-12-03",
+  "disclaimer": "本资料仅供一般教育用途，不构成个性化移民或法律建议。"
+}

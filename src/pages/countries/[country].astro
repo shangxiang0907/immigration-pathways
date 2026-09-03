@@ -5,14 +5,16 @@ import { site } from "../../../site.config.mjs";
 
 export async function getStaticPaths() {
   const countries = await getCollection("countries");
-  return countries.map((country) => ({ params: { country: country.id }, props: { country } }));
+  const programs = await getCollection("programs");
+  return countries.map((country) => ({ params: { country: country.id }, props: { country, programs: programs.filter((program) => program.data.countryId === country.id) } }));
 }
 
 interface Props {
   country: CollectionEntry<"countries">;
+  programs: CollectionEntry<"programs">[];
 }
 
-const { country } = Astro.props;
+const { country, programs } = Astro.props;
 const coverageLabels = {
   directory: "Official directory",
   overview: "Policy overview",
@@ -37,6 +39,8 @@ const coverageLabels = {
         <p>Eligibility, fees, timing, and process details have not yet been reviewed. Consult the government source below and do not treat this page as an eligibility decision.</p>
       </aside>
     )}
+
+    {programs.length > 0 && <section aria-labelledby="programs-heading"><h2 id="programs-heading">Reviewed programs</h2><ul>{programs.map((program) => <li><a href={`/programs/${program.id}`}>{program.data.nameEn}</a> — {program.data.summaryEn}</li>)}</ul></section>}
 
     <section aria-labelledby="sources-heading">
       <h2 id="sources-heading">Official sources</h2>
