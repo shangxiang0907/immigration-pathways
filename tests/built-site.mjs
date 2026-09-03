@@ -18,7 +18,8 @@ for (const [path, language, heading] of [["match/index.html", "en-US", "Fill onc
   const asset = html.match(/src="(\/_astro\/UnifiedMatcher[^"?]+\.js)"/)?.[1];
   assert.ok(asset, `${path} must load the unified matcher client`);
   const script = await read(asset.slice(1));
-  assert.match(script, /immigration-pathways-profile-v1/);
+  assert.match(script, /immigration-pathways-profile-v2/);
+  assert.match(script, /version:2/);
   assert.doesNotMatch(script, /fetch\(|XMLHttpRequest|sendBeacon/);
 }
 

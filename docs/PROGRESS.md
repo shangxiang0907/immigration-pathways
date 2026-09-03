@@ -44,6 +44,7 @@ M3 — Comparison and matching
 - [x] Tested cross-country ranking with conservative pathway-count result summaries
 - [x] Closest-path links and concise explanations for user-triggered known barriers
 - [x] Built-output contract tests for both locales, privacy controls, no-upload client code, and legacy redirects
+- [x] Versioned profile-cache migration and complete local-storage privacy disclosure
 
 ## Next
 
