@@ -35,6 +35,7 @@ M3 — Comparison and matching
 - [x] Declarative rule migrations for all nine reviewed Canada, Australia, and Germany programs
 - [x] Central matching registry and build-time rule/profile schema validation
 - [x] Generic configuration-driven questionnaire component and first Australia migration
+- [x] Cross-validation between questionnaires, profile fields, programs, and bilingual result reasons
 
 ## Next
 
