@@ -1,4 +1,3 @@
 ---
-import SiteLayout from "../../../layouts/SiteLayout.astro"; import GenericMatcher from "../../../components/GenericMatcher.astro"; import { site } from "../../../../site.config.mjs";
+return Astro.redirect("/zh/match", 302);
 ---
-<SiteLayout locale="zh" title={`澳大利亚技术签证预筛 — ${site.name}`} description="将你的答案与澳大利亚 189、190 和 491 类技术签证的已复核基础条件进行比较。"><GenericMatcher countryId="australia" locale="zh" /></SiteLayout>

@@ -1,4 +1,3 @@
 ---
-import SiteLayout from "../../layouts/SiteLayout.astro"; import GenericMatcher from "../../components/GenericMatcher.astro"; import { site } from "../../../site.config.mjs";
+return Astro.redirect("/match", 302);
 ---
-<SiteLayout title={`Australia skilled visa pre-screen — ${site.name}`} description="Compare your answers with reviewed basic requirements for Australian skilled visa subclasses 189, 190 and 491."><GenericMatcher countryId="australia" /></SiteLayout>

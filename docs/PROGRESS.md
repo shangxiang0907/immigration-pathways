@@ -40,10 +40,11 @@ M3 — Comparison and matching
 - [x] Lightweight unified eight-question profile and cross-country comparison
 - [x] Opt-in, versioned browser-only profile storage and clear control
 - [x] Replaced unused goal input with a qualification-assessment signal used by country rules
+- [x] Retired country-specific questionnaires; legacy URLs redirect to the unified comparison
 
 ## Next
 
-- [ ] Refine cross-country ranking and progressively retire country-specific questionnaires
+- [ ] Refine cross-country ranking and result explanations
 
 ## Blocked until owner authorization
 

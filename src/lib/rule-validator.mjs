@@ -44,34 +44,3 @@ export function validateMatchingRuleSets(ruleSets, profileSchema) {
   }
   return errors;
 }
-
-export function validateQuestionnaires(questionnaires, rulesByCountry, profileSchema) {
-  const errors = [];
-  const fields = new Set(Object.keys(profileSchema.fields));
-  for (const [countryId, questionnaire] of Object.entries(questionnaires)) {
-    const rules = rulesByCountry[countryId];
-    if (!rules) { errors.push(`${countryId}: questionnaire has no matching rule set`); continue; }
-    if (questionnaire.countryId !== countryId) errors.push(`${countryId}: questionnaire countryId mismatch`);
-    if (questionnaire.schemaVersion !== 1) errors.push(`${countryId}: unsupported questionnaire schema version`);
-    const questionFields = new Set();
-    for (const question of questionnaire.questions || []) {
-      if (question.type && !["radio", "select"].includes(question.type)) errors.push(`${countryId}.${question.field}: unsupported question type '${question.type}'`);
-      if (!fields.has(question.field)) errors.push(`${countryId}: unknown question field '${question.field}'`);
-      if (questionFields.has(question.field)) errors.push(`${countryId}: duplicate question field '${question.field}'`);
-      questionFields.add(question.field);
-      if (!question.label?.en || !question.label?.zh) errors.push(`${countryId}.${question.field}: bilingual labels are required`);
-      if (question.type === "select") {
-        if (!Array.isArray(question.options) || question.options.length < 2) errors.push(`${countryId}.${question.field}: select options are required`);
-        for (const option of question.options || []) if (option.value === undefined || !option.label?.en || !option.label?.zh) errors.push(`${countryId}.${question.field}: every option needs a value and bilingual label`);
-      }
-    }
-    for (const program of rules.programs) {
-      const display = questionnaire.programs?.[program.resultKey];
-      if (!display?.slug || !display?.name?.en || !display?.name?.zh) errors.push(`${countryId}.${program.resultKey}: bilingual program display metadata is required`);
-      for (const check of program.checks) {
-        if (!questionnaire.reasons?.en?.[check.reasonKey] || !questionnaire.reasons?.zh?.[check.reasonKey]) errors.push(`${countryId}.${program.resultKey}: missing bilingual reason '${check.reasonKey}'`);
-      }
-    }
-  }
-  return errors;
-}
