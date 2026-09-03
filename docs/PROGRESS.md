@@ -49,6 +49,7 @@ M2/M3 — Expand verified country coverage while connecting reviewed paths to un
 - [x] Expanded the official country directory from 13 to 21 countries
 - [x] Reviewed and connected two principal pathways each for Austria, Denmark, Finland, and Norway
 - [x] Owner set the next milestone order: country coverage, then Google AdSense support, then LLM reports
+- [x] Owner confirmed the dual-revenue model: AdSense on free surfaces plus low-priced paid reports
 
 ## Next
 

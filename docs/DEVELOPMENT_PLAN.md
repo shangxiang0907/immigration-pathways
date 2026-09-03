@@ -10,6 +10,15 @@
 - Prefer simple static and browser-only features. Add a backend only when report generation, payment, or delivery genuinely requires one.
 - Focus development on verified country data, matching quality, official-source links, and the report proposition. Defer nonessential polish and infrastructure.
 
+## Revenue model
+
+- Use two complementary revenue streams: advertising on useful free information and comparison pages, plus low-priced paid in-depth reports.
+- Advertising is not a substitute for paid reports, and paid reports are not expected to replace free-site advertising.
+- Keep the free result genuinely useful: show a preliminary shortlist, reviewed pathway summaries, uncertainty, and official links without payment.
+- Reserve the paid report for deeper organization and explanation based on the user's saved answers and verified structured data; do not sell access to links that are already public.
+- Keep paid report views free of advertising. Ads must not interrupt the questionnaire, obscure official sources, imitate navigation, or create pressure through misleading placement.
+- Measure the two streams separately: free-page engagement and advertising yield versus report funnel conversion, refunds, and report-generation cost.
+
 ## Product sequence
 
 1. Build a verified immigration-policy directory with official sources.
@@ -87,6 +96,7 @@ Owner approved this milestone on 2026-09-03, to start after the planned country-
 - Keep local and preview builds free of third-party advertising requests
 - Update privacy and consent behavior before enabling ads where legally required
 - Do not create or configure the external AdSense account without the owner's account details and explicit go-live instruction
+- Place ads only on free informational and free-result surfaces; exclude paid report and checkout surfaces
 
 ### M5 — Grounded report prototype
 
@@ -105,6 +115,7 @@ Requires explicit owner authorization before implementation.
 - Immediate web report with print/download support
 - Optional transactional email containing an access link
 - Refund, retention, deletion, privacy, and support policies
+- Ad-free paid report presentation
 
 ## Release gates
 
