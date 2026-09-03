@@ -2,9 +2,9 @@
   "name": "德国",
   "nameEn": "Germany",
   "region": "Europe",
-  "coverage": "directory",
-  "summary": "德国政府面向国际专业人才提供的签证与居留信息入口。详细项目资料尚待逐项核验。",
-  "summaryEn": "The German government's visa and residence information entry point for international professionals. Detailed program information is pending review.",
+  "coverage": "overview",
+  "summary": "德国政府国际专业人才入口，以及欧盟蓝卡、专业技术人员工作签证和求职机会卡的已复核概览。",
+  "summaryEn": "The German government portal plus reviewed overviews of the EU Blue Card, qualified-professional work visa and opportunity card.",
   "reviewedAt": "2026-09-03",
   "sources": [
     {
