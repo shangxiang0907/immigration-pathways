@@ -53,6 +53,15 @@ must be rechecked against the responsible government authority before publicatio
 - Deterministic `pass`, `fail`, and `unknown` outcomes
 - No approval prediction or personalized legal advice
 
+### Matching architecture for 100+ countries
+
+- One versioned applicant-profile schema shared by every country
+- Declarative program rules stored as data, not country-specific UI code
+- One generic evaluator producing `pass`, `fail`, or `unknown` per requirement
+- One adaptive questionnaire that asks shared fields once and reveals relevant follow-ups
+- Country-specific rules may extend the schema but must not create another standalone engine
+- Field-level source URL, review date, rule version, and dynamic-value expiry
+
 ### M4 — Grounded report prototype
 
 - Serverless Cloudflare Worker endpoint

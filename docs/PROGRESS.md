@@ -33,12 +33,12 @@ M3 — Comparison and matching
 
 ## In progress
 
-- [ ] Normalize another country batch before expanding the unified questionnaire
+- [ ] Replace three country-specific evaluators with one declarative rule engine
 
 ## Next
 
-- [ ] Expand structured rules beyond the first three Canadian programs
-- [ ] Select the next small authoritative-source research batch
+- [ ] Define versioned shared applicant-profile and rule schemas
+- [ ] Migrate the nine existing program rules without changing outcomes
 
 ## Blocked until owner authorization
 
