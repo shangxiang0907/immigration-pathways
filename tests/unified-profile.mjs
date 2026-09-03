@@ -8,4 +8,5 @@ assert.deepEqual(summarizeCountry({a:{fail:[],unknown:["x"]},b:{fail:["x"],unkno
 const ranked=rankCountries(profile,matchingRuleSets); assert.equal(ranked[0].countryId,"germany"); assert.equal(ranked[0].bestProgramId,"germany-opportunity-card"); assert.equal(ranked[0].total,3); assert.ok(ranked[0].viable>0);
 const blocked=rankCountries({...profile,funds:"no",qualification:"no",jobOffer:"none"},matchingRuleSets);const germany=blocked.find(x=>x.countryId==="germany");assert.ok(germany.barrierKeys.length>0);assert.ok(germany.bestProgramId);
 const nzProfile=projectProfile({...profile,jobOffer:"new-zealand"});assert.equal(nzProfile["new-zealand"].nzJob,"yes");assert.equal(rankCountries({...profile,jobOffer:"new-zealand"},matchingRuleSets).find(x=>x.countryId==="new-zealand").total,3);
+const ukProfile=projectProfile({...profile,jobOffer:"united-kingdom"});assert.equal(ukProfile["united-kingdom"].ukJob,"yes");assert.equal(ukProfile["united-kingdom"].ukEnglish,"yes");assert.equal(rankCountries({...profile,jobOffer:"united-kingdom"},matchingRuleSets).find(x=>x.countryId==="united-kingdom").total,3);
 console.log("unified profile tests passed");

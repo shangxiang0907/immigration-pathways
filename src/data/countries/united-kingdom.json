@@ -1,7 +1,10 @@
 {
-  "name": "英国", "nameEn": "United Kingdom", "region": "Europe", "coverage": "directory",
-  "summary": "英国政府签证与移民事务官方入口。详细项目资料尚待逐项核验。",
-  "summaryEn": "The UK government's official visas and immigration entry point. Detailed program information is pending review.",
+  "name": "英国", "nameEn": "United Kingdom", "region": "Europe", "coverage": "overview",
+  "summary": "已复核技术工作、成长型企业工作及全球人才三条主要工作路线；具体职业代码、工资、担保和人才资格须在申请时向 GOV.UK 确认。",
+  "summaryEn": "Reviewed coverage of the Skilled Worker, Scale-up Worker and Global Talent routes; confirm occupation code, salary, sponsorship and talent-route details on GOV.UK when applying.",
   "reviewedAt": "2026-09-03",
-  "sources": [{ "authority": "UK Government", "title": "Visas and immigration", "url": "https://www.gov.uk/browse/visas-immigration", "reviewedAt": "2026-09-03" }]
+  "sources": [
+    { "authority": "UK Home Office — GOV.UK", "title": "Work in the UK", "url": "https://www.gov.uk/browse/visas-immigration/work-visas", "reviewedAt": "2026-09-03" },
+    { "authority": "UK Home Office — GOV.UK", "title": "Skilled Worker visa", "url": "https://www.gov.uk/skilled-worker-visa", "reviewedAt": "2026-09-03" }
+  ]
 }

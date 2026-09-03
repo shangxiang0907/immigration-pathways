@@ -12,5 +12,6 @@ export const applicantProfileSchema = {
     fsw67: { type: "derived" }, recognized: { type: "answer" }, job: { type: "answer" }, sixMonths: { type: "answer" }, salary: { type: "choice" },
     lowerEligible: { type: "answer" }, over45First: { type: "answer" }, pension: { type: "answer" }, formalQualification: { type: "answer" }, sixPoints: { type: "answer" },
     age55: { type: "answer" }, nzJob: { type: "answer" }, nzEnglish: { type: "answer" }, nzSmcPathway: { type: "answer" }, nzAccredited: { type: "answer" }, nzTier1: { type: "answer" }, nzTier2: { type: "answer" }, nzWork24: { type: "answer" }, nzRoleRequirements: { type: "answer" },
+    adult: { type: "answer" }, ukJob: { type: "answer" }, ukSponsor: { type: "answer" }, ukOccupation: { type: "answer" }, ukSalary: { type: "answer" }, ukEnglish: { type: "answer" }, ukTalentRoute: { type: "answer" }, ukScaleUpSponsor: { type: "answer" }, ukSixMonths: { type: "answer" },
   },
 };

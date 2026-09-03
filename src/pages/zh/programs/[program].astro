@@ -5,7 +5,7 @@ import { site } from "../../../../site.config.mjs";
 export async function getStaticPaths() { const programs = await getCollection("programs"); const countries = await getCollection("countries"); return programs.map((program) => ({ params: { program: program.id }, props: { program, country: countries.find((country) => country.id === program.data.countryId)! } })); }
 interface Props { program: CollectionEntry<"programs">; country: CollectionEntry<"countries">; }
 const { program, country } = Astro.props;
-const labels: Record<string, string> = { workExperience: "工作经验", language: "语言", education: "学历", jobOffer: "工作邀请", jobOfferOrCertificate: "工作邀请或技工资格证书", settlementFunds: "安家资金", age: "年龄", occupation: "合资格职业", skillsAssessment: "职业评估", points: "积分测试", english: "英语", nomination: "提名", nominationOrSponsor: "提名或担保", regionalResidence: "偏远地区居住要求", invitation: "申请邀请", qualification: "资格", salary: "薪资", ageSalaryCondition: "年龄相关薪资条件", qualificationRoute: "资格路线", livelihood: "生活资金" };
+const labels: Record<string, string> = { workExperience: "工作经验", language: "语言", education: "学历", jobOffer: "工作邀请", jobOfferOrCertificate: "工作邀请或技工资格证书", settlementFunds: "安家资金", age: "年龄", field: "适用领域", endorsementOrPrize: "背书或合资格奖项", sponsorship: "雇主担保", occupation: "合资格职业", skillsAssessment: "职业评估", points: "积分测试", english: "英语", nomination: "提名", nominationOrSponsor: "提名或担保", regionalResidence: "偏远地区居住要求", invitation: "申请邀请", qualification: "资格", salary: "薪资", ageSalaryCondition: "年龄相关薪资条件", qualificationRoute: "资格路线", livelihood: "生活资金" };
 const statuses = { required: "必须", "not-required": "非必须", conditional: "有条件要求", unknown: "尚未确认" };
 const format = new Intl.DateTimeFormat("zh-CN", { dateStyle: "long", timeZone: "UTC" });
 ---
