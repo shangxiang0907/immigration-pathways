@@ -1,0 +1,24 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "pathways-to-abroad",
+  "main": "./src/worker.mjs",
+  "compatibility_date": "2026-09-03",
+  "workers_dev": true,
+  "routes": [
+    {
+      "pattern": "pathwaystoabroad.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.pathwaystoabroad.com",
+      "custom_domain": true
+    }
+  ],
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}

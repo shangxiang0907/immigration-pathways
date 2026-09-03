@@ -23,3 +23,11 @@ npm run build:production
 ```
 
 Production mode emits canonical URLs, an indexable robots directive, and a sitemap based on `site.config.mjs`. Building production output does not deploy it.
+
+After explicit publication approval and Cloudflare authentication, deploy the production build with:
+
+```bash
+npm run deploy:cloudflare
+```
+
+The Worker serves the generated static assets on the apex domain and redirects HTTP and `www` requests to the canonical HTTPS origin.

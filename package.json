@@ -8,16 +8,18 @@
   "scripts": {
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
     "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
-    "test": "node tests/rule-validator.mjs && node tests/rule-engine.mjs && node tests/matcher.mjs && node tests/unified-profile.mjs && node tests/adsense-config.mjs",
+    "test": "node tests/rule-validator.mjs && node tests/rule-engine.mjs && node tests/matcher.mjs && node tests/unified-profile.mjs && node tests/adsense-config.mjs && node tests/worker-routing.mjs",
     "test:dist": "node tests/built-site.mjs",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
     "build:production": "SITE_BUILD_MODE=production ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "deploy:cloudflare": "npm run build:production && wrangler deploy",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.10",
     "@astrojs/sitemap": "^3.7.4",
     "astro": "^7.2.10",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "wrangler": "^4.129.0"
   }
 }

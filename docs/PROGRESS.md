@@ -9,6 +9,8 @@ M2/M3 — Expand verified country coverage while connecting reviewed paths to un
 ## Completed
 
 - [x] Production domain selected and configured: `https://pathwaystoabroad.com`
+- [x] Cloudflare Workers Static Assets deployment configuration with apex and `www` custom-domain routes
+- [x] Production deployment verified on Cloudflare with HTTPS, canonical redirects, indexable robots, sitemap, and live 404 behavior
 - [x] Astro static-site baseline with preview `noindex`
 - [x] Country and immigration-program schemas
 - [x] Country directory, region filter, and name search
@@ -65,7 +67,6 @@ M2/M3 — Expand verified country coverage while connecting reviewed paths to un
 
 ## Requires a later production/configuration decision
 
-- Production deployment and indexing activation
 - Real AdSense publisher/slot IDs, account connection, consent configuration, and production activation
 - Payment, checkout, accounts, and report delivery
 - Transactional email configuration
