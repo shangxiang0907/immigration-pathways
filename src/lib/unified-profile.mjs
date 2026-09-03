@@ -15,6 +15,10 @@ export function projectProfile(profile) {
     netherlands:{nlJob:offer("netherlands"),nlSponsor:"unknown",nlIncome:"unknown",nlBlueQualification:"unknown"},
     france:{frJob:offer("france"),frQualification:"unknown",frBlueQualification:"unknown",frSalary:"unknown"},
     portugal:{ptJob:offer("portugal"),ptWorkVisa:"unknown",ptGeneral:"unknown",ptQualification:"unknown",ptQualifiedVisa:"unknown",ptActivity:"unknown"},
+    spain:{esJob:offer("spain"),esQualification:"unknown",esAssessment:"unknown"},
+    japan:{jpJob:offer("japan"),jpQualification:"unknown",jpAssessment:"unknown"},
+    singapore:{sgJob:offer("singapore"),sgQualification:"unknown",sgAssessment:"unknown"},
+    "united-states":{usJob:offer("united-states"),usQualification:"unknown",usAssessment:"unknown"},
   };
 }
 

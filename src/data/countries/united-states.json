@@ -1,7 +1,7 @@
 {
-  "name": "美国", "nameEn": "United States", "region": "Americas", "coverage": "directory",
-  "summary": "美国政府移民与公民事务官方导航入口。详细项目资料尚待逐项核验。",
-  "summaryEn": "The U.S. government's official immigration and citizenship guide. Detailed program information is pending review.",
+  "name": "美国", "nameEn": "United States", "region": "Americas", "coverage": "overview",
+  "summary": "已复核 EB-1 和 EB-2 国家利益豁免；基础资格、证据标准及签证可用性须向 USCIS 和国务院确认。",
+  "summaryEn": "Reviewed EB-1 and EB-2 National Interest Waiver; confirm classification eligibility, evidence standards and visa availability with USCIS and the Department of State.",
   "reviewedAt": "2026-09-03",
   "sources": [{ "authority": "U.S. General Services Administration", "title": "Immigration and U.S. citizenship", "url": "https://www.usa.gov/immigration-and-citizenship", "reviewedAt": "2026-09-03" }]
 }

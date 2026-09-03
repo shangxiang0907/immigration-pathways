@@ -10,4 +10,5 @@ const blocked=rankCountries({...profile,funds:"no",qualification:"no",jobOffer:"
 const nzProfile=projectProfile({...profile,jobOffer:"new-zealand"});assert.equal(nzProfile["new-zealand"].nzJob,"yes");assert.equal(rankCountries({...profile,jobOffer:"new-zealand"},matchingRuleSets).find(x=>x.countryId==="new-zealand").total,3);
 const ukProfile=projectProfile({...profile,jobOffer:"united-kingdom"});assert.equal(ukProfile["united-kingdom"].ukJob,"yes");assert.equal(ukProfile["united-kingdom"].ukEnglish,"yes");assert.equal(rankCountries({...profile,jobOffer:"united-kingdom"},matchingRuleSets).find(x=>x.countryId==="united-kingdom").total,3);
 for(const country of ["ireland","netherlands","france","portugal"]){const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
+for(const country of ["spain","japan","singapore","united-states"]){const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
 console.log("unified profile tests passed");

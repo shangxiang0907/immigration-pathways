@@ -1,7 +1,7 @@
 {
-  "name": "西班牙", "nameEn": "Spain", "region": "Europe", "coverage": "directory",
-  "summary": "西班牙内政部外国人事务官方入口。详细项目资料尚待逐项核验。",
-  "summaryEn": "The Spanish Ministry of the Interior's official foreign-national procedures entry point. Detailed program information is pending review.",
+  "name": "西班牙", "nameEn": "Spain", "region": "Europe", "coverage": "overview",
+  "summary": "已复核高技能专业人士及欧盟蓝卡路线；合同、资格和薪酬须按申请时官方规则确认。",
+  "summaryEn": "Reviewed highly qualified professional and EU Blue Card routes; confirm contract, qualification and salary rules when applying.",
   "reviewedAt": "2026-09-03",
   "sources": [{ "authority": "Ministerio del Interior", "title": "Extranjería", "url": "https://interior.gob.es/opencms/es/servicios-al-ciudadano/tramites-y-gestiones/extranjeria/", "reviewedAt": "2026-09-03" }]
 }
