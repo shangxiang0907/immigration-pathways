@@ -21,6 +21,7 @@ export function projectProfile(profile) {
     "united-states":{usJob:offer("united-states"),usQualification:"unknown",usAssessment:"unknown"},
     austria:{atJob:offer("austria"),atQualification:"unknown",atAssessment:"unknown"},denmark:{dkJob:offer("denmark"),dkQualification:"unknown",dkAssessment:"unknown"},finland:{fiJob:offer("finland"),fiQualification:"unknown",fiAssessment:"unknown"},norway:{noJob:offer("norway"),noQualification:"unknown",noAssessment:"unknown"},
     belgium:{beJob:offer("belgium"),beQualification:"unknown",beAssessment:"unknown"},sweden:{seJob:offer("sweden"),seQualification:"unknown",seAssessment:"unknown"},switzerland:{chJob:offer("switzerland"),chQualification:"unknown",chAssessment:"unknown"},italy:{itJob:offer("italy"),itQualification:"unknown",itAssessment:"unknown"},
+    czechia:{czJob:offer("czechia"),czQualification:profile.qualification,czAssessment:"unknown"},poland:{plJob:offer("poland"),plQualification:profile.qualification,plAssessment:"unknown"},greece:{grJob:offer("greece"),grQualification:profile.qualification,grAssessment:"unknown"},malta:{mtJob:offer("malta"),mtQualification:profile.qualification,mtAssessment:"unknown"},
   };
 }
 
