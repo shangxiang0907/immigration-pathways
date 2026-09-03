@@ -1,0 +1,9 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { site } from "../../site.config.mjs";
+Astro.response.status = 404;
+---
+
+<SiteLayout title={`Page not found — ${site.name}`} description="The requested page could not be found." currentPath="/404">
+  <article class="prose"><p class="eyebrow">404</p><h1>Page not found</h1><p>The address may have changed. Return to the <a href="/">homepage</a>.</p></article>
+</SiteLayout>

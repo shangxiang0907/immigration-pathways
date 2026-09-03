@@ -1,0 +1,14 @@
+---
+import SiteLayout from "../layouts/SiteLayout.astro";
+import { site } from "../../site.config.mjs";
+---
+
+<SiteLayout title={`About — ${site.name}`} description={`How ${site.name} selects, checks, and presents information.`}>
+  <article class="prose">
+    <p class="eyebrow">About</p>
+    <h1>Why this site exists</h1>
+    <p>{site.description}</p>
+    <h2>Editorial approach</h2>
+    <p>This starter copy must be adapted before publication. Explain who produces the content, how important claims are checked, and how readers can report corrections.</p>
+  </article>
+</SiteLayout>

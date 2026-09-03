@@ -1,0 +1,54 @@
+---
+import "../styles/global.css";
+import { site } from "../../site.config.mjs";
+
+interface Props {
+  title: string;
+  description: string;
+  currentPath?: string;
+}
+
+const { title, description, currentPath = Astro.url.pathname } = Astro.props;
+const isProduction = import.meta.env.SITE_BUILD_MODE === "production";
+const isIndexable = isProduction && currentPath !== "/404";
+const canonicalUrl = isIndexable && Astro.site ? new URL(currentPath, Astro.site) : undefined;
+---
+
+<!doctype html>
+<html lang={site.locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={description} />
+    <meta name="robots" content={isIndexable ? "index, follow" : "noindex, nofollow, noarchive"} />
+    {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <a class="brand" href="/">{site.name}</a>
+        <nav aria-label="Primary navigation">
+          <ul>
+            {site.navigation.map((link) => (
+              <li><a href={link.href} aria-current={currentPath === link.href ? "page" : undefined}>{link.label}</a></li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main id="main-content" class="shell"><slot /></main>
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <p>© {new Date().getFullYear()} {site.name}</p>
+        <nav aria-label="Legal and contact navigation">
+          <a href="/contact">Contact</a>
+          <a href="/privacy">Privacy</a>
+          <a href="/terms">Terms</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
