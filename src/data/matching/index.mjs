@@ -27,6 +27,10 @@ import { estoniaRules } from "./estonia.mjs";
 import { latviaRules } from "./latvia.mjs";
 import { lithuaniaRules } from "./lithuania.mjs";
 import { luxembourgRules } from "./luxembourg.mjs";
+import { hungaryRules } from "./hungary.mjs";
+import { croatiaRules } from "./croatia.mjs";
+import { cyprusRules } from "./cyprus.mjs";
+import { icelandRules } from "./iceland.mjs";
 
-export const matchingRuleSets = [australiaRules, canadaRules, germanyRules, newZealandRules, unitedKingdomRules, irelandRules, netherlandsRules, franceRules, portugalRules, spainRules, japanRules, singaporeRules, unitedStatesRules, austriaRules, denmarkRules, finlandRules, norwayRules, belgiumRules, swedenRules, switzerlandRules, italyRules, czechiaRules, polandRules, greeceRules, maltaRules, estoniaRules, latviaRules, lithuaniaRules, luxembourgRules];
+export const matchingRuleSets = [australiaRules, canadaRules, germanyRules, newZealandRules, unitedKingdomRules, irelandRules, netherlandsRules, franceRules, portugalRules, spainRules, japanRules, singaporeRules, unitedStatesRules, austriaRules, denmarkRules, finlandRules, norwayRules, belgiumRules, swedenRules, switzerlandRules, italyRules, czechiaRules, polandRules, greeceRules, maltaRules, estoniaRules, latviaRules, lithuaniaRules, luxembourgRules, hungaryRules, croatiaRules, cyprusRules, icelandRules];
 export const matchingRulesByCountry = Object.fromEntries(matchingRuleSets.map((rules) => [rules.countryId, rules]));

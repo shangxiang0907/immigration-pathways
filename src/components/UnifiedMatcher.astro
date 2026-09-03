@@ -10,6 +10,7 @@ t.offers.splice(14,0,["austria",zh?"奥地利":"Austria"],["denmark",zh?"丹麦"
 t.offers.splice(18,0,["belgium",zh?"比利时":"Belgium"],["sweden",zh?"瑞典":"Sweden"],["switzerland",zh?"瑞士":"Switzerland"],["italy",zh?"意大利":"Italy"]);
 t.offers.splice(22,0,["czechia",zh?"捷克":"Czechia"],["poland",zh?"波兰":"Poland"],["greece",zh?"希腊":"Greece"],["malta",zh?"马耳他":"Malta"]);
 t.offers.splice(26,0,["estonia",zh?"爱沙尼亚":"Estonia"],["latvia",zh?"拉脱维亚":"Latvia"],["lithuania",zh?"立陶宛":"Lithuania"],["luxembourg",zh?"卢森堡":"Luxembourg"]);
+t.offers.splice(30,0,["hungary",zh?"匈牙利":"Hungary"],["croatia",zh?"克罗地亚":"Croatia"],["cyprus",zh?"塞浦路斯":"Cyprus"],["iceland",zh?"冰岛":"Iceland"]);
 const fields=["age","education","experience","english","jobOffer","funds","regional","qualification"]; const optionSets=[t.options,t.education,t.experience,t.answers,t.offers,t.answers,t.answers,t.answers];
 ---
 <header class="page-heading"><p class="eyebrow">{zh?"轻量跨国预筛":"Lightweight cross-country screen"}</p><h1>{t.title}</h1><p class="lede">{t.intro}</p></header>
@@ -24,6 +25,7 @@ const copy={en:{possible:"No decisive barrier found yet",barrier:"Known barriers
 Object.assign(names.en,{belgium:"Belgium",sweden:"Sweden",switzerland:"Switzerland",italy:"Italy"});Object.assign(names.zh,{belgium:"比利时",sweden:"瑞典",switzerland:"瑞士",italy:"意大利"});
 Object.assign(names.en,{czechia:"Czechia",poland:"Poland",greece:"Greece",malta:"Malta"});Object.assign(names.zh,{czechia:"捷克",poland:"波兰",greece:"希腊",malta:"马耳他"});
 Object.assign(names.en,{estonia:"Estonia",latvia:"Latvia",lithuania:"Lithuania",luxembourg:"Luxembourg"});Object.assign(names.zh,{estonia:"爱沙尼亚",latvia:"拉脱维亚",lithuania:"立陶宛",luxembourg:"卢森堡"});
+Object.assign(names.en,{hungary:"Hungary",croatia:"Croatia",cyprus:"Cyprus",iceland:"Iceland"});Object.assign(names.zh,{hungary:"匈牙利",croatia:"克罗地亚",cyprus:"塞浦路斯",iceland:"冰岛"});
 const barrierText={en:{age:"The stated age range exceeds this pathway's limit.",assessment:"A required credential or skills assessment is not in place.",qualification:"Required qualification recognition is not in place.",english:"The stated English level is below this pathway's minimum.",job:"This pathway requires a qualifying job offer.",funds:"This pathway requires evidence of sufficient funds.",year1:"At least one year of relevant experience is required.",year2:"At least two years of relevant experience is required."},zh:{age:"所填年龄范围超过该路径限制。",assessment:"尚未完成所需资质或职业评估。",qualification:"尚未完成所需资格认可。",english:"所填英语水平低于该路径最低要求。",job:"该路径要求合格工作邀请。",funds:"该路径要求足够资金证明。",year1:"需要至少一年相关经验。",year2:"需要至少两年相关经验。"}};
 const scrollBehavior=matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth";
 try{const saved=JSON.parse(localStorage.getItem(key)??"null");if(saved?.version===2&&form){for(const el of form.querySelectorAll<HTMLSelectElement>("select"))if(saved.profile[el.name])el.value=saved.profile[el.name];const box=form.elements.namedItem("saveProfile")as HTMLInputElement|null;if(box)box.checked=true;}}catch{}

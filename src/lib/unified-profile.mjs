@@ -23,6 +23,7 @@ export function projectProfile(profile) {
     belgium:{beJob:offer("belgium"),beQualification:"unknown",beAssessment:"unknown"},sweden:{seJob:offer("sweden"),seQualification:"unknown",seAssessment:"unknown"},switzerland:{chJob:offer("switzerland"),chQualification:"unknown",chAssessment:"unknown"},italy:{itJob:offer("italy"),itQualification:"unknown",itAssessment:"unknown"},
     czechia:{czJob:offer("czechia"),czQualification:profile.qualification,czAssessment:"unknown"},poland:{plJob:offer("poland"),plQualification:profile.qualification,plAssessment:"unknown"},greece:{grJob:offer("greece"),grQualification:profile.qualification,grAssessment:"unknown"},malta:{mtJob:offer("malta"),mtQualification:profile.qualification,mtAssessment:"unknown"},
     estonia:{eeJob:offer("estonia"),eeQualification:profile.qualification,eeAssessment:"unknown"},latvia:{lvJob:offer("latvia"),lvQualification:profile.qualification,lvAssessment:"unknown"},lithuania:{ltJob:offer("lithuania"),ltQualification:profile.qualification,ltAssessment:"unknown"},luxembourg:{luJob:offer("luxembourg"),luQualification:profile.qualification,luAssessment:"unknown"},
+    hungary:{huJob:offer("hungary"),huQualification:profile.qualification,huAssessment:"unknown"},croatia:{hrJob:offer("croatia"),hrQualification:profile.qualification,hrAssessment:"unknown"},cyprus:{cyJob:offer("cyprus"),cyQualification:profile.qualification,cyAssessment:"unknown"},iceland:{isJob:offer("iceland"),isQualification:profile.qualification,isAssessment:"unknown"},
   };
 }
 
