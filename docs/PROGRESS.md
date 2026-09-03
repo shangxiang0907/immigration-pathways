@@ -4,7 +4,7 @@ Last updated: 2026-09-03
 
 ## Current milestone
 
-M2 — Verified content batches
+M3 — Comparison and matching
 
 ## Completed
 
@@ -22,14 +22,17 @@ M2 — Verified content batches
 - [x] Directory-only government entry points for 13 countries
 - [x] First reviewed batch: Canada's three federal Express Entry programs
 - [x] English and Chinese program directories and detail pages
+- [x] Privacy-preserving browser-only Canada pre-screen
+- [x] Deterministic `potential match`, `does not meet`, and `more information needed` outcomes
+- [x] Boundary-case tests for the initial Canada matching rules
 
 ## In progress
 
-- [ ] Review the next country/program batch
+- [ ] Research and normalize the next program batch
 
 ## Next
 
-- [ ] Add deterministic program filters using normalized requirements
+- [ ] Expand structured rules beyond the first three Canadian programs
 - [ ] Select the next small authoritative-source research batch
 
 ## Blocked until owner authorization

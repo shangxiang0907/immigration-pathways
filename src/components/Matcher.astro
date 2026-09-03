@@ -1,0 +1,67 @@
+---
+interface Props { locale?: "en" | "zh"; }
+const { locale = "en" } = Astro.props;
+const zh = locale === "zh";
+const prefix = zh ? "/zh" : "";
+const t = zh ? {
+  title: "加拿大快速预筛", intro: "回答 10 个问题，初步查看你与三项 Express Entry 联邦项目最低条件的匹配情况。答案只在你的浏览器中处理，不会上传或保存。",
+  work: "你的主要技术工作经验属于哪类？", workOptions: [["", "请选择"], ["canada", "加拿大境内 TEER 0–3 技术工作"], ["foreign", "加拿大境外 TEER 0–3 技术工作"], ["trade", "合资格技术工种工作"], ["other", "以上都不是"], ["unknown", "不确定"]],
+  years: "相关工作经验有多久？", yearsOptions: [["", "请选择"], ["lt1", "少于 1 年"], ["one", "至少 1 年但少于 2 年"], ["two", "至少 2 年"], ["unknown", "不确定"]],
+  recency: "这段经验距今多久？", recencyOptions: [["", "请选择"], ["within3", "3 年以内"], ["within5", "超过 3 年但在 5 年以内"], ["within10", "超过 5 年但在 10 年以内"], ["older", "超过 10 年"], ["unknown", "不确定"]],
+  teer: "你的加拿大或一般技术工作属于哪个 TEER？", teerOptions: [["", "请选择"], ["01", "TEER 0 或 1"], ["23", "TEER 2 或 3"], ["other", "其他"], ["unknown", "不确定"]],
+  language: "认可语言考试的最低单项水平？", languageOptions: [["", "请选择"], ["7", "四项均达到 CLB/NCLC 7"], ["5", "四项均达到 CLB/NCLC 5，但未全达 7"], ["trade", "听说达 5、读写达 4"], ["below", "低于上述水平"], ["untested", "未考试或不确定"]],
+  education: "你的学历证明情况？", educationOptions: [["", "请选择"], ["canadian", "加拿大高中或以上学历"], ["foreign-eca", "境外高中或以上学历，已有 ECA"], ["foreign-no-eca", "境外学历，尚无 ECA"], ["none", "没有高中学历"], ["unknown", "不确定"]],
+  offer: "你是否有至少 1 年的有效加拿大全职工作邀请？", certificate: "你是否有加拿大主管机构签发的相应技工资格证书？", funds: "如项目要求，你能否提供达到官网最新金额的安家资金证明？", quebec: "你是否计划居住在魁北克以外？",
+  yes: "是", no: "否", unsure: "不确定", submit: "查看初步结果", reset: "重新填写", results: "初步结果", privacy: "本工具不会将答案发送到服务器。刷新或离开页面后答案即消失。",
+} : {
+  title: "Canada quick pre-screen", intro: "Answer 10 questions to see how your information compares with the minimum requirements of three federal Express Entry programs. Answers are processed only in your browser and are not uploaded or saved.",
+  work: "Which best describes your main skilled work experience?", workOptions: [["", "Select one"], ["canada", "Skilled Canadian work in TEER 0–3"], ["foreign", "Skilled foreign work in TEER 0–3"], ["trade", "Work in an eligible skilled trade"], ["other", "None of these"], ["unknown", "Not sure"]],
+  years: "How much relevant work experience do you have?", yearsOptions: [["", "Select one"], ["lt1", "Less than 1 year"], ["one", "At least 1 but less than 2 years"], ["two", "At least 2 years"], ["unknown", "Not sure"]],
+  recency: "How recent is that experience?", recencyOptions: [["", "Select one"], ["within3", "Within the last 3 years"], ["within5", "More than 3 but within 5 years"], ["within10", "More than 5 but within 10 years"], ["older", "More than 10 years ago"], ["unknown", "Not sure"]],
+  teer: "What is the TEER of your Canadian or general skilled work?", teerOptions: [["", "Select one"], ["01", "TEER 0 or 1"], ["23", "TEER 2 or 3"], ["other", "Other"], ["unknown", "Not sure"]],
+  language: "What is your lowest score on an approved language test?", languageOptions: [["", "Select one"], ["7", "At least CLB/NCLC 7 in all four abilities"], ["5", "At least CLB/NCLC 5 in all four, but not all 7"], ["trade", "5 in speaking/listening and 4 in reading/writing"], ["below", "Below these levels"], ["untested", "Not tested or not sure"]],
+  education: "What education evidence do you have?", educationOptions: [["", "Select one"], ["canadian", "Canadian secondary or higher credential"], ["foreign-eca", "Foreign secondary or higher credential with ECA"], ["foreign-no-eca", "Foreign credential without ECA"], ["none", "No secondary credential"], ["unknown", "Not sure"]],
+  offer: "Do you have a valid Canadian full-time job offer for at least 1 year?", certificate: "Do you hold a Canadian certificate of qualification in the skilled trade?", funds: "If required, can you show settlement funds meeting the latest official amount?", quebec: "Do you plan to live outside Quebec?",
+  yes: "Yes", no: "No", unsure: "Not sure", submit: "See preliminary results", reset: "Start again", results: "Preliminary results", privacy: "This tool does not send answers to a server. Answers disappear when you refresh or leave the page.",
+};
+const selectField = (name: string, label: string, options: string[][]) => ({ name, label, options });
+const selects = [selectField("work", t.work, t.workOptions), selectField("years", t.years, t.yearsOptions), selectField("recency", t.recency, t.recencyOptions), selectField("teer", t.teer, t.teerOptions), selectField("language", t.language, t.languageOptions), selectField("education", t.education, t.educationOptions)];
+const radios = [["offer", t.offer], ["certificate", t.certificate], ["funds", t.funds], ["outsideQuebec", t.quebec]];
+---
+<header class="page-heading"><p class="eyebrow">{zh ? "透明规则预筛" : "Transparent rule-based screening"}</p><h1>{t.title}</h1><p class="lede">{t.intro}</p></header>
+<form id="matcher-form" class="matcher" data-locale={locale} data-prefix={prefix}>
+  {selects.map((field, index) => <label class="question"><span><b>{index + 1}.</b> {field.label}</span><select name={field.name} required>{field.options.map(([value, label]) => <option value={value}>{label}</option>)}</select></label>)}
+  {radios.map(([name, label], index) => <fieldset class="question"><legend><b>{index + 7}.</b> {label}</legend><label><input type="radio" name={name} value="yes" required /> {t.yes}</label><label><input type="radio" name={name} value="no" /> {t.no}</label><label><input type="radio" name={name} value="unknown" /> {t.unsure}</label></fieldset>)}
+  <p class="matcher-privacy">{t.privacy}</p><button class="button" type="submit">{t.submit}</button>
+</form>
+<section id="matcher-results" class="matcher-results" aria-labelledby="results-heading" aria-live="polite" hidden><h2 id="results-heading">{t.results}</h2><div id="result-list" class="result-list"></div><button id="matcher-reset" class="text-button" type="button">{t.reset}</button></section>
+
+<script>
+  import { evaluateCanadaPrograms, resultStatus } from "../lib/matcher.mjs";
+  const form = document.querySelector<HTMLFormElement>("#matcher-form");
+  const results = document.querySelector<HTMLElement>("#matcher-results");
+  const list = document.querySelector<HTMLElement>("#result-list");
+  const reset = document.querySelector<HTMLButtonElement>("#matcher-reset");
+  const copy = {
+    en: { likely: "Potential match", fail: "Does not meet stated minimums", unknown: "More information needed", pass: "No stated minimum barrier found in these answers.", disclaimer: "This is not an eligibility decision. NOC duties, work-hour continuity, admissibility, document validity and Express Entry ranking still require confirmation.", reasons: "What affected this result", details: "Review program" },
+    zh: { likely: "可能匹配", fail: "未达到已列最低条件", unknown: "需要更多信息", pass: "根据这些答案，暂未发现已列最低条件障碍。", disclaimer: "这不是资格裁定。NOC 职责、工时连续性、入境许可、文件有效性及 Express Entry 排名仍需确认。", reasons: "影响本结果的因素", details: "查看项目" },
+  };
+  const names = { en: { cec: "Canadian Experience Class", fsw: "Federal Skilled Worker Program", fst: "Federal Skilled Trades Program" }, zh: { cec: "加拿大经验类", fsw: "联邦技术工人计划", fst: "联邦技工计划" } };
+  const slugs = { cec: "canada-experience-class", fsw: "canada-federal-skilled-worker", fst: "canada-federal-skilled-trades" };
+  const reasonText = {
+    en: { work: "Work type does not match this program.", year1: "At least 1 year of relevant work is required.", year2: "At least 2 years of relevant trade work is required.", recent3: "Canadian experience must be within the last 3 years.", recent5: "Trade experience must be within the last 5 years.", recent10: "Skilled work must be within the last 10 years.", teer: "The selected TEER does not meet this program's requirement.", lang7: "CLB/NCLC 7 in all four abilities is required.", langCec: "The language minimum depends on TEER and is not met by the selected result.", langTrade: "The trade-program language minimum is not met.", education: "A qualifying Canadian credential or foreign credential with ECA is required.", offerCert: "A valid 1-year job offer or Canadian trade certificate is required.", funds: "Settlement funds are generally required for this program unless the official exemption applies.", quebec: "This federal program requires an intention to live outside Quebec.", unclear: "One or more answers needed for this program are uncertain.", fsw67: "The separate 67-point Federal Skilled Worker selection-factor test is not calculated yet." },
+    zh: { work: "工作类型不符合该项目。", year1: "需要至少 1 年相关工作经验。", year2: "需要至少 2 年相关技工经验。", recent3: "加拿大工作经验须在最近 3 年内取得。", recent5: "技工经验须在最近 5 年内取得。", recent10: "技术工作经验须在最近 10 年内取得。", teer: "所选 TEER 不符合该项目要求。", lang7: "四项能力均须达到 CLB/NCLC 7。", langCec: "语言最低要求取决于 TEER，所选成绩未达到对应门槛。", langTrade: "未达到联邦技工计划的最低语言要求。", education: "须有合资格加拿大证书，或境外学历加 ECA。", offerCert: "须有至少一年的有效工作邀请，或加拿大技工资格证书。", funds: "除非满足官网例外，该项目通常要求安家资金证明。", quebec: "该联邦项目要求申请人计划居住在魁北克以外。", unclear: "该项目所需的一项或多项答案尚不确定。", fsw67: "本工具尚未计算联邦技术工人的独立 67 分甄选因素。" },
+  };
+  type ProgramKey = "cec" | "fsw" | "fst";
+  form?.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if (!form.reportValidity() || !results || !list) return;
+    const data = Object.fromEntries(new FormData(form).entries());
+    const locale = form.dataset.locale === "zh" ? "zh" : "en";
+    const text = copy[locale]; const reasons = reasonText[locale]; const prefix = form.dataset.prefix ?? "";
+    const evaluated = evaluateCanadaPrograms(data, reasons);
+    list.innerHTML = (Object.keys(evaluated) as ProgramKey[]).map((key) => { const value = evaluated[key]; const status = resultStatus(value); const items = value.fail.length ? value.fail : value.unknown.length ? value.unknown : [text.pass]; return `<article class="match-result match-${status}"><div><span class="match-label">${text[status]}</span><h3>${names[locale][key]}</h3></div><h4>${text.reasons}</h4><ul>${items.map((item) => `<li>${item}</li>`).join("")}</ul><a href="${prefix}/programs/${slugs[key]}">${text.details}</a></article>`; }).join("");
+    const note = document.createElement("p"); note.className = "disclaimer"; note.textContent = text.disclaimer; list.append(note); results.hidden = false; results.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  reset?.addEventListener("click", () => { form?.reset(); if (results) results.hidden = true; form?.scrollIntoView({ behavior: "smooth" }); });
+</script>
