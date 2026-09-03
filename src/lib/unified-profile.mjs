@@ -9,6 +9,7 @@ export function projectProfile(profile) {
     australia: { under45: age, occupation:"unknown", assessment:profile.qualification, points:"unknown", english:profile.english, stateNomination:"unknown", relativeSponsor:"unknown", regional:profile.regional },
     canada: { work:"unknown", years, recency:"unknown", teer:"unknown", language:"untested", education:"unknown", offer:offer("canada"), certificate:"unknown", funds:profile.funds, outsideQuebec:"unknown" },
     germany: { recognized:profile.qualification, job:offer("germany"), sixMonths:"unknown", salary:"unknown", lowerEligible:"unknown", over45First:"unknown", pension:"unknown", formalQualification:profile.education === "postsecondary" ? "yes" : "unknown", language:"unknown", sixPoints:"unknown", funds:profile.funds },
+    "new-zealand": { age55:profile.age === "under45" ? "yes" : "unknown", nzJob:offer("new-zealand"), nzEnglish:profile.english, nzSmcPathway:"unknown", nzAccredited:"unknown", nzTier1:"unknown", nzTier2:"unknown", nzWork24:"unknown", nzRoleRequirements:"unknown" },
   };
 }
 

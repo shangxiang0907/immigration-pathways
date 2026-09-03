@@ -1,7 +1,10 @@
 {
-  "name": "新西兰", "nameEn": "New Zealand", "region": "Oceania", "coverage": "directory",
-  "summary": "新西兰移民局签证查询官方入口。详细项目资料尚待逐项核验。",
-  "summaryEn": "Immigration New Zealand's official visa search entry point. Detailed program information is pending review.",
+  "name": "新西兰", "nameEn": "New Zealand", "region": "Oceania", "coverage": "overview",
+  "summary": "已复核技术移民类别及绿色清单 Tier 1、Tier 2 三条技术居留路径；具体职位、工资及证据仍须在申请时向新西兰移民局确认。",
+  "summaryEn": "Reviewed coverage of the Skilled Migrant Category and Green List Tier 1 and Tier 2 skilled-residence pathways; confirm role, pay and evidence details with Immigration New Zealand when applying.",
   "reviewedAt": "2026-09-03",
-  "sources": [{ "authority": "Immigration New Zealand", "title": "Find and choose a visa", "url": "https://www.immigration.govt.nz/process-to-apply/find-a-visa-tool/", "reviewedAt": "2026-09-03" }]
+  "sources": [
+    { "authority": "Immigration New Zealand", "title": "Skilled residence pathways in New Zealand", "url": "https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/", "reviewedAt": "2026-09-03" },
+    { "authority": "Immigration New Zealand", "title": "Find and choose a visa", "url": "https://www.immigration.govt.nz/process-to-apply/find-a-visa-tool/", "reviewedAt": "2026-09-03" }
+  ]
 }

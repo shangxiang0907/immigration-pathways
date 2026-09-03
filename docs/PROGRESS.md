@@ -43,10 +43,11 @@ M3 — Comparison and matching
 - [x] Built-output contract tests for both locales, privacy controls, no-upload client code, and legacy redirects
 - [x] Versioned profile-cache migration and complete local-storage privacy disclosure
 - [x] Reduced-motion-aware result navigation and explicitly labelled live results
+- [x] Reviewed New Zealand skilled-residence batch: SMC, Straight to Residence, and Work to Residence
+- [x] New Zealand connected to the unified profile and country ranking
 
 ## Next
 
-- [ ] Select and research the next authoritative country/program content batch
 - [ ] Connect each newly reviewed program to the shared profile and country ranking
 - [ ] Define the free-result boundary and low-priced report contents
 - [ ] Draft the grounded report data contract before choosing an LLM or backend

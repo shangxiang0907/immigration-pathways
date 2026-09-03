@@ -1,0 +1,13 @@
+{
+  "name":"新西兰绿色清单工作转居留签证","nameEn":"New Zealand Work to Residence Visa","countryId":"new-zealand","category":"skilled-work","status":"active","coverage":"overview",
+  "summary":"面向已在新西兰绿色清单 Tier 2 职位完成规定工作时间，并有认可雇主相应工作或邀请的人士。","summaryEn":"For people who completed the required New Zealand work in a Green List Tier 2 role and hold qualifying employment or an offer with an accredited employer.",
+  "requirements":{
+    "age":{"status":"required","summary":"申请时须年满 55 岁或以下。","summaryEn":"You must be aged 55 or younger when applying.","sourceUrls":["https://www.immigration.govt.nz/visas/work-to-residence-visa/"]},
+    "currentJob":{"status":"required","summary":"当前须在绿色清单 Tier 2 全职职位工作或有相应邀请，雇主须获认可，工作通常须为永久或至少 12 个月固定期限。","summaryEn":"You must currently work in or hold an offer for a full-time Green List Tier 2 role with an accredited employer, generally permanent or fixed-term for at least 12 months.","sourceUrls":["https://www.immigration.govt.nz/visas/work-to-residence-visa/"]},
+    "workExperience":{"status":"required","summary":"申请前最近 30 个月内，须在新西兰符合条件的绿色清单 Tier 2 职位工作满 24 个月。","summaryEn":"At least 24 months of qualifying New Zealand work in a Green List Tier 2 role within the 30 months before applying is required.","sourceUrls":["https://www.immigration.govt.nz/visas/work-to-residence-visa/"]},
+    "roleRequirements":{"status":"required","summary":"须满足该职位适用的工资、资格、注册及其他绿色清单条件。","summaryEn":"The applicable pay, qualification, registration and other Green List conditions for the role must be met.","sourceUrls":["https://www.immigration.govt.nz/visas/work-to-residence-visa/"]},
+    "english":{"status":"required","summary":"须满足英语要求。","summaryEn":"You must meet the English requirement.","sourceUrls":["https://www.immigration.govt.nz/visas/work-to-residence-visa/"]}
+  },
+  "sources":[{"authority":"Immigration New Zealand","title":"Work to Residence Visa","url":"https://www.immigration.govt.nz/visas/work-to-residence-visa/","reviewedAt":"2026-09-03"},{"authority":"Immigration New Zealand","title":"Green List pathway to residence","url":"https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/green-list-pathway-to-residence/","reviewedAt":"2026-09-03"}],
+  "reviewedAt":"2026-09-03","nextReviewAt":"2026-10-03","disclaimer":"本资料仅供一般教育用途，不构成个性化移民或法律建议。"
+}

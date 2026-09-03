@@ -1,0 +1,12 @@
+{
+  "name":"新西兰技术移民类别居民签证","nameEn":"New Zealand Skilled Migrant Category Resident Visa","countryId":"new-zealand","category":"skilled-work","status":"active","coverage":"overview",
+  "summary":"面向拥有新西兰技术工作或工作邀请，并符合积分、技术工作经验或技工与技术人员其中一条路线的人士。","summaryEn":"For people with skilled employment or an offer in New Zealand who qualify through the points-based, skilled-work-experience, or trades-and-technician pathway.",
+  "requirements":{
+    "age":{"status":"required","summary":"主申请人申请居民签证时须年满 55 岁或以下。","summaryEn":"The principal applicant must be aged 55 or younger when applying for residence.","sourceUrls":["https://www.immigration.govt.nz/visas/skilled-migrant-category-resident-visa/"]},
+    "employment":{"status":"required","summary":"通常须有新西兰认可雇主提供的合格技术工作或工作邀请，并达到适用工资要求。","summaryEn":"A qualifying skilled job or job offer in New Zealand with an accredited employer and the applicable pay requirement is generally required.","sourceUrls":["https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/skilled-migrant-category-pathway-to-residence/"]},
+    "pathway":{"status":"required","summary":"须符合积分制、技术工作经验或技工与技术人员三条路线之一；各路线对积分、资格、工资和新西兰经验要求不同。","summaryEn":"One of the points-based, skilled-work-experience, or trades-and-technician pathways must be met; their points, qualification, pay and New Zealand experience rules differ.","sourceUrls":["https://www.immigration.govt.nz/visas/skilled-migrant-category-resident-visa/"]},
+    "english":{"status":"required","summary":"主申请人须达到技术居留适用的英语要求。","summaryEn":"The principal applicant must meet the English requirement for skilled residence.","sourceUrls":["https://www.immigration.govt.nz/visas/skilled-migrant-category-resident-visa/"]}
+  },
+  "sources":[{"authority":"Immigration New Zealand","title":"Skilled Migrant Category Resident Visa","url":"https://www.immigration.govt.nz/visas/skilled-migrant-category-resident-visa/","reviewedAt":"2026-09-03"},{"authority":"Immigration New Zealand","title":"Skilled Migrant Category pathway to residence","url":"https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/skilled-migrant-category-pathway-to-residence/","reviewedAt":"2026-09-03"}],
+  "reviewedAt":"2026-09-03","nextReviewAt":"2026-10-03","disclaimer":"本资料仅供一般教育用途，不构成个性化移民或法律建议。"
+}
