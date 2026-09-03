@@ -30,10 +30,12 @@ M3 — Comparison and matching
 - [x] Browser-only Australia 189/190/491 pre-screen and boundary tests
 - [x] First reviewed Germany batch: EU Blue Card, qualified-professional visa, and opportunity card
 - [x] Browser-only Germany pathway pre-screen and boundary tests
+- [x] Versioned generic tri-state rule engine
+- [x] First declarative rule migration: Australia
 
 ## In progress
 
-- [ ] Replace three country-specific evaluators with one declarative rule engine
+- [ ] Migrate Canada and Germany to declarative rules
 
 ## Next
 

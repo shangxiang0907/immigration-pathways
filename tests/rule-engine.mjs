@@ -1,0 +1,10 @@
+import assert from "node:assert/strict";
+import { evaluateExpression, evaluateProgramRules, PROFILE_SCHEMA_VERSION, RULE_SCHEMA_VERSION } from "../src/lib/rule-engine.mjs";
+assert.equal(PROFILE_SCHEMA_VERSION,1); assert.equal(RULE_SCHEMA_VERSION,1);
+assert.equal(evaluateExpression({age:30},{field:"age",operator:"gte",value:18}),true);
+assert.equal(evaluateExpression({answer:"unknown"},{field:"answer",operator:"equals",value:"yes"}),null);
+assert.equal(evaluateExpression({a:"no",b:"unknown"},{any:[{field:"a",operator:"equals",value:"yes"},{field:"b",operator:"equals",value:"yes"}]}),null);
+assert.equal(evaluateExpression({a:"yes",b:"unknown"},{all:[{field:"a",operator:"equals",value:"yes"},{field:"b",operator:"equals",value:"yes"}]}),null);
+const output=evaluateProgramRules({x:"no"},[{resultKey:"p",checks:[{reasonKey:"x",expression:{field:"x",operator:"equals",value:"yes"}}]}],{x:"reason"});
+assert.deepEqual(output.p,{fail:["reason"],unknown:[]});
+console.log("generic rule engine tests passed");
