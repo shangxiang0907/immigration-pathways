@@ -32,15 +32,12 @@ M3 — Comparison and matching
 - [x] Browser-only Germany pathway pre-screen and boundary tests
 - [x] Versioned generic tri-state rule engine
 - [x] First declarative rule migration: Australia
-
-## In progress
-
-- [ ] Migrate Canada and Germany to declarative rules
+- [x] Declarative rule migrations for all nine reviewed Canada, Australia, and Germany programs
 
 ## Next
 
 - [ ] Define versioned shared applicant-profile and rule schemas
-- [ ] Migrate the nine existing program rules without changing outcomes
+- [ ] Replace country-specific forms with a schema-driven adaptive questionnaire
 
 ## Blocked until owner authorization
 
