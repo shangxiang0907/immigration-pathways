@@ -6,35 +6,51 @@ interface Props {
   title: string;
   description: string;
   currentPath?: string;
+  locale?: "en" | "zh";
 }
 
-const { title, description, currentPath = Astro.url.pathname } = Astro.props;
+const { title, description, currentPath = Astro.url.pathname, locale = "en" } = Astro.props;
+const localeConfig = site.locales[locale];
+const alternateLocale = locale === "en" ? "zh" : "en";
+const alternateConfig = site.locales[alternateLocale];
+const pathWithoutLocale = currentPath.replace(/^\/zh(?=\/|$)/, "") || "/";
+const alternatePath = alternateLocale === "zh"
+  ? `/zh${pathWithoutLocale === "/" ? "/" : pathWithoutLocale}`
+  : pathWithoutLocale;
+const showLocaleSwitch = currentPath !== "/404";
 const isProduction = import.meta.env.SITE_BUILD_MODE === "production";
 const isIndexable = isProduction && currentPath !== "/404";
 const canonicalUrl = isIndexable && Astro.site ? new URL(currentPath, Astro.site) : undefined;
+const alternateUrl = isIndexable && Astro.site ? new URL(alternatePath, Astro.site) : undefined;
+const defaultPath = locale === "en" ? currentPath : pathWithoutLocale;
+const defaultUrl = isIndexable && Astro.site ? new URL(defaultPath, Astro.site) : undefined;
 ---
 
 <!doctype html>
-<html lang={site.locale}>
+<html lang={localeConfig.htmlLang}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="description" content={description} />
     <meta name="robots" content={isIndexable ? "index, follow" : "noindex, nofollow, noarchive"} />
     {canonicalUrl && <link rel="canonical" href={canonicalUrl} />}
+    {canonicalUrl && <link rel="alternate" hreflang={localeConfig.htmlLang} href={canonicalUrl} />}
+    {alternateUrl && <link rel="alternate" hreflang={alternateConfig.htmlLang} href={alternateUrl} />}
+    {defaultUrl && <link rel="alternate" hreflang="x-default" href={defaultUrl} />}
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
-    <a class="skip-link" href="#main-content">跳到正文</a>
+  <body data-detect-locale={locale === "en" && currentPath !== "/404" ? "true" : "false"}>
+    <a class="skip-link" href="#main-content">{locale === "zh" ? "跳到正文" : "Skip to content"}</a>
     <header class="site-header">
       <div class="shell header-inner">
-        <a class="brand" href="/">{site.name}</a>
-        <nav aria-label="主导航">
+        <a class="brand" href={`${localeConfig.pathPrefix}/`}>{site.name}</a>
+        <nav aria-label={locale === "zh" ? "主导航" : "Primary navigation"}>
           <ul>
-            {site.navigation.map((link) => (
+            {localeConfig.navigation.map((link) => (
               <li><a href={link.href} aria-current={currentPath === link.href ? "page" : undefined}>{link.label}</a></li>
             ))}
+            {showLocaleSwitch && <li><a href={alternatePath} data-locale-choice={alternateLocale}>{alternateConfig.label}</a></li>}
           </ul>
         </nav>
       </div>
@@ -43,12 +59,27 @@ const canonicalUrl = isIndexable && Astro.site ? new URL(currentPath, Astro.site
     <footer class="site-footer">
       <div class="shell footer-inner">
         <p>© {new Date().getFullYear()} {site.name}</p>
-        <nav aria-label="联系与法律信息">
-          <a href="/contact">联系</a>
-          <a href="/privacy">隐私</a>
-          <a href="/terms">条款</a>
+        <nav aria-label={locale === "zh" ? "联系与法律信息" : "Contact and legal information"}>
+          <a href={`${localeConfig.pathPrefix}/contact`}>{locale === "zh" ? "联系" : "Contact"}</a>
+          <a href={`${localeConfig.pathPrefix}/privacy`}>{locale === "zh" ? "隐私" : "Privacy"}</a>
+          <a href={`${localeConfig.pathPrefix}/terms`}>{locale === "zh" ? "条款" : "Terms"}</a>
         </nav>
       </div>
     </footer>
   </body>
 </html>
+
+<script is:inline>
+  (() => {
+    const choiceLinks = document.querySelectorAll("[data-locale-choice]");
+    for (const link of choiceLinks) {
+      link.addEventListener("click", () => localStorage.setItem("preferred-locale", link.dataset.localeChoice));
+    }
+
+    if (document.body.dataset.detectLocale !== "true") return;
+    if (localStorage.getItem("preferred-locale")) return;
+    if (!navigator.languages?.some((language) => language.toLowerCase().startsWith("zh"))) return;
+    const target = `/zh${location.pathname === "/" ? "/" : location.pathname}${location.search}${location.hash}`;
+    location.replace(target);
+  })();
+</script>

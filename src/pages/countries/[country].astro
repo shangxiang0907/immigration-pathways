@@ -14,43 +14,42 @@ interface Props {
 
 const { country } = Astro.props;
 const coverageLabels = {
-  directory: "官网目录",
-  overview: "政策概览",
-  deep: "深度覆盖",
+  directory: "Official directory",
+  overview: "Policy overview",
+  deep: "Deep coverage",
 };
-const dateFormatter = new Intl.DateTimeFormat("zh-CN", { dateStyle: "long", timeZone: "UTC" });
 ---
 
-<SiteLayout title={`${country.data.name}移民信息 — ${site.name}`} description={country.data.summary}>
+<SiteLayout title={`${country.data.nameEn} immigration information — ${site.name}`} description={country.data.summaryEn}>
   <article class="prose country-detail">
-    <nav class="breadcrumbs" aria-label="面包屑导航"><a href="/countries">国家与地区</a><span aria-hidden="true">/</span><span>{country.data.name}</span></nav>
-    <p class="eyebrow">{country.data.nameEn}</p>
-    <h1>{country.data.name}</h1>
+    <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/countries">Countries</a><span aria-hidden="true">/</span><span>{country.data.nameEn}</span></nav>
+    <p class="eyebrow">{country.data.name}</p>
+    <h1>{country.data.nameEn}</h1>
     <div class="card-meta">
       <span class={`status status-${country.data.coverage}`}>{coverageLabels[country.data.coverage]}</span>
-      <span>复核于 {dateFormatter.format(country.data.reviewedAt)}</span>
+      <span>Reviewed {country.data.reviewedAt.toISOString().slice(0, 10)}</span>
     </div>
-    <p class="lede">{country.data.summary}</p>
+    <p class="lede">{country.data.summaryEn}</p>
 
     {country.data.coverage === "directory" && (
       <aside class="notice" aria-labelledby="coverage-notice">
-        <h2 id="coverage-notice">当前仅提供官方入口</h2>
-        <p>本站尚未完成该国具体项目的资格、费用、期限和流程核验。请直接查阅下方政府来源，不要把本页视为资格判断。</p>
+        <h2 id="coverage-notice">Official entry point only</h2>
+        <p>Eligibility, fees, timing, and process details have not yet been reviewed. Consult the government source below and do not treat this page as an eligibility decision.</p>
       </aside>
     )}
 
     <section aria-labelledby="sources-heading">
-      <h2 id="sources-heading">官方来源</h2>
+      <h2 id="sources-heading">Official sources</h2>
       <ul class="source-list">
         {country.data.sources.map((source) => (
           <li>
             <a href={source.url} rel="external noreferrer">{source.title}</a>
-            <span>{source.authority} · 复核于 {dateFormatter.format(source.reviewedAt)}</span>
+            <span>{source.authority} · Reviewed {source.reviewedAt.toISOString().slice(0, 10)}</span>
           </li>
         ))}
       </ul>
     </section>
 
-    <p class="disclaimer">本页提供一般教育信息，不构成个性化移民或法律建议。申请前请以主管政府机构公布的最新要求为准。</p>
+    <p class="disclaimer">This page provides general educational information, not personalized immigration or legal advice. Confirm current requirements with the responsible government authority before acting.</p>
   </article>
 </SiteLayout>

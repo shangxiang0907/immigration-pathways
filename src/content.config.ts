@@ -17,6 +17,7 @@ const countries = defineCollection({
     region: z.enum(["Africa", "Americas", "Asia", "Europe", "Oceania"]),
     coverage: z.enum(["directory", "overview", "deep"]),
     summary: z.string().min(1),
+    summaryEn: z.string().min(1),
     reviewedAt: z.coerce.date(),
     sources: z.array(sourceSchema).min(1),
   }),

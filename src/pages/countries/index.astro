@@ -8,58 +8,54 @@ const countries = (await getCollection("countries")).sort((a, b) =>
 );
 
 const coverageLabels = {
-  directory: "官网目录",
-  overview: "政策概览",
-  deep: "深度覆盖",
+  directory: "Official directory",
+  overview: "Policy overview",
+  deep: "Deep coverage",
 };
 ---
 
-<SiteLayout title={`国家与地区 — ${site.name}`} description="查询各国移民主管机构、官方入口与本站内容覆盖情况。">
+<SiteLayout title={`Countries — ${site.name}`} description="Find immigration authorities, official entry points, and current coverage by country.">
   <header class="page-heading">
     <p class="eyebrow">Country directory</p>
-    <h1>国家与地区</h1>
-    <p class="lede">先从官方入口开始。本站只在完成来源核验后提供政策摘要、条件与比较数据。</p>
+    <h1>Countries</h1>
+    <p class="lede">Start with the official source. Policy summaries, eligibility details, and comparisons appear only after review.</p>
   </header>
 
   <section class="directory-tools" aria-labelledby="directory-heading">
-    <h2 id="directory-heading">查询国家</h2>
+    <h2 id="directory-heading">Find a country</h2>
     <div class="filter-bar">
       <label>
-        <span>搜索</span>
-        <input id="country-search" type="search" placeholder="输入中文或英文国家名" autocomplete="off" />
+        <span>Search</span>
+        <input id="country-search" type="search" placeholder="Enter a country name" autocomplete="off" />
       </label>
       <label>
-        <span>地区</span>
+        <span>Region</span>
         <select id="region-filter">
-          <option value="">全部地区</option>
-          <option value="Africa">非洲</option>
-          <option value="Americas">美洲</option>
-          <option value="Asia">亚洲</option>
-          <option value="Europe">欧洲</option>
-          <option value="Oceania">大洋洲</option>
+          <option value="">All regions</option>
+          <option value="Africa">Africa</option><option value="Americas">Americas</option><option value="Asia">Asia</option><option value="Europe">Europe</option><option value="Oceania">Oceania</option>
         </select>
       </label>
     </div>
-    <p id="country-count" class="result-count" aria-live="polite">当前收录 {countries.length} 个国家入口</p>
+    <p id="country-count" class="result-count" aria-live="polite">{countries.length} country entries</p>
     <div id="country-grid" class="card-grid directory-grid">
       {countries.map((country) => (
         <article
           class="card country-card"
           data-country-card
-          data-search={`${country.data.name} ${country.data.nameEn}`.toLowerCase()}
+          data-search={`${country.data.nameEn} ${country.data.name}`.toLowerCase()}
           data-region={country.data.region}
         >
           <div class="card-meta">
             <span class={`status status-${country.data.coverage}`}>{coverageLabels[country.data.coverage]}</span>
             <span>{country.data.region}</span>
           </div>
-          <h2><a href={`/countries/${country.id}`}>{country.data.name}</a></h2>
-          <p class="muted">{country.data.nameEn}</p>
-          <p>{country.data.summary}</p>
+          <h2><a href={`/countries/${country.id}`}>{country.data.nameEn}</a></h2>
+          <p class="muted">{country.data.name}</p>
+          <p>{country.data.summaryEn}</p>
         </article>
       ))}
     </div>
-    <p id="country-empty" class="empty-state" hidden>暂无匹配国家。可以清除搜索条件后重试。</p>
+    <p id="country-empty" class="empty-state" hidden>No countries match these filters.</p>
   </section>
 </SiteLayout>
 
@@ -82,7 +78,7 @@ const coverageLabels = {
       if (!card.hidden) visible += 1;
     }
 
-    if (count) count.textContent = `找到 ${visible} 个国家入口`;
+    if (count) count.textContent = `${visible} country entries`;
     if (empty) empty.hidden = visible !== 0;
   };
 

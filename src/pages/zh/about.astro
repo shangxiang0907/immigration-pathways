@@ -1,0 +1,5 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import { site } from "../../../site.config.mjs";
+---
+<SiteLayout locale="zh" title={`关于 — ${site.name}`} description={`${site.name} 如何选择、核验和更新移民信息。`}><article class="prose"><p class="eyebrow">About</p><h1>帮助读者先查清，再决定</h1><p>查询各国移民政策、官方来源与经过复核的申请条件。</p><h2>编辑方法</h2><p>本站将移民信息拆分为国家、具体项目、要求和来源。涉及资格、费用、名额、处理规则及截止日期的内容，必须核对主管政府机构的来源并记录复核日期。</p><h2>覆盖状态</h2><p>“官网目录”只代表已经找到政府入口；“政策概览”和“深度覆盖”只会在相应内容完成核验后显示。</p><h2>使用边界</h2><p>本站提供一般教育信息，不提供个性化法律建议，也不预测申请结果。采取行动前应再次查看页面列出的官方来源。</p></article></SiteLayout>

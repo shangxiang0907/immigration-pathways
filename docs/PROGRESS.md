@@ -1,0 +1,38 @@
+# Development progress
+
+Last updated: 2026-09-03
+
+## Current milestone
+
+M1 — Information foundation
+
+## Completed
+
+- [x] Astro static-site baseline with preview `noindex`
+- [x] Country and immigration-program schemas
+- [x] Country directory, region filter, and name search
+- [x] Country detail and program-directory templates
+- [x] Coverage status, official source, and review-date display
+- [x] Directory-only seed entries for Canada, Germany, and the Netherlands
+- [x] English-default and Chinese-localized URL strategy approved
+- [x] English root pages and `/zh/` localized equivalents
+- [x] Explicit language switch and first-visit browser-language detection
+- [x] Localized production canonical and `hreflang` metadata
+- [x] Multilingual routing quality review
+
+## In progress
+
+- [ ] First country/program research batch awaiting scope approval
+
+## Next
+
+- [ ] Approve the first country/program research batch
+- [ ] Enable the verified program collection
+- [ ] Add the first normalized program records
+
+## Blocked until owner authorization
+
+- Production domain and indexing
+- Analytics or advertising
+- Payment, checkout, accounts, and report delivery
+- Transactional email configuration

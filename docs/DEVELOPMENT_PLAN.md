@@ -7,6 +7,15 @@
 3. Add LLM-written reports grounded only in verified structured data.
 4. Add payment and email delivery only after the report has been validated.
 
+## Language behavior
+
+- English (`en-US`) is the default language and uses root URLs.
+- Chinese (`zh-CN`) uses `/zh/` URLs.
+- A first-time visitor whose browser prefers Chinese may be redirected to Chinese.
+- An explicit language choice overrides browser detection and is remembered locally.
+- Language is never inferred from IP address, nationality, or conversation language.
+- Localized pages must emit matching `lang`, canonical, and `hreflang` metadata before publication.
+
 ## Content coverage
 
 - **Deep:** complete, reviewed program coverage for a small launch group.
