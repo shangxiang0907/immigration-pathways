@@ -13,5 +13,15 @@ export function projectProfile(profile) {
 export function summarizeCountry(evaluated) {
   const programs = Object.values(evaluated);
   const viable = programs.filter((result) => result.fail.length === 0);
-  return { viable: viable.length, knownBarriers: Math.min(...programs.map((result) => result.fail.length)), missing: Math.min(...viable.length ? viable.map((result) => result.unknown.length) : programs.map((result) => result.unknown.length)) };
+  return { total: programs.length, viable: viable.length, knownBarriers: Math.min(...programs.map((result) => result.fail.length)), missing: Math.min(...viable.length ? viable.map((result) => result.unknown.length) : programs.map((result) => result.unknown.length)) };
 }
+
+export function rankCountries(profile, ruleSets) {
+  const projected = projectProfile(profile);
+  const reasons = new Proxy({}, { get: (_, key) => String(key) });
+  return ruleSets.map((rules) => ({
+    countryId: rules.countryId,
+    ...summarizeCountry(evaluateProgramRules(projected[rules.countryId], rules.programs, reasons)),
+  })).sort((a, b) => a.knownBarriers - b.knownBarriers || b.viable - a.viable || a.missing - b.missing);
+}
+import { evaluateProgramRules } from "./rule-engine.mjs";

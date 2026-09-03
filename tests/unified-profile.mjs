@@ -1,2 +1,9 @@
-import assert from"node:assert/strict";import{projectProfile,summarizeCountry}from"../src/lib/unified-profile.mjs";
-const p=projectProfile({age:"under45",experience:"twoPlus",english:"yes",jobOffer:"germany",education:"postsecondary",funds:"yes",regional:"yes",qualification:"yes"});assert.equal(p.australia.under45,"yes");assert.equal(p.australia.assessment,"yes");assert.equal(p.canada.years,"two");assert.equal(p.germany.job,"yes");assert.equal(p.germany.recognized,"yes");assert.equal(p.canada.offer,"unknown");assert.deepEqual(summarizeCountry({a:{fail:[],unknown:["x"]},b:{fail:["x"],unknown:[]}}),{viable:1,knownBarriers:0,missing:1});console.log("unified profile tests passed");
+import assert from "node:assert/strict";
+import { matchingRuleSets } from "../src/data/matching/index.mjs";
+import { projectProfile, rankCountries, summarizeCountry } from "../src/lib/unified-profile.mjs";
+const profile={age:"under45",experience:"twoPlus",english:"yes",jobOffer:"germany",education:"postsecondary",funds:"yes",regional:"yes",qualification:"yes"};
+const p=projectProfile(profile);
+assert.equal(p.australia.under45,"yes"); assert.equal(p.australia.assessment,"yes"); assert.equal(p.canada.years,"two"); assert.equal(p.germany.job,"yes"); assert.equal(p.germany.recognized,"yes"); assert.equal(p.canada.offer,"unknown");
+assert.deepEqual(summarizeCountry({a:{fail:[],unknown:["x"]},b:{fail:["x"],unknown:[]}}),{total:2,viable:1,knownBarriers:0,missing:1});
+const ranked=rankCountries(profile,matchingRuleSets); assert.equal(ranked[0].countryId,"germany"); assert.equal(ranked[0].total,3); assert.ok(ranked[0].viable>0);
+console.log("unified profile tests passed");

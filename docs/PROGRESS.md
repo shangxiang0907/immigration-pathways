@@ -41,10 +41,11 @@ M3 — Comparison and matching
 - [x] Opt-in, versioned browser-only profile storage and clear control
 - [x] Replaced unused goal input with a qualification-assessment signal used by country rules
 - [x] Retired country-specific questionnaires; legacy URLs redirect to the unified comparison
+- [x] Tested cross-country ranking with conservative pathway-count result summaries
 
 ## Next
 
-- [ ] Refine cross-country ranking and result explanations
+- [ ] Add concise explanations for known barriers without expanding the questionnaire
 
 ## Blocked until owner authorization
 
