@@ -5,5 +5,31 @@ import { site } from "../../../../site.config.mjs";
 const programs = (await getCollection("programs")).sort((a, b) => a.data.name.localeCompare(b.data.name, "zh-CN"));
 const countries = await getCollection("countries");
 const countryNames = Object.fromEntries(countries.map((country) => [country.id, country.data.name]));
+const categoryNames = { "skilled-work": "技术移民", work: "工作", study: "留学", business: "商业", family: "家庭", other: "其他" };
+const availableCountries = [...new Set(programs.map((program) => program.data.countryId))].sort();
+const availableCategories = [...new Set(programs.map((program) => program.data.category))].sort();
 ---
-<SiteLayout locale="zh" title={`移民项目 — ${site.name}`} description="查询附有官方来源和标准化资格字段的移民项目概览。"><header class="page-heading"><p class="eyebrow">Immigration programs</p><h1>移民项目</h1><p class="lede">这里提供依据政府来源复核的项目概览，帮助你理解主要条件；行动前仍须向主管机构确认每项最新要求。</p></header><section class="directory-tools" aria-labelledby="program-heading"><h2 id="program-heading">现有项目</h2><p class="result-count">{programs.length} 个已复核项目概览</p><div class="card-grid directory-grid">{programs.map((program) => <article class="card"><div class="card-meta"><span class="status status-overview">概览</span><span>{countryNames[program.data.countryId]}</span></div><h2><a href={`/zh/programs/${program.id}`}>{program.data.name}</a></h2><p>{program.data.summary}</p></article>)}</div></section></SiteLayout>
+<SiteLayout locale="zh" title={`移民项目 — ${site.name}`} description="查询附有官方来源和标准化资格字段的移民项目概览。">
+  <header class="page-heading"><p class="eyebrow">Immigration programs</p><h1>移民项目</h1><p class="lede">这里提供依据政府来源复核的项目概览，帮助你理解主要条件；行动前仍须向主管机构确认每项最新要求。</p></header>
+  <section class="directory-tools" aria-labelledby="program-heading">
+    <h2 id="program-heading">查找项目</h2>
+    <div class="filter-bar program-filters">
+      <label><span>搜索</span><input id="program-search" type="search" placeholder="项目或国家名称" autocomplete="off" /></label>
+      <label><span>国家</span><select id="program-country"><option value="">全部国家</option>{availableCountries.map((id) => <option value={id}>{countryNames[id]}</option>)}</select></label>
+      <label><span>类别</span><select id="program-category"><option value="">全部类别</option>{availableCategories.map((category) => <option value={category}>{categoryNames[category]}</option>)}</select></label>
+    </div>
+    <p id="program-count" class="result-count" aria-live="polite">{programs.length} 个已复核项目概览</p>
+    <div class="card-grid directory-grid">{programs.map((program) => <article class="card program-card" data-program-card data-search={`${program.data.nameEn} ${program.data.name} ${countryNames[program.data.countryId]}`.toLowerCase()} data-country={program.data.countryId} data-category={program.data.category}><div class="card-meta"><span class="status status-overview">概览</span><span>{countryNames[program.data.countryId]}</span><span>{categoryNames[program.data.category]}</span></div><h2><a href={`/zh/programs/${program.id}`}>{program.data.name}</a></h2><p>{program.data.summary}</p></article>)}</div>
+    <p id="program-empty" class="empty-state" hidden>没有符合这些筛选条件的项目。</p>
+  </section>
+</SiteLayout>
+<script>
+  const search = document.querySelector<HTMLInputElement>("#program-search");
+  const country = document.querySelector<HTMLSelectElement>("#program-country");
+  const category = document.querySelector<HTMLSelectElement>("#program-category");
+  const cards = [...document.querySelectorAll<HTMLElement>("[data-program-card]")];
+  const count = document.querySelector<HTMLElement>("#program-count");
+  const empty = document.querySelector<HTMLElement>("#program-empty");
+  const update = () => { const query = search?.value.trim().toLowerCase() ?? ""; let visible = 0; for (const card of cards) { card.hidden = Boolean((query && !card.dataset.search?.includes(query)) || (country?.value && card.dataset.country !== country.value) || (category?.value && card.dataset.category !== category.value)); if (!card.hidden) visible += 1; } if (count) count.textContent = `${visible} 个已复核项目概览`; if (empty) empty.hidden = visible !== 0; };
+  search?.addEventListener("input", update); country?.addEventListener("change", update); category?.addEventListener("change", update);
+</script>

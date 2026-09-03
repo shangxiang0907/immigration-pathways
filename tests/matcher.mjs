@@ -1,5 +1,6 @@
 import assert from "node:assert/strict";
 import { evaluateCanadaPrograms, resultStatus } from "../src/lib/matcher.mjs";
+import { evaluateAustraliaPrograms } from "../src/lib/australia-matcher.mjs";
 const r = new Proxy({}, { get: (_, key) => String(key) });
 const base = { work: "canada", years: "two", recency: "within3", teer: "01", language: "7", education: "canadian", offer: "yes", certificate: "no", funds: "yes", outsideQuebec: "yes" };
 
@@ -22,3 +23,17 @@ result = evaluateCanadaPrograms({ ...base, outsideQuebec: "no" }, r);
 assert.deepEqual(Object.values(result).map(resultStatus), ["fail", "fail", "fail"], "Quebec intent must fail all three federal programs");
 
 console.log("matcher boundary tests passed");
+
+const australiaBase = { under45: "yes", occupation: "yes", assessment: "yes", points: "yes", english: "yes", stateNomination: "no", relativeSponsor: "no", regional: "yes" };
+let australia = evaluateAustraliaPrograms(australiaBase, r);
+assert.equal(resultStatus(australia.visa189), "likely", "189 should not require nomination");
+assert.equal(resultStatus(australia.visa190), "fail", "190 must require state or territory nomination");
+assert.equal(resultStatus(australia.visa491), "fail", "491 must require nomination or eligible-relative sponsorship");
+australia = evaluateAustraliaPrograms({ ...australiaBase, relativeSponsor: "yes" }, r);
+assert.equal(resultStatus(australia.visa491), "likely", "491 may match with eligible-relative sponsorship and regional intent");
+australia = evaluateAustraliaPrograms({ ...australiaBase, under45: "unknown" }, r);
+assert.equal(resultStatus(australia.visa189), "unknown", "unknown age must not produce a potential match");
+australia = evaluateAustraliaPrograms({ ...australiaBase, stateNomination: "yes", regional: "no" }, r);
+assert.equal(resultStatus(australia.visa190), "likely", "regional intent is not a subclass 190 minimum");
+assert.equal(resultStatus(australia.visa491), "fail", "491 requires regional residence intent");
+console.log("Australia matcher boundary tests passed");

@@ -28,7 +28,7 @@ const selectField = (name: string, label: string, options: string[][]) => ({ nam
 const selects = [selectField("work", t.work, t.workOptions), selectField("years", t.years, t.yearsOptions), selectField("recency", t.recency, t.recencyOptions), selectField("teer", t.teer, t.teerOptions), selectField("language", t.language, t.languageOptions), selectField("education", t.education, t.educationOptions)];
 const radios = [["offer", t.offer], ["certificate", t.certificate], ["funds", t.funds], ["outsideQuebec", t.quebec]];
 ---
-<header class="page-heading"><p class="eyebrow">{zh ? "透明规则预筛" : "Transparent rule-based screening"}</p><h1>{t.title}</h1><p class="lede">{t.intro}</p></header>
+<header class="page-heading"><p class="eyebrow">{zh ? "透明规则预筛" : "Transparent rule-based screening"}</p><h1>{t.title}</h1><p class="lede">{t.intro}</p><p><a href={`${prefix}/match/australia`}>{zh ? "改查澳大利亚" : "Check Australia instead"}</a></p></header>
 <form id="matcher-form" class="matcher" data-locale={locale} data-prefix={prefix}>
   {selects.map((field, index) => <label class="question"><span><b>{index + 1}.</b> {field.label}</span><select name={field.name} required>{field.options.map(([value, label]) => <option value={value}>{label}</option>)}</select></label>)}
   {radios.map(([name, label], index) => <fieldset class="question"><legend><b>{index + 7}.</b> {label}</legend><label><input type="radio" name={name} value="yes" required /> {t.yes}</label><label><input type="radio" name={name} value="no" /> {t.no}</label><label><input type="radio" name={name} value="unknown" /> {t.unsure}</label></fieldset>)}

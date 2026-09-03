@@ -26,10 +26,12 @@ M3 — Comparison and matching
 - [x] Deterministic `potential match`, `does not meet`, and `more information needed` outcomes
 - [x] Boundary-case tests for the initial Canada matching rules
 - [x] First reviewed Australia batch: skilled visa subclasses 189, 190, and 491
+- [x] Program keyword, country, and category filters
+- [x] Browser-only Australia 189/190/491 pre-screen and boundary tests
 
 ## In progress
 
-- [ ] Add country and category filters to the growing program directory
+- [ ] Normalize another country batch before expanding the unified questionnaire
 
 ## Next
 

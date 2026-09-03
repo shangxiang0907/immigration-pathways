@@ -51,6 +51,8 @@ h2 { margin-top: 3rem; font-size: clamp(1.6rem, 4vw, 2.4rem); }
 .result-count { margin-block: 1.5rem 0; color: var(--muted); }
 .directory-grid { margin-top: 1rem; }
 .country-card[hidden] { display: none; }
+.program-card[hidden] { display: none; }
+.program-filters { grid-template-columns: minmax(0, 2fr) repeat(2, minmax(10rem, 1fr)); }
 .card-meta { display: flex; align-items: center; flex-wrap: wrap; gap: .5rem 1rem; color: var(--muted); font-size: .85rem; }
 .status { border-radius: 999px; padding: .2rem .65rem; font-weight: 800; }
 .status-directory { background: #eef0f4; color: #475166; }

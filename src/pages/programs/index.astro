@@ -5,9 +5,31 @@ import { site } from "../../../site.config.mjs";
 const programs = (await getCollection("programs")).sort((a, b) => a.data.nameEn.localeCompare(b.data.nameEn));
 const countries = await getCollection("countries");
 const countryNames = Object.fromEntries(countries.map((country) => [country.id, country.data.nameEn]));
+const categoryNames = { "skilled-work": "Skilled work", work: "Work", study: "Study", business: "Business", family: "Family", other: "Other" };
+const availableCountries = [...new Set(programs.map((program) => program.data.countryId))].sort();
+const availableCategories = [...new Set(programs.map((program) => program.data.category))].sort();
 ---
-
 <SiteLayout title={`Immigration programs — ${site.name}`} description="Browse reviewed immigration programs using normalized fields.">
   <header class="page-heading"><p class="eyebrow">Immigration programs</p><h1>Immigration programs</h1><p class="lede">Reviewed program overviews based on government sources. Understand the main requirements, then confirm every detail with the responsible authority.</p></header>
-  <section class="directory-tools" aria-labelledby="program-heading"><h2 id="program-heading">Available programs</h2><p class="result-count">{programs.length} reviewed program overviews</p><div class="card-grid directory-grid">{programs.map((program) => <article class="card"><div class="card-meta"><span class="status status-overview">Overview</span><span>{countryNames[program.data.countryId]}</span></div><h2><a href={`/programs/${program.id}`}>{program.data.nameEn}</a></h2><p>{program.data.summaryEn}</p></article>)}</div></section>
+  <section class="directory-tools" aria-labelledby="program-heading">
+    <h2 id="program-heading">Find a program</h2>
+    <div class="filter-bar program-filters">
+      <label><span>Search</span><input id="program-search" type="search" placeholder="Program or country" autocomplete="off" /></label>
+      <label><span>Country</span><select id="program-country"><option value="">All countries</option>{availableCountries.map((id) => <option value={id}>{countryNames[id]}</option>)}</select></label>
+      <label><span>Category</span><select id="program-category"><option value="">All categories</option>{availableCategories.map((category) => <option value={category}>{categoryNames[category]}</option>)}</select></label>
+    </div>
+    <p id="program-count" class="result-count" aria-live="polite">{programs.length} reviewed program overviews</p>
+    <div class="card-grid directory-grid">{programs.map((program) => <article class="card program-card" data-program-card data-search={`${program.data.nameEn} ${program.data.name} ${countryNames[program.data.countryId]}`.toLowerCase()} data-country={program.data.countryId} data-category={program.data.category}><div class="card-meta"><span class="status status-overview">Overview</span><span>{countryNames[program.data.countryId]}</span><span>{categoryNames[program.data.category]}</span></div><h2><a href={`/programs/${program.id}`}>{program.data.nameEn}</a></h2><p>{program.data.summaryEn}</p></article>)}</div>
+    <p id="program-empty" class="empty-state" hidden>No programs match these filters.</p>
+  </section>
 </SiteLayout>
+<script>
+  const search = document.querySelector<HTMLInputElement>("#program-search");
+  const country = document.querySelector<HTMLSelectElement>("#program-country");
+  const category = document.querySelector<HTMLSelectElement>("#program-category");
+  const cards = [...document.querySelectorAll<HTMLElement>("[data-program-card]")];
+  const count = document.querySelector<HTMLElement>("#program-count");
+  const empty = document.querySelector<HTMLElement>("#program-empty");
+  const update = () => { const query = search?.value.trim().toLowerCase() ?? ""; let visible = 0; for (const card of cards) { card.hidden = Boolean((query && !card.dataset.search?.includes(query)) || (country?.value && card.dataset.country !== country.value) || (category?.value && card.dataset.category !== category.value)); if (!card.hidden) visible += 1; } if (count) count.textContent = `${visible} reviewed program ${visible === 1 ? "overview" : "overviews"}`; if (empty) empty.hidden = visible !== 0; };
+  search?.addEventListener("input", update); country?.addEventListener("change", update); category?.addEventListener("change", update);
+</script>
