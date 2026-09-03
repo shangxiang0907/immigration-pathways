@@ -43,7 +43,7 @@ const advertisingActive = isAdvertisingActive(site.advertising, isProduction);
     {advertisingActive && <script is:inline async crossorigin="anonymous" src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.advertising.publisherId}`}></script>}
     <title>{title}</title>
   </head>
-  <body data-detect-locale={locale === "en" && currentPath !== "/404" ? "true" : "false"}>
+  <body data-detect-locale={locale === "en" && currentPath === "/" ? "true" : "false"}>
     <a class="skip-link" href="#main-content">{locale === "zh" ? "跳到正文" : "Skip to content"}</a>
     <header class="site-header">
       <div class="shell header-inner">
@@ -80,9 +80,15 @@ const advertisingActive = isAdvertisingActive(site.advertising, isProduction);
     }
 
     if (document.body.dataset.detectLocale !== "true") return;
-    if (localStorage.getItem("preferred-locale")) return;
-    if (!navigator.languages?.some((language) => language.toLowerCase().startsWith("zh"))) return;
-    const target = `/zh${location.pathname === "/" ? "/" : location.pathname}${location.search}${location.hash}`;
-    location.replace(target);
+
+    let preferredLocale;
+    try {
+      preferredLocale = localStorage.getItem("preferred-locale");
+    } catch {}
+
+    if (preferredLocale === "en") return;
+    const primaryLanguage = navigator.languages?.[0] ?? navigator.language ?? "";
+    if (preferredLocale !== "zh" && !primaryLanguage.toLowerCase().startsWith("zh")) return;
+    location.replace(`/zh/${location.search}${location.hash}`);
   })();
 </script>

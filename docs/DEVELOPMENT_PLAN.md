@@ -33,7 +33,7 @@ Email is optional, not a default requirement. A paid report should be available 
 
 - English (`en-US`) is the default language and uses root URLs.
 - Chinese (`zh-CN`) uses `/zh/` URLs.
-- A first-time visitor whose browser prefers Chinese may be redirected to Chinese.
+- A first-time homepage visitor whose primary browser language is Chinese may be redirected to Chinese.
 - An explicit language choice overrides browser detection and is remembered locally.
 - Language is never inferred from IP address, nationality, or conversation language.
 - Localized pages must emit matching `lang`, canonical, and `hreflang` metadata before publication.
