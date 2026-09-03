@@ -8,7 +8,7 @@
   "scripts": {
     "dev": "ASTRO_TELEMETRY_DISABLED=1 astro dev",
     "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
-    "test": "node tests/rule-engine.mjs && node tests/matcher.mjs",
+    "test": "node tests/rule-validator.mjs && node tests/rule-engine.mjs && node tests/matcher.mjs",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
     "build:production": "SITE_BUILD_MODE=production ASTRO_TELEMETRY_DISABLED=1 astro build",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview"

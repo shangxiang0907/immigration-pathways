@@ -7,7 +7,7 @@ const shared = [
   {reasonKey:"english",expression:equals("english")},
 ];
 export const australiaRules = {
-  schemaVersion:1, profileSchemaVersion:1, countryId:"australia", reviewedAt:"2026-09-03",
+  schemaVersion:1, profileSchemaVersion:1, countryId:"australia", reviewedAt:"2026-09-03", nextReviewAt:"2026-12-03",
   programs:[
     {programId:"australia-skilled-independent-189",resultKey:"visa189",checks:[...shared]},
     {programId:"australia-skilled-nominated-190",resultKey:"visa190",checks:[...shared,{reasonKey:"nomination",expression:equals("stateNomination")}]},

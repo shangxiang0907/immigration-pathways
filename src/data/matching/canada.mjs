@@ -9,6 +9,7 @@ export const canadaRules = {
   profileSchemaVersion: 1,
   countryId: "canada",
   reviewedAt: "2026-09-03",
+  nextReviewAt: "2026-12-03",
   programs: [
     {
       programId: "canada-experience-class",

@@ -33,10 +33,10 @@ M3 — Comparison and matching
 - [x] Versioned generic tri-state rule engine
 - [x] First declarative rule migration: Australia
 - [x] Declarative rule migrations for all nine reviewed Canada, Australia, and Germany programs
+- [x] Central matching registry and build-time rule/profile schema validation
 
 ## Next
 
-- [ ] Define versioned shared applicant-profile and rule schemas
 - [ ] Replace country-specific forms with a schema-driven adaptive questionnaire
 
 ## Blocked until owner authorization
