@@ -19,6 +19,7 @@ export function projectProfile(profile) {
     japan:{jpJob:offer("japan"),jpQualification:"unknown",jpAssessment:"unknown"},
     singapore:{sgJob:offer("singapore"),sgQualification:"unknown",sgAssessment:"unknown"},
     "united-states":{usJob:offer("united-states"),usQualification:"unknown",usAssessment:"unknown"},
+    austria:{atJob:offer("austria"),atQualification:"unknown",atAssessment:"unknown"},denmark:{dkJob:offer("denmark"),dkQualification:"unknown",dkAssessment:"unknown"},finland:{fiJob:offer("finland"),fiQualification:"unknown",fiAssessment:"unknown"},norway:{noJob:offer("norway"),noQualification:"unknown",noAssessment:"unknown"},
   };
 }
 
