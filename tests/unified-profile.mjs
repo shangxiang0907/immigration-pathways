@@ -12,4 +12,5 @@ const ukProfile=projectProfile({...profile,jobOffer:"united-kingdom"});assert.eq
 for(const country of ["ireland","netherlands","france","portugal"]){const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
 for(const country of ["spain","japan","singapore","united-states"]){const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
 for(const country of ["austria","denmark","finland","norway"]){const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
+for(const country of ["belgium","sweden","switzerland","italy"]){const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
 console.log("unified profile tests passed");
