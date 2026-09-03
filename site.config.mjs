@@ -1,10 +1,12 @@
 export const site = {
   name: "Immigration Pathways",
-  description: "A multilingual immigration information platform for comparing country requirements and delivering in-depth reports.",
+  description: "查询各国移民政策、官方来源与经过复核的申请条件。",
   url: "https://example.com",
-  locale: "en-US",
+  locale: "zh-CN",
   navigation: [
-    { href: "/", label: "Home" },
-    { href: "/about", label: "About" },
+    { href: "/", label: "首页" },
+    { href: "/countries", label: "国家" },
+    { href: "/programs", label: "移民项目" },
+    { href: "/about", label: "关于" },
   ],
 };

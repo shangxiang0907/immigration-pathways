@@ -1,0 +1,16 @@
+{
+  "name": "加拿大",
+  "nameEn": "Canada",
+  "region": "Americas",
+  "coverage": "directory",
+  "summary": "加拿大政府移民与公民信息入口。详细项目资料尚待逐项核验。",
+  "reviewedAt": "2026-09-03",
+  "sources": [
+    {
+      "authority": "Government of Canada",
+      "title": "Immigration and citizenship",
+      "url": "https://www.canada.ca/en/services/immigration-citizenship.html",
+      "reviewedAt": "2026-09-03"
+    }
+  ]
+}

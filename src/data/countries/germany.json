@@ -1,0 +1,16 @@
+{
+  "name": "德国",
+  "nameEn": "Germany",
+  "region": "Europe",
+  "coverage": "directory",
+  "summary": "德国政府面向国际专业人才提供的签证与居留信息入口。详细项目资料尚待逐项核验。",
+  "reviewedAt": "2026-09-03",
+  "sources": [
+    {
+      "authority": "German Federal Government",
+      "title": "Make it in Germany — Visa & residence",
+      "url": "https://www.make-it-in-germany.com/en/visa-residence",
+      "reviewedAt": "2026-09-03"
+    }
+  ]
+}

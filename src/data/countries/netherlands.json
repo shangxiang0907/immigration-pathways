@@ -1,0 +1,16 @@
+{
+  "name": "荷兰",
+  "nameEn": "Netherlands",
+  "region": "Europe",
+  "coverage": "directory",
+  "summary": "荷兰移民与归化局居留许可信息入口。详细项目资料尚待逐项核验。",
+  "reviewedAt": "2026-09-03",
+  "sources": [
+    {
+      "authority": "Immigration and Naturalisation Service (IND)",
+      "title": "Residence permits",
+      "url": "https://ind.nl/en/residence-permits",
+      "reviewedAt": "2026-09-03"
+    }
+  ]
+}
