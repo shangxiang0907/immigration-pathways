@@ -14,12 +14,13 @@ for (const [path, language, heading] of [["match/index.html", "en-US", "Fill onc
   for (const field of fields) assert.match(html, new RegExp(`<select name="${field}" required>`), `${path} must include ${field}`);
   assert.match(html, /name="saveProfile" type="checkbox"/);
   assert.match(html, /id="clear-profile"/);
-  assert.match(html, /id="unified-results"[^>]+aria-live="polite"/);
+  assert.match(html, /id="unified-results"[^>]+aria-labelledby="unified-results-heading"[^>]+aria-live="polite"/);
   const asset = html.match(/src="(\/_astro\/UnifiedMatcher[^"?]+\.js)"/)?.[1];
   assert.ok(asset, `${path} must load the unified matcher client`);
   const script = await read(asset.slice(1));
   assert.match(script, /immigration-pathways-profile-v2/);
   assert.match(script, /version:2/);
+  assert.match(script, /prefers-reduced-motion/);
   assert.doesNotMatch(script, /fetch\(|XMLHttpRequest|sendBeacon/);
 }
 
