@@ -34,10 +34,11 @@ M3 — Comparison and matching
 - [x] First declarative rule migration: Australia
 - [x] Declarative rule migrations for all nine reviewed Canada, Australia, and Germany programs
 - [x] Central matching registry and build-time rule/profile schema validation
+- [x] Generic configuration-driven questionnaire component and first Australia migration
 
 ## Next
 
-- [ ] Replace country-specific forms with a schema-driven adaptive questionnaire
+- [ ] Migrate Canada and Germany to the generic questionnaire component
 
 ## Blocked until owner authorization
 

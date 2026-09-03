@@ -1,4 +1,4 @@
 ---
-import SiteLayout from "../../../layouts/SiteLayout.astro"; import AustraliaMatcher from "../../../components/AustraliaMatcher.astro"; import { site } from "../../../../site.config.mjs";
+import SiteLayout from "../../../layouts/SiteLayout.astro"; import GenericMatcher from "../../../components/GenericMatcher.astro"; import { site } from "../../../../site.config.mjs";
 ---
-<SiteLayout locale="zh" title={`澳大利亚技术签证预筛 — ${site.name}`} description="将你的答案与澳大利亚 189、190 和 491 类技术签证的已复核基础条件进行比较。"><AustraliaMatcher locale="zh" /></SiteLayout>
+<SiteLayout locale="zh" title={`澳大利亚技术签证预筛 — ${site.name}`} description="将你的答案与澳大利亚 189、190 和 491 类技术签证的已复核基础条件进行比较。"><GenericMatcher countryId="australia" locale="zh" /></SiteLayout>

@@ -1,4 +1,4 @@
 ---
-import SiteLayout from "../../layouts/SiteLayout.astro"; import AustraliaMatcher from "../../components/AustraliaMatcher.astro"; import { site } from "../../../site.config.mjs";
+import SiteLayout from "../../layouts/SiteLayout.astro"; import GenericMatcher from "../../components/GenericMatcher.astro"; import { site } from "../../../site.config.mjs";
 ---
-<SiteLayout title={`Australia skilled visa pre-screen — ${site.name}`} description="Compare your answers with reviewed basic requirements for Australian skilled visa subclasses 189, 190 and 491."><AustraliaMatcher /></SiteLayout>
+<SiteLayout title={`Australia skilled visa pre-screen — ${site.name}`} description="Compare your answers with reviewed basic requirements for Australian skilled visa subclasses 189, 190 and 491."><GenericMatcher countryId="australia" /></SiteLayout>
