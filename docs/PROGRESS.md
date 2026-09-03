@@ -42,10 +42,11 @@ M3 — Comparison and matching
 - [x] Replaced unused goal input with a qualification-assessment signal used by country rules
 - [x] Retired country-specific questionnaires; legacy URLs redirect to the unified comparison
 - [x] Tested cross-country ranking with conservative pathway-count result summaries
+- [x] Closest-path links and concise explanations for user-triggered known barriers
 
 ## Next
 
-- [ ] Add concise explanations for known barriers without expanding the questionnaire
+- [ ] Validate the unified flow in a real browser at representative mobile and desktop widths
 
 ## Blocked until owner authorization
 

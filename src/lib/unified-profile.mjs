@@ -1,3 +1,5 @@
+import { evaluateProgramRules } from "./rule-engine.mjs";
+
 /** Convert the short shared profile into known country-rule answers. Unmappable fields stay unknown. */
 export function projectProfile(profile) {
   const age = profile.age === "under45" ? "yes" : profile.age === "45plus" ? "no" : "unknown";
@@ -19,9 +21,10 @@ export function summarizeCountry(evaluated) {
 export function rankCountries(profile, ruleSets) {
   const projected = projectProfile(profile);
   const reasons = new Proxy({}, { get: (_, key) => String(key) });
-  return ruleSets.map((rules) => ({
-    countryId: rules.countryId,
-    ...summarizeCountry(evaluateProgramRules(projected[rules.countryId], rules.programs, reasons)),
-  })).sort((a, b) => a.knownBarriers - b.knownBarriers || b.viable - a.viable || a.missing - b.missing);
+  return ruleSets.map((rules) => {
+    const evaluated = evaluateProgramRules(projected[rules.countryId], rules.programs, reasons);
+    const best = Object.entries(evaluated).sort(([, a], [, b]) => a.fail.length - b.fail.length || a.unknown.length - b.unknown.length)[0];
+    const program = rules.programs.find((item) => item.resultKey === best[0]);
+    return { countryId: rules.countryId, bestProgramId: program?.programId, barrierKeys: best[1].fail, ...summarizeCountry(evaluated) };
+  }).sort((a, b) => a.knownBarriers - b.knownBarriers || b.viable - a.viable || a.missing - b.missing);
 }
-import { evaluateProgramRules } from "./rule-engine.mjs";
