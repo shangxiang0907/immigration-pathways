@@ -1,0 +1,22 @@
+{
+  "name": "澳大利亚偏远地区技术工作签证（491 类）",
+  "nameEn": "Skilled Work Regional (Provisional) visa (subclass 491)",
+  "countryId": "australia",
+  "category": "skilled-work",
+  "status": "active",
+  "coverage": "overview",
+  "summary": "供州或领地政府提名、或由合资格亲属担保的技术人才在指定偏远地区生活和工作的五年临时签证，并可能通向永久居留。",
+  "summaryEn": "A five-year provisional visa for skilled workers nominated by a state or territory or sponsored by an eligible relative to live and work in designated regional Australia, with a possible permanent-residence pathway.",
+  "requirements": {
+    "age": {"status":"required","summary":"收到邀请时须未满 45 岁。","summaryEn":"You must be under 45 when invited to apply.","sourceUrls":["https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/491-skilled-work-regional.aspx"]},
+    "occupation": {"status":"required","summary":"提名职业须列入 491 类签证适用的综合技术职业清单。","summaryEn":"The nominated occupation must be on the combined skilled occupation list relevant to subclass 491.","sourceUrls":["https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/491-skilled-work-regional.aspx"]},
+    "skillsAssessment": {"status":"required","summary":"须取得提名职业的合格职业评估，并满足官网所列有效期要求。","summaryEn":"A suitable skills assessment for the nominated occupation is required and must meet the official validity rules.","sourceUrls":["https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/491-skilled-work-regional.aspx"]},
+    "points": {"status":"required","summary":"SkillSelect 意向书估算分数须至少 65 分；实际获邀门槛可能更高，邀请时申报的分数须能提供证据。","summaryEn":"The SkillSelect EOI must show at least 65 points. The invitation threshold may be higher, and claims in the invited score must be evidenced.","sourceUrls":["https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/491-skilled-work-regional.aspx"]},
+    "english": {"status":"required","summary":"收到邀请时至少须达到 Competent English。","summaryEn":"At least Competent English is required at the time of invitation.","sourceUrls":["https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/491-skilled-work-regional.aspx"]},
+    "nominationOrSponsor": {"status":"required","summary":"须由澳大利亚州或领地政府机构提名，或由通常居住在指定偏远地区的合资格亲属担保。","summaryEn":"Nomination by a state or territory government agency or sponsorship by an eligible relative usually resident in a designated regional area is required.","sourceUrls":["https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/491-skilled-work-regional.aspx"]},
+    "regionalResidence": {"status":"required","summary":"主申请人及持该签证的家庭成员须在指定偏远地区生活、工作和学习。","summaryEn":"The main applicant and family members holding the visa must live, work and study in designated regional Australia.","sourceUrls":["https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/491-skilled-work-regional.aspx"]},
+    "invitation": {"status":"required","summary":"须通过 SkillSelect 提交意向书并收到申请邀请；意向书本身不是签证申请。","summaryEn":"An EOI must be submitted through SkillSelect and an invitation received before applying; an EOI is not a visa application.","sourceUrls":["https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/491-skilled-work-regional.aspx"]}
+  },
+  "sources": [{"authority":"Australian Department of Home Affairs","title":"Skilled Work Regional (Provisional) visa (subclass 491) — Main applicant","url":"https://immi.homeaffairs.gov.au/Visa-subsite/Pages/work/491-skilled-work-regional.aspx","reviewedAt":"2026-09-03"}],
+  "reviewedAt":"2026-09-03","nextReviewAt":"2026-12-03","disclaimer":"本资料仅供一般教育用途，不构成个性化移民或法律建议。"
+}

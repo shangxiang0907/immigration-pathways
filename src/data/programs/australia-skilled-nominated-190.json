@@ -1,0 +1,21 @@
+{
+  "name": "澳大利亚州担保技术签证（190 类）",
+  "nameEn": "Skilled Nominated visa (subclass 190)",
+  "countryId": "australia",
+  "category": "skilled-work",
+  "status": "active",
+  "coverage": "overview",
+  "summary": "面向获澳大利亚州或领地政府提名的受邀技术人才的永久签证。各州和领地另有自己的提名标准。",
+  "summaryEn": "A permanent visa for invited skilled workers nominated by an Australian state or territory government. Each jurisdiction applies its own nomination criteria.",
+  "requirements": {
+    "age": {"status":"required","summary":"收到邀请时须未满 45 岁。","summaryEn":"You must be under 45 when invited to apply.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190"]},
+    "occupation": {"status":"required","summary":"提名职业须列入 190 类签证适用的技术职业清单。","summaryEn":"The nominated occupation must be on the skilled occupation list relevant to subclass 190.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190"]},
+    "skillsAssessment": {"status":"required","summary":"须取得提名职业的合格职业评估，并满足官网所列有效期要求。","summaryEn":"A suitable skills assessment for the nominated occupation is required and must meet the official validity rules.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190"]},
+    "points": {"status":"required","summary":"SkillSelect 意向书估算分数须至少 65 分；实际获邀门槛可能更高，邀请时申报的分数须能提供证据。","summaryEn":"The SkillSelect EOI must show at least 65 points. The invitation threshold may be higher, and claims in the invited score must be evidenced.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190"]},
+    "english": {"status":"required","summary":"收到邀请时至少须达到 Competent English。","summaryEn":"At least Competent English is required at the time of invitation.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190"]},
+    "nomination": {"status":"required","summary":"须获得澳大利亚州或领地政府机构提名；各地提名条件和名额可能不同并会变化。","summaryEn":"Nomination by an Australian state or territory government agency is required. Jurisdictions have separate criteria and changing allocations.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190"]},
+    "invitation": {"status":"required","summary":"须通过 SkillSelect 提交意向书；获得州或领地提名后才会收到签证申请邀请。","summaryEn":"An EOI must be submitted through SkillSelect; nomination by a state or territory leads to an invitation to apply.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190"]}
+  },
+  "sources": [{"authority":"Australian Department of Home Affairs","title":"Skilled Nominated visa (subclass 190)","url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-nominated-190","reviewedAt":"2026-09-03"}],
+  "reviewedAt":"2026-09-03","nextReviewAt":"2026-12-03","disclaimer":"本资料仅供一般教育用途，不构成个性化移民或法律建议。"
+}

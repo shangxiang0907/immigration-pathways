@@ -3,9 +3,11 @@ import { getCollection } from "astro:content";
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import { site } from "../../../site.config.mjs";
 const programs = (await getCollection("programs")).sort((a, b) => a.data.nameEn.localeCompare(b.data.nameEn));
+const countries = await getCollection("countries");
+const countryNames = Object.fromEntries(countries.map((country) => [country.id, country.data.nameEn]));
 ---
 
 <SiteLayout title={`Immigration programs — ${site.name}`} description="Browse reviewed immigration programs using normalized fields.">
   <header class="page-heading"><p class="eyebrow">Immigration programs</p><h1>Immigration programs</h1><p class="lede">Reviewed program overviews based on government sources. Understand the main requirements, then confirm every detail with the responsible authority.</p></header>
-  <section class="directory-tools" aria-labelledby="program-heading"><h2 id="program-heading">Available programs</h2><p class="result-count">{programs.length} reviewed program overviews</p><div class="card-grid directory-grid">{programs.map((program) => <article class="card"><div class="card-meta"><span class="status status-overview">Overview</span><span>Canada</span></div><h2><a href={`/programs/${program.id}`}>{program.data.nameEn}</a></h2><p>{program.data.summaryEn}</p></article>)}</div></section>
+  <section class="directory-tools" aria-labelledby="program-heading"><h2 id="program-heading">Available programs</h2><p class="result-count">{programs.length} reviewed program overviews</p><div class="card-grid directory-grid">{programs.map((program) => <article class="card"><div class="card-meta"><span class="status status-overview">Overview</span><span>{countryNames[program.data.countryId]}</span></div><h2><a href={`/programs/${program.id}`}>{program.data.nameEn}</a></h2><p>{program.data.summaryEn}</p></article>)}</div></section>
 </SiteLayout>

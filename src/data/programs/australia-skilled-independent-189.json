@@ -1,0 +1,21 @@
+{
+  "name": "澳大利亚独立技术签证（189 类）",
+  "nameEn": "Skilled Independent visa (subclass 189)",
+  "countryId": "australia",
+  "category": "skilled-work",
+  "status": "active",
+  "coverage": "overview",
+  "summary": "面向无需州、领地或亲属担保的受邀技术人才的永久签证。65 分只是最低门槛，达到门槛不保证获得邀请。",
+  "summaryEn": "A permanent visa for invited skilled workers that does not require state, territory or family sponsorship. The 65-point threshold is a minimum and does not guarantee an invitation.",
+  "requirements": {
+    "age": {"status":"required","summary":"收到邀请时须未满 45 岁。","summaryEn":"You must be under 45 when invited to apply.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested"]},
+    "occupation": {"status":"required","summary":"提名职业须列入 189 类积分制通道适用的技术职业清单。","summaryEn":"The nominated occupation must be on the skilled occupation list relevant to the subclass 189 points-tested stream.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested"]},
+    "skillsAssessment": {"status":"required","summary":"须取得提名职业的合格职业评估，并满足官网所列有效期要求。","summaryEn":"A suitable skills assessment for the nominated occupation is required and must meet the official validity rules.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested"]},
+    "points": {"status":"required","summary":"SkillSelect 意向书估算分数须至少 65 分；实际获邀分数可能更高，邀请时申报的分数须能提供证据。","summaryEn":"The SkillSelect EOI must show at least 65 points. The score needed for an invitation may be higher, and claims in the invited score must be evidenced.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested"]},
+    "english": {"status":"required","summary":"收到邀请时至少须达到 Competent English。","summaryEn":"At least Competent English is required at the time of invitation.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested"]},
+    "nomination": {"status":"not-required","summary":"189 类独立技术签证不要求州、领地或亲属担保。","summaryEn":"State, territory or eligible-relative sponsorship is not required for this independent pathway.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested"]},
+    "invitation": {"status":"required","summary":"须先通过 SkillSelect 提交意向书并收到申请邀请；意向书本身不是签证申请。","summaryEn":"An EOI must be submitted through SkillSelect and an invitation received before applying; an EOI is not a visa application.","sourceUrls":["https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested"]}
+  },
+  "sources": [{"authority":"Australian Department of Home Affairs","title":"Skilled Independent visa (subclass 189) — Points-tested stream","url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested","reviewedAt":"2026-09-03"}],
+  "reviewedAt":"2026-09-03","nextReviewAt":"2026-12-03","disclaimer":"本资料仅供一般教育用途，不构成个性化移民或法律建议。"
+}
