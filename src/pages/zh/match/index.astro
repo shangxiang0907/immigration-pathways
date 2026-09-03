@@ -1,5 +1,4 @@
 ---
-import SiteLayout from "../../../layouts/SiteLayout.astro"; import { site } from "../../../../site.config.mjs";
-const options=[{href:"/zh/match/canada",name:"加拿大",detail:"Express Entry 三项联邦经济类项目"},{href:"/zh/match/australia",name:"澳大利亚",detail:"189、190 和 491 三项技术签证"},{href:"/zh/match/germany",name:"德国",detail:"欧盟蓝卡、专业技术人员工作签证和求职机会卡"}];
+import SiteLayout from "../../../layouts/SiteLayout.astro"; import UnifiedMatcher from "../../../components/UnifiedMatcher.astro"; import { site } from "../../../../site.config.mjs";
 ---
-<SiteLayout locale="zh" title={`查询移民选项 — ${site.name}`} description="选择国家，将答案与已复核项目最低条件比较。"><header class="page-heading"><p class="eyebrow">规则条件预筛</p><h1>查询你的选项</h1><p class="lede">先选择国家。结果只指出可能匹配、明确障碍和缺失信息，不预测获批概率。</p></header><section class="card-grid" aria-label="可用国家预筛">{options.map(option=><article class="card"><p class="step">3 个已复核路径</p><h2><a href={option.href}>{option.name}</a></h2><p>{option.detail}</p></article>)}</section><p class="disclaimer">答案仅在浏览器处理。覆盖范围仅限页面列出的项目。</p></SiteLayout>
+<SiteLayout locale="zh" title={`查询移民选项 — ${site.name}`} description="填写一份简短资料，比较已收录国家和已复核路径。"><UnifiedMatcher locale="zh" /></SiteLayout>

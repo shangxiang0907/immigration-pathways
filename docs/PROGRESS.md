@@ -37,10 +37,12 @@ M3 — Comparison and matching
 - [x] Generic configuration-driven questionnaire component and first Australia migration
 - [x] Cross-validation between questionnaires, profile fields, programs, and bilingual result reasons
 - [x] Canada migration to the generic questionnaire with reusable select questions
+- [x] Lightweight unified eight-question profile and cross-country comparison
+- [x] Opt-in, versioned browser-only profile storage and clear control
 
 ## Next
 
-- [ ] Migrate Germany to the generic questionnaire component
+- [ ] Refine cross-country ranking and progressively retire country-specific questionnaires
 
 ## Blocked until owner authorization
 
