@@ -4,9 +4,9 @@ export function projectProfile(profile) {
   const years = profile.experience === "lt1" ? "lt1" : profile.experience === "one" ? "one" : profile.experience === "twoPlus" ? "two" : "unknown";
   const offer = (country) => profile.jobOffer === country ? "yes" : profile.jobOffer === "none" ? "no" : "unknown";
   return {
-    australia: { under45: age, occupation:"unknown", assessment:"unknown", points:"unknown", english:profile.english, stateNomination:"unknown", relativeSponsor:"unknown", regional:profile.regional },
+    australia: { under45: age, occupation:"unknown", assessment:profile.qualification, points:"unknown", english:profile.english, stateNomination:"unknown", relativeSponsor:"unknown", regional:profile.regional },
     canada: { work:"unknown", years, recency:"unknown", teer:"unknown", language:"untested", education:"unknown", offer:offer("canada"), certificate:"unknown", funds:profile.funds, outsideQuebec:"unknown" },
-    germany: { recognized:"unknown", job:offer("germany"), sixMonths:"unknown", salary:"unknown", lowerEligible:"unknown", over45First:"unknown", pension:"unknown", formalQualification:profile.education === "postsecondary" ? "yes" : "unknown", language:"unknown", sixPoints:"unknown", funds:profile.funds },
+    germany: { recognized:profile.qualification, job:offer("germany"), sixMonths:"unknown", salary:"unknown", lowerEligible:"unknown", over45First:"unknown", pension:"unknown", formalQualification:profile.education === "postsecondary" ? "yes" : "unknown", language:"unknown", sixPoints:"unknown", funds:profile.funds },
   };
 }
 

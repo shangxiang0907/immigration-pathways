@@ -39,6 +39,7 @@ M3 — Comparison and matching
 - [x] Canada migration to the generic questionnaire with reusable select questions
 - [x] Lightweight unified eight-question profile and cross-country comparison
 - [x] Opt-in, versioned browser-only profile storage and clear control
+- [x] Replaced unused goal input with a qualification-assessment signal used by country rules
 
 ## Next
 
