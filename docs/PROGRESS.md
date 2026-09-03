@@ -4,7 +4,7 @@ Last updated: 2026-09-03
 
 ## Current milestone
 
-M3 — Comparison and matching
+M2/M3 — Expand verified country coverage while connecting reviewed paths to unified matching
 
 ## Completed
 
@@ -45,20 +45,25 @@ M3 — Comparison and matching
 - [x] Reduced-motion-aware result navigation and explicitly labelled live results
 - [x] Reviewed New Zealand skilled-residence batch: SMC, Straight to Residence, and Work to Residence
 - [x] New Zealand connected to the unified profile and country ranking
+- [x] Reviewed principal pathways and unified matching for the United Kingdom, Ireland, Netherlands, France, Portugal, Spain, Japan, Singapore, and United States
+- [x] Expanded the official country directory from 13 to 21 countries
+- [x] Reviewed and connected two principal pathways each for Austria, Denmark, Finland, and Norway
+- [x] Owner set the next milestone order: country coverage, then Google AdSense support, then LLM reports
 
 ## Next
 
-- [ ] Connect each newly reviewed program to the shared profile and country ranking
+- [ ] Finish the planned country-directory expansion and principal-path coverage
+- [ ] Add production-gated, configurable Google AdSense support after country coverage
 - [ ] Define the free-result boundary and low-priced report contents
-- [ ] Draft the grounded report data contract before choosing an LLM or backend
+- [ ] After AdSense support, draft the grounded report data contract before choosing an LLM or backend
 
 ## Secondary validation
 
 - [ ] Validate the unified flow in a real browser at representative mobile and desktop widths when a browser is available
 
-## Blocked until owner authorization
+## Requires a later production/configuration decision
 
 - Production domain and indexing
-- Analytics or advertising
+- Real AdSense publisher/slot IDs, account connection, consent configuration, and production activation
 - Payment, checkout, accounts, and report delivery
 - Transactional email configuration

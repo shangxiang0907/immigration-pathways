@@ -14,8 +14,9 @@
 
 1. Build a verified immigration-policy directory with official sources.
 2. Add deterministic filtering and side-by-side comparison.
-3. Add LLM-written reports grounded only in verified structured data.
-4. Add payment and email delivery only after the report has been validated.
+3. Add configurable Google AdSense support after the planned country coverage is in place.
+4. Add LLM-written reports grounded only in verified structured data.
+5. Add payment and email delivery only after the report has been validated.
 
 Email is optional, not a default requirement. A paid report should be available immediately on the web; email may later send an access link if owner research shows users want it.
 
@@ -76,7 +77,18 @@ must be rechecked against the responsible government authority before publicatio
 - Country-specific rules may extend internal rule data but must not create standalone UI or another engine
 - Field-level source URL, review date, rule version, and dynamic-value expiry
 
-### M4 — Grounded report prototype
+### M4 — Google AdSense support
+
+Owner approved this milestone on 2026-09-03, to start after the planned country-directory expansion and before any LLM work.
+
+- Optional publisher ID and ad-slot settings in site configuration
+- Reusable responsive ad component with reserved space to limit layout shift
+- Load the AdSense script only when a real publisher ID is configured and the build is explicitly production
+- Keep local and preview builds free of third-party advertising requests
+- Update privacy and consent behavior before enabling ads where legally required
+- Do not create or configure the external AdSense account without the owner's account details and explicit go-live instruction
+
+### M5 — Grounded report prototype
 
 - Serverless Cloudflare Worker endpoint
 - Rule-engine results supplied as structured input
@@ -84,7 +96,7 @@ must be rechecked against the responsible government authority before publicatio
 - Structured output validation, rate limits, and graceful fallback
 - Internal testing before public access
 
-### M5 — Paid delivery
+### M6 — Paid delivery
 
 Requires explicit owner authorization before implementation.
 
@@ -100,7 +112,7 @@ Requires explicit owner authorization before implementation.
 - No policy page ships without official provenance and a review date.
 - No comparison field is inferred from prose when a structured value is required.
 - LLM output cannot add facts or sources that are absent from verified input.
-- Production domain, indexing, analytics, payment, and email require owner approval.
+- Production domain, indexing, analytics, payment, and email require owner approval. AdSense implementation order is approved; actual account connection and production activation remain separate release actions.
 
 ## Product decisions still open
 
