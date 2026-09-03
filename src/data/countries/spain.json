@@ -1,0 +1,7 @@
+{
+  "name": "西班牙", "nameEn": "Spain", "region": "Europe", "coverage": "directory",
+  "summary": "西班牙内政部外国人事务官方入口。详细项目资料尚待逐项核验。",
+  "summaryEn": "The Spanish Ministry of the Interior's official foreign-national procedures entry point. Detailed program information is pending review.",
+  "reviewedAt": "2026-09-03",
+  "sources": [{ "authority": "Ministerio del Interior", "title": "Extranjería", "url": "https://interior.gob.es/opencms/es/servicios-al-ciudadano/tramites-y-gestiones/extranjeria/", "reviewedAt": "2026-09-03" }]
+}

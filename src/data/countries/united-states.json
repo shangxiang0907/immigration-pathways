@@ -1,0 +1,7 @@
+{
+  "name": "美国", "nameEn": "United States", "region": "Americas", "coverage": "directory",
+  "summary": "美国政府移民与公民事务官方导航入口。详细项目资料尚待逐项核验。",
+  "summaryEn": "The U.S. government's official immigration and citizenship guide. Detailed program information is pending review.",
+  "reviewedAt": "2026-09-03",
+  "sources": [{ "authority": "U.S. General Services Administration", "title": "Immigration and U.S. citizenship", "url": "https://www.usa.gov/immigration-and-citizenship", "reviewedAt": "2026-09-03" }]
+}

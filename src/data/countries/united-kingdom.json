@@ -1,0 +1,7 @@
+{
+  "name": "英国", "nameEn": "United Kingdom", "region": "Europe", "coverage": "directory",
+  "summary": "英国政府签证与移民事务官方入口。详细项目资料尚待逐项核验。",
+  "summaryEn": "The UK government's official visas and immigration entry point. Detailed program information is pending review.",
+  "reviewedAt": "2026-09-03",
+  "sources": [{ "authority": "UK Government", "title": "Visas and immigration", "url": "https://www.gov.uk/browse/visas-immigration", "reviewedAt": "2026-09-03" }]
+}

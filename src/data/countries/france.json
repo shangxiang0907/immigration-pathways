@@ -1,0 +1,7 @@
+{
+  "name": "法国", "nameEn": "France", "region": "Europe", "coverage": "directory",
+  "summary": "法国政府签证事务官方入口。详细项目资料尚待逐项核验。",
+  "summaryEn": "The French government's official visa entry point. Detailed program information is pending review.",
+  "reviewedAt": "2026-09-03",
+  "sources": [{ "authority": "Government of France", "title": "France-Visas", "url": "https://www.france-visas.gouv.fr/en/", "reviewedAt": "2026-09-03" }]
+}

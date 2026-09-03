@@ -1,0 +1,7 @@
+{
+  "name": "新西兰", "nameEn": "New Zealand", "region": "Oceania", "coverage": "directory",
+  "summary": "新西兰移民局签证查询官方入口。详细项目资料尚待逐项核验。",
+  "summaryEn": "Immigration New Zealand's official visa search entry point. Detailed program information is pending review.",
+  "reviewedAt": "2026-09-03",
+  "sources": [{ "authority": "Immigration New Zealand", "title": "Find and choose a visa", "url": "https://www.immigration.govt.nz/process-to-apply/find-a-visa-tool/", "reviewedAt": "2026-09-03" }]
+}

@@ -1,0 +1,10 @@
+{
+  "name": "新加坡", "nameEn": "Singapore", "region": "Asia", "coverage": "directory",
+  "summary": "新加坡居留、永居和工作准证政府入口。详细项目资料尚待逐项核验。",
+  "summaryEn": "Singapore government entry points for residence, permanent residence, and work passes. Detailed program information is pending review.",
+  "reviewedAt": "2026-09-03",
+  "sources": [
+    { "authority": "Immigration & Checkpoints Authority", "title": "Reside, Study and Work in Singapore", "url": "https://www.ica.gov.sg/reside", "reviewedAt": "2026-09-03" },
+    { "authority": "Ministry of Manpower", "title": "Work passes", "url": "https://www.mom.gov.sg/passes-and-permits", "reviewedAt": "2026-09-03" }
+  ]
+}

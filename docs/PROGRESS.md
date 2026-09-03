@@ -19,10 +19,11 @@ M1 — Information foundation
 - [x] Explicit language switch and first-visit browser-language detection
 - [x] Localized production canonical and `hreflang` metadata
 - [x] Multilingual routing quality review
+- [x] Directory-only government entry points for 13 countries
 
 ## In progress
 
-- [ ] First country/program research batch awaiting scope approval
+- [ ] First detailed immigration-program research batch awaiting scope approval
 
 ## Next
 

@@ -1,0 +1,7 @@
+{
+  "name": "爱尔兰", "nameEn": "Ireland", "region": "Europe", "coverage": "directory",
+  "summary": "爱尔兰政府移民制度官方入口。详细项目资料尚待逐项核验。",
+  "summaryEn": "The Irish government's official immigration-system entry point. Detailed program information is pending review.",
+  "reviewedAt": "2026-09-03",
+  "sources": [{ "authority": "Department of Justice, Home Affairs and Migration", "title": "How our immigration system works", "url": "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/collections/how-our-immigration-system-works/", "reviewedAt": "2026-09-03" }]
+}

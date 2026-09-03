@@ -1,0 +1,7 @@
+{
+  "name": "葡萄牙", "nameEn": "Portugal", "region": "Europe", "coverage": "directory",
+  "summary": "葡萄牙政府入境签证与居留许可官方指南。详细项目资料尚待逐项核验。",
+  "summaryEn": "The Portuguese government's official guide to entry visas and residence permits. Detailed program information is pending review.",
+  "reviewedAt": "2026-09-03",
+  "sources": [{ "authority": "Portuguese Republic", "title": "Migrants: visas and permits to enter and live in Portugal", "url": "https://www.gov.pt/guias/migrantes-vistos-e-autorizacoes-para-entrar-e-viver-em-portugal", "reviewedAt": "2026-09-03" }]
+}

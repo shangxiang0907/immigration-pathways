@@ -1,0 +1,7 @@
+{
+  "name": "日本", "nameEn": "Japan", "region": "Asia", "coverage": "directory",
+  "summary": "日本出入国在留管理厅官方入口。详细项目资料尚待逐项核验。",
+  "summaryEn": "The Immigration Services Agency of Japan official entry point. Detailed program information is pending review.",
+  "reviewedAt": "2026-09-03",
+  "sources": [{ "authority": "Immigration Services Agency of Japan", "title": "Immigration Services Agency", "url": "https://www.moj.go.jp/isa/index.html", "reviewedAt": "2026-09-03" }]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "澳大利亚", "nameEn": "Australia", "region": "Oceania", "coverage": "directory",
+  "summary": "澳大利亚内政部移民与公民事务官方入口。详细项目资料尚待逐项核验。",
+  "summaryEn": "The Australian Department of Home Affairs immigration and citizenship entry point. Detailed program information is pending review.",
+  "reviewedAt": "2026-09-03",
+  "sources": [{ "authority": "Australian Department of Home Affairs", "title": "Immigration and citizenship", "url": "https://immi.homeaffairs.gov.au/home", "reviewedAt": "2026-09-03" }]
+}
