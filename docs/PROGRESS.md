@@ -36,10 +36,11 @@ M3 — Comparison and matching
 - [x] Central matching registry and build-time rule/profile schema validation
 - [x] Generic configuration-driven questionnaire component and first Australia migration
 - [x] Cross-validation between questionnaires, profile fields, programs, and bilingual result reasons
+- [x] Canada migration to the generic questionnaire with reusable select questions
 
 ## Next
 
-- [ ] Migrate Canada and Germany to the generic questionnaire component
+- [ ] Migrate Germany to the generic questionnaire component
 
 ## Blocked until owner authorization
 

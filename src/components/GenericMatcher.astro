@@ -10,13 +10,18 @@ const formId = `${countryId}-matcher-form`;
 const resultsId = `${countryId}-matcher-results`;
 const configId = `${countryId}-matcher-config`;
 const clientConfig = JSON.stringify({ questionnaire, rules: matchingRulesByCountry[countryId] }).replaceAll("<", "\\u003c");
+type Localized = { en: string; zh: string };
+type Question = { type: "radio" | "select"; field: string; label: Localized; options?: Array<{ value: string; label: Localized }> };
+const questions = questionnaire.questions as Question[];
 ---
 <header class="page-heading">
   <p class="eyebrow">{text.eyebrow}</p><h1>{text.title}</h1><p class="lede">{text.intro}</p>
   <p><a href={`${prefix}/match`}>{locale === "zh" ? "查看其他国家" : "Check another country"}</a></p>
 </header>
 <form id={formId} class="matcher" data-country={countryId} data-config={configId} data-locale={locale} data-prefix={prefix}>
-  {questionnaire.questions.map((question, index) => <fieldset class="question"><legend><b>{index + 1}.</b> {question.label[locale]}</legend><label><input type="radio" name={question.field} value="yes" required /> {text.yes}</label><label><input type="radio" name={question.field} value="no" /> {text.no}</label><label><input type="radio" name={question.field} value="unknown" /> {text.unknown}</label></fieldset>)}
+  {questions.map((question, index) => question.type === "select" && question.options
+    ? <label class="question"><span><b>{index + 1}.</b> {question.label[locale]}</span><select name={question.field} required>{question.options.map((option) => <option value={option.value}>{option.label[locale]}</option>)}</select></label>
+    : <fieldset class="question"><legend><b>{index + 1}.</b> {question.label[locale]}</legend><label><input type="radio" name={question.field} value="yes" required /> {text.yes}</label><label><input type="radio" name={question.field} value="no" /> {text.no}</label><label><input type="radio" name={question.field} value="unknown" /> {text.unknown}</label></fieldset>)}
   <p class="matcher-privacy">{text.privacy}</p><button class="button" type="submit">{text.submit}</button>
 </form>
 <section id={resultsId} class="matcher-results" aria-live="polite" hidden><h2>{text.results}</h2><div class="result-list"></div><button class="text-button" type="button">{text.reset}</button></section>

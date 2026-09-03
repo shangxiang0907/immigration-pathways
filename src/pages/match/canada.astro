@@ -1,6 +1,6 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
-import Matcher from "../../components/Matcher.astro";
+import GenericMatcher from "../../components/GenericMatcher.astro";
 import { site } from "../../../site.config.mjs";
 ---
-<SiteLayout title={`Canada immigration pre-screen — ${site.name}`} description="Compare your answers with reviewed minimum requirements for three Canadian Express Entry programs."><Matcher /></SiteLayout>
+<SiteLayout title={`Canada immigration pre-screen — ${site.name}`} description="Compare your answers with reviewed minimum requirements for three Canadian Express Entry programs."><GenericMatcher countryId="canada" /></SiteLayout>
