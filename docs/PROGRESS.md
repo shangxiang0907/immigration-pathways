@@ -43,10 +43,11 @@ M3 — Comparison and matching
 - [x] Retired country-specific questionnaires; legacy URLs redirect to the unified comparison
 - [x] Tested cross-country ranking with conservative pathway-count result summaries
 - [x] Closest-path links and concise explanations for user-triggered known barriers
+- [x] Built-output contract tests for both locales, privacy controls, no-upload client code, and legacy redirects
 
 ## Next
 
-- [ ] Validate the unified flow in a real browser at representative mobile and desktop widths
+- [ ] Validate the unified flow in a real browser at representative mobile and desktop widths (browser unavailable locally)
 
 ## Blocked until owner authorization
 
