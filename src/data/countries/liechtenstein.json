@@ -1,0 +1,6 @@
+{
+  "name": "列支敦士登", "nameEn": "Liechtenstein", "region": "Europe", "coverage": "directory",
+  "summary": "列支敦士登国家行政机关提供的居留许可官方入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence-permit entry point from the Liechtenstein National Administration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Liechtenstein National Administration", "title": "Residence permit", "url": "https://www.llv.li/en/individuals/migration-and-integration/residence-permit", "reviewedAt": "2026-09-04" }]
+}

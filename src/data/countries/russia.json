@@ -1,0 +1,6 @@
+{
+  "name": "俄罗斯", "nameEn": "Russia", "region": "Europe", "coverage": "directory",
+  "summary": "俄罗斯外交部提供的官方统一电子签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official unified e-visa entry point from Russia's Ministry of Foreign Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Foreign Affairs of the Russian Federation", "title": "Unified electronic visa", "url": "https://evisa.kdmid.ru/Home/", "reviewedAt": "2026-09-04" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "贝宁", "nameEn": "Benin", "region": "Africa", "coverage": "directory",
+  "summary": "贝宁政府提供的官方电子签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official e-visa entry point from the Government of Benin; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Benin", "title": "Benin eVisa", "url": "https://evisa.bj/?_locale=en", "reviewedAt": "2026-09-04" }]
+}

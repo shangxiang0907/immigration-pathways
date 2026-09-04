@@ -1,0 +1,6 @@
+{
+  "name": "圣马力诺", "nameEn": "San Marino", "region": "Europe", "coverage": "directory",
+  "summary": "圣马力诺外交事务部门提供的居留和停留许可官方信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official stay-permit and residence information entry point from San Marino's foreign-affairs authority; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Department of Foreign Affairs of San Marino", "title": "Stay permits and residence", "url": "https://www.esteri.sm/pub1/EsteriSM/en/Servizi-per-utenza/Permessi-di-Soggiorno-e-Residenze.html", "reviewedAt": "2026-09-04" }]
+}

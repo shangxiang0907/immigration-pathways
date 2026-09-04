@@ -1,0 +1,6 @@
+{
+  "name": "多哥", "nameEn": "Togo", "region": "Africa", "coverage": "directory",
+  "summary": "多哥政府提供的官方旅行、签证和移民手续入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official travel, visa, and immigration-formalities entry point from the Government of Togo; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Togo", "title": "Togo Voyage", "url": "https://voyage.gouv.tg/?language=en", "reviewedAt": "2026-09-04" }]
+}

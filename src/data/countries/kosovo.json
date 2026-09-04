@@ -1,0 +1,6 @@
+{
+  "name": "科索沃", "nameEn": "Kosovo", "region": "Europe", "coverage": "directory",
+  "summary": "科索沃内务部提供的临时居留许可官方服务入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official temporary-residence-permit service entry point from Kosovo's Ministry of Internal Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Internal Affairs of Kosovo", "title": "Temporary residence permit", "url": "https://lejelicenca.rks-gov.net/Search/Details/983", "reviewedAt": "2026-09-04" }]
+}

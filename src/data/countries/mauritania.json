@@ -1,0 +1,6 @@
+{
+  "name": "毛里塔尼亚", "nameEn": "Mauritania", "region": "Africa", "coverage": "directory",
+  "summary": "毛里塔尼亚人口登记与安全证件局提供的官方电子签证及居民卡服务入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official e-visa and resident-card services entry point from Mauritania's population-register and secure-titles agency; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "National Agency for the Population Register and Secure Titles", "title": "Agency services and eVisa", "url": "https://anrpts.gov.mr/fr", "reviewedAt": "2026-09-04" }]
+}

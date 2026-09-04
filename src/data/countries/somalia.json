@@ -1,0 +1,6 @@
+{
+  "name": "索马里", "nameEn": "Somalia", "region": "Africa", "coverage": "directory",
+  "summary": "索马里移民与公民身份局提供的官方电子旅行授权入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official electronic travel-authorization entry point from Somalia's Immigration and Citizenship Agency; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Immigration and Citizenship Agency of Somalia", "title": "Electronic Visa / ETAS system", "url": "https://immigration.gov.so/news/somalia-launches-e-visa-etas-system", "reviewedAt": "2026-09-04" }]
+}

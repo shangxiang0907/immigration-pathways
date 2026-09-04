@@ -1,0 +1,6 @@
+{
+  "name": "布隆迪", "nameEn": "Burundi", "region": "Africa", "coverage": "directory",
+  "summary": "布隆迪外交部提供的官方签证申请表入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa-application-form entry point from Burundi's Ministry of Foreign Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Foreign Affairs of Burundi", "title": "Visa application forms", "url": "https://www.mae.gov.bi/en/visa-application-forms/", "reviewedAt": "2026-09-04" }]
+}

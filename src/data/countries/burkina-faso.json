@@ -1,0 +1,6 @@
+{
+  "name": "布基纳法索", "nameEn": "Burkina Faso", "region": "Africa", "coverage": "directory",
+  "summary": "布基纳法索政府公共服务门户收录的官方电子签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official e-visa entry point listed by Burkina Faso's public-service portal; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Burkina Faso", "title": "Public-service eVisa listing", "url": "https://www.service-public.gov.bf/eservices", "reviewedAt": "2026-09-04" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "安道尔", "nameEn": "Andorra", "region": "Europe", "coverage": "directory",
+  "summary": "安道尔政府提供的首次居留和工作许可官方入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official initial residence-and-work authorization entry point from the Government of Andorra; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Andorra", "title": "Initial residence and work authorization", "url": "https://www.govern.ad/fr/tematiques/immigracio/residencia-i-treball/residencia-i-treball-autoritzacio-inicial", "reviewedAt": "2026-09-04" }]
+}

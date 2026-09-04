@@ -4,9 +4,9 @@ Last updated: 2026-09-04
 
 ## Current milestone
 
-Gate 6 — complete Search Console URL Inspection for the canonical homepage. The authorized indexable build is live and verified.
+Gate 6 — complete. The authorized indexable build is live, and the owner confirmed that Search Console URL Inspection now succeeds for the canonical homepage.
 
-The first live inspection at 2026-09-04 14:00:13 was rejected because Google's Inspection Tool still reported the previous `robots.txt` rule, `Disallow: /`. The public origin already returns `Allow: /`. Google documents that robots content is generally cached for up to 24 hours, so this is a pending cache refresh rather than a new site defect. Do not repeatedly request indexing while the live test remains blocked.
+The first live inspection at 2026-09-04 14:00:13 saw Google's cached previous `robots.txt` rule, `Disallow: /`. A later inspection succeeded after the cache refreshed; the public origin continues to return `Allow: /`.
 
 ## Product and platform completed
 
@@ -17,7 +17,7 @@ The first live inspection at 2026-09-04 14:00:13 was rejected because Google's I
 - [x] Localized canonical and `hreflang` metadata
 - [x] Country/program schemas, directories, search, and filters
 - [x] Official-source, coverage-status, and review-date display
-- [x] 149-country directory and 71 program records
+- [x] 169-country directory and 71 program records
 - [x] Versioned generic tri-state rule engine and centralized registry
 - [x] One shared eight-question profile across covered countries
 - [x] Opt-in, versioned browser-only profile storage and clear control
@@ -51,9 +51,9 @@ The earlier out-of-order indexable deployment was corrected by restoring `noinde
 
 ## Next actions
 
-1. Keep the current indexable deployment stable while Google's robots cache refreshes.
-2. After 2026-09-05 14:05 local time, run a new live URL test for `https://pathwaystoabroad.com/`.
-3. If crawling and indexing are allowed, request homepage indexing once and record the accepted result.
+1. Continue authoritative directory coverage toward the remaining countries.
+2. Keep the current indexable deployment stable; publish content batches only with explicit owner authorization.
+3. Complete Adsterra consent, account, code-review, and placement gates before enabling advertising.
 
 ## Indexable deployment
 
@@ -86,18 +86,18 @@ Completed 2026-09-04 with headless Chromium at 1440×1000 desktop and 390×844 m
 
 Completed locally on 2026-09-04; publication remains separately gated.
 
-- [x] Added a 20-country directory-level batch: Myanmar, Timor-Leste, Papua New Guinea, Fiji, Vanuatu, Solomon Islands, Kiribati, Bhutan, Turkmenistan, Iran, Cuba, Dominica, Grenada, Saint Lucia, Saint Kitts and Nevis, Saint Vincent and the Grenadines, Suriname, Venezuela, Nicaragua, and Palau
-- [x] Expanded directory coverage from 129 to 149 countries across Asia, Oceania, and the Americas
+- [x] Added a 20-country directory-level batch: Russia, Kosovo, Andorra, Liechtenstein, San Marino, Benin, Djibouti, The Gambia, Cabo Verde, Liberia, Mauritania, Sierra Leone, Somalia, Burkina Faso, Togo, South Sudan, Guinea, Burundi, São Tomé and Príncipe, and Chad
+- [x] Expanded directory coverage from 149 to 169 countries across Europe and Africa
 - [x] Added equivalent English and Chinese summaries with explicit directory-only limitations
 - [x] Retained an authoritative government URL and 2026-09-04 review date for every record
 - [x] Inspected all 20 current authoritative government pages through browser-accessible results
 - [x] `npm test`, `npm run check`, `npm run build`, and preview-output tests passed
-- [x] Generated 463 static pages with all 149 countries represented in English and Chinese
+- [x] Generated 503 static pages with all 169 countries represented in English and Chinese
 - [x] Preview output remains non-indexable and advertising remains disabled
 
 ## Deferred
 
-- Further country expansion beyond 149 after the release sequence is stable
+- Further country expansion beyond 169
 - Adsterra account connection, generated banner code, and production activation
 - Free/paid report boundary and pricing
 - Grounded report data contract and LLM provider

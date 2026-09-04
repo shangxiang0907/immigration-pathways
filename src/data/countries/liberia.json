@@ -1,0 +1,6 @@
+{
+  "name": "利比里亚", "nameEn": "Liberia", "region": "Africa", "coverage": "directory",
+  "summary": "利比里亚移民局提供的居留许可官方入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official resident-permit entry point from the Liberia Immigration Service; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Liberia Immigration Service", "title": "Resident permit", "url": "https://rp.lis.gov.lr/Faq.aspx", "reviewedAt": "2026-09-04" }]
+}

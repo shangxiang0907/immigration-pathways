@@ -1,0 +1,6 @@
+{
+  "name": "南苏丹", "nameEn": "South Sudan", "region": "Africa", "coverage": "directory",
+  "summary": "南苏丹内政部移民服务部门提供的官方电子签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official e-visa entry point from South Sudan's Ministry of Interior immigration services; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Interior of South Sudan", "title": "South Sudan eVisa", "url": "https://www.evisa.gov.ss/", "reviewedAt": "2026-09-04" }]
+}

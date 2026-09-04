@@ -1,0 +1,6 @@
+{
+  "name": "吉布提", "nameEn": "Djibouti", "region": "Africa", "coverage": "directory",
+  "summary": "吉布提政府提供的官方电子签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official e-visa entry point from the Government of Djibouti; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Djibouti", "title": "Djibouti eVisa", "url": "https://www.evisa.gouv.dj/", "reviewedAt": "2026-09-04" }]
+}
