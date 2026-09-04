@@ -4,7 +4,7 @@ Last updated: 2026-09-04
 
 ## Current milestone
 
-Gate 4 — submit the production sitemap in Google Search Console. The Domain property is verified and indexing remains disabled.
+Gate 6 — awaiting explicit owner authorization to enable production indexing. Gates 1–5 are complete and indexing remains disabled.
 
 ## Product and platform completed
 
@@ -35,8 +35,8 @@ Gate 4 — submit the production sitemap in Google Search Console. The Domain pr
 - [x] 2. Legal/contact surfaces finalized for the public contact channel
 - [x] 3. Google Search Console property verified
 - [x] 4. Production sitemap is generated and reachable
-- [ ] 4. Production sitemap submitted in Search Console
-- [ ] 5. Live site checked in real mobile and desktop browsers
+- [x] 4. Production sitemap submitted in Search Console
+- [x] 5. Live site checked in real mobile and desktop browsers
 - [ ] 6. Explicit owner authorization to enable indexing after gates 1–5
 - [ ] 6. Production indexing enabled in the correct sequence
 - [ ] 7. Consent requirements/configuration complete for advertising
@@ -47,9 +47,21 @@ The earlier indexable deployment was a release-order defect, not completion of g
 
 ## Next actions
 
-1. Submit the production sitemap in Search Console and confirm its status.
-2. Complete real mobile and desktop live-site QA.
-3. Request explicit indexing authorization.
+1. Obtain explicit owner authorization to enable production indexing.
+2. Deploy the separately gated indexable build.
+3. Verify live page directives, `robots.txt`, sitemap, redirects, and 404 behavior.
+
+## Latest live quality review
+
+Completed 2026-09-04 with headless Chromium at 1440×1000 desktop and 390×844 mobile viewports.
+
+- [x] Twelve representative live routes per viewport, including both locales, country sources, and a real 404
+- [x] English and Chinese country-directory searches
+- [x] Eight-field unified questionnaire and generated results
+- [x] No horizontal overflow or unexpected console/page errors
+- [x] Contact, privacy, canonical, sitemap, and non-indexing behavior retained
+- [x] Desktop and mobile screenshots visually inspected
+- [x] English single-result grammar defect found, fixed, deployed, and regression-tested
 
 ## Deferred
 

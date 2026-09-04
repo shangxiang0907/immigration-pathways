@@ -23,13 +23,13 @@ This sequence is mandatory. A technical ability to perform a later step is not p
 
 - [x] Use the safe production build, which emits canonical URLs and a sitemap while retaining `noindex` and `Disallow: /`.
 - [x] Confirm the production sitemap is reachable and contains canonical public URLs only.
-- [ ] Submit it in Search Console and confirm it is accepted.
+- [x] Submit it in Search Console and confirm it is accepted.
 
 ## 5. Live quality review
 
-- [ ] Test representative mobile and desktop widths in real browsers.
-- [ ] Check both locales, navigation, directory search, unified questionnaire, results, official links, privacy controls, and 404 behavior.
-- [ ] Resolve release blockers and rerun `npm run check` and `npm run build`.
+- [x] Test representative mobile and desktop widths in real browsers.
+- [x] Check both locales, navigation, directory search, unified questionnaire, results, official links, privacy controls, and 404 behavior.
+- [x] Resolve release blockers and rerun `npm run check` and `npm run build`.
 
 ## 6. Indexing
 

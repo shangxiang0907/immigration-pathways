@@ -78,7 +78,7 @@ const coverageLabels = {
       if (!card.hidden) visible += 1;
     }
 
-    if (count) count.textContent = `${visible} country entries`;
+    if (count) count.textContent = `${visible} country ${visible === 1 ? "entry" : "entries"}`;
     if (empty) empty.hidden = visible !== 0;
   };
 

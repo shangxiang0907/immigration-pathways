@@ -15,6 +15,7 @@ assert.match(previewHome, /Compare 71 reviewed immigration and work-residence pa
 assert.doesNotMatch(previewHome, /This preview remains unavailable|Canada now includes three reviewed/);
 const previewCountries = await read("countries/index.html");
 assert.match(previewCountries, /<body data-detect-locale="false">/);
+assert.match(previewCountries, /===1\?`entry`:`entries`/);
 assert.doesNotMatch(previewHome, /navigator\.languages\?\.some/);
 const previewZhHome = await read("zh/index.html");
 assert.match(previewZhHome, /已复核覆盖 33 个国家/);
