@@ -1,0 +1,6 @@
+{
+  "name": "缅甸", "nameEn": "Myanmar", "region": "Asia", "coverage": "directory",
+  "summary": "缅甸移民与人口部提供的官方电子签证及停留延期入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official e-Visa and stay-extension entry point from Myanmar's Ministry of Immigration and Population; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Immigration and Population of Myanmar", "title": "Official Myanmar eVisa", "url": "https://evisa.moip.gov.mm/home", "reviewedAt": "2026-09-04" }]
+}

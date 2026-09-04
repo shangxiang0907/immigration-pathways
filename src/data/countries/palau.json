@@ -1,0 +1,6 @@
+{
+  "name": "帕劳", "nameEn": "Palau", "region": "Oceania", "coverage": "directory",
+  "summary": "帕劳国家政府提供的官方移民局信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official Bureau of Immigration information entry point from the Palau National Government; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Palau National Government", "title": "Bureau of Immigration contact and services", "url": "https://www.palaugov.pw/executive-branch/ministries/state/bureau-of-foreign-affairs/", "reviewedAt": "2026-09-04" }]
+}

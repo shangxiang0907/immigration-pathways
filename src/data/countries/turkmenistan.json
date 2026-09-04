@@ -1,0 +1,6 @@
+{
+  "name": "土库曼斯坦", "nameEn": "Turkmenistan", "region": "Asia", "coverage": "directory",
+  "summary": "土库曼斯坦国家移民局提供的官方移民信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration-information entry point from the State Migration Service of Turkmenistan; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "State Migration Service of Turkmenistan", "title": "Official migration portal", "url": "https://migration.gov.tm/", "reviewedAt": "2026-09-04" }]
+}

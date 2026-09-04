@@ -1,0 +1,6 @@
+{
+  "name": "圣卢西亚", "nameEn": "Saint Lucia", "region": "Americas", "coverage": "directory",
+  "summary": "圣卢西亚政府提供的官方外国人工作许可信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official foreign-national work-permit information from the Government of Saint Lucia; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Saint Lucia", "title": "Work permit requirements", "url": "https://www.govt.lc/news/work-permit-requirement-for-employment-of-foreign-nationals-mandatory", "reviewedAt": "2026-09-04" }]
+}

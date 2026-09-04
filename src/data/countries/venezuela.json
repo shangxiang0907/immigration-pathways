@@ -1,0 +1,6 @@
+{
+  "name": "委内瑞拉", "nameEn": "Venezuela", "region": "Americas", "coverage": "directory",
+  "summary": "委内瑞拉身份、移民与外国人管理局提供的官方移民与外国人服务入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official migration and foreign-national services entry point from Venezuela's identity and immigration authority; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "SAIME", "title": "Migration and foreign-national services", "url": "https://www.saime.gob.ve/", "reviewedAt": "2026-09-04" }]
+}

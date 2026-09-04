@@ -1,0 +1,6 @@
+{
+  "name": "古巴", "nameEn": "Cuba", "region": "Americas", "coverage": "directory",
+  "summary": "古巴外交部提供的官方电子签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official e-Visa entry point from Cuba's Ministry of Foreign Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Foreign Affairs of Cuba", "title": "Cuba electronic visa", "url": "https://evisacuba.cu/en/inicio", "reviewedAt": "2026-09-04" }]
+}

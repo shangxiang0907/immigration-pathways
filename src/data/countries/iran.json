@@ -1,0 +1,6 @@
+{
+  "name": "伊朗", "nameEn": "Iran", "region": "Asia", "coverage": "directory",
+  "summary": "伊朗外交部提供的官方电子签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official e-Visa entry point from Iran's Ministry of Foreign Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Foreign Affairs of Iran", "title": "Iran electronic visa", "url": "https://evisa.mfa.ir/en/", "reviewedAt": "2026-09-04" }]
+}

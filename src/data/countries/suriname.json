@@ -1,0 +1,6 @@
+{
+  "name": "苏里南", "nameEn": "Suriname", "region": "Americas", "coverage": "directory",
+  "summary": "苏里南政府提供的官方外国人居留许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official foreign-national residence-permit entry point from the Government of Suriname; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Suriname", "title": "Residence permits", "url": "https://gov.sr/ministeries/ministerie-van-buitenlandse-zaken-internationale-handel-samenwerking/verblijfsvergunningen/", "reviewedAt": "2026-09-04" }]
+}

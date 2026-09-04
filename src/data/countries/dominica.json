@@ -1,0 +1,6 @@
+{
+  "name": "多米尼克", "nameEn": "Dominica", "region": "Americas", "coverage": "directory",
+  "summary": "多米尼克政府提供的官方居留许可申请入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence-permit application entry point from the Government of Dominica; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Dominica", "title": "Apply for a residence permit", "url": "https://www.dominica.gov.dm/services/residency/how-do-i-apply-for-a-residence-permit", "reviewedAt": "2026-09-04" }]
+}

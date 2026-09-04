@@ -1,0 +1,6 @@
+{
+  "name": "东帝汶", "nameEn": "Timor-Leste", "region": "Asia", "coverage": "directory",
+  "summary": "东帝汶移民局提供的官方签证、工作许可和居留法律资料入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa, work-permit, and residence-law resource from Timor-Leste's Migration Service; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Migration Service of Timor-Leste", "title": "Immigration and Asylum Law", "url": "https://migracao.gov.tl/pdf/%5B0503-01%5DLIA-English.pdf", "reviewedAt": "2026-09-04" }]
+}
