@@ -1,4 +1,14 @@
 const allowedFormats = new Set(["native-banner", "display-banner"]);
+const allowedHosts = new Set(["pl31189426.profitableratecpmnetwork.com", "www.highrevenueformat.com"]);
+
+function isApprovedScriptUrl(value) {
+  try {
+    const url = new URL(value);
+    return url.protocol === "https:" && allowedHosts.has(url.hostname) && url.pathname.endsWith("/invoke.js");
+  } catch {
+    return false;
+  }
+}
 
 export function validateAdvertisingConfig(config) {
   if (!config || config.provider !== "adsterra") return ["advertising.provider must be adsterra"];
@@ -10,6 +20,19 @@ export function validateAdvertisingConfig(config) {
   if (!config.enabled) return errors;
   if (!config.consentReady) errors.push("advertising.consentReady must be true before activation");
   if (!config.integrationReady) errors.push("advertising.integrationReady must be true after generated code and placements are reviewed");
+  const { native, mobile, desktop } = config.placements ?? {};
+  if (!native || !mobile || !desktop) {
+    errors.push("advertising.placements must include native, mobile, and desktop placements");
+    return errors;
+  }
+  if (!isApprovedScriptUrl(native.scriptUrl) || !/^container-[a-f0-9]{32}$/.test(native.containerId ?? "")) {
+    errors.push("advertising.placements.native is invalid");
+  }
+  for (const [name, placement, expected] of [["mobile", mobile, [320, 50]], ["desktop", desktop, [728, 90]]]) {
+    if (!isApprovedScriptUrl(placement.scriptUrl) || !/^[a-f0-9]{32}$/.test(placement.key ?? "") || placement.width !== expected[0] || placement.height !== expected[1]) {
+      errors.push(`advertising.placements.${name} is invalid`);
+    }
+  }
   return errors;
 }
 

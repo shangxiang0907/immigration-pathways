@@ -8,8 +8,26 @@ export const site = {
     provider: "adsterra",
     enabled: false,
     consentReady: false,
-    integrationReady: false,
+    integrationReady: true,
     allowedFormats: ["native-banner", "display-banner"],
+    placements: {
+      native: {
+        scriptUrl: "https://pl31189426.profitableratecpmnetwork.com/c7533d92fabd0a50f3b95905edae43e8/invoke.js",
+        containerId: "container-c7533d92fabd0a50f3b95905edae43e8",
+      },
+      mobile: {
+        scriptUrl: "https://www.highrevenueformat.com/8175f7a86e3c4067b6c69640dff0b70f/invoke.js",
+        key: "8175f7a86e3c4067b6c69640dff0b70f",
+        width: 320,
+        height: 50,
+      },
+      desktop: {
+        scriptUrl: "https://www.highrevenueformat.com/9084f0b0a63d84094331623d7bc1be97/invoke.js",
+        key: "9084f0b0a63d84094331623d7bc1be97",
+        width: 728,
+        height: 90,
+      },
+    },
   },
   locales: {
     en: {

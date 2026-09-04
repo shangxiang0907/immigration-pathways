@@ -7,7 +7,7 @@ const read = (path) => readFile(resolve(root, path), "utf8");
 const expectedRobots = process.env.EXPECT_INDEXABLE === "true" ? "index, follow" : "noindex, nofollow, noarchive";
 const fields = ["age", "education", "experience", "english", "jobOffer", "funds", "regional", "qualification"];
 const previewHome = await read("index.html");
-assert.doesNotMatch(previewHome, /pagead2\.googlesyndication\.com|adsbygoogle|adsterra|data-ad-placement/, "preview must not emit advertising code");
+assert.doesNotMatch(previewHome, /pagead2\.googlesyndication\.com|adsbygoogle|adsterra|profitableratecpmnetwork|highrevenueformat|data-ad-slot/, "preview must not emit advertising code");
 assert.match(previewHome, /<body data-detect-locale="true">/);
 assert.match(previewHome, /navigator\.languages\?\.\[0\] \?\? navigator\.language/);
 assert.match(previewHome, /preferredLocale !== "zh"/);

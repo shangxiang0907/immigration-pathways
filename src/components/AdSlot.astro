@@ -1,3 +1,91 @@
 ---
+import { site } from "../../site.config.mjs";
+import { isAdvertisingActive } from "../lib/advertising.mjs";
+
 interface Props { placement: "content" | "results"; locale?: "en" | "zh"; }
+
+const { placement, locale = "en" } = Astro.props;
+const active = isAdvertisingActive(site.advertising, import.meta.env.SITE_BUILD_MODE === "production");
+const config = site.advertising.placements;
+const copy = locale === "zh"
+  ? { label: "广告", prompt: "允许广告以支持本站？同意后，本页会连接 Adsterra；你可以继续使用网站而不接受。", accept: "允许广告", reject: "不，谢谢" }
+  : { label: "Advertisement", prompt: "Allow ads to support this site? If accepted, this page will connect to Adsterra. You can continue without accepting.", accept: "Allow ads", reject: "No thanks" };
 ---
+
+{active && (
+  <aside
+    class="ad-placement"
+    data-ad-slot
+    data-ad-kind={placement === "content" ? "native" : "display"}
+    data-native-url={config.native.scriptUrl}
+    data-native-container={config.native.containerId}
+    data-mobile-url={config.mobile.scriptUrl}
+    data-mobile-key={config.mobile.key}
+    data-desktop-url={config.desktop.scriptUrl}
+    data-desktop-key={config.desktop.key}
+  >
+    <span class="ad-label">{copy.label}</span>
+    <div class="ad-consent" data-ad-consent>
+      <p>{copy.prompt}</p>
+      <div class="ad-consent-actions">
+        <button class="button" type="button" data-ad-accept>{copy.accept}</button>
+        <button class="text-button" type="button" data-ad-reject>{copy.reject}</button>
+      </div>
+    </div>
+    <div class="ad-content" data-ad-content hidden></div>
+  </aside>
+)}
+
+{active && <script is:inline>
+  (() => {
+    const consentKey = "immigration-pathways-ad-consent-v1";
+    const slot = document.currentScript?.previousElementSibling;
+    if (!(slot instanceof HTMLElement) || !slot.matches("[data-ad-slot]")) return;
+    const prompt = slot.querySelector("[data-ad-consent]");
+    const content = slot.querySelector("[data-ad-content]");
+
+    const remember = (value) => {
+      try { localStorage.setItem(consentKey, value); } catch {}
+    };
+    const load = () => {
+      if (!(content instanceof HTMLElement) || content.dataset.loaded === "true") return;
+      content.dataset.loaded = "true";
+      content.hidden = false;
+      if (prompt instanceof HTMLElement) prompt.hidden = true;
+
+      if (slot.dataset.adKind === "native") {
+        const container = document.createElement("div");
+        container.id = slot.dataset.nativeContainer;
+        content.append(container);
+        const script = document.createElement("script");
+        script.async = true;
+        script.dataset.cfasync = "false";
+        script.src = slot.dataset.nativeUrl;
+        content.append(script);
+        return;
+      }
+
+      const mobile = matchMedia("(max-width: 44rem)").matches;
+      const key = mobile ? slot.dataset.mobileKey : slot.dataset.desktopKey;
+      const width = mobile ? 320 : 728;
+      const height = mobile ? 50 : 90;
+      Object.assign(window, { atOptions: { key, format: "iframe", height, width, params: {} } });
+      const script = document.createElement("script");
+      script.src = mobile ? slot.dataset.mobileUrl : slot.dataset.desktopUrl;
+      content.append(script);
+    };
+    const reject = () => {
+      remember("rejected");
+      slot.hidden = true;
+    };
+
+    let saved;
+    try { saved = localStorage.getItem(consentKey); } catch {}
+    if (saved === "accepted") load();
+    else if (saved === "rejected") slot.hidden = true;
+    else {
+      slot.querySelector("[data-ad-accept]")?.addEventListener("click", () => { remember("accepted"); load(); });
+      slot.querySelector("[data-ad-reject]")?.addEventListener("click", reject);
+    }
+  })();
+</script>}

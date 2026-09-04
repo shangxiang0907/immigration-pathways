@@ -1,6 +1,6 @@
 # Development progress
 
-Last updated: 2026-09-04
+Last updated: 2026-09-05
 
 ## Current milestone
 
@@ -44,7 +44,7 @@ The first live inspection at 2026-09-04 14:00:13 saw Google's cached previous `r
 - [x] 6. Explicit owner authorization to enable indexing after gates 1–5
 - [x] 6. Production indexing enabled in the correct sequence
 - [ ] 7. Consent requirements/configuration complete for advertising
-- [ ] 7. Adsterra website approved and owner-generated banner code reviewed
+- [x] 7. Adsterra website approved and owner-generated banner code reviewed
 - [ ] 7. Ad placements reviewed and explicitly authorized for activation
 
 The earlier out-of-order indexable deployment was corrected by restoring `noindex` and `Disallow: /`. After gates 1–5 passed and the owner explicitly authorized indexing, the separately gated indexable build was deployed on 2026-09-04. Google may temporarily retain the earlier robots response in its crawler cache.
@@ -54,6 +54,17 @@ The earlier out-of-order indexable deployment was corrected by restoring `noinde
 1. Deepen high-demand country records from directory links into reviewed pathway overviews; broad country coverage is complete.
 2. Keep the current indexable deployment stable; publish content batches only with explicit owner authorization.
 3. Complete Adsterra consent, account, code-review, and placement gates before enabling advertising.
+
+## Advertising integration checkpoint
+
+Completed locally on 2026-09-05; production activation and deployment remain separately gated.
+
+- [x] Recorded the owner-generated Native Banner, 320×50 mobile banner, and 728×90 desktop banner configuration
+- [x] Added explicit accept/reject controls that load no Adsterra resource before opt-in
+- [x] Restricted script origins and dimensions in configuration validation
+- [x] Kept `advertising.enabled` false, so preview and production builds emit no ad code
+- [ ] Review applicable consent requirements before setting `consentReady`
+- [ ] Owner reviews placements and explicitly authorizes production activation
 
 ## Indexable deployment
 
