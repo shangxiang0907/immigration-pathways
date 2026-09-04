@@ -1,0 +1,7 @@
+{
+  "name": "以色列", "nameEn": "Israel", "region": "Asia", "coverage": "directory",
+  "summary": "以色列人口和移民管理局提供的外国专家工作许可官方入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official expert foreign-worker permit entry point from Israel's Population and Immigration Authority; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Israel Population and Immigration Authority", "title": "Permit to employ an expert foreign worker", "url": "https://www.gov.il/en/service/working_permit_for_foreign_workers", "reviewedAt": "2026-09-04" }]
+}

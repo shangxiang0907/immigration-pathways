@@ -1,0 +1,7 @@
+{
+  "name": "菲律宾", "nameEn": "Philippines", "region": "Asia", "coverage": "directory",
+  "summary": "菲律宾移民局提供的官方签证类别入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa-category entry point from the Philippine Bureau of Immigration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Philippine Bureau of Immigration", "title": "Visas", "url": "https://immigration.gov.ph/visas/", "reviewedAt": "2026-09-04" }]
+}

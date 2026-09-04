@@ -1,0 +1,7 @@
+{
+  "name": "马来西亚", "nameEn": "Malaysia", "region": "Asia", "coverage": "directory",
+  "summary": "马来西亚移民局提供的官方就业准证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official Employment Pass entry point from Malaysia's Immigration Department; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Immigration Department of Malaysia", "title": "Employment Pass", "url": "https://www.imi.gov.my/index.php/en/main-services/pass/employment-pass/", "reviewedAt": "2026-09-04" }]
+}

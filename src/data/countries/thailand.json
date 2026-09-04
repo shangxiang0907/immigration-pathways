@@ -1,0 +1,7 @@
+{
+  "name": "泰国", "nameEn": "Thailand", "region": "Asia", "coverage": "directory",
+  "summary": "泰国外交部提供的官方签证与工作许可信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa and work-permit information entry point from Thailand's Ministry of Foreign Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Thailand Ministry of Foreign Affairs", "title": "Visa: general information", "url": "https://www.mfa.go.th/en/page/general-information", "reviewedAt": "2026-09-04" }]
+}

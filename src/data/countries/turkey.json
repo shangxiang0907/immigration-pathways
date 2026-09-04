@@ -1,0 +1,7 @@
+{
+  "name": "土耳其", "nameEn": "Türkiye", "region": "Asia", "coverage": "directory",
+  "summary": "土耳其劳动和社会保障部提供的外国人工作许可官方入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official foreign-national work-permit entry point from Türkiye's Ministry of Labour and Social Security; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Türkiye Ministry of Labour and Social Security", "title": "Work Permit", "url": "https://www.csgb.gov.tr/en/frequently-asked-questions/directorate-general-of-international-labour-force/work-permit/", "reviewedAt": "2026-09-04" }]
+}
