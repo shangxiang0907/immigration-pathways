@@ -1,0 +1,7 @@
+{
+  "name": "中国", "nameEn": "China", "region": "Asia", "coverage": "directory",
+  "summary": "中国国家移民管理局提供的官方外国人出入境与居留信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official foreign-national entry and residence information from China's National Immigration Administration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "National Immigration Administration", "title": "Services for foreigners", "url": "https://en.nia.gov.cn/", "reviewedAt": "2026-09-04" }]
+}

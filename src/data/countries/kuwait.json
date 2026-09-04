@@ -1,0 +1,7 @@
+{
+  "name": "科威特", "nameEn": "Kuwait", "region": "Asia", "coverage": "directory",
+  "summary": "科威特政府在线门户提供的官方私营部门工作居留入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official private-sector work-residence entry point from Kuwait Government Online; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Kuwait Government Online", "title": "Private residence Article 18", "url": "https://www.e.gov.kw/sites/kgoEnglish/Pages/Services/MOI/WorkResidenceArticle18.aspx", "reviewedAt": "2026-09-04" }]
+}

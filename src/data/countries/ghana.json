@@ -1,0 +1,7 @@
+{
+  "name": "加纳", "nameEn": "Ghana", "region": "Africa", "coverage": "directory",
+  "summary": "加纳移民局提供的官方居留与工作许可资料入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence and work-permit resources from the Ghana Immigration Service; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Ghana Immigration Service", "title": "Immigration forms", "url": "https://gis.gov.gh/gis-forms/", "reviewedAt": "2026-09-04" }]
+}

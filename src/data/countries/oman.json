@@ -1,0 +1,7 @@
+{
+  "name": "阿曼", "nameEn": "Oman", "region": "Asia", "coverage": "directory",
+  "summary": "阿曼政府门户提供的官方工作签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official work-visa entry point from the Government of Oman; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Government of Oman", "title": "Get a work visa", "url": "https://gov.om/en/w/get-a-work-visa", "reviewedAt": "2026-09-04" }]
+}

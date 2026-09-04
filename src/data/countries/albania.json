@@ -1,0 +1,7 @@
+{
+  "name": "阿尔巴尼亚", "nameEn": "Albania", "region": "Europe", "coverage": "directory",
+  "summary": "阿尔巴尼亚内政部提供的官方居留与统一许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence and unique-permit entry point from Albania's Ministry of Interior; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Ministry of Interior of Albania", "title": "Residence and unique permit procedure", "url": "https://mb.gov.al/en/procedura-dhe-dokumentacioni-per-pajisjen-me-leje-qendrimi-dhe-leje-unike-residence-unique-permit-al-en/", "reviewedAt": "2026-09-04" }]
+}

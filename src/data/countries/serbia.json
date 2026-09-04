@@ -1,0 +1,7 @@
+{
+  "name": "塞尔维亚", "nameEn": "Serbia", "region": "Europe", "coverage": "directory",
+  "summary": "塞尔维亚政府提供的官方临时居留入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official temporary-residence entry point from the Government of Serbia; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Government of Serbia", "title": "Temporary residence", "url": "https://welcometoserbia.gov.rs/temporary-residence", "reviewedAt": "2026-09-04" }]
+}

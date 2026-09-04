@@ -1,0 +1,7 @@
+{
+  "name": "台湾", "nameEn": "Taiwan", "region": "Asia", "coverage": "directory",
+  "summary": "内政部移民署提供的官方外国人居留申请入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official foreign-national residency application entry point from the National Immigration Agency; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "National Immigration Agency", "title": "Foreign-national residency applications", "url": "https://www.immigration.gov.tw/5475/5478/141465/141808/141970/", "reviewedAt": "2026-09-04" }]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "卢旺达", "nameEn": "Rwanda", "region": "Africa", "coverage": "directory",
+  "summary": "卢旺达移民与移出境总局提供的官方居留许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence-permit entry point from Rwanda's Directorate General of Immigration and Emigration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Directorate General of Immigration and Emigration", "title": "Permit general information", "url": "https://www.migration.gov.rw/our-services/permit/general-information", "reviewedAt": "2026-09-04" }]
+}

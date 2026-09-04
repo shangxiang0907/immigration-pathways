@@ -1,0 +1,7 @@
+{
+  "name": "坦桑尼亚", "nameEn": "Tanzania", "region": "Africa", "coverage": "directory",
+  "summary": "坦桑尼亚移民局电子服务门户提供的官方居留许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence-permit entry point from Tanzania's e-Immigration portal; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Tanzania Immigration Department", "title": "Residence permit application guidelines", "url": "https://eservices.immigration.go.tz/online/web/permit/guidelines", "reviewedAt": "2026-09-04" }]
+}

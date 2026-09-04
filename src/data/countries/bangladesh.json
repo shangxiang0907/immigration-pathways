@@ -1,0 +1,7 @@
+{
+  "name": "孟加拉国", "nameEn": "Bangladesh", "region": "Asia", "coverage": "directory",
+  "summary": "孟加拉国政府在线签证门户提供的官方签证申请入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa-application entry point from the Government of Bangladesh; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Government of Bangladesh", "title": "Bangladesh Online MRV Portal", "url": "https://visa.gov.bd/Home.aspx", "reviewedAt": "2026-09-04" }]
+}

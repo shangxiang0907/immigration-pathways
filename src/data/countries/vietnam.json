@@ -1,0 +1,7 @@
+{
+  "name": "越南", "nameEn": "Vietnam", "region": "Asia", "coverage": "directory",
+  "summary": "越南公安部国家移民门户提供的官方签证与外国人服务入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa and foreign-national services entry point from Vietnam's national immigration portal; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Vietnam Immigration Department", "title": "National portal on immigration", "url": "https://immigration.gov.vn/", "reviewedAt": "2026-09-04" }]
+}

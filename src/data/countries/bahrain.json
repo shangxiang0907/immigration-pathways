@@ -1,0 +1,7 @@
+{
+  "name": "巴林", "nameEn": "Bahrain", "region": "Asia", "coverage": "directory",
+  "summary": "巴林劳动力市场监管局提供的官方工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official work-permit entry point from Bahrain's Labour Market Regulatory Authority; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Labour Market Regulatory Authority", "title": "Apply for a registered worker permit", "url": "https://www.lmra.gov.bh/en/page/show/549", "reviewedAt": "2026-09-04" }]
+}

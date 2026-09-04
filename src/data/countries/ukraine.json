@@ -1,0 +1,7 @@
+{
+  "name": "乌克兰", "nameEn": "Ukraine", "region": "Europe", "coverage": "directory",
+  "summary": "乌克兰国家移民局提供的官方临时居留许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official temporary-residence permit entry point from the State Migration Service of Ukraine; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "State Migration Service of Ukraine", "title": "Issuance of temporary residence permit", "url": "https://dmsu.gov.ua/en-home/services/documenting-foreigners/issuance-of-temporary-residence-permit.html", "reviewedAt": "2026-09-04" }]
+}

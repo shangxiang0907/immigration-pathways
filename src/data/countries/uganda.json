@@ -1,0 +1,7 @@
+{
+  "name": "乌干达", "nameEn": "Uganda", "region": "Africa", "coverage": "directory",
+  "summary": "乌干达国家公民与移民管理局提供的官方工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official work-permit entry point from Uganda's National Citizenship and Immigration Control; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "National Citizenship and Immigration Control", "title": "Work permit", "url": "https://immigration.go.ug/index.php/services/work-permit", "reviewedAt": "2026-09-04" }]
+}

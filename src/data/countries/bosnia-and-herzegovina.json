@@ -1,0 +1,7 @@
+{
+  "name": "波斯尼亚和黑塞哥维那", "nameEn": "Bosnia and Herzegovina", "region": "Europe", "coverage": "directory",
+  "summary": "外国人事务局提供的官方外国人居留入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence entry point for foreign nationals from the Service for Foreigners' Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Service for Foreigners' Affairs", "title": "Stay of aliens in Bosnia and Herzegovina", "url": "https://sps.gov.ba/en/information-for-foreigners/stay-of-aliens-in-bih/", "reviewedAt": "2026-09-04" }]
+}

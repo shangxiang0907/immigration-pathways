@@ -1,0 +1,7 @@
+{
+  "name": "摩尔多瓦", "nameEn": "Moldova", "region": "Europe", "coverage": "directory",
+  "summary": "摩尔多瓦移民总监察局提供的官方居留入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence entry point from Moldova's General Inspectorate for Migration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "General Inspectorate for Migration", "title": "Right to stay", "url": "https://old.igm.gov.md/en/right-to-stay/", "reviewedAt": "2026-09-04" }]
+}

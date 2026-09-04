@@ -1,0 +1,7 @@
+{
+  "name": "摩洛哥", "nameEn": "Morocco", "region": "Africa", "coverage": "directory",
+  "summary": "摩洛哥外交部官方门户提供的签证信息与申请入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa information and application entry point from Morocco's Ministry of Foreign Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Ministry of Foreign Affairs of Morocco", "title": "Accès Maroc", "url": "https://www.acces-maroc.ma/", "reviewedAt": "2026-09-04" }]
+}

@@ -1,0 +1,7 @@
+{
+  "name": "尼泊尔", "nameEn": "Nepal", "region": "Asia", "coverage": "directory",
+  "summary": "尼泊尔移民局提供的官方签证类型与申请信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa types and application information from Nepal's Department of Immigration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Department of Immigration, Nepal", "title": "Visa information", "url": "https://immigration.gov.np/visa-information", "reviewedAt": "2026-09-04" }]
+}
