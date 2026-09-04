@@ -5,14 +5,11 @@ export const site = {
   contactEmail: "contact@pathwaystoabroad.com",
   defaultLocale: "en",
   advertising: {
-    provider: "google-adsense",
+    provider: "adsterra",
     enabled: false,
     consentReady: false,
-    publisherId: "",
-    slots: {
-      content: "",
-      results: "",
-    },
+    integrationReady: false,
+    allowedFormats: ["native-banner", "display-banner"],
   },
   locales: {
     en: {

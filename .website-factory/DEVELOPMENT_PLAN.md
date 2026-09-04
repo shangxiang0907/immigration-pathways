@@ -8,7 +8,7 @@ Last updated: 2026-09-04
 2. Add deterministic filtering, a unified questionnaire, and comparison.
 3. Expand structured coverage toward at least 100 countries in coherent batches.
 4. Complete the static-site release sequence and observe the site for one to two weeks.
-5. Activate advertising only after account, consent, placement, and owner gates pass.
+5. Activate Adsterra advertising only after account, consent, placement, and owner gates pass.
 6. Define and validate the free/paid report boundary.
 7. Prototype grounded LLM reports only after that validation.
 8. Add payment and optional email delivery only with separate owner authorization.
@@ -48,7 +48,7 @@ Normalized fields, shared questionnaire, generic tri-state evaluation, side-by-s
 
 ### M4 — Static release and advertising — gated
 
-Configurable AdSense support is implemented but disabled. Before activation, complete the ordered release checklist, establish required consent behavior, add real account identifiers, verify placements, and obtain explicit authorization.
+Adsterra has replaced Google AdSense as the selected provider. Only Native Banner and Display Banner formats are approved in principle; Popunder, Social Bar, Interstitial, Smartlink, anti-adblock, forced redirects, and deceptive placements are excluded. Advertising remains disabled until owner-generated code, consent behavior, placements, and production activation are separately reviewed and authorized.
 
 ### M5 — Grounded report prototype — deferred
 
@@ -68,7 +68,7 @@ The order is a dependency chain, not a menu:
 4. Verify and submit the production sitemap.
 5. Perform real mobile and desktop live-site QA.
 6. Obtain explicit owner authorization, then enable indexing.
-7. Configure consent and AdSense account details, review placements, obtain explicit activation authorization, then enable ads.
+7. Configure consent and Adsterra owner-generated banner code, review placements, obtain explicit activation authorization, then enable ads.
 
 If a later step was completed early, record the exception in `PROGRESS.md` and restore the safest reversible state before continuing.
 

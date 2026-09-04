@@ -23,8 +23,10 @@ The first live inspection at 2026-09-04 14:00:13 was rejected because Google's I
 - [x] Opt-in, versioned browser-only profile storage and clear control
 - [x] Legacy country questionnaires redirected to the unified comparison
 - [x] Boundary and built-output contract tests for matching/localization/privacy
-- [x] Configurable production-gated AdSense code
-- [x] AdSense disabled pending account, consent, review, and authorization
+- [x] Google AdSense removed as the selected advertising provider
+- [x] Adsterra selected with only Native Banner and Display Banner allowed in principle
+- [x] Advertising disabled pending owner-generated code, consent, placement review, and authorization
+- [x] Disabled Adsterra migration deployed without third-party advertising scripts
 - [x] Production metadata/sitemap generation separated from explicit indexing permission
 - [x] Non-indexable production build deployed and verified on the public domain
 - [x] Cloudflare Email Routing enabled with a verified destination
@@ -42,7 +44,7 @@ The first live inspection at 2026-09-04 14:00:13 was rejected because Google's I
 - [x] 6. Explicit owner authorization to enable indexing after gates 1–5
 - [x] 6. Production indexing enabled in the correct sequence
 - [ ] 7. Consent requirements/configuration complete for advertising
-- [ ] 7. Real AdSense publisher and slot IDs configured
+- [ ] 7. Adsterra website approved and owner-generated banner code reviewed
 - [ ] 7. Ad placements reviewed and explicitly authorized for activation
 
 The earlier out-of-order indexable deployment was corrected by restoring `noindex` and `Disallow: /`. After gates 1–5 passed and the owner explicitly authorized indexing, the separately gated indexable build was deployed on 2026-09-04. Google may temporarily retain the earlier robots response in its crawler cache.
@@ -63,6 +65,11 @@ Owner authorized production indexing on 2026-09-04. Cloudflare version `f67fd88d
 - [x] Unknown route returns 404 and remains `noindex, nofollow, noarchive`
 - [x] `www` permanently redirects to the canonical apex domain
 
+The advertising-provider migration was deployed as Cloudflare version
+`4e215b77-7e40-4d24-b992-d32c9a735d49` on 2026-09-04. It preserves the
+indexable release while keeping advertising disabled and emitting no Adsterra or
+Google advertising scripts.
+
 ## Latest live quality review
 
 Completed 2026-09-04 with headless Chromium at 1440×1000 desktop and 390×844 mobile viewports.
@@ -78,7 +85,7 @@ Completed 2026-09-04 with headless Chromium at 1440×1000 desktop and 390×844 m
 ## Deferred
 
 - Further country expansion toward 100+ after the release sequence is stable
-- AdSense account connection and production activation
+- Adsterra account connection, generated banner code, and production activation
 - Free/paid report boundary and pricing
 - Grounded report data contract and LLM provider
 - Payment, checkout, accounts, transactional email, and report delivery

@@ -1,7 +1,6 @@
 ---
 import "../styles/global.css";
 import { site } from "../../site.config.mjs";
-import { isAdvertisingActive } from "../lib/adsense.mjs";
 
 interface Props {
   title: string;
@@ -26,7 +25,6 @@ const canonicalUrl = isProduction && currentPath !== "/404" && Astro.site ? new 
 const alternateUrl = isProduction && currentPath !== "/404" && Astro.site ? new URL(alternatePath, Astro.site) : undefined;
 const defaultPath = locale === "en" ? currentPath : pathWithoutLocale;
 const defaultUrl = isProduction && currentPath !== "/404" && Astro.site ? new URL(defaultPath, Astro.site) : undefined;
-const advertisingActive = isAdvertisingActive(site.advertising, isProduction);
 ---
 
 <!doctype html>
@@ -41,7 +39,6 @@ const advertisingActive = isAdvertisingActive(site.advertising, isProduction);
     {alternateUrl && <link rel="alternate" hreflang={alternateConfig.htmlLang} href={alternateUrl} />}
     {defaultUrl && <link rel="alternate" hreflang="x-default" href={defaultUrl} />}
     <meta name="generator" content={Astro.generator} />
-    {advertisingActive && <script is:inline async crossorigin="anonymous" src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.advertising.publisherId}`}></script>}
     <title>{title}</title>
   </head>
   <body data-detect-locale={locale === "en" && currentPath === "/" ? "true" : "false"}>

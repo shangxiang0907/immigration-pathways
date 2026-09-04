@@ -47,8 +47,9 @@ indexing requests against a failed live test.
 ## 7. Advertising (separate activation)
 
 - [ ] Confirm applicable consent requirements and configure the approved consent mechanism.
-- [ ] Obtain explicit authorization for AdSense account connection/configuration.
-- [ ] Configure real publisher/slot identifiers without committing secrets.
+- [ ] Obtain explicit authorization for Adsterra account connection/configuration.
+- [ ] Approve only Native Banner or Display Banner formats; reject Popunder, Social Bar, Interstitial, Smartlink, anti-adblock, forced redirects, and deceptive placements.
+- [ ] Configure owner-generated placement code without committing account credentials.
 - [ ] Review ad placement on free surfaces; exclude paid reports and checkout.
 - [ ] Obtain explicit authorization to activate production ads.
 - [ ] Deploy and verify that ads do not load on previews or disabled builds.
