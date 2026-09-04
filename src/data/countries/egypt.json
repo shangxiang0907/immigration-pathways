@@ -1,0 +1,6 @@
+{
+  "name": "埃及", "nameEn": "Egypt", "region": "Africa", "coverage": "directory",
+  "summary": "埃及政府电子签证门户提供的官方签证申请入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa-application entry point from Egypt's government e-Visa portal; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Egypt", "title": "Egypt e-Visa portal", "url": "https://www.visa2egypt.gov.eg/eVisa/Home", "reviewedAt": "2026-09-04" }]
+}

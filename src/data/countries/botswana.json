@@ -1,0 +1,6 @@
+{
+  "name": "博茨瓦纳", "nameEn": "Botswana", "region": "Africa", "coverage": "directory",
+  "summary": "博茨瓦纳政府提供的官方居留许可申请入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence-permit application entry point from the Government of Botswana; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Botswana", "title": "Residence permit application", "url": "https://www.gov.bw/residency-and-work/residence-permit-application", "reviewedAt": "2026-09-04" }]
+}

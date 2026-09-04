@@ -1,0 +1,6 @@
+{
+  "name": "亚美尼亚", "nameEn": "Armenia", "region": "Asia", "coverage": "directory",
+  "summary": "亚美尼亚内务部移民与公民服务局提供的官方居留身份入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence-status entry point from Armenia's Migration and Citizenship Service; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Migration and Citizenship Service of Armenia", "title": "Residency status and visa", "url": "https://migration.mia.gov.am/en/residency-status-and-visa", "reviewedAt": "2026-09-04" }]
+}

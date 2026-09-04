@@ -1,0 +1,6 @@
+{
+  "name": "吉尔吉斯斯坦", "nameEn": "Kyrgyzstan", "region": "Asia", "coverage": "directory",
+  "summary": "吉尔吉斯共和国外交部电子签证门户提供的官方签证与统一许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa and uniform-permit entry point from Kyrgyzstan's Ministry of Foreign Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Foreign Affairs of Kyrgyzstan", "title": "Kyrgyz Republic e-Visa portal", "url": "https://www.evisa.e-gov.kg/?lng=en", "reviewedAt": "2026-09-04" }]
+}

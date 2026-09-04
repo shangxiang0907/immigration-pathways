@@ -1,0 +1,6 @@
+{
+  "name": "文莱", "nameEn": "Brunei", "region": "Asia", "coverage": "directory",
+  "summary": "文莱移民与国民登记局提供的官方工作准证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official work-pass entry point from Brunei's Immigration and National Registration Department; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Immigration and National Registration Department of Brunei", "title": "Work pass division", "url": "https://www.immigration.gov.bn/bahagian-pas-kerja/?lang=en", "reviewedAt": "2026-09-04" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "斯威士兰", "nameEn": "Eswatini", "region": "Africa", "coverage": "directory",
+  "summary": "斯威士兰政府内政部提供的官方移民与临时居留许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration and temporary-residence permit entry point from Eswatini's Ministry of Home Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Home Affairs of Eswatini", "title": "Immigration", "url": "https://www.gov.sz/index.php/ministries-departments/ministry-of-home-affairs?catid=81%3Ahome-affairs&id=307%3Aimmigration&view=article", "reviewedAt": "2026-09-04" }]
+}

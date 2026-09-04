@@ -1,0 +1,6 @@
+{
+  "name": "阿塞拜疆", "nameEn": "Azerbaijan", "region": "Asia", "coverage": "directory",
+  "summary": "阿塞拜疆国家移民局提供的官方临时居留许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official temporary-residence permit entry point from Azerbaijan's State Migration Service; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "State Migration Service of Azerbaijan", "title": "Temporary residence permit", "url": "https://migration.gov.az/en/page_detail/572", "reviewedAt": "2026-09-04" }]
+}

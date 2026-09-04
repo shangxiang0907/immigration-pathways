@@ -1,0 +1,6 @@
+{
+  "name": "柬埔寨", "nameEn": "Cambodia", "region": "Asia", "coverage": "directory",
+  "summary": "柬埔寨政府电子签证门户提供的官方签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa entry point from the Government of Cambodia's e-Visa portal; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Cambodia", "title": "Cambodia e-Visa", "url": "https://www.evisa.gov.kh/", "reviewedAt": "2026-09-04" }]
+}

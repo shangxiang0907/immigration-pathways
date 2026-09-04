@@ -1,0 +1,6 @@
+{
+  "name": "马拉维", "nameEn": "Malawi", "region": "Africa", "coverage": "directory",
+  "summary": "马拉维移民与公民服务局提供的官方许可申请入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official permit-application entry point from Malawi's Department of Immigration and Citizenship Services; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Department of Immigration and Citizenship Services of Malawi", "title": "Apply for a permit", "url": "https://www.immigration.gov.mw/permits/apply-for-permit/", "reviewedAt": "2026-09-04" }]
+}

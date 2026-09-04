@@ -1,0 +1,6 @@
+{
+  "name": "赞比亚", "nameEn": "Zambia", "region": "Africa", "coverage": "directory",
+  "summary": "赞比亚移民局提供的官方居留、就业及其他许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence, employment, and other permit entry point from Zambia's Department of Immigration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Zambia Department of Immigration", "title": "Permit types", "url": "https://www.zambiaimmigration.gov.zm/permit-types/", "reviewedAt": "2026-09-04" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "阿尔及利亚", "nameEn": "Algeria", "region": "Africa", "coverage": "directory",
+  "summary": "阿尔及利亚内政部提供的官方外国居民卡入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official foreign-resident card entry point from Algeria's Ministry of the Interior; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of the Interior of Algeria", "title": "Foreign resident card", "url": "https://interieur.gov.dz/2024/02/29/carte-de-resident-etranger/", "reviewedAt": "2026-09-04" }]
+}

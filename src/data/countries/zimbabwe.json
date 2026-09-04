@@ -1,0 +1,6 @@
+{
+  "name": "津巴布韦", "nameEn": "Zimbabwe", "region": "Africa", "coverage": "directory",
+  "summary": "津巴布韦政府电子签证门户提供的官方签证信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa-information entry point from Zimbabwe's government e-Visa portal; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Zimbabwe", "title": "Zimbabwe e-Visa", "url": "https://www.evisa.gov.zw/faq.html", "reviewedAt": "2026-09-04" }]
+}
