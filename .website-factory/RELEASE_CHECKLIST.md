@@ -39,6 +39,11 @@ This sequence is mandatory. A technical ability to perform a later step is not p
 - [ ] Run Search Console URL Inspection for the canonical homepage and test the live URL.
 - [ ] If the live test passes, request homepage indexing once and record the result.
 
+If indexing activation replaced a recent `Disallow: /`, Google may still use its cached
+robots response for up to 24 hours. When the live test reports the old rule, keep the
+correct deployment stable, wait for the cache to refresh, and test again; do not repeat
+indexing requests against a failed live test.
+
 ## 7. Advertising (separate activation)
 
 - [ ] Confirm applicable consent requirements and configure the approved consent mechanism.

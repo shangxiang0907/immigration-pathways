@@ -6,6 +6,8 @@ Last updated: 2026-09-04
 
 Gate 6 — complete Search Console URL Inspection for the canonical homepage. The authorized indexable build is live and verified.
 
+The first live inspection at 2026-09-04 14:00:13 was rejected because Google's Inspection Tool still reported the previous `robots.txt` rule, `Disallow: /`. The public origin already returns `Allow: /`. Google documents that robots content is generally cached for up to 24 hours, so this is a pending cache refresh rather than a new site defect. Do not repeatedly request indexing while the live test remains blocked.
+
 ## Product and platform completed
 
 - [x] Production domain and HTTPS: <https://pathwaystoabroad.com>
@@ -43,13 +45,13 @@ Gate 6 — complete Search Console URL Inspection for the canonical homepage. Th
 - [ ] 7. Real AdSense publisher and slot IDs configured
 - [ ] 7. Ad placements reviewed and explicitly authorized for activation
 
-The earlier indexable deployment was a release-order defect, not completion of gate 6. It was corrected on 2026-09-04: the live homepage emits `noindex, nofollow, noarchive`, live `robots.txt` emits `Disallow: /`, and the sitemap remains reachable. Only the separately named indexable build can reopen indexing.
+The earlier out-of-order indexable deployment was corrected by restoring `noindex` and `Disallow: /`. After gates 1–5 passed and the owner explicitly authorized indexing, the separately gated indexable build was deployed on 2026-09-04. Google may temporarily retain the earlier robots response in its crawler cache.
 
 ## Next actions
 
-1. Run Search Console URL Inspection for `https://pathwaystoabroad.com/`.
-2. Test the live URL and confirm Google reports it can be indexed.
-3. Request homepage indexing once and record the accepted result.
+1. Keep the current indexable deployment stable while Google's robots cache refreshes.
+2. After 2026-09-05 14:05 local time, run a new live URL test for `https://pathwaystoabroad.com/`.
+3. If crawling and indexing are allowed, request homepage indexing once and record the accepted result.
 
 ## Indexable deployment
 
