@@ -10,6 +10,7 @@
     "check": "ASTRO_TELEMETRY_DISABLED=1 astro check",
     "test": "node tests/rule-validator.mjs && node tests/rule-engine.mjs && node tests/matcher.mjs && node tests/unified-profile.mjs && node tests/adsense-config.mjs && node tests/worker-routing.mjs",
     "test:dist": "node tests/built-site.mjs",
+    "test:dist:indexable": "EXPECT_INDEXABLE=true node tests/built-site.mjs",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
     "build:production": "SITE_BUILD_MODE=production SITE_INDEXING_ENABLED=false ASTRO_TELEMETRY_DISABLED=1 astro build",
     "build:indexable": "SITE_BUILD_MODE=production SITE_INDEXING_ENABLED=true ASTRO_TELEMETRY_DISABLED=1 astro build",

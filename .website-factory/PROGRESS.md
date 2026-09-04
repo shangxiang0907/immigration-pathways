@@ -4,7 +4,7 @@ Last updated: 2026-09-04
 
 ## Current milestone
 
-Gate 6 — awaiting explicit owner authorization to enable production indexing. Gates 1–5 are complete and indexing remains disabled.
+Gate 6 — complete Search Console URL Inspection for the canonical homepage. The authorized indexable build is live and verified.
 
 ## Product and platform completed
 
@@ -37,8 +37,8 @@ Gate 6 — awaiting explicit owner authorization to enable production indexing. 
 - [x] 4. Production sitemap is generated and reachable
 - [x] 4. Production sitemap submitted in Search Console
 - [x] 5. Live site checked in real mobile and desktop browsers
-- [ ] 6. Explicit owner authorization to enable indexing after gates 1–5
-- [ ] 6. Production indexing enabled in the correct sequence
+- [x] 6. Explicit owner authorization to enable indexing after gates 1–5
+- [x] 6. Production indexing enabled in the correct sequence
 - [ ] 7. Consent requirements/configuration complete for advertising
 - [ ] 7. Real AdSense publisher and slot IDs configured
 - [ ] 7. Ad placements reviewed and explicitly authorized for activation
@@ -47,9 +47,19 @@ The earlier indexable deployment was a release-order defect, not completion of g
 
 ## Next actions
 
-1. Obtain explicit owner authorization to enable production indexing.
-2. Deploy the separately gated indexable build.
-3. Verify live page directives, `robots.txt`, sitemap, redirects, and 404 behavior.
+1. Run Search Console URL Inspection for `https://pathwaystoabroad.com/`.
+2. Test the live URL and confirm Google reports it can be indexed.
+3. Request homepage indexing once and record the accepted result.
+
+## Indexable deployment
+
+Owner authorized production indexing on 2026-09-04. Cloudflare version `f67fd88d-fbe2-430c-9559-740cabd47f87` was deployed and verified:
+
+- [x] Representative English and Chinese pages return 200 with `index, follow`
+- [x] `robots.txt` allows crawling and references the production sitemap
+- [x] Sitemap index returns 200
+- [x] Unknown route returns 404 and remains `noindex, nofollow, noarchive`
+- [x] `www` permanently redirects to the canonical apex domain
 
 ## Latest live quality review
 

@@ -4,6 +4,7 @@ import { resolve } from "node:path";
 
 const root = resolve("dist");
 const read = (path) => readFile(resolve(root, path), "utf8");
+const expectedRobots = process.env.EXPECT_INDEXABLE === "true" ? "index, follow" : "noindex, nofollow, noarchive";
 const fields = ["age", "education", "experience", "english", "jobOffer", "funds", "regional", "qualification"];
 const previewHome = await read("index.html");
 assert.doesNotMatch(previewHome, /pagead2\.googlesyndication\.com|adsbygoogle|data-ad-placement/, "preview must not emit advertising code");
@@ -26,7 +27,7 @@ for (const [path, language, heading] of [["match/index.html", "en-US", "Fill onc
   const html = await read(path);
   assert.match(html, new RegExp(`<html lang="${language}"`));
   assert.match(html, new RegExp(`<h1>${heading}</h1>`));
-  assert.match(html, /<meta name="robots" content="noindex, nofollow, noarchive">/);
+  assert.match(html, new RegExp(`<meta name="robots" content="${expectedRobots}">`));
   for (const field of fields) assert.match(html, new RegExp(`<select name="${field}" required>`), `${path} must include ${field}`);
   assert.match(html, /name="saveProfile" type="checkbox"/);
   assert.match(html, /id="clear-profile"/);

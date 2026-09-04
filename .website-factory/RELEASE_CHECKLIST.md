@@ -33,9 +33,11 @@ This sequence is mandatory. A technical ability to perform a later step is not p
 
 ## 6. Indexing
 
-- [ ] Confirm steps 1–5 are complete in `PROGRESS.md`.
-- [ ] Obtain explicit owner authorization to enable indexing.
-- [ ] Deploy indexable robots/meta output and verify the live response.
+- [x] Confirm steps 1–5 are complete in `PROGRESS.md`.
+- [x] Obtain explicit owner authorization to enable indexing.
+- [x] Deploy indexable robots/meta output and verify the live response.
+- [ ] Run Search Console URL Inspection for the canonical homepage and test the live URL.
+- [ ] If the live test passes, request homepage indexing once and record the result.
 
 ## 7. Advertising (separate activation)
 
