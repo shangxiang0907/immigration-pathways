@@ -15,9 +15,9 @@ This sequence is mandatory. A technical ability to perform a later step is not p
 
 ## 3. Google Search Console
 
-- [ ] Obtain explicit owner authorization for account-side configuration.
-- [ ] Add and verify the correct production property.
-- [ ] Record the verified property and date in `PROGRESS.md` without storing credentials.
+- [x] Obtain explicit owner authorization for account-side configuration.
+- [x] Add and verify the `sc-domain:pathwaystoabroad.com` production property.
+- [x] Record the verified property and date in `PROGRESS.md` without storing credentials.
 
 ## 4. Sitemap
 

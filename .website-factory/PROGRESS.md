@@ -4,7 +4,7 @@ Last updated: 2026-09-04
 
 ## Current milestone
 
-Gate 3 — Google Search Console property verification. Domain, contact email, and legal-surface gates are complete; indexing remains disabled.
+Gate 4 — submit the production sitemap in Google Search Console. The Domain property is verified and indexing remains disabled.
 
 ## Product and platform completed
 
@@ -33,7 +33,7 @@ Gate 3 — Google Search Console property verification. Domain, contact email, a
 - [x] 1. Production domain and HTTPS verified
 - [x] 2. Working public contact email configured and tested
 - [x] 2. Legal/contact surfaces finalized for the public contact channel
-- [ ] 3. Google Search Console property verified
+- [x] 3. Google Search Console property verified
 - [x] 4. Production sitemap is generated and reachable
 - [ ] 4. Production sitemap submitted in Search Console
 - [ ] 5. Live site checked in real mobile and desktop browsers
@@ -47,10 +47,9 @@ The earlier indexable deployment was a release-order defect, not completion of g
 
 ## Next actions
 
-1. Verify Google Search Console ownership.
-2. Submit the production sitemap.
-3. Complete real mobile and desktop live-site QA.
-4. Request explicit indexing authorization.
+1. Submit the production sitemap in Search Console and confirm its status.
+2. Complete real mobile and desktop live-site QA.
+3. Request explicit indexing authorization.
 
 ## Deferred
 
