@@ -1,0 +1,6 @@
+{
+  "name": "叙利亚", "nameEn": "Syria", "region": "Asia", "coverage": "directory",
+  "summary": "叙利亚民航总局官方航空资料提供的护照和签证要求入口；移民申请渠道、具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official passport-and-visa requirements entry point in Syria's aeronautical information publication; immigration application channels, eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Syrian General Authority of Civil Aviation", "title": "Entry, transit, and departure requirements", "url": "https://www.eaip.gaca.gov.sy/section/40", "reviewedAt": "2026-09-04" }]
+}

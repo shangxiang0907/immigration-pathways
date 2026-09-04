@@ -17,7 +17,7 @@ The first live inspection at 2026-09-04 14:00:13 saw Google's cached previous `r
 - [x] Localized canonical and `hreflang` metadata
 - [x] Country/program schemas, directories, search, and filters
 - [x] Official-source, coverage-status, and review-date display
-- [x] 189-country directory and 71 program records
+- [x] Complete 195-country UN-system directory coverage, plus Taiwan and Kosovo (197 country records total), and 71 program records
 - [x] Versioned generic tri-state rule engine and centralized registry
 - [x] One shared eight-question profile across covered countries
 - [x] Opt-in, versioned browser-only profile storage and clear control
@@ -51,7 +51,7 @@ The earlier out-of-order indexable deployment was corrected by restoring `noinde
 
 ## Next actions
 
-1. Continue authoritative directory coverage toward the remaining countries.
+1. Deepen high-demand country records from directory links into reviewed pathway overviews; broad country coverage is complete.
 2. Keep the current indexable deployment stable; publish content batches only with explicit owner authorization.
 3. Complete Adsterra consent, account, code-review, and placement gates before enabling advertising.
 
@@ -86,18 +86,18 @@ Completed 2026-09-04 with headless Chromium at 1440×1000 desktop and 390×844 m
 
 Completed locally on 2026-09-04; publication remains separately gated.
 
-- [x] Added a 20-country directory-level batch: Belarus, Central African Republic, Comoros, Democratic Republic of the Congo, Republic of the Congo, Equatorial Guinea, Guinea-Bissau, Nauru, Samoa, Federated States of Micronesia, Tonga, Afghanistan, Haiti, Libya, Mali, Tunisia, Senegal, Palestine, Yemen, and Monaco
-- [x] Expanded directory coverage from 169 to 189 countries across Africa, Asia, Europe, Oceania, and the Americas
+- [x] Added the final eight UN-system country records: Eritrea, Marshall Islands, North Korea, Niger, Sudan, Syria, Tuvalu, and Vatican City
+- [x] Completed directory coverage for 193 UN members plus Palestine and Vatican City; Taiwan and Kosovo remain as two additional records, for 197 total
 - [x] Added equivalent English and Chinese summaries with explicit directory-only limitations
 - [x] Retained an authoritative government URL and 2026-09-04 review date for every record
-- [x] Inspected all 20 current authoritative government pages through browser-accessible results
+- [x] Inspected all eight current authoritative government, official diplomatic, or official legal pages through browser-accessible results
 - [x] `npm test`, `npm run check`, `npm run build`, and preview-output tests passed
-- [x] Generated 543 static pages with all 189 countries represented in English and Chinese
+- [x] Generated 559 static pages with all 197 country records represented in English and Chinese
 - [x] Preview output remains non-indexable and advertising remains disabled
 
 ## Deferred
 
-- Complete the final country-directory gap beyond 189 where a responsible official source can be verified
+- Deepen the highest-demand directory records into reviewed pathway overviews
 - Adsterra account connection, generated banner code, and production activation
 - Free/paid report boundary and pricing
 - Grounded report data contract and LLM provider

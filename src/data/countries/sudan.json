@@ -1,0 +1,6 @@
+{
+  "name": "苏丹", "nameEn": "Sudan", "region": "Africa", "coverage": "directory",
+  "summary": "苏丹内政部提供的护照、移民和外国人事务官方机构入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official institutional entry point for passport, immigration, and foreigner affairs from Sudan's Ministry of Interior; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Interior of Sudan", "title": "Official ministry portal", "url": "https://moi.gov.sd/home", "reviewedAt": "2026-09-04" }]
+}

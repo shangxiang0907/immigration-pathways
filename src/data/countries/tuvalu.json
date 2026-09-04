@@ -1,0 +1,6 @@
+{
+  "name": "图瓦卢", "nameEn": "Tuvalu", "region": "Oceania", "coverage": "directory",
+  "summary": "图瓦卢政府法律门户提供的官方移民条例和许可表入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration regulations and permit-form entry point from Tuvalu's legislation portal; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Tuvalu", "title": "Immigration Regulations", "url": "https://tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/2014/2014-0003/2014-0003_2.pdf", "reviewedAt": "2026-09-04" }]
+}

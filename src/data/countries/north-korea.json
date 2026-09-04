@@ -1,0 +1,6 @@
+{
+  "name": "朝鲜", "nameEn": "North Korea", "region": "Asia", "coverage": "directory",
+  "summary": "朝鲜外务省官方机构入口；本站尚未确认面向普通申请人的公开移民申请渠道，具体资格、文件、费用和办理时间亦未复核。",
+  "summaryEn": "Official institutional entry point for North Korea's Ministry of Foreign Affairs; no public immigration application channel for ordinary applicants has been confirmed here, and eligibility, documents, fees, and timing have not been reviewed.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Foreign Affairs of the Democratic People's Republic of Korea", "title": "Official ministry portal", "url": "https://www.mfa.gov.kp/", "reviewedAt": "2026-09-04" }]
+}

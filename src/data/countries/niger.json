@@ -1,0 +1,6 @@
+{
+  "name": "尼日尔", "nameEn": "Niger", "region": "Africa", "coverage": "directory",
+  "summary": "尼日尔外交部提供的官方入境和签证信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official entry and visa information from Niger's Ministry of Foreign Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Foreign Affairs of Niger", "title": "Entry into Niger", "url": "https://diplomatie.gouv.ne/index.php/services-aux-usagers/entree-au-niger", "reviewedAt": "2026-09-04" }]
+}
