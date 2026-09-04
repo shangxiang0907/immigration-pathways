@@ -17,6 +17,7 @@ const copy = locale === "zh"
     class="ad-placement"
     data-ad-slot
     data-ad-kind={placement === "content" ? "native" : "display"}
+    data-policy-endpoint={site.advertising.policyEndpoint}
     data-native-url={config.native.scriptUrl}
     data-native-container={config.native.containerId}
     data-mobile-url={config.mobile.scriptUrl}
@@ -25,7 +26,7 @@ const copy = locale === "zh"
     data-desktop-key={config.desktop.key}
   >
     <span class="ad-label">{copy.label}</span>
-    <div class="ad-consent" data-ad-consent>
+    <div class="ad-consent" data-ad-consent hidden>
       <p>{copy.prompt} <a href={copy.privacyUrl}>{copy.privacy}</a></p>
       <div class="ad-consent-actions">
         <button class="button" type="button" data-ad-accept>{copy.accept}</button>
@@ -86,6 +87,15 @@ const copy = locale === "zh"
     else {
       slot.querySelector("[data-ad-accept]")?.addEventListener("click", () => { remember("accepted"); load(); });
       slot.querySelector("[data-ad-reject]")?.addEventListener("click", reject);
+      const showPrompt = () => { if (prompt instanceof HTMLElement) prompt.hidden = false; };
+      if (navigator.globalPrivacyControl === true) {
+        slot.hidden = true;
+      } else {
+        fetch(slot.dataset.policyEndpoint, { credentials: "same-origin" })
+          .then((response) => response.ok ? response.json() : Promise.reject())
+          .then((policy) => policy.consentRequired ? showPrompt() : load())
+          .catch(showPrompt);
+      }
     }
   })();
 </script>}

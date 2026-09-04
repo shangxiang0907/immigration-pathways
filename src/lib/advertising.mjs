@@ -20,6 +20,9 @@ export function validateAdvertisingConfig(config) {
   if (!config.enabled) return errors;
   if (!config.consentReady) errors.push("advertising.consentReady must be true before activation");
   if (!config.integrationReady) errors.push("advertising.integrationReady must be true after generated code and placements are reviewed");
+  if (config.consentMode !== "regional" || config.policyEndpoint !== "/api/ad-policy") {
+    errors.push("advertising regional consent policy is invalid");
+  }
   const { native, mobile, desktop } = config.placements ?? {};
   if (!native || !mobile || !desktop) {
     errors.push("advertising.placements must include native, mobile, and desktop placements");

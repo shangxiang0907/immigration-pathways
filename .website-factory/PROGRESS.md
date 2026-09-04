@@ -45,7 +45,7 @@ The first live inspection at 2026-09-04 14:00:13 saw Google's cached previous `r
 - [x] 6. Production indexing enabled in the correct sequence
 - [x] 7. Consent requirements/configuration complete for advertising
 - [x] 7. Adsterra website approved and owner-generated banner code reviewed
-- [ ] 7. Ad placements reviewed and explicitly authorized for activation
+- [x] 7. Ad placements reviewed and explicitly authorized for activation
 
 The earlier out-of-order indexable deployment was corrected by restoring `noindex` and `Disallow: /`. After gates 1–5 passed and the owner explicitly authorized indexing, the separately gated indexable build was deployed on 2026-09-04. Google may temporarily retain the earlier robots response in its crawler cache.
 
@@ -62,11 +62,14 @@ Completed locally on 2026-09-05; production activation and deployment remain sep
 - [x] Recorded the owner-generated Native Banner, 320×50 mobile banner, and 728×90 desktop banner configuration
 - [x] Added explicit accept/reject controls that load no Adsterra resource before opt-in
 - [x] Added bilingual privacy disclosure and a persistent withdrawal control
+- [x] Changed consent to a regional policy: prior opt-in in EEA/UK/Switzerland, direct loading elsewhere, with a safe prompt fallback
+- [x] Added a Cloudflare country-policy endpoint and honored Global Privacy Control before loading ads
 - [x] Restricted script origins and dimensions in configuration validation
-- [x] Kept `advertising.enabled` false, so preview and production builds emit no ad code
+- [x] Owner authorized the regional, revenue-oriented advertising mode on 2026-09-05
+- [x] Set `advertising.enabled` true; preview builds still emit no advertising code
 - [x] Reviewed Adsterra publisher terms section 4.9 and its linked privacy/Cookie policies on 2026-09-05
 - [x] Verified a temporary production-mode build emits the Native placement on content pages and the responsive display placement on matching pages
-- [ ] Owner reviews placements and explicitly authorizes production activation
+- [x] Owner reviewed the monetization tradeoff and explicitly authorized production activation
 
 ## Indexable deployment
 

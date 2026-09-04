@@ -34,4 +34,20 @@ for (const testCase of [
   }
 }
 
+assert.equal(worker.fetch !== undefined, true);
+const strictRequest = new Request("https://pathwaystoabroad.com/api/ad-policy");
+Object.defineProperty(strictRequest, "cf", { value: { country: "DE" } });
+const strictPolicy = await worker.fetch(strictRequest, { ASSETS: assets });
+assert.deepEqual(await strictPolicy.json(), { consentRequired: true });
+assert.equal(strictPolicy.headers.get("cache-control"), "private, no-store");
+
+const directRequest = new Request("https://pathwaystoabroad.com/api/ad-policy");
+Object.defineProperty(directRequest, "cf", { value: { country: "TH" } });
+const directPolicy = await worker.fetch(directRequest, { ASSETS: assets });
+assert.deepEqual(await directPolicy.json(), { consentRequired: false });
+
+const unknownRequest = new Request("https://pathwaystoabroad.com/api/ad-policy");
+const unknownPolicy = await worker.fetch(unknownRequest, { ASSETS: assets });
+assert.deepEqual(await unknownPolicy.json(), { consentRequired: true });
+
 console.log("worker routing tests passed");

@@ -6,9 +6,11 @@ export const site = {
   defaultLocale: "en",
   advertising: {
     provider: "adsterra",
-    enabled: false,
+    enabled: true,
     consentReady: true,
     integrationReady: true,
+    consentMode: "regional",
+    policyEndpoint: "/api/ad-policy",
     allowedFormats: ["native-banner", "display-banner"],
     placements: {
       native: {

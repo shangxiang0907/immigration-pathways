@@ -3,6 +3,7 @@ import { isAdvertisingActive, validateAdvertisingConfig } from "../src/lib/adver
 
 const valid = {
   provider: "adsterra", enabled: true, consentReady: true, integrationReady: true,
+  consentMode: "regional", policyEndpoint: "/api/ad-policy",
   allowedFormats: ["native-banner", "display-banner"],
   placements: {
     native: { scriptUrl: "https://pl31189426.profitableratecpmnetwork.com/c7533d92fabd0a50f3b95905edae43e8/invoke.js", containerId: "container-c7533d92fabd0a50f3b95905edae43e8" },
@@ -17,6 +18,7 @@ assert.ok(validateAdvertisingConfig({ ...valid, consentReady: false }).some((err
 assert.ok(validateAdvertisingConfig({ ...valid, integrationReady: false }).some((error) => error.includes("integrationReady")));
 assert.ok(validateAdvertisingConfig({ ...valid, allowedFormats: ["popunder"] }).some((error) => error.includes("allowedFormats")));
 assert.ok(validateAdvertisingConfig({ ...valid, provider: "google-adsense" }).some((error) => error.includes("provider")));
+assert.ok(validateAdvertisingConfig({ ...valid, consentMode: "global" }).some((error) => error.includes("regional")));
 assert.ok(validateAdvertisingConfig({ ...valid, placements: undefined }).some((error) => error.includes("placements")));
 assert.ok(validateAdvertisingConfig({ ...valid, placements: { ...valid.placements, mobile: { ...valid.placements.mobile, scriptUrl: "https://example.com/invoke.js" } } }).some((error) => error.includes("mobile")));
 console.log("advertising configuration tests passed");
