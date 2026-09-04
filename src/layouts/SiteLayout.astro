@@ -20,11 +20,12 @@ const alternatePath = alternateLocale === "zh"
   : pathWithoutLocale;
 const showLocaleSwitch = currentPath !== "/404";
 const isProduction = import.meta.env.SITE_BUILD_MODE === "production";
-const isIndexable = isProduction && currentPath !== "/404";
-const canonicalUrl = isIndexable && Astro.site ? new URL(currentPath, Astro.site) : undefined;
-const alternateUrl = isIndexable && Astro.site ? new URL(alternatePath, Astro.site) : undefined;
+const indexingEnabled = import.meta.env.SITE_INDEXING_ENABLED === "true";
+const isIndexable = isProduction && indexingEnabled && currentPath !== "/404";
+const canonicalUrl = isProduction && currentPath !== "/404" && Astro.site ? new URL(currentPath, Astro.site) : undefined;
+const alternateUrl = isProduction && currentPath !== "/404" && Astro.site ? new URL(alternatePath, Astro.site) : undefined;
 const defaultPath = locale === "en" ? currentPath : pathWithoutLocale;
-const defaultUrl = isIndexable && Astro.site ? new URL(defaultPath, Astro.site) : undefined;
+const defaultUrl = isProduction && currentPath !== "/404" && Astro.site ? new URL(defaultPath, Astro.site) : undefined;
 const advertisingActive = isAdvertisingActive(site.advertising, isProduction);
 ---
 

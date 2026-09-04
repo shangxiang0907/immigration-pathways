@@ -4,7 +4,7 @@ This sequence is mandatory. A technical ability to perform a later step is not p
 
 ## 1. Domain and transport
 
-- [ ] Confirm apex and `www` behavior, canonical host, HTTPS, redirects, and live 404 handling.
+- [x] Confirm apex and `www` behavior, canonical host, HTTPS, redirects, and live 404 handling.
 
 ## 2. Contact and legal surfaces
 
@@ -21,7 +21,8 @@ This sequence is mandatory. A technical ability to perform a later step is not p
 
 ## 4. Sitemap
 
-- [ ] Confirm the production sitemap is reachable and contains canonical public URLs only.
+- [x] Use the safe production build, which emits canonical URLs and a sitemap while retaining `noindex` and `Disallow: /`.
+- [x] Confirm the production sitemap is reachable and contains canonical public URLs only.
 - [ ] Submit it in Search Console and confirm it is accepted.
 
 ## 5. Live quality review

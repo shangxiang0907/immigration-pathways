@@ -4,7 +4,7 @@ Last updated: 2026-09-04
 
 ## Current milestone
 
-Static release sequencing correction. The site content and unified matcher are functional, but indexing was enabled before contact email, Search Console, sitemap submission, and live browser QA. The next safe action is to restore non-indexable production output, then complete the gates in order.
+Gate 2 — public contact email and legal surfaces. The safe production build has been deployed and verified with canonical URLs and a sitemap while indexing remains disabled.
 
 ## Product and platform completed
 
@@ -23,6 +23,8 @@ Static release sequencing correction. The site content and unified matcher are f
 - [x] Boundary and built-output contract tests for matching/localization/privacy
 - [x] Configurable production-gated AdSense code
 - [x] AdSense disabled pending account, consent, review, and authorization
+- [x] Production metadata/sitemap generation separated from explicit indexing permission
+- [x] Non-indexable production build deployed and verified on the public domain
 
 ## Ordered release gates
 
@@ -39,16 +41,15 @@ Static release sequencing correction. The site content and unified matcher are f
 - [ ] 7. Real AdSense publisher and slot IDs configured
 - [ ] 7. Ad placements reviewed and explicitly authorized for activation
 
-Known exception: production currently emits indexable robots/sitemap behavior even though gates 2–5 are incomplete. Treat this as a release-order defect, not as completion of gate 6.
+The earlier indexable deployment was a release-order defect, not completion of gate 6. It was corrected on 2026-09-04: the live homepage emits `noindex, nofollow, noarchive`, live `robots.txt` emits `Disallow: /`, and the sitemap remains reachable. Only the separately named indexable build can reopen indexing.
 
 ## Next actions
 
-1. Restore the production site to a non-indexable state.
-2. Configure and test the public contact email/forwarding and update legal surfaces.
-3. Verify Google Search Console ownership.
-4. Submit the production sitemap.
-5. Complete real mobile and desktop live-site QA.
-6. Request explicit indexing authorization.
+1. Configure and test the public contact email/forwarding and update legal surfaces.
+2. Verify Google Search Console ownership.
+3. Submit the production sitemap.
+4. Complete real mobile and desktop live-site QA.
+5. Request explicit indexing authorization.
 
 ## Deferred
 

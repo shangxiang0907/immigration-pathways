@@ -11,8 +11,10 @@
     "test": "node tests/rule-validator.mjs && node tests/rule-engine.mjs && node tests/matcher.mjs && node tests/unified-profile.mjs && node tests/adsense-config.mjs && node tests/worker-routing.mjs",
     "test:dist": "node tests/built-site.mjs",
     "build": "ASTRO_TELEMETRY_DISABLED=1 astro build",
-    "build:production": "SITE_BUILD_MODE=production ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "build:production": "SITE_BUILD_MODE=production SITE_INDEXING_ENABLED=false ASTRO_TELEMETRY_DISABLED=1 astro build",
+    "build:indexable": "SITE_BUILD_MODE=production SITE_INDEXING_ENABLED=true ASTRO_TELEMETRY_DISABLED=1 astro build",
     "deploy:cloudflare": "npm run build:production && wrangler deploy",
+    "deploy:indexable": "npm run build:indexable && wrangler deploy",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview"
   },
   "devDependencies": {
