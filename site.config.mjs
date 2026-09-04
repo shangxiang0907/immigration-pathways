@@ -7,7 +7,7 @@ export const site = {
   advertising: {
     provider: "adsterra",
     enabled: false,
-    consentReady: false,
+    consentReady: true,
     integrationReady: true,
     allowedFormats: ["native-banner", "display-banner"],
     placements: {

@@ -1,14 +1,18 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
+import AdConsentSettings from "../components/AdConsentSettings.astro";
 import { site } from "../../site.config.mjs";
+const adsEnabled = site.advertising.enabled;
 ---
 
 <SiteLayout title={`Privacy — ${site.name}`} description={`Current data-handling information for ${site.name}.`}>
   <article class="prose">
     <p class="eyebrow">Privacy</p>
     <h1>Privacy</h1>
-    <p>The site currently does not use analytics, advertising, accounts, payments, form submissions, or embedded third-party media.</p>
-    <p>Adsterra is the selected advertising provider, but advertising remains disabled. No advertising script or ad request is emitted unless production mode, owner-generated and reviewed banner code, explicit activation, and required consent handling are all configured. If activated, Adsterra may process pseudonymous browser and device information and use cookies to serve and measure ads; this notice and consent controls will be updated before activation.</p>
+    <p>The site currently does not use analytics, accounts, payments, form submissions, or embedded third-party media. {adsEnabled ? "Advertising is available only after the choice described below." : "Advertising is currently disabled."}</p>
+    <p>Adsterra is the selected advertising provider. No Adsterra script or request loads until you explicitly allow ads. After consent, Adsterra may process browser, device, IP-address, usage, and advertising-interaction information and may use cookies to serve, personalize, secure, and measure advertising. This can involve sharing data with advertising partners. See the <a href="https://adsterra.com/privacy-policy/" rel="external noreferrer">Adsterra Privacy Policy</a> and <a href="https://adsterra.com/cookies/" rel="external noreferrer">Cookies Policy</a>.</p>
+    <p>You may reject advertising without losing site features. Your choice is stored in this browser so the site can respect it. You can withdraw a prior choice below; this stops future ad loading but does not itself delete cookies already created by third parties, which you can remove through your browser settings.</p>
+    <AdConsentSettings />
     <p>Pre-screen answers are processed locally and are not transmitted. The unified comparison does not save answers by default. If you select “Save my answers on this device,” a versioned profile is stored only in this browser using local storage. You can remove it with the “Clear saved profile” control.</p>
     <p>The site also stores your explicit language choice locally so it can respect that choice on later visits. This preference contains no pre-screen answers.</p>
     <p>If you email <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>, the message, your email address, and information you choose to include are processed by Cloudflare Email Routing and the receiving email provider so we can review and reply. Do not send identity documents, financial records, application files, or other sensitive information. Email is retained only as needed for the inquiry, recordkeeping, and abuse prevention; you may request deletion by replying to the same address, subject to legal or security obligations.</p>

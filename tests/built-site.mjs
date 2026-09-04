@@ -22,6 +22,13 @@ const previewZhHome = await read("zh/index.html");
 assert.match(previewZhHome, /已复核覆盖 33 个国家/);
 assert.match(previewZhHome, /比较 71 条经过复核的移民及工作居留路径/);
 assert.doesNotMatch(previewZhHome, /预览站不会被搜索引擎索引|加拿大现有三项/);
+const previewPrivacy = await read("privacy/index.html");
+assert.match(previewPrivacy, /Withdraw advertising consent/);
+assert.match(previewPrivacy, /immigration-pathways-ad-consent-v1/);
+assert.match(previewPrivacy, /Adsterra Privacy Policy/);
+const previewZhPrivacy = await read("zh/privacy/index.html");
+assert.match(previewZhPrivacy, /撤回广告同意/);
+assert.match(previewZhPrivacy, /Adsterra 隐私政策/);
 
 for (const [path, language, heading] of [["match/index.html", "en-US", "Fill once, compare countries"], ["zh/match/index.html", "zh-CN", "一次填写，比较多个国家"]]) {
   const html = await read(path);

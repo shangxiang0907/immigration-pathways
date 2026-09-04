@@ -102,6 +102,8 @@ fieldset.question { grid-template-columns: repeat(3, max-content); }
 .ad-consent .button { border: 0; cursor: pointer; font: inherit; }
 .ad-content { min-height: 5.7rem; text-align: center; }
 .ad-content > iframe { max-width: 100%; }
+.consent-settings { margin-block: 1.5rem; }
+.consent-settings .button { border: 0; cursor: pointer; font: inherit; }
 
 @media (max-width: 44rem) {
   .header-inner, .footer-inner { align-items: flex-start; flex-direction: column; padding-block: 1rem; }

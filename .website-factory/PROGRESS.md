@@ -43,7 +43,7 @@ The first live inspection at 2026-09-04 14:00:13 saw Google's cached previous `r
 - [x] 5. Live site checked in real mobile and desktop browsers
 - [x] 6. Explicit owner authorization to enable indexing after gates 1–5
 - [x] 6. Production indexing enabled in the correct sequence
-- [ ] 7. Consent requirements/configuration complete for advertising
+- [x] 7. Consent requirements/configuration complete for advertising
 - [x] 7. Adsterra website approved and owner-generated banner code reviewed
 - [ ] 7. Ad placements reviewed and explicitly authorized for activation
 
@@ -61,9 +61,11 @@ Completed locally on 2026-09-05; production activation and deployment remain sep
 
 - [x] Recorded the owner-generated Native Banner, 320×50 mobile banner, and 728×90 desktop banner configuration
 - [x] Added explicit accept/reject controls that load no Adsterra resource before opt-in
+- [x] Added bilingual privacy disclosure and a persistent withdrawal control
 - [x] Restricted script origins and dimensions in configuration validation
 - [x] Kept `advertising.enabled` false, so preview and production builds emit no ad code
-- [ ] Review applicable consent requirements before setting `consentReady`
+- [x] Reviewed Adsterra publisher terms section 4.9 and its linked privacy/Cookie policies on 2026-09-05
+- [x] Verified a temporary production-mode build emits the Native placement on content pages and the responsive display placement on matching pages
 - [ ] Owner reviews placements and explicitly authorizes production activation
 
 ## Indexable deployment

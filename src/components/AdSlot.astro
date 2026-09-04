@@ -8,8 +8,8 @@ const { placement, locale = "en" } = Astro.props;
 const active = isAdvertisingActive(site.advertising, import.meta.env.SITE_BUILD_MODE === "production");
 const config = site.advertising.placements;
 const copy = locale === "zh"
-  ? { label: "广告", prompt: "允许广告以支持本站？同意后，本页会连接 Adsterra；你可以继续使用网站而不接受。", accept: "允许广告", reject: "不，谢谢" }
-  : { label: "Advertisement", prompt: "Allow ads to support this site? If accepted, this page will connect to Adsterra. You can continue without accepting.", accept: "Allow ads", reject: "No thanks" };
+  ? { label: "广告", prompt: "允许 Adsterra 广告以支持本站？同意后，Adsterra 可能使用 Cookie 和设备信息来投放及衡量广告。拒绝不影响网站功能。", accept: "允许广告", reject: "拒绝广告", privacy: "隐私说明", privacyUrl: "/zh/privacy" }
+  : { label: "Advertisement", prompt: "Allow Adsterra ads to support this site? If accepted, Adsterra may use cookies and device information to serve and measure ads. Refusing does not limit site features.", accept: "Allow ads", reject: "Reject ads", privacy: "Privacy details", privacyUrl: "/privacy" };
 ---
 
 {active && (
@@ -26,10 +26,10 @@ const copy = locale === "zh"
   >
     <span class="ad-label">{copy.label}</span>
     <div class="ad-consent" data-ad-consent>
-      <p>{copy.prompt}</p>
+      <p>{copy.prompt} <a href={copy.privacyUrl}>{copy.privacy}</a></p>
       <div class="ad-consent-actions">
         <button class="button" type="button" data-ad-accept>{copy.accept}</button>
-        <button class="text-button" type="button" data-ad-reject>{copy.reject}</button>
+        <button class="button button-secondary" type="button" data-ad-reject>{copy.reject}</button>
       </div>
     </div>
     <div class="ad-content" data-ad-content hidden></div>
