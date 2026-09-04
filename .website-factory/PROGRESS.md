@@ -17,7 +17,7 @@ The first live inspection at 2026-09-04 14:00:13 was rejected because Google's I
 - [x] Localized canonical and `hreflang` metadata
 - [x] Country/program schemas, directories, search, and filters
 - [x] Official-source, coverage-status, and review-date display
-- [x] 109-country directory and 71 program records
+- [x] 129-country directory and 71 program records
 - [x] Versioned generic tri-state rule engine and centralized registry
 - [x] One shared eight-question profile across covered countries
 - [x] Opt-in, versioned browser-only profile storage and clear control
@@ -86,18 +86,18 @@ Completed 2026-09-04 with headless Chromium at 1440×1000 desktop and 390×844 m
 
 Completed locally on 2026-09-04; publication remains separately gated.
 
-- [x] Added a 20-country directory-level batch: Armenia, Azerbaijan, Georgia, Kyrgyzstan, Uzbekistan, Mongolia, Brunei, Maldives, Cambodia, Laos, Botswana, Namibia, Zambia, Zimbabwe, Algeria, Egypt, Ethiopia, Malawi, Eswatini, and Mozambique
-- [x] Expanded directory coverage from 89 to 109 countries across Asia and Africa
+- [x] Added a 20-country directory-level batch: Costa Rica, Guatemala, Honduras, El Salvador, Guyana, Bahamas, Barbados, Belize, Antigua and Barbuda, Côte d’Ivoire, Lesotho, Seychelles, Madagascar, Angola, Cameroon, Gabon, Jordan, Iraq, Lebanon, and Tajikistan
+- [x] Expanded directory coverage from 109 to 129 countries across the Americas, Africa, and Asia
 - [x] Added equivalent English and Chinese summaries with explicit directory-only limitations
 - [x] Retained an authoritative government URL and 2026-09-04 review date for every record
 - [x] Inspected all 20 current authoritative government pages through browser-accessible results
 - [x] `npm test`, `npm run check`, `npm run build`, and preview-output tests passed
-- [x] Generated 383 static pages with all 109 countries represented in English and Chinese
+- [x] Generated 423 static pages with all 129 countries represented in English and Chinese
 - [x] Preview output remains non-indexable and advertising remains disabled
 
 ## Deferred
 
-- Further country expansion beyond 109 after the release sequence is stable
+- Further country expansion beyond 129 after the release sequence is stable
 - Adsterra account connection, generated banner code, and production activation
 - Free/paid report boundary and pricing
 - Grounded report data contract and LLM provider

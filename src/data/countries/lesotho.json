@@ -1,0 +1,6 @@
+{
+  "name": "莱索托", "nameEn": "Lesotho", "region": "Africa", "coverage": "directory",
+  "summary": "莱索托内政部提供的官方居留许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence-permit entry point from Lesotho's Ministry of Home Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Home Affairs of Lesotho", "title": "Immigration services", "url": "https://www.homeaffairs.gov.ls/immigration/", "reviewedAt": "2026-09-04" }]
+}

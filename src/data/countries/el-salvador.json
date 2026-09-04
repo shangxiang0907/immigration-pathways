@@ -1,0 +1,6 @@
+{
+  "name": "萨尔瓦多", "nameEn": "El Salvador", "region": "Americas", "coverage": "directory",
+  "summary": "萨尔瓦多移民与外国人事务总局提供的官方居留服务入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence-services entry point from El Salvador's migration authority; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Dirección General de Migración y Extranjería", "title": "Residence services", "url": "https://www.migracion.gob.sv/servicios/residencias-definitivas/", "reviewedAt": "2026-09-04" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "伊拉克", "nameEn": "Iraq", "region": "Asia", "coverage": "directory",
+  "summary": "伊拉克政府电子签证门户提供的官方签证要求入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa-requirements entry point from Iraq's electronic visa portal; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Iraq", "title": "Iraqi electronic visa", "url": "https://evisa.iq/en/Instructions", "reviewedAt": "2026-09-04" }]
+}

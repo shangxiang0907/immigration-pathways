@@ -1,0 +1,6 @@
+{
+  "name": "哥斯达黎加", "nameEn": "Costa Rica", "region": "Americas", "coverage": "directory",
+  "summary": "哥斯达黎加移民与外国人事务总局提供的官方移民信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration-information entry point from Costa Rica's migration authority; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Dirección General de Migración y Extranjería", "title": "Official migration portal", "url": "https://www.migracion.go.cr/", "reviewedAt": "2026-09-04" }]
+}

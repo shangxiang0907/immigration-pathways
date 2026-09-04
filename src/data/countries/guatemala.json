@@ -1,0 +1,6 @@
+{
+  "name": "危地马拉", "nameEn": "Guatemala", "region": "Americas", "coverage": "directory",
+  "summary": "危地马拉移民局提供的官方居留信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence-information entry point from the Guatemalan Migration Institute; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Guatemalan Migration Institute", "title": "Permanent residence information", "url": "https://igm.gob.gt/informacion-residencias-permanentes/", "reviewedAt": "2026-09-04" }]
+}

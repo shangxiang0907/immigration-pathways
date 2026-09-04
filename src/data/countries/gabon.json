@@ -1,0 +1,6 @@
+{
+  "name": "加蓬", "nameEn": "Gabon", "region": "Africa", "coverage": "directory",
+  "summary": "加蓬文件与移民总局提供的官方电子签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official e-Visa entry point from Gabon's Directorate General of Documentation and Immigration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Directorate General of Documentation and Immigration of Gabon", "title": "Gabon e-Visa", "url": "https://evisa.dgdi.ga/?lang=en", "reviewedAt": "2026-09-04" }]
+}

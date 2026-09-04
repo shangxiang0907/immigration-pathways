@@ -1,0 +1,6 @@
+{
+  "name": "黎巴嫩", "nameEn": "Lebanon", "region": "Asia", "coverage": "directory",
+  "summary": "黎巴嫩安全总局提供的官方签证与居留许可信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa and residence-permit information entry point from Lebanese General Security; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Lebanese General Security", "title": "Visa and residence services", "url": "https://www.general-security.gov.lb/en/posts/5", "reviewedAt": "2026-09-04" }]
+}

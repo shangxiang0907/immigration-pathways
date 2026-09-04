@@ -1,0 +1,6 @@
+{
+  "name": "安哥拉", "nameEn": "Angola", "region": "Africa", "coverage": "directory",
+  "summary": "安哥拉移民与外国人服务局提供的官方电子签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official e-Visa entry point from Angola's Migration and Foreigners Service; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Migration and Foreigners Service of Angola", "title": "SME e-Visa", "url": "https://www.smevisa.gov.ao/visatype.aspx", "reviewedAt": "2026-09-04" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "洪都拉斯", "nameEn": "Honduras", "region": "Americas", "coverage": "directory",
+  "summary": "洪都拉斯国家移民局提供的官方居留入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence entry point from Honduras's National Migration Institute; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "National Migration Institute of Honduras", "title": "Residences", "url": "https://inm.gob.hn/residencias.html", "reviewedAt": "2026-09-04" }]
+}

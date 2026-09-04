@@ -1,0 +1,6 @@
+{
+  "name": "巴哈马", "nameEn": "Bahamas", "region": "Americas", "coverage": "directory",
+  "summary": "巴哈马移民局提供的官方居留与工作许可资料入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official residence and work-permit resources from the Bahamas Department of Immigration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Bahamas Department of Immigration", "title": "Immigration regulations", "url": "https://www.immigration.gov.bs/wp-content/uploads/2016/02/ImmigrationGeneralRegulations_1.pdf", "reviewedAt": "2026-09-04" }]
+}

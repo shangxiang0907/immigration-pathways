@@ -1,0 +1,6 @@
+{
+  "name": "喀麦隆", "nameEn": "Cameroon", "region": "Africa", "coverage": "directory",
+  "summary": "喀麦隆官方领事服务门户提供的签证申请入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa-application entry point from Cameroon's consular services portal; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Cameroon", "title": "Cameroon consular services portal", "url": "https://evisacam.cm/", "reviewedAt": "2026-09-04" }]
+}

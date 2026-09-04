@@ -1,0 +1,6 @@
+{
+  "name": "科特迪瓦", "nameEn": "Côte d’Ivoire", "region": "Africa", "coverage": "directory",
+  "summary": "科特迪瓦政府认可的电子签证服务提供的官方签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Officially recognized e-Visa entry point for Côte d’Ivoire; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "SNEDAI, authorized by the Government of Côte d’Ivoire", "title": "Côte d’Ivoire e-Visa", "url": "https://snedai.com/e-visa/", "reviewedAt": "2026-09-04" }]
+}
