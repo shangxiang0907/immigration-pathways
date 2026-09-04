@@ -17,7 +17,7 @@ The first live inspection at 2026-09-04 14:00:13 saw Google's cached previous `r
 - [x] Localized canonical and `hreflang` metadata
 - [x] Country/program schemas, directories, search, and filters
 - [x] Official-source, coverage-status, and review-date display
-- [x] 169-country directory and 71 program records
+- [x] 189-country directory and 71 program records
 - [x] Versioned generic tri-state rule engine and centralized registry
 - [x] One shared eight-question profile across covered countries
 - [x] Opt-in, versioned browser-only profile storage and clear control
@@ -86,18 +86,18 @@ Completed 2026-09-04 with headless Chromium at 1440×1000 desktop and 390×844 m
 
 Completed locally on 2026-09-04; publication remains separately gated.
 
-- [x] Added a 20-country directory-level batch: Russia, Kosovo, Andorra, Liechtenstein, San Marino, Benin, Djibouti, The Gambia, Cabo Verde, Liberia, Mauritania, Sierra Leone, Somalia, Burkina Faso, Togo, South Sudan, Guinea, Burundi, São Tomé and Príncipe, and Chad
-- [x] Expanded directory coverage from 149 to 169 countries across Europe and Africa
+- [x] Added a 20-country directory-level batch: Belarus, Central African Republic, Comoros, Democratic Republic of the Congo, Republic of the Congo, Equatorial Guinea, Guinea-Bissau, Nauru, Samoa, Federated States of Micronesia, Tonga, Afghanistan, Haiti, Libya, Mali, Tunisia, Senegal, Palestine, Yemen, and Monaco
+- [x] Expanded directory coverage from 169 to 189 countries across Africa, Asia, Europe, Oceania, and the Americas
 - [x] Added equivalent English and Chinese summaries with explicit directory-only limitations
 - [x] Retained an authoritative government URL and 2026-09-04 review date for every record
 - [x] Inspected all 20 current authoritative government pages through browser-accessible results
 - [x] `npm test`, `npm run check`, `npm run build`, and preview-output tests passed
-- [x] Generated 503 static pages with all 169 countries represented in English and Chinese
+- [x] Generated 543 static pages with all 189 countries represented in English and Chinese
 - [x] Preview output remains non-indexable and advertising remains disabled
 
 ## Deferred
 
-- Further country expansion beyond 169
+- Complete the final country-directory gap beyond 189 where a responsible official source can be verified
 - Adsterra account connection, generated banner code, and production activation
 - Free/paid report boundary and pricing
 - Grounded report data contract and LLM provider

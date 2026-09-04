@@ -1,0 +1,6 @@
+{
+  "name": "塞内加尔", "nameEn": "Senegal", "region": "Africa", "coverage": "directory",
+  "summary": "塞内加尔内政与公共安全部提供的官方行政服务入口；具体外国人居留服务、资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official administrative-services entry point from Senegal's Ministry of the Interior and Public Security; foreign-residence services, eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of the Interior and Public Security of Senegal", "title": "Official ministry portal", "url": "https://interieur.gouv.sn/", "reviewedAt": "2026-09-04" }]
+}

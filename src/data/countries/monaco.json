@@ -1,0 +1,6 @@
+{
+  "name": "摩纳哥", "nameEn": "Monaco", "region": "Europe", "coverage": "directory",
+  "summary": "摩纳哥政府提供的新居民居留许可官方入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official new-resident permit entry point from the Government of Monaco; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Monaco", "title": "How to apply for a residence permit", "url": "https://monservicepublic.gouv.mc/en/themes/nationality-and-residency/residency/new-entrants/how-to-apply-for-a-residence-permit", "reviewedAt": "2026-09-04" }]
+}

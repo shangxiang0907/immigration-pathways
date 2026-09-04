@@ -1,0 +1,6 @@
+{
+  "name": "汤加", "nameEn": "Tonga", "region": "Oceania", "coverage": "directory",
+  "summary": "汤加政府提供的移民和入境许可官方信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration and entry-permit information entry point from the Government of Tonga; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Tonga", "title": "Immigration and general services", "url": "https://www.revenue.gov.to/immigration-and-general-services", "reviewedAt": "2026-09-04" }]
+}

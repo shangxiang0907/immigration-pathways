@@ -1,0 +1,6 @@
+{
+  "name": "白俄罗斯", "nameEn": "Belarus", "region": "Europe", "coverage": "directory",
+  "summary": "白俄罗斯外交部提供的官方签证办理信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa-procedure information entry point from the Ministry of Foreign Affairs of Belarus; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Ministry of Foreign Affairs of Belarus", "title": "Visa application procedure", "url": "https://mfa.gov.by/en/visa/oformlenie/", "reviewedAt": "2026-09-04" }]
+}

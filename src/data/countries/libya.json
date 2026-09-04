@@ -1,0 +1,6 @@
+{
+  "name": "利比亚", "nameEn": "Libya", "region": "Africa", "coverage": "directory",
+  "summary": "利比亚护照、国籍和外国人事务管理局提供的官方信息与表格入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official information and forms entry point from Libya's Passport, Nationality and Foreigners Affairs Authority; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Libyan Passport, Nationality and Foreigners Affairs Authority", "title": "Official authority portal", "url": "https://lpa.gov.ly/", "reviewedAt": "2026-09-04" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "突尼斯", "nameEn": "Tunisia", "region": "Africa", "coverage": "directory",
+  "summary": "突尼斯政府行政服务系统提供的外国人居留卡官方信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official foreign-residence-card information entry point from Tunisia's administrative-services system; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Government of Tunisia", "title": "Residence card for foreigners", "url": "https://www.sicad.gov.tn/Fr/Prestation_Octroi-de-la--carte-de-sejour-pour-etrangers_57_3_D1024", "reviewedAt": "2026-09-04" }]
+}

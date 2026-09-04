@@ -1,0 +1,6 @@
+{
+  "name": "密克罗尼西亚联邦", "nameEn": "Federated States of Micronesia", "region": "Oceania", "coverage": "directory",
+  "summary": "密克罗尼西亚联邦司法部移民与劳工部门的官方入境许可表入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official entry-permit form entry point from the Federated States of Micronesia's Department of Justice, Division of Immigration and Labor; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Department of Justice of the Federated States of Micronesia", "title": "Entry permit application", "url": "https://nach.gov.fm/wp-content/uploads/2020/02/FSM_immigration_permit.pdf", "reviewedAt": "2026-09-04" }]
+}

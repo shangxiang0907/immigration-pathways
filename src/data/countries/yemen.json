@@ -1,0 +1,6 @@
+{
+  "name": "也门", "nameEn": "Yemen", "region": "Asia", "coverage": "directory",
+  "summary": "也门内政部移民、护照和国籍主管机构提供的电子签证入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "E-visa entry point presented for Yemen's Ministry of Interior immigration, passports, and nationality authority; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "Immigration, Passports and Nationality Authority of Yemen", "title": "Yemen eVisa portal", "url": "https://yemenevisa.org/visas", "reviewedAt": "2026-09-04" }]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "海地", "nameEn": "Haiti", "region": "Americas", "coverage": "directory",
+  "summary": "海地国家移民办公室提供的官方移民信息入口；具体入境或居留服务、资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official migration-information entry point from Haiti's National Migration Office; entry or residence services, eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04", "sources": [{ "authority": "National Migration Office of Haiti", "title": "Official migration office portal", "url": "https://onm.gouv.ht/", "reviewedAt": "2026-09-04" }]
+}
