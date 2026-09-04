@@ -15,14 +15,15 @@
   authorization before implementation or external configuration.
 - Run `npm run check` and `npm run build` after site or template changes.
 
-## Website Factory skill routing
+## Website Factory Markdown routing
 
-- When initializing or substantially restructuring the site, use
-  `website-factory:website-bootstrap`.
-- When researching, drafting, or implementing an approved batch of country,
-  immigration-program, visa, requirement, or comparison pages, use
-  `website-factory:website-content-batch`.
-- Before completing a coherent page batch or preparing a release, use
-  `website-factory:website-quality-review`.
-- Use the installed Website Factory plugin as the source of these reusable skills.
-  Do not copy plugin skill directories into this repository.
+- Read `.website-factory/START_HERE.md` before planning or changing the site.
+- Use `.website-factory/PROJECT_BRIEF.md` for product scope and decisions.
+- Use `.website-factory/DEVELOPMENT_PLAN.md` for implementation order.
+- Update `.website-factory/PROGRESS.md` whenever a milestone or release gate changes.
+- Follow `.website-factory/CONTENT_GUIDELINES.md` for factual content work.
+- Run `.website-factory/QUALITY_CHECKLIST.md` at coherent batch boundaries.
+- Follow `.website-factory/RELEASE_CHECKLIST.md` in order for external release work;
+  later steps never imply authorization for earlier or external account actions.
+- These repository-local Markdown files are the working source. Do not depend on
+  Website Factory skills or copy a second `AGENTS.md` into this repository.
