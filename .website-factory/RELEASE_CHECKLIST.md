@@ -9,7 +9,7 @@ This sequence is mandatory. A technical ability to perform a later step is not p
 ## 2. Contact and legal surfaces
 
 - [x] Configure a public contact address or forwarding route.
-- [ ] Send and receive a real test message.
+- [x] Send and receive a real test message.
 - [x] Put the working address on the contact/privacy surfaces.
 - [x] Verify privacy, terms, disclaimer, support expectations, and data-handling descriptions.
 

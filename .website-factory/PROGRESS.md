@@ -4,7 +4,7 @@ Last updated: 2026-09-04
 
 ## Current milestone
 
-Gate 2 — public contact email and legal surfaces. The safe production build has been deployed and verified with canonical URLs and a sitemap while indexing remains disabled.
+Gate 3 — Google Search Console property verification. Domain, contact email, and legal-surface gates are complete; indexing remains disabled.
 
 ## Product and platform completed
 
@@ -31,7 +31,7 @@ Gate 2 — public contact email and legal surfaces. The safe production build ha
 ## Ordered release gates
 
 - [x] 1. Production domain and HTTPS verified
-- [ ] 2. Working public contact email configured and tested
+- [x] 2. Working public contact email configured and tested
 - [x] 2. Legal/contact surfaces finalized for the public contact channel
 - [ ] 3. Google Search Console property verified
 - [x] 4. Production sitemap is generated and reachable
@@ -47,11 +47,10 @@ The earlier indexable deployment was a release-order defect, not completion of g
 
 ## Next actions
 
-1. Send a real message to `contact@pathwaystoabroad.com` and confirm delivery to the forwarding inbox.
-2. Verify Google Search Console ownership.
-3. Submit the production sitemap.
-4. Complete real mobile and desktop live-site QA.
-5. Request explicit indexing authorization.
+1. Verify Google Search Console ownership.
+2. Submit the production sitemap.
+3. Complete real mobile and desktop live-site QA.
+4. Request explicit indexing authorization.
 
 ## Deferred
 
