@@ -1,4 +1,11 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro"; import { site } from "../../../site.config.mjs";
 ---
-<SiteLayout locale="zh" title={`联系 — ${site.name}`} description={`${site.name} 的联系信息。`}><article class="prose"><p class="eyebrow">Contact</p><h1>联系我们</h1><p>本站尚未启用公开联系方式。联系方式启用后，将用于内容纠错和一般支持。</p><p>请勿通过未经确认的渠道发送护照、身份证明、财务资料或其他敏感信息。</p></article></SiteLayout>
+<SiteLayout locale="zh" title={`联系 — ${site.name}`} description={`${site.name} 的联系信息。`}>
+  <article class="prose">
+    <p class="eyebrow">Contact</p>
+    <h1>联系我们</h1>
+    <p>如需反馈内容错误或进行一般咨询，请发送邮件至 <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>。</p>
+    <p>我们无法提供个性化移民或法律建议。请勿通过邮件发送护照、身份证明、财务资料、申请文件或其他敏感信息。</p>
+  </article>
+</SiteLayout>

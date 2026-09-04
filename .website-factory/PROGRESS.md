@@ -25,12 +25,14 @@ Gate 2 — public contact email and legal surfaces. The safe production build ha
 - [x] AdSense disabled pending account, consent, review, and authorization
 - [x] Production metadata/sitemap generation separated from explicit indexing permission
 - [x] Non-indexable production build deployed and verified on the public domain
+- [x] Cloudflare Email Routing enabled with a verified destination
+- [x] `contact@pathwaystoabroad.com` forwarding rule created
 
 ## Ordered release gates
 
 - [x] 1. Production domain and HTTPS verified
 - [ ] 2. Working public contact email configured and tested
-- [ ] 2. Legal/contact surfaces finalized for the public contact channel
+- [x] 2. Legal/contact surfaces finalized for the public contact channel
 - [ ] 3. Google Search Console property verified
 - [x] 4. Production sitemap is generated and reachable
 - [ ] 4. Production sitemap submitted in Search Console
@@ -45,7 +47,7 @@ The earlier indexable deployment was a release-order defect, not completion of g
 
 ## Next actions
 
-1. Configure and test the public contact email/forwarding and update legal surfaces.
+1. Send a real message to `contact@pathwaystoabroad.com` and confirm delivery to the forwarding inbox.
 2. Verify Google Search Console ownership.
 3. Submit the production sitemap.
 4. Complete real mobile and desktop live-site QA.

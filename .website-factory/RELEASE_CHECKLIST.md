@@ -8,10 +8,10 @@ This sequence is mandatory. A technical ability to perform a later step is not p
 
 ## 2. Contact and legal surfaces
 
-- [ ] Configure a public contact address or forwarding route.
+- [x] Configure a public contact address or forwarding route.
 - [ ] Send and receive a real test message.
-- [ ] Put the working address on the contact/privacy surfaces.
-- [ ] Verify privacy, terms, disclaimer, support expectations, and data-handling descriptions.
+- [x] Put the working address on the contact/privacy surfaces.
+- [x] Verify privacy, terms, disclaimer, support expectations, and data-handling descriptions.
 
 ## 3. Google Search Console
 

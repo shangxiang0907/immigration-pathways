@@ -4,5 +4,10 @@ import { site } from "../../site.config.mjs";
 ---
 
 <SiteLayout title={`Contact — ${site.name}`} description={`Contact information for ${site.name}.`}>
-  <article class="prose"><p class="eyebrow">Contact</p><h1>Contact us</h1><p>A public contact method is not yet enabled. Once available, it will support content corrections and general inquiries.</p><p>Do not send passports, identity documents, financial records, or other sensitive information through an unconfirmed channel.</p></article>
+  <article class="prose">
+    <p class="eyebrow">Contact</p>
+    <h1>Contact us</h1>
+    <p>For content corrections and general inquiries, email <a href={`mailto:${site.contactEmail}`}>{site.contactEmail}</a>.</p>
+    <p>We cannot provide personalized immigration or legal advice. Do not email passports, identity documents, financial records, application files, or other sensitive information.</p>
+  </article>
 </SiteLayout>
