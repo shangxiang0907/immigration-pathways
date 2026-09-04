@@ -1,0 +1,7 @@
+{
+  "name": "厄瓜多尔", "nameEn": "Ecuador", "region": "Americas", "coverage": "directory",
+  "summary": "Ecuador Ministry of Foreign Affairs and Human Mobility提供的官方移民、居留或工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration, residence, or work-permit entry point from Ecuador Ministry of Foreign Affairs and Human Mobility; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Ecuador Ministry of Foreign Affairs and Human Mobility", "title": "eVisas portal guide", "url": "https://www.cancilleria.gob.ec/wp-content/uploads/2026/03/Portal-EVisas-INGLES_compressed.pdf", "reviewedAt": "2026-09-04" }]
+}

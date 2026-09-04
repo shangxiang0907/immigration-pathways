@@ -1,0 +1,7 @@
+{
+  "name": "玻利维亚", "nameEn": "Bolivia", "region": "Americas", "coverage": "directory",
+  "summary": "Bolivia General Directorate of Migration提供的官方移民、居留或工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration, residence, or work-permit entry point from Bolivia General Directorate of Migration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Bolivia General Directorate of Migration", "title": "Services for foreign nationals", "url": "https://www.migracion.gob.bo/", "reviewedAt": "2026-09-04" }]
+}

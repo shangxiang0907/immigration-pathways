@@ -1,0 +1,7 @@
+{
+  "name": "尼日利亚", "nameEn": "Nigeria", "region": "Africa", "coverage": "directory",
+  "summary": "Nigeria Immigration Service提供的官方移民、居留或工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration, residence, or work-permit entry point from Nigeria Immigration Service; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Nigeria Immigration Service", "title": "Nigeria visas", "url": "https://immigration.gov.ng/nigerian-visa/", "reviewedAt": "2026-09-04" }]
+}

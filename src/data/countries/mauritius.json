@@ -1,0 +1,7 @@
+{
+  "name": "毛里求斯", "nameEn": "Mauritius", "region": "Africa", "coverage": "directory",
+  "summary": "Mauritius Passport and Immigration Office提供的官方移民、居留或工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration, residence, or work-permit entry point from Mauritius Passport and Immigration Office; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Mauritius Passport and Immigration Office", "title": "Occupation Permit", "url": "https://passport.govmu.org/passport/?page_id=626", "reviewedAt": "2026-09-04" }]
+}

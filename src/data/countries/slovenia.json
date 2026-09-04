@@ -1,0 +1,7 @@
+{
+  "name": "斯洛文尼亚", "nameEn": "Slovenia", "region": "Europe", "coverage": "directory",
+  "summary": "欧盟移民门户提供的官方受雇工作信息入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration, residence, or work-permit entry point from European Commission; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "European Commission", "title": "Employed worker in Slovenia", "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-slovenia_en", "reviewedAt": "2026-09-04" }]
+}

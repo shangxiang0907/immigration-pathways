@@ -1,0 +1,7 @@
+{
+  "name": "巴拿马", "nameEn": "Panama", "region": "Americas", "coverage": "directory",
+  "summary": "Panama National Migration Service提供的官方移民、居留或工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration, residence, or work-permit entry point from Panama National Migration Service; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Panama National Migration Service", "title": "Migration permits", "url": "https://www.migracion.gob.pa/permisos-migratorios/", "reviewedAt": "2026-09-04" }]
+}

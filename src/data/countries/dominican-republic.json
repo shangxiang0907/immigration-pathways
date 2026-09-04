@@ -1,0 +1,7 @@
+{
+  "name": "多米尼加共和国", "nameEn": "Dominican Republic", "region": "Americas", "coverage": "directory",
+  "summary": "Dominican Republic General Directorate of Migration提供的官方移民、居留或工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration, residence, or work-permit entry point from Dominican Republic General Directorate of Migration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Dominican Republic General Directorate of Migration", "title": "Residences", "url": "https://migracion.gob.do/en/servicios/residence/", "reviewedAt": "2026-09-04" }]
+}

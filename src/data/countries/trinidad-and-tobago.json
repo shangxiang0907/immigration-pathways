@@ -1,0 +1,7 @@
+{
+  "name": "特立尼达和多巴哥", "nameEn": "Trinidad and Tobago", "region": "Americas", "coverage": "directory",
+  "summary": "Trinidad and Tobago Ministry of Homeland Security提供的官方移民、居留或工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration, residence, or work-permit entry point from Trinidad and Tobago Ministry of Homeland Security; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Trinidad and Tobago Ministry of Homeland Security", "title": "Work permits", "url": "https://homelandsecurity.gov.tt/services/work-permit/", "reviewedAt": "2026-09-04" }]
+}

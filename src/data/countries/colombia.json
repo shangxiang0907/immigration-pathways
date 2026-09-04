@@ -1,0 +1,7 @@
+{
+  "name": "哥伦比亚", "nameEn": "Colombia", "region": "Americas", "coverage": "directory",
+  "summary": "Colombia Ministry of Foreign Affairs提供的官方移民、居留或工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration, residence, or work-permit entry point from Colombia Ministry of Foreign Affairs; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Colombia Ministry of Foreign Affairs", "title": "Visas", "url": "https://www.cancilleria.gov.co/visas", "reviewedAt": "2026-09-04" }]
+}

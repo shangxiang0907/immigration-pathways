@@ -1,0 +1,7 @@
+{
+  "name": "北马其顿", "nameEn": "North Macedonia", "region": "Europe", "coverage": "directory",
+  "summary": "North Macedonia Ministry of Interior提供的官方移民、居留或工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration, residence, or work-permit entry point from North Macedonia Ministry of Interior; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "North Macedonia Ministry of Interior", "title": "Guidelines for foreign nationals", "url": "https://mvr.gov.mk/en-GB/uslugi/upatstvo-i-postapka-za-oddelni-prava-baranja-na-strancite", "reviewedAt": "2026-09-04" }]
+}

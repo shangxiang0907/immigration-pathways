@@ -1,0 +1,7 @@
+{
+  "name": "黑山", "nameEn": "Montenegro", "region": "Europe", "coverage": "directory",
+  "summary": "Government of Montenegro提供的官方移民、居留或工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration, residence, or work-permit entry point from Government of Montenegro; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [{ "authority": "Government of Montenegro", "title": "Labour and employment", "url": "https://www.gov.me/en/article/labour-and-employment", "reviewedAt": "2026-09-04" }]
+}

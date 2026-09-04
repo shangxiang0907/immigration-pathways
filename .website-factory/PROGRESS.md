@@ -17,7 +17,7 @@ The first live inspection at 2026-09-04 14:00:13 was rejected because Google's I
 - [x] Localized canonical and `hreflang` metadata
 - [x] Country/program schemas, directories, search, and filters
 - [x] Official-source, coverage-status, and review-date display
-- [x] 49-country directory and 71 program records
+- [x] 69-country directory and 71 program records
 - [x] Versioned generic tri-state rule engine and centralized registry
 - [x] One shared eight-question profile across covered countries
 - [x] Opt-in, versioned browser-only profile storage and clear control
@@ -86,16 +86,16 @@ Completed 2026-09-04 with headless Chromium at 1440×1000 desktop and 390×844 m
 
 Completed locally on 2026-09-04; publication remains separately gated.
 
-- [x] Added a second directory-level batch for India, Indonesia, Israel, Malaysia, the Philippines, Qatar, Saudi Arabia, Thailand, and Türkiye
+- [x] Added a 20-country directory-level batch spanning Eastern Europe, Latin America, Africa, and the Caribbean
 - [x] Added equivalent English and Chinese summaries with explicit directory-only limitations
 - [x] Retained an authoritative government URL and 2026-09-04 review date for every record
-- [x] Verified all nine sources through current government pages; six returned HTTP 200 directly, two rejected automated requests with HTTP 403, and Qatar's portal was browser-indexable but its TLS endpoint rejected the command-line probe
+- [x] Verified all 20 sources through current government pages; 15 returned HTTP 200 directly, one rejected automated requests with HTTP 403, and four official portals had command-line TLS issues but were browser-indexable
 - [x] `npm test`, `npm run check`, `npm run build`, and preview-output tests passed
 - [x] Preview output remains non-indexable and advertising remains disabled
 
 ## Deferred
 
-- Further country expansion from 49 toward 100+ after the release sequence is stable
+- Further country expansion from 69 toward 100+ after the release sequence is stable
 - Adsterra account connection, generated banner code, and production activation
 - Free/paid report boundary and pricing
 - Grounded report data contract and LLM provider
