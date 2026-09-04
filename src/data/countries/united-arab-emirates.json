@@ -1,0 +1,23 @@
+{
+  "name": "阿拉伯联合酋长国",
+  "nameEn": "United Arab Emirates",
+  "region": "Asia",
+  "coverage": "directory",
+  "summary": "阿联酋政府的官方签证、居留和工作许可入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official UAE Government entry point for visas, residence, and work permits; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [
+    {
+      "authority": "United Arab Emirates Government",
+      "title": "Visa and Emirates ID",
+      "url": "https://u.ae/en/information-and-services/visa-and-emirates-id",
+      "reviewedAt": "2026-09-04"
+    },
+    {
+      "authority": "United Arab Emirates Government",
+      "title": "Work permits",
+      "url": "https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/job-offers-and-work-permits-and-contracts/work-permits",
+      "reviewedAt": "2026-09-04"
+    }
+  ]
+}

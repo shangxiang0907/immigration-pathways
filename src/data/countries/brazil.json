@@ -1,0 +1,17 @@
+{
+  "name": "巴西",
+  "nameEn": "Brazil",
+  "region": "Americas",
+  "coverage": "directory",
+  "summary": "巴西司法与公共安全部的官方劳动移民入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official labour-migration entry point from Brazil's Ministry of Justice and Public Security; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [
+    {
+      "authority": "Brazil Ministry of Justice and Public Security",
+      "title": "Labour Immigration Portal",
+      "url": "https://www.gov.br/mj/pt-br/assuntos/seus-direitos/migracoes/portaldeimigracao",
+      "reviewedAt": "2026-09-04"
+    }
+  ]
+}

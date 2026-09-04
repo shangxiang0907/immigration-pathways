@@ -1,0 +1,17 @@
+{
+  "name": "智利",
+  "nameEn": "Chile",
+  "region": "Americas",
+  "coverage": "directory",
+  "summary": "智利国家移民服务局的官方临时居留入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official temporary-residence entry point from Chile's National Migration Service; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [
+    {
+      "authority": "Chile National Migration Service",
+      "title": "Temporary Residence in Chile",
+      "url": "https://serviciomigraciones.cl/residencia-temporal/",
+      "reviewedAt": "2026-09-04"
+    }
+  ]
+}

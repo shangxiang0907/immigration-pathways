@@ -1,0 +1,17 @@
+{
+  "name": "墨西哥",
+  "nameEn": "Mexico",
+  "region": "Americas",
+  "coverage": "directory",
+  "summary": "墨西哥国家移民局的官方受薪活动移民手续入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official immigration-procedure entry point for paid activity from Mexico's National Institute of Migration; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [
+    {
+      "authority": "Mexico National Institute of Migration",
+      "title": "Migration procedures for paid activities",
+      "url": "https://www.gob.mx/inm/articulos/guia-de-tramites-migratorios-para-extranjeros-que-deseen-realizar-actividades-remuneradas-en-mexico-y-empleadores",
+      "reviewedAt": "2026-09-04"
+    }
+  ]
+}

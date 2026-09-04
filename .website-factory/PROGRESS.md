@@ -17,7 +17,7 @@ The first live inspection at 2026-09-04 14:00:13 was rejected because Google's I
 - [x] Localized canonical and `hreflang` metadata
 - [x] Country/program schemas, directories, search, and filters
 - [x] Official-source, coverage-status, and review-date display
-- [x] 33-country directory and 71 program records
+- [x] 40-country directory and 71 program records
 - [x] Versioned generic tri-state rule engine and centralized registry
 - [x] One shared eight-question profile across covered countries
 - [x] Opt-in, versioned browser-only profile storage and clear control
@@ -82,9 +82,20 @@ Completed 2026-09-04 with headless Chromium at 1440×1000 desktop and 390×844 m
 - [x] Desktop and mobile screenshots visually inspected
 - [x] English single-result grammar defect found, fixed, deployed, and regression-tested
 
+## Latest content batch
+
+Completed locally on 2026-09-04; publication remains separately gated.
+
+- [x] Added directory-level pages for Argentina, Brazil, Chile, Mexico, South Africa, South Korea, and the United Arab Emirates
+- [x] Added equivalent English and Chinese summaries with explicit directory-only limitations
+- [x] Retained an authoritative government URL and 2026-09-04 review date for every record
+- [x] Confirmed all seven government entry points returned HTTP 200
+- [x] `npm test`, `npm run check`, `npm run build`, and preview-output tests passed
+- [x] Preview output remains non-indexable and advertising remains disabled
+
 ## Deferred
 
-- Further country expansion toward 100+ after the release sequence is stable
+- Further country expansion from 40 toward 100+ after the release sequence is stable
 - Adsterra account connection, generated banner code, and production activation
 - Free/paid report boundary and pricing
 - Grounded report data contract and LLM provider

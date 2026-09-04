@@ -1,0 +1,17 @@
+{
+  "name": "南非",
+  "nameEn": "South Africa",
+  "region": "Africa",
+  "coverage": "directory",
+  "summary": "南非政府面向外国人的官方临时居留入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official temporary-residence entry point for foreign nationals from the South African Government; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [
+    {
+      "authority": "South African Government",
+      "title": "Temporary residence",
+      "url": "https://www.gov.za/services/temporary-residence",
+      "reviewedAt": "2026-09-04"
+    }
+  ]
+}

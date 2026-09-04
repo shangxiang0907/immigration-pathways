@@ -1,0 +1,17 @@
+{
+  "name": "韩国",
+  "nameEn": "South Korea",
+  "region": "Asia",
+  "coverage": "directory",
+  "summary": "韩国政府签证门户的官方签证查询入口；具体资格、文件、费用和办理时间尚未由本站复核。",
+  "summaryEn": "Official visa discovery entry point from the Korea Visa Portal; eligibility, documents, fees, and timing have not yet been reviewed here.",
+  "reviewedAt": "2026-09-04",
+  "sources": [
+    {
+      "authority": "Korea Visa Portal",
+      "title": "Visa Navigator",
+      "url": "https://www.visa.go.kr/openPage.do?LLANG=EN&MENU_ID=10102",
+      "reviewedAt": "2026-09-04"
+    }
+  ]
+}
