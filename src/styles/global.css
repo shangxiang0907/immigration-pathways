@@ -117,3 +117,5 @@ fieldset.question { grid-template-columns: repeat(3, max-content); }
 .fact-table thead th { color: var(--muted); font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; }
 .fact-table tbody th { font-weight: 600; }
 .fact-table td .muted { font-size: .85rem; }
+
+.coverage-breakdown { margin-block: .35rem 1.5rem; font-size: .9rem; }

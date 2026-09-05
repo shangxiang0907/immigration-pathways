@@ -235,6 +235,24 @@ Second deep record, following the Germany shape. Not yet deployed.
 
 Coverage is now 164 directory, 27 overview, and 6 deep across 197 records.
 
+### Country directory leads with reviewed records — 2026-09-06
+
+The directory listed all 197 records in one alphabetical run, so the first thing
+a reader or an ad-network reviewer saw was mostly directory stubs. Reviewed
+records now sort first and the thin ones sort last.
+
+- [x] Added `src/lib/coverage.mjs` so both locales order and count records
+      identically instead of duplicating the rule
+- [x] Added a coverage filter in both locales: all levels, reviewed detail,
+      deep coverage, or official directory only
+- [x] Added a breakdown line stating how many records sit at each level, so the
+      depth of coverage is stated rather than implied
+- [x] Contract test asserts the listing never places a less-covered record above
+      a better-covered one and always leads with a deep record; verified by
+      temporarily inverting the ordering and watching the test fail
+- [x] Headless Chromium at 390, 768, and 1440 px in both locales: zero
+      horizontal body overflow with the extra filter control
+
 ## Deferred
 
 - AdSense approval, certified CMP, ad units, and production activation

@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 
@@ -76,6 +77,34 @@ for (const path of ["countries/australia/index.html", "countries/afghanistan/ind
 // Reviewed country records follow the build's indexing mode.
 for (const path of ["countries/germany/index.html", "zh/countries/germany/index.html"]) {
   assert.match(await read(path), new RegExp(`<meta name="robots" content="${expectedRobots}">`), `${path} must follow the build mode`);
+}
+
+// The country directory leads with records that carry reviewed detail, so a
+// reader (or an ad-network reviewer) does not land on directory stubs first.
+{
+  const { readdirSync } = await import("node:fs");
+  const coverageById = Object.fromEntries(readdirSync("src/data/countries")
+    .filter((file) => file.endsWith(".json"))
+    .map((file) => [file.replace(/\.json$/, ""), JSON.parse(readFileSync(resolve("src/data/countries", file), "utf8")).coverage]));
+
+  for (const [path, prefix, filterOption] of [
+    ["countries/index.html", "/countries/", "Official directory only"],
+    ["zh/countries/index.html", "/zh/countries/", "仅官方入口"],
+  ]) {
+    const html = await read(path);
+    assert.match(html, /id="coverage-filter"/, `${path} must offer a coverage filter`);
+    assert.ok(html.includes(filterOption), `${path} must localize the coverage filter`);
+    assert.match(html, /class="muted coverage-breakdown"/, `${path} must state the coverage breakdown`);
+
+    const order = [...html.matchAll(new RegExp(`href="${prefix}([a-z-]+)"`, "g"))].map((match) => match[1]);
+    assert.ok(order.length > 100, `${path} must still list every country`);
+    const rank = { deep: 0, overview: 1, directory: 2 };
+    const ranks = order.map((id) => rank[coverageById[id]]);
+    for (let i = 1; i < ranks.length; i += 1) {
+      assert.ok(ranks[i] >= ranks[i - 1], `${path}: ${order[i]} is listed above a less-covered record`);
+    }
+    assert.equal(ranks[0], 0, `${path} must lead with a deep-coverage record`);
+  }
 }
 
 for (const [path, language, heading] of [["match/index.html", "en-US", "Fill once, compare countries"], ["zh/match/index.html", "zh-CN", "一次填写，比较多个国家"]]) {

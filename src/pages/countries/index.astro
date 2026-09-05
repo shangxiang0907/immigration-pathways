@@ -2,10 +2,13 @@
 import { getCollection } from "astro:content";
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import { site } from "../../../site.config.mjs";
+import { countByCoverage, sortByCoverage } from "../../lib/coverage.mjs";
 
-const countries = (await getCollection("countries")).sort((a, b) =>
-  a.data.name.localeCompare(b.data.name, "zh-CN"),
+const countries = sortByCoverage(
+  await getCollection("countries"),
+  (a, b) => a.data.nameEn.localeCompare(b.data.nameEn, "en"),
 );
+const counts = countByCoverage(countries);
 
 const coverageLabels = {
   directory: "Official directory",
@@ -29,6 +32,15 @@ const coverageLabels = {
         <input id="country-search" type="search" placeholder="Enter a country name" autocomplete="off" />
       </label>
       <label>
+        <span>Coverage</span>
+        <select id="coverage-filter">
+          <option value="">All coverage levels</option>
+          <option value="reviewed">Reviewed detail</option>
+          <option value="deep">Deep coverage</option>
+          <option value="directory">Official directory only</option>
+        </select>
+      </label>
+      <label>
         <span>Region</span>
         <select id="region-filter">
           <option value="">All regions</option>
@@ -37,6 +49,7 @@ const coverageLabels = {
       </label>
     </div>
     <p id="country-count" class="result-count" aria-live="polite">{countries.length} country entries</p>
+    <p class="muted coverage-breakdown">{counts.deep} with deep coverage, {counts.overview} with a reviewed policy overview, and {counts.directory} listing the official entry point only. Reviewed records are shown first.</p>
     <div id="country-grid" class="card-grid directory-grid">
       {countries.map((country) => (
         <article
@@ -44,6 +57,7 @@ const coverageLabels = {
           data-country-card
           data-search={`${country.data.nameEn} ${country.data.name}`.toLowerCase()}
           data-region={country.data.region}
+          data-coverage={country.data.coverage}
         >
           <div class="card-meta">
             <span class={`status status-${country.data.coverage}`}>{coverageLabels[country.data.coverage]}</span>
@@ -62,6 +76,7 @@ const coverageLabels = {
 <script>
   const search = document.querySelector<HTMLInputElement>("#country-search");
   const region = document.querySelector<HTMLSelectElement>("#region-filter");
+  const coverage = document.querySelector<HTMLSelectElement>("#coverage-filter");
   const cards = [...document.querySelectorAll<HTMLElement>("[data-country-card]")];
   const count = document.querySelector<HTMLElement>("#country-count");
   const empty = document.querySelector<HTMLElement>("#country-empty");
@@ -69,12 +84,18 @@ const coverageLabels = {
   const update = () => {
     const query = search?.value.trim().toLowerCase() ?? "";
     const selectedRegion = region?.value ?? "";
+    const selectedCoverage = coverage?.value ?? "";
     let visible = 0;
 
     for (const card of cards) {
       const matchesQuery = !query || card.dataset.search?.includes(query);
       const matchesRegion = !selectedRegion || card.dataset.region === selectedRegion;
-      card.hidden = !(matchesQuery && matchesRegion);
+      // "Reviewed detail" spans both levels that carry our own reviewed content.
+      const matchesCoverage = !selectedCoverage
+        || (selectedCoverage === "reviewed"
+          ? card.dataset.coverage !== "directory"
+          : card.dataset.coverage === selectedCoverage);
+      card.hidden = !(matchesQuery && matchesRegion && matchesCoverage);
       if (!card.hidden) visible += 1;
     }
 
@@ -84,4 +105,5 @@ const coverageLabels = {
 
   search?.addEventListener("input", update);
   region?.addEventListener("change", update);
+  coverage?.addEventListener("change", update);
 </script>
