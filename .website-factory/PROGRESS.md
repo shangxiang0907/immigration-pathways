@@ -4,7 +4,7 @@ Last updated: 2026-09-05
 
 ## Current milestone
 
-Gate 6 — complete. The authorized indexable build is live, and the owner confirmed that Search Console URL Inspection now succeeds for the canonical homepage.
+Gate 7 — complete. The authorized regional Adsterra build is live while the existing indexable release remains intact.
 
 The first live inspection at 2026-09-04 14:00:13 saw Google's cached previous `robots.txt` rule, `Disallow: /`. A later inspection succeeded after the cache refreshed; the public origin continues to return `Allow: /`.
 
@@ -57,7 +57,7 @@ The earlier out-of-order indexable deployment was corrected by restoring `noinde
 
 ## Advertising integration checkpoint
 
-Completed locally on 2026-09-05; production activation and deployment remain separately gated.
+Completed and deployed on 2026-09-05 as Cloudflare version `b7dfab1c-7b78-4859-aa71-01abbed1213a`.
 
 - [x] Recorded the owner-generated Native Banner, 320×50 mobile banner, and 728×90 desktop banner configuration
 - [x] Added explicit accept/reject controls that load no Adsterra resource before opt-in
@@ -70,6 +70,8 @@ Completed locally on 2026-09-05; production activation and deployment remain sep
 - [x] Reviewed Adsterra publisher terms section 4.9 and its linked privacy/Cookie policies on 2026-09-05
 - [x] Verified a temporary production-mode build emits the Native placement on content pages and the responsive display placement on matching pages
 - [x] Owner reviewed the monetization tradeoff and explicitly authorized production activation
+- [x] Verified the live regional policy endpoint returns direct loading outside prior-consent regions
+- [x] Verified live Native and Display placements, privacy withdrawal control, and `index, follow` output
 
 ## Indexable deployment
 
