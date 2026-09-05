@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import { site } from "../../../site.config.mjs";
 import AdSlot from "../../components/AdSlot.astro";
+import { sourceLabel } from "../../lib/source-label.mjs";
 
 export async function getStaticPaths() {
   const countries = await getCollection("countries");
@@ -60,7 +61,7 @@ const coverageLabels = {
               <li>
                 <h3>{step.titleEn}</h3>
                 <p>{step.bodyEn}</p>
-                <p class="step-sources">{step.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p>
+                <p class="step-sources">{step.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{sourceLabel(url)}</a>)}</p>
               </li>
             ))}
           </ol>
@@ -78,7 +79,7 @@ const coverageLabels = {
                     <th scope="row">{fact.labelEn}</th>
                     <td>{fact.valueEn}</td>
                     <td>{fact.appliesTo}</td>
-                    <td><a href={fact.sourceUrl} rel="external noreferrer">{new URL(fact.sourceUrl).hostname}</a><span class="muted"> · reviewed {isoDate(fact.reviewedAt)}</span></td>
+                    <td><a href={fact.sourceUrl} rel="external noreferrer">{sourceLabel(fact.sourceUrl)}</a><span class="muted"> · reviewed {isoDate(fact.reviewedAt)}</span></td>
                   </tr>
                 ))}
               </tbody>
@@ -93,7 +94,7 @@ const coverageLabels = {
             {deep.blockers.map((blocker) => (
               <li>
                 <p>{blocker.summaryEn}</p>
-                <p class="step-sources">{blocker.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p>
+                <p class="step-sources">{blocker.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{sourceLabel(url)}</a>)}</p>
               </li>
             ))}
           </ul>
@@ -107,7 +108,7 @@ const coverageLabels = {
               {deep.sourceConflicts.map((conflict) => (
                 <li>
                   <p>{conflict.summaryEn}</p>
-                  <p class="step-sources">{conflict.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p>
+                  <p class="step-sources">{conflict.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{sourceLabel(url)}</a>)}</p>
                 </li>
               ))}
             </ul>

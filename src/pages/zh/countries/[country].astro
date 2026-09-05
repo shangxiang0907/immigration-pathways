@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from "astro:content";
 import SiteLayout from "../../../layouts/SiteLayout.astro";
 import { site } from "../../../../site.config.mjs";
 import AdSlot from "../../../components/AdSlot.astro";
+import { sourceLabel } from "../../../lib/source-label.mjs";
 export async function getStaticPaths() { const countries = await getCollection("countries"); const programs = await getCollection("programs"); return countries.map((country) => ({ params: { country: country.id }, props: { country, programs: programs.filter((program) => program.data.countryId === country.id) } })); }
 interface Props { country: CollectionEntry<"countries">; programs: CollectionEntry<"programs">[]; }
 const { country, programs } = Astro.props;
@@ -26,7 +27,7 @@ const deep = country.data.deepCoverage;
               <li>
                 <h3>{step.title}</h3>
                 <p>{step.body}</p>
-                <p class="step-sources">{step.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p>
+                <p class="step-sources">{step.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{sourceLabel(url)}</a>)}</p>
               </li>
             ))}
           </ol>
@@ -44,7 +45,7 @@ const deep = country.data.deepCoverage;
                     <th scope="row">{fact.label}</th>
                     <td>{fact.value}</td>
                     <td>{fact.appliesTo}</td>
-                    <td><a href={fact.sourceUrl} rel="external noreferrer">{new URL(fact.sourceUrl).hostname}</a><span class="muted"> · 复核于 {format.format(fact.reviewedAt)}</span></td>
+                    <td><a href={fact.sourceUrl} rel="external noreferrer">{sourceLabel(fact.sourceUrl)}</a><span class="muted"> · 复核于 {format.format(fact.reviewedAt)}</span></td>
                   </tr>
                 ))}
               </tbody>
@@ -57,7 +58,7 @@ const deep = country.data.deepCoverage;
           <p class="muted">以下是路径被关闭的常见原因。没有出现在列表中的问题，并不等于符合条件。</p>
           <ul class="blocker-list">
             {deep.blockers.map((blocker) => (
-              <li><p>{blocker.summary}</p><p class="step-sources">{blocker.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p></li>
+              <li><p>{blocker.summary}</p><p class="step-sources">{blocker.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{sourceLabel(url)}</a>)}</p></li>
             ))}
           </ul>
         </section>
@@ -68,7 +69,7 @@ const deep = country.data.deepCoverage;
             <p class="muted">我们照实公布这些分歧，而不是私下选一个。涉及关键决定时，请向主管机关确认。</p>
             <ul class="blocker-list">
               {deep.sourceConflicts.map((conflict) => (
-                <li><p>{conflict.summary}</p><p class="step-sources">{conflict.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p></li>
+                <li><p>{conflict.summary}</p><p class="step-sources">{conflict.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{sourceLabel(url)}</a>)}</p></li>
               ))}
             </ul>
           </section>
