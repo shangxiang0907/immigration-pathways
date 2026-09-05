@@ -16,6 +16,7 @@
     "build:indexable": "SITE_BUILD_MODE=production SITE_INDEXING_ENABLED=true ASTRO_TELEMETRY_DISABLED=1 astro build",
     "deploy:cloudflare": "npm run build:production && wrangler deploy",
     "deploy:indexable": "npm run build:indexable && wrangler deploy",
+    "traffic:adsterra": "node scripts/adsterra-report.mjs",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview"
   },
   "devDependencies": {
