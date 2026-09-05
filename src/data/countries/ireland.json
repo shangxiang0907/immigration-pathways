@@ -1,7 +1,177 @@
 {
-  "name": "爱尔兰", "nameEn": "Ireland", "region": "Europe", "coverage": "overview",
-  "summary": "已复核关键技能及一般就业许可；职业清单、薪酬和劳动力市场测试须按申请时官方规则确认。",
-  "summaryEn": "Reviewed Critical Skills and General Employment Permits; confirm occupation lists, remuneration and labour-market testing under the rules in force when applying.",
-  "reviewedAt": "2026-09-03",
-  "sources": [{ "authority": "Department of Justice, Home Affairs and Migration", "title": "How our immigration system works", "url": "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/collections/how-our-immigration-system-works/", "reviewedAt": "2026-09-03" }]
+  "name": "爱尔兰",
+  "nameEn": "Ireland",
+  "region": "Europe",
+  "coverage": "deep",
+  "summary": "爱尔兰关键技能就业许可路径，含三档薪资门槛及各自的学历条件、两年工作邀请要求、免劳动力市场测试，以及许可到期后直接申请 Stamp 4 的路线。",
+  "summaryEn": "Ireland's Critical Skills Employment Permit route, with its three remuneration thresholds and the qualification condition attached to each, the two-year job offer, the exemption from the labour market needs test, and the direct route to Stamp 4 when the permit expires.",
+  "reviewedAt": "2026-09-06",
+  "deepCoverage": {
+    "scope": "本页覆盖关键技能就业许可（Critical Skills Employment Permit）这条以就业为基础的路径。不覆盖一般就业许可、公司内部调动、学签、家庭团聚和庇护。就业许可由企业、贸易和就业部签发，居留许可（Stamp）由司法部另行办理，两者是分开的程序。",
+    "scopeEn": "This page covers the Critical Skills Employment Permit route taken for employment. It does not cover the General Employment Permit, intra-company transfers, study, family reunification, or asylum. Employment permits are issued by the Department of Enterprise, Trade and Employment while residence permission (the Stamp) is handled separately by the Department of Justice; these are two distinct processes.",
+    "steps": [
+      {
+        "title": "第一步：确认职业属于关键技能范围",
+        "titleEn": "Step 1: Check that the occupation falls within critical skills",
+        "body": "关键技能就业许可面向被认定为对国家具有战略重要性的职业，例如信息通信技术专业人员、专业工程师和技术专家。该清单依据未来技能需求专家组（Expert Group on Future Skills Needs）的定期分析确定，会随经济需求调整。职业是否在清单上，直接决定适用哪一档薪资门槛。",
+        "bodyEn": "The Critical Skills Employment Permit targets occupations identified as strategically important to the State, such as ICT professionals, professional engineers and technologists. The list is set from regular analyses by the Expert Group on Future Skills Needs and shifts with economic need. Whether an occupation is on that list determines which remuneration threshold applies.",
+        "sourceUrls": [
+          "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/"
+        ]
+      },
+      {
+        "title": "第二步：对准薪资门槛与其绑定的学历条件",
+        "titleEn": "Step 2: Match the remuneration threshold to the qualification condition tied to it",
+        "body": "薪资门槛不是单一数字，而是三档，且每一档都绑定了不同的学历要求。列入清单的战略重要职业为年薪 40,904 欧元，须具备相关学位或更高学历；如学历是在申请前 12 个月内取得的，门槛降至 36,848 欧元。清单以外的其他职业为 68,911 欧元，此档如具备足够经验则不强制要求学位。护士和助产士须持有护理及助产委员会认可的三级学位或文凭。公共部门岗位适用相应的薪酬协议。",
+        "bodyEn": "The threshold is not one figure but three, and each carries its own qualification condition. Restricted strategically important occupations require €40,904 a year together with a relevant degree or higher; if the qualification was obtained within the 12 months before the application, the threshold drops to €36,848. All other occupations require €68,911, and at that level a degree is not mandatory provided the necessary level of experience is held. Nurses and midwives need a third-level degree or diploma accepted by the Nursing and Midwifery Board. Public sector roles follow the applicable pay agreements.",
+        "sourceUrls": [
+          "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/"
+        ]
+      },
+      {
+        "title": "第三步：取得为期两年的工作邀请",
+        "titleEn": "Step 3: Secure a two-year job offer",
+        "body": "申请须以针对该符合条件职业的两年期工作邀请为基础。与一般就业许可不同，关键技能就业许可不要求进行劳动力市场需求测试，雇主无需先证明本地和欧洲经济区内招不到人。这使得流程明显更快，但也意味着职业是否在清单上、薪资是否达标这两项审查更为严格。",
+        "bodyEn": "The application rests on a two-year job offer for the eligible occupation. Unlike the General Employment Permit, a Labour Market Needs Test is not required, so the employer does not first have to show that the role could not be filled locally or within the European Economic Area. That makes the process markedly faster, and correspondingly makes the occupation-list and remuneration checks the parts that decide the outcome.",
+        "sourceUrls": [
+          "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/"
+        ]
+      },
+      {
+        "title": "第四步：许可到期后转 Stamp 4",
+        "titleEn": "Step 4: Move to Stamp 4 when the permit expires",
+        "body": "关键技能就业许可持有人在许可到期时，可直接向司法部申请 Stamp 4。取得 Stamp 4 后，可在爱尔兰居住和工作而无需再持有就业许可，也就不再受单一雇主约束。这条路线是关键技能就业许可相对于其他就业许可的核心优势。",
+        "bodyEn": "When the permit expires, holders can apply directly to the Department of Justice for a Stamp 4. With a Stamp 4 you may reside and work in the State without needing a further employment permit, and are therefore no longer tied to one employer. This route is the central advantage of the Critical Skills Employment Permit over other permit types.",
+        "sourceUrls": [
+          "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/"
+        ]
+      }
+    ],
+    "keyFacts": [
+      {
+        "label": "薪资门槛：列入清单的战略重要职业",
+        "labelEn": "Threshold: restricted strategically important occupations",
+        "value": "年薪 40,904 欧元，须具备相关学位或更高学历",
+        "valueEn": "€40,904 a year, with a relevant degree qualification or higher required",
+        "appliesTo": "2026",
+        "sourceUrl": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "薪资门槛：学历为近期取得",
+        "labelEn": "Threshold: recently obtained qualification",
+        "value": "年薪 36,848 欧元，适用于申请前 12 个月内取得学历的情形",
+        "valueEn": "€36,848 a year where the qualification was obtained within the 12 months before the application",
+        "appliesTo": "2026",
+        "sourceUrl": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "薪资门槛：清单以外的其他职业",
+        "labelEn": "Threshold: all other occupations",
+        "value": "年薪 68,911 欧元；具备足够经验的，此档不强制要求学位",
+        "valueEn": "€68,911 a year; at this level a degree is not required provided the necessary level of experience is held",
+        "appliesTo": "2026",
+        "sourceUrl": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "工作邀请期限",
+        "labelEn": "Job offer duration",
+        "value": "针对该符合条件职业的两年期工作邀请",
+        "valueEn": "A two-year job offer in respect of the eligible occupation",
+        "appliesTo": "2026",
+        "sourceUrl": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "劳动力市场需求测试",
+        "labelEn": "Labour Market Needs Test",
+        "value": "不要求",
+        "valueEn": "Not required",
+        "appliesTo": "2026",
+        "sourceUrl": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "护士与助产士的学历要求",
+        "labelEn": "Qualification requirement for nurses and midwives",
+        "value": "须持有护理及助产委员会认可的三级学位或文凭",
+        "valueEn": "A third-level degree or diploma accepted by the Nursing and Midwifery Board",
+        "appliesTo": "2026",
+        "sourceUrl": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "许可到期后的路线",
+        "labelEn": "Route when the permit expires",
+        "value": "可直接向司法部申请 Stamp 4，之后无需就业许可即可在爱尔兰居住和工作",
+        "valueEn": "Apply directly to the Department of Justice for a Stamp 4, after which you may reside and work in the State without a further employment permit",
+        "appliesTo": "2026",
+        "sourceUrl": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "公共部门岗位",
+        "labelEn": "Public sector roles",
+        "value": "适用相应的薪酬协议",
+        "valueEn": "Follow the applicable pay agreements",
+        "appliesTo": "2026",
+        "sourceUrl": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/",
+        "reviewedAt": "2026-09-06"
+      }
+    ],
+    "blockers": [
+      {
+        "summary": "按 40,904 欧元这一档准备，但职业不在战略重要职业清单上。清单外职业的门槛是 68,911 欧元，差距很大。",
+        "summaryEn": "Planning against the €40,904 tier when the occupation is not on the restricted strategically important list. Occupations outside that list require €68,911, a substantial gap.",
+        "sourceUrls": [
+          "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/"
+        ]
+      },
+      {
+        "summary": "薪资达标但缺少该档绑定的学历。40,904 和 36,848 欧元两档都要求相关学位或更高学历，薪资本身不能替代。",
+        "summaryEn": "Meeting the salary but not the qualification tied to that tier. Both the €40,904 and €36,848 tiers require a relevant degree or higher, and salary does not substitute for it.",
+        "sourceUrls": [
+          "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/"
+        ]
+      },
+      {
+        "summary": "工作邀请期限不足两年。关键技能就业许可以两年期工作邀请为前提。",
+        "summaryEn": "A job offer shorter than two years. The permit rests on a two-year job offer.",
+        "sourceUrls": [
+          "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/"
+        ]
+      },
+      {
+        "summary": "以为 36,848 欧元这一档对所有应届毕业生开放。该档只适用于申请前 12 个月内取得学历的情形。",
+        "summaryEn": "Assuming the €36,848 tier is open to all recent graduates. It applies only where the qualification was obtained within the 12 months before the application.",
+        "sourceUrls": [
+          "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/"
+        ]
+      },
+      {
+        "summary": "把就业许可和居留许可当成同一件事。就业许可由企业、贸易和就业部签发，Stamp 由司法部另行办理。",
+        "summaryEn": "Treating the employment permit and residence permission as one thing. The permit comes from the Department of Enterprise, Trade and Employment while the Stamp is handled separately by the Department of Justice.",
+        "sourceUrls": [
+          "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/"
+        ]
+      }
+    ],
+    "sourceConflicts": []
+  },
+  "sources": [
+    {
+      "authority": "Department of Justice, Home Affairs and Migration",
+      "title": "How our immigration system works",
+      "url": "https://www.gov.ie/en/department-of-justice-home-affairs-and-migration/collections/how-our-immigration-system-works/",
+      "reviewedAt": "2026-09-03"
+    },
+    {
+      "authority": "Department of Enterprise, Trade and Employment (Ireland)",
+      "title": "Critical Skills Employment Permit",
+      "url": "https://enterprise.gov.ie/en/what-we-do/workplace-and-skills/employment-permits/permit-types/critical-skills-employment-permit/",
+      "reviewedAt": "2026-09-06"
+    }
+  ]
 }

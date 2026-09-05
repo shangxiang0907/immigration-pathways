@@ -2,16 +2,182 @@
   "name": "荷兰",
   "nameEn": "Netherlands",
   "region": "Europe",
-  "coverage": "overview",
-  "summary": "已复核高技术移民及欧盟蓝卡；担保人、学历和收入标准须按申请时 IND 规则确认。",
-  "summaryEn": "Reviewed the highly skilled migrant and European Blue Card permits; confirm sponsor, qualification and income rules with the IND when applying.",
-  "reviewedAt": "2026-09-03",
+  "coverage": "deep",
+  "summary": "荷兰高技能移民（kennismigrant）居留许可路径，含 IND 认可担保雇主要求、按年龄分档的月薪门槛及其半年一变的适用期间，以及应届毕业生适用的降低门槛。",
+  "summaryEn": "The Netherlands' highly skilled migrant residence permit, with the IND recognised-sponsor requirement, the age-banded gross monthly salary thresholds and the six-month windows they apply to, and the reduced criterion for recent graduates.",
+  "reviewedAt": "2026-09-06",
+  "deepCoverage": {
+    "scope": "本页覆盖高技能移民（kennismigrant）居留许可这条以就业为基础的路径。不覆盖欧盟蓝卡、自雇与创业类别、求职定向年（orientation year）本身的申请条件、学签、家庭团聚和庇护。",
+    "scopeEn": "This page covers the highly skilled migrant (kennismigrant) residence permit taken for employment. It does not cover the EU Blue Card, self-employment and start-up categories, the conditions for the orientation year itself, study, family reunification, or asylum.",
+    "steps": [
+      {
+        "title": "第一步：雇主必须是 IND 认可的担保方",
+        "titleEn": "Step 1: The employer must be a sponsor recognised by the IND",
+        "body": "你需要与荷兰境内的雇主或研究机构签订雇佣合同，且该雇主必须是移民与归化局（IND）认可的担保方（recognised sponsor）。这一条不可绕过：雇主未取得认可资格，这条路径就不成立，个人学历和薪资再高也无法替代。认可担保方名单由 IND 维护，申请由雇主一侧发起。",
+        "bodyEn": "You need an employment contract with an employer or research institution in the Netherlands, and that employer must be a sponsor recognised by the Immigration and Naturalisation Service. There is no way around this: if the employer does not hold recognition, the route does not exist, and no amount of personal qualification or salary substitutes for it. The IND maintains the list of recognised sponsors, and the application is initiated from the employer's side.",
+        "sourceUrls": [
+          "https://ind.nl/en/residence-permits/work/highly-skilled-migrant"
+        ]
+      },
+      {
+        "title": "第二步：对准适用于你年龄段的月薪门槛",
+        "titleEn": "Step 2: Match the gross monthly salary threshold for your age band",
+        "body": "荷兰按年龄分档设定最低月薪，而不是统一数字。30 岁及以上与 30 岁以下适用不同门槛；曾参加求职定向年（orientation year）或近三年内毕业的人适用明显更低的门槛。所有金额均为税前月薪且不含假期津贴（holiday allowance）——用含假期津贴的数字去比对会高估自己的实际水平。",
+        "bodyEn": "The Netherlands sets the minimum by age band rather than a single figure. Applicants aged 30 and over face a different threshold from those under 30, and people who did the orientation year or graduated within the last three years qualify for a markedly lower one. All amounts are gross per month and exclude holiday allowance, so comparing against a figure that includes holiday allowance overstates where you actually stand.",
+        "sourceUrls": [
+          "https://ind.nl/en/required-amounts-income-requirements"
+        ]
+      },
+      {
+        "title": "第三步：注意金额每半年调整，且以申请当日为准",
+        "titleEn": "Step 3: Note that the amounts change twice a year and are fixed at the application date",
+        "body": "IND 的金额按半年区间公布，当前一档适用于 2026 年 7 月 1 日至 2026 年 12 月 31 日，之后会更新。适用哪一档，取决于申请提交当日生效的金额，而不是签订合同当日或开始工作当日。按上一区间的数字规划薪资谈判，是这条路径上常见的失误。",
+        "bodyEn": "The IND publishes the amounts in six-month windows; the current set applies from 1 July 2026 to 31 December 2026 and is then updated. Which figure governs depends on the amount in force on the date the application is submitted, not the date the contract was signed or the work began. Planning a salary negotiation against the previous window's figure is a common misstep on this route.",
+        "sourceUrls": [
+          "https://ind.nl/en/required-amounts-income-requirements"
+        ]
+      },
+      {
+        "title": "第四步：确认薪资符合市场水平，并了解许可期限",
+        "titleEn": "Step 4: Check the salary is market-rate, and understand the permit's length",
+        "body": "除达到门槛金额外，约定薪资还须符合该岗位的市场水平。居留许可的有效期与合同或工作期限一致，最长五年，属于 I 类临时常规居留许可。合同期短于五年的，许可期限随合同期，而不是自动给满五年。",
+        "bodyEn": "Beyond clearing the threshold amount, the agreed salary must also be in line with the market rate for the role. The residence permit is valid for the same period as the contract or job, up to a maximum of five years, and is a type I temporary regular residence permit. Where the contract is shorter than five years the permit follows the contract rather than automatically running the full five.",
+        "sourceUrls": [
+          "https://ind.nl/en/residence-permits/work/highly-skilled-migrant"
+        ]
+      }
+    ],
+    "keyFacts": [
+      {
+        "label": "担保方要求",
+        "labelEn": "Sponsor requirement",
+        "value": "须与荷兰境内雇主或研究机构签订雇佣合同，且该雇主为 IND 认可的担保方",
+        "valueEn": "An employment contract with an employer or research institution in the Netherlands that is a sponsor recognised by the IND",
+        "appliesTo": "2026",
+        "sourceUrl": "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "月薪门槛：30 岁及以上",
+        "labelEn": "Monthly salary threshold: aged 30 and over",
+        "value": "税前每月 5,942.00 欧元，不含假期津贴",
+        "valueEn": "€5,942.00 gross per month, excluding holiday allowance",
+        "appliesTo": "2026-07-01 至 2026-12-31 / 1 July to 31 December 2026",
+        "sourceUrl": "https://ind.nl/en/required-amounts-income-requirements",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "月薪门槛：30 岁以下",
+        "labelEn": "Monthly salary threshold: under 30",
+        "value": "税前每月 4,357.00 欧元，不含假期津贴",
+        "valueEn": "€4,357.00 gross per month, excluding holiday allowance",
+        "appliesTo": "2026-07-01 至 2026-12-31 / 1 July to 31 December 2026",
+        "sourceUrl": "https://ind.nl/en/required-amounts-income-requirements",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "降低门槛：求职定向年或近三年毕业",
+        "labelEn": "Reduced criterion: orientation year or graduated within three years",
+        "value": "税前每月 3,122.00 欧元，不含假期津贴",
+        "valueEn": "€3,122.00 gross per month, excluding holiday allowance",
+        "appliesTo": "2026-07-01 至 2026-12-31 / 1 July to 31 December 2026",
+        "sourceUrl": "https://ind.nl/en/required-amounts-income-requirements",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "适用金额的确定时点",
+        "labelEn": "Which amount applies",
+        "value": "以申请提交当日生效的金额为准",
+        "valueEn": "The required amount that applies on the date of the application",
+        "appliesTo": "2026",
+        "sourceUrl": "https://ind.nl/en/required-amounts-income-requirements",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "市场水平要求",
+        "labelEn": "Market-rate requirement",
+        "value": "约定薪资须符合该岗位的市场水平",
+        "valueEn": "The agreed salary must be in line with the market rate",
+        "appliesTo": "2026",
+        "sourceUrl": "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "许可期限",
+        "labelEn": "Permit length",
+        "value": "与合同或工作期限一致，最长五年",
+        "valueEn": "Valid for the same period as the contract or job, up to a maximum of five years",
+        "appliesTo": "2026",
+        "sourceUrl": "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "许可类型",
+        "labelEn": "Permit type",
+        "value": "I 类临时常规居留许可",
+        "valueEn": "Type I, temporary regular residence permit",
+        "appliesTo": "2026",
+        "sourceUrl": "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+        "reviewedAt": "2026-09-06"
+      }
+    ],
+    "blockers": [
+      {
+        "summary": "雇主不是 IND 认可的担保方。这是最彻底的阻断，个人条件无法替代雇主的认可资格。",
+        "summaryEn": "The employer is not an IND recognised sponsor. This is the most absolute blocker, and no personal qualification substitutes for the employer's recognition.",
+        "sourceUrls": [
+          "https://ind.nl/en/residence-permits/work/highly-skilled-migrant"
+        ]
+      },
+      {
+        "summary": "用含假期津贴的月薪去比对门槛。所有门槛金额均为不含假期津贴的税前月薪。",
+        "summaryEn": "Comparing a salary that includes holiday allowance against the threshold. All threshold amounts are gross per month excluding holiday allowance.",
+        "sourceUrls": [
+          "https://ind.nl/en/required-amounts-income-requirements"
+        ]
+      },
+      {
+        "summary": "按上一个半年区间的金额规划薪资。金额每半年更新，且以申请提交当日生效的数字为准。",
+        "summaryEn": "Planning against the previous six-month window's amount. The figures are updated every six months and the one in force on the application date governs.",
+        "sourceUrls": [
+          "https://ind.nl/en/required-amounts-income-requirements"
+        ]
+      },
+      {
+        "summary": "以为 3,122 欧元这一档对所有年轻申请人开放。该档只适用于参加过求职定向年或近三年内毕业的人。",
+        "summaryEn": "Assuming the €3,122 tier is open to any young applicant. It applies only to those who did the orientation year or graduated within the last three years.",
+        "sourceUrls": [
+          "https://ind.nl/en/required-amounts-income-requirements"
+        ]
+      },
+      {
+        "summary": "达到门槛但薪资低于该岗位的市场水平。门槛金额与市场水平是两项独立要求。",
+        "summaryEn": "Clearing the threshold while paying below the market rate for the role. The threshold amount and the market-rate test are two separate requirements.",
+        "sourceUrls": [
+          "https://ind.nl/en/residence-permits/work/highly-skilled-migrant"
+        ]
+      }
+    ],
+    "sourceConflicts": []
+  },
   "sources": [
     {
       "authority": "Immigration and Naturalisation Service (IND)",
       "title": "Residence permits",
       "url": "https://ind.nl/en/residence-permits",
       "reviewedAt": "2026-09-03"
+    },
+    {
+      "authority": "Immigration and Naturalisation Service (IND)",
+      "title": "Highly skilled migrant",
+      "url": "https://ind.nl/en/residence-permits/work/highly-skilled-migrant",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "Immigration and Naturalisation Service (IND)",
+      "title": "Required amounts income requirements",
+      "url": "https://ind.nl/en/required-amounts-income-requirements",
+      "reviewedAt": "2026-09-06"
     }
   ]
 }

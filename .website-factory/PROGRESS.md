@@ -212,7 +212,28 @@ Second deep record, following the Germany shape. Not yet deployed.
 - [x] Headless Chromium at 390, 768, and 1440 px in both locales: zero
       horizontal body overflow on all four new pages
 
-Coverage is now 164 directory, 29 overview, and 4 deep across 197 records.
+### Ireland and the Netherlands raised to `deep` coverage — 2026-09-06
+
+- [x] Ireland verified against the Department of Enterprise, Trade and Employment
+      on 2026-09-06: the Critical Skills Employment Permit's three remuneration
+      thresholds and the qualification condition tied to each, the two-year job
+      offer, the exemption from the Labour Market Needs Test, and the direct
+      route to Stamp 4 when the permit expires
+- [x] Netherlands verified against the IND on 2026-09-06: the recognised-sponsor
+      requirement, the age-banded gross monthly thresholds excluding holiday
+      allowance, the reduced criterion for orientation-year and recent graduates,
+      the market-rate test, and the permit's maximum five years
+- [x] The Dutch figures are published in six-month windows, so their
+      applicability column carries the exact window (1 July to 31 December 2026)
+      rather than just a year — the amounts change on 1 January 2027
+- [x] Ireland's page separates the employment permit from residence permission,
+      since they are issued by different departments and are commonly conflated
+- [x] `npm test` (11 suites), `npm run check`, `npm run build`, and
+      `npm run test:dist` pass
+- [x] Headless Chromium at 390, 768, and 1440 px in both locales: zero
+      horizontal body overflow on all four new pages
+
+Coverage is now 164 directory, 27 overview, and 6 deep across 197 records.
 
 ## Deferred
 
