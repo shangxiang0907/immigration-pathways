@@ -1,15 +1,18 @@
 ---
 import "../styles/global.css";
 import { site } from "../../site.config.mjs";
+import { isAdvertisingActive } from "../lib/advertising.mjs";
 
 interface Props {
   title: string;
   description: string;
   currentPath?: string;
   locale?: "en" | "zh";
+  /** Directory-only stubs opt out of indexing and of advertising. */
+  indexable?: boolean;
 }
 
-const { title, description, currentPath = Astro.url.pathname, locale = "en" } = Astro.props;
+const { title, description, currentPath = Astro.url.pathname, locale = "en", indexable = true } = Astro.props;
 const localeConfig = site.locales[locale];
 const alternateLocale = locale === "en" ? "zh" : "en";
 const alternateConfig = site.locales[alternateLocale];
@@ -20,7 +23,11 @@ const alternatePath = alternateLocale === "zh"
 const showLocaleSwitch = currentPath !== "/404";
 const isProduction = import.meta.env.SITE_BUILD_MODE === "production";
 const indexingEnabled = import.meta.env.SITE_INDEXING_ENABLED === "true";
-const isIndexable = isProduction && indexingEnabled && currentPath !== "/404";
+const hasIndexableContent = indexable && currentPath !== "/404";
+const isIndexable = isProduction && indexingEnabled && hasIndexableContent;
+// AdSense forbids ads on pages without publisher content, so the loader is
+// emitted only where an ad unit may legitimately appear.
+const advertisingActive = isAdvertisingActive(site.advertising, isProduction) && hasIndexableContent;
 const canonicalUrl = isProduction && currentPath !== "/404" && Astro.site ? new URL(currentPath, Astro.site) : undefined;
 const alternateUrl = isProduction && currentPath !== "/404" && Astro.site ? new URL(alternatePath, Astro.site) : undefined;
 const defaultPath = locale === "en" ? currentPath : pathWithoutLocale;
@@ -39,6 +46,7 @@ const defaultUrl = isProduction && currentPath !== "/404" && Astro.site ? new UR
     {alternateUrl && <link rel="alternate" hreflang={alternateConfig.htmlLang} href={alternateUrl} />}
     {defaultUrl && <link rel="alternate" hreflang="x-default" href={defaultUrl} />}
     <meta name="generator" content={Astro.generator} />
+    {advertisingActive && <script is:inline async crossorigin="anonymous" src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${site.advertising.publisherId}`}></script>}
     <title>{title}</title>
   </head>
   <body data-detect-locale={locale === "en" && currentPath === "/" ? "true" : "false"}>

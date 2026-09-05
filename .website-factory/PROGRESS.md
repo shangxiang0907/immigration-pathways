@@ -4,9 +4,16 @@ Last updated: 2026-09-05
 
 ## Current milestone
 
-Gate 7 — complete. The authorized regional Adsterra build is live while the existing indexable release remains intact.
+Last updated: 2026-09-05.
 
-The first live inspection at 2026-09-04 14:00:13 saw Google's cached previous `robots.txt` rule, `Disallow: /`. A later inspection succeeded after the cache refreshed; the public origin continues to return `Allow: /`.
+Gate 7 is **reopened**. Adsterra was withdrawn as the advertising provider and
+Google AdSense is now the selected provider, so every advertising gate restarts
+against AdSense requirements. The indexable release is otherwise unchanged.
+
+**Production still serves Adsterra.** The removal exists in the repository but
+not on the live origin; `npm run deploy:indexable` must be authorized and run to
+retire the live Adsterra scripts. Until then the deployed site and this
+repository disagree about advertising.
 
 ## Product and platform completed
 
@@ -23,10 +30,10 @@ The first live inspection at 2026-09-04 14:00:13 saw Google's cached previous `r
 - [x] Opt-in, versioned browser-only profile storage and clear control
 - [x] Legacy country questionnaires redirected to the unified comparison
 - [x] Boundary and built-output contract tests for matching/localization/privacy
-- [x] Google AdSense removed as the selected advertising provider
-- [x] Adsterra selected with only Native Banner and Display Banner allowed in principle
-- [x] Advertising disabled pending owner-generated code, consent, placement review, and authorization
-- [x] Disabled Adsterra migration deployed without third-party advertising scripts
+- [x] Adsterra withdrawn; Google AdSense selected as the advertising provider
+- [x] Advertising disabled pending AdSense approval, `ads.txt`, a certified CMP, ad units, and authorization
+- [x] Directory-only records excluded from indexing, from the sitemap, and from advertising
+- [x] `ads.txt` generated from configuration, authorizing no seller until a publisher ID exists
 - [x] Production metadata/sitemap generation separated from explicit indexing permission
 - [x] Non-indexable production build deployed and verified on the public domain
 - [x] Cloudflare Email Routing enabled with a verified destination
@@ -43,39 +50,67 @@ The first live inspection at 2026-09-04 14:00:13 saw Google's cached previous `r
 - [x] 5. Live site checked in real mobile and desktop browsers
 - [x] 6. Explicit owner authorization to enable indexing after gates 1–5
 - [x] 6. Production indexing enabled in the correct sequence
-- [x] 7. Consent requirements/configuration complete for advertising
-- [x] 7. Adsterra website approved and owner-generated banner code reviewed
-- [x] 7. Ad placements reviewed and explicitly authorized for activation
+- [ ] 7. AdSense account approved for the production domain
+- [ ] 7. `ads.txt` authorizes the publisher account on the live origin
+- [ ] 7. Google-certified consent management platform configured for EEA/UK/Swiss traffic
+- [ ] 7. Ad units created, placements reviewed, and activation explicitly authorized
 
 The earlier out-of-order indexable deployment was corrected by restoring `noindex` and `Disallow: /`. After gates 1–5 passed and the owner explicitly authorized indexing, the separately gated indexable build was deployed on 2026-09-04. Google may temporarily retain the earlier robots response in its crawler cache.
 
 ## Next actions
 
-1. Deepen high-demand country records from directory links into reviewed pathway overviews; broad country coverage is complete.
-2. Keep the current indexable deployment stable; publish content batches only with explicit owner authorization.
-3. Monitor live Adsterra fill, impressions, and revenue; the consent, account, code-review, placement, and activation gates are complete.
+1. Deploy the Adsterra removal so the live origin matches this repository.
+   Requires explicit owner authorization for `npm run deploy:indexable`.
+2. Deepen high-demand country records from directory links into reviewed pathway
+   overviews. This is now the prerequisite for AdSense approval, not only a
+   content goal: 164 of 197 records are directory-only.
+3. Apply for AdSense once reviewed coverage is materially deeper, then work
+   release gate 7 in order.
 
 ## Advertising integration checkpoint
 
-Completed and deployed on 2026-09-05 as Cloudflare version `b7dfab1c-7b78-4859-aa71-01abbed1213a`.
+### Adsterra withdrawal — 2026-09-05
 
-- [x] Recorded the owner-generated Native Banner, 320×50 mobile banner, and 728×90 desktop banner configuration
-- [x] Added explicit accept/reject controls that load no Adsterra resource before opt-in
-- [x] Added bilingual privacy disclosure and a persistent withdrawal control
-- [x] Changed consent to a regional policy: prior opt-in in EEA/UK/Switzerland, direct loading elsewhere, with a safe prompt fallback
-- [x] Added a Cloudflare country-policy endpoint and honored Global Privacy Control before loading ads
-- [x] Restricted script origins and dimensions in configuration validation
-- [x] Owner authorized the regional, revenue-oriented advertising mode on 2026-09-05
-- [x] Set `advertising.enabled` true; preview builds still emit no advertising code
-- [x] Reviewed Adsterra publisher terms section 4.9 and its linked privacy/Cookie policies on 2026-09-05
-- [x] Verified a temporary production-mode build emits the Native placement on content pages and the responsive display placement on matching pages
-- [x] Owner reviewed the monetization tradeoff and explicitly authorized production activation
-- [x] Verified the live regional policy endpoint returns direct loading outside prior-consent regions
-- [x] Verified live Native and Display placements, privacy withdrawal control, and `index, follow` output
-- [x] Headless desktop and mobile checks each issued the expected Adsterra request with no popup, script error, or horizontal overflow
-- [x] Added a local, Git-ignored Adsterra Publisher API token and a read-only seven-day traffic report command
-- [x] Added reusable read-only Cloudflare Analytics access and a combined website/ad traffic report command
-- [ ] Confirm real-user creative fill and impressions in the Adsterra dashboard; headless checks showed reserved ad space but no rendered creative
+Withdrawn by owner decision on brand and content-quality grounds: an audience
+researching immigration is actively targeted by fraud, and creative quality on
+that network is not controllable from this repository.
+
+- [x] Removed the placement configuration, the ad component's loader, and the
+      hand-rolled consent UI
+- [x] Removed the `/api/ad-policy` regional consent endpoint from the Worker
+- [x] Removed the Adsterra traffic report script and its `npm` scripts
+- [x] Rewrote the bilingual privacy disclosure for AdSense
+- [x] Verified the preview and indexable builds emit no Adsterra host, script, or
+      container ID
+- [ ] Deploy so the live origin stops serving Adsterra — requires authorization
+
+Revoke the Adsterra Publisher API token and remove `ADSTERRA_API_TOKEN` from the
+local, Git-ignored `.env.traffic.local`. That file is untracked, so this cannot
+be done from the repository.
+
+### AdSense readiness — in progress
+
+Configuration lives in `site.config.mjs` and is enforced by
+`src/lib/advertising.mjs`; activation is impossible while any gate is unmet.
+
+- [x] Provider set to `google-adsense` with advertising disabled
+- [x] Publisher ID, certified-CMP, `integrationReady`, and 10-digit slot IDs
+      required before `enabled` can take effect
+- [x] Format allowlist restricted to responsive display units
+- [x] `/ads.txt` generated from the publisher ID
+- [x] Ad loader and ad units suppressed on 404 and on directory-only records
+- [ ] AdSense account approval
+- [ ] Google-certified CMP for EEA/UK/Swiss traffic
+- [ ] Ad units created and slot IDs recorded
+- [ ] Owner authorization to activate
+
+### Thin-content exposure
+
+164 of 197 country records are directory-only. They now render
+`noindex, nofollow, noarchive` in every build mode and are excluded from the
+sitemap, which drops the submitted URL count from 559 to 230. Deploying this
+change will remove those URLs from the index over time; that is intended, both
+for search quality and for AdSense review.
 
 ## Indexable deployment
 
@@ -120,7 +155,8 @@ Completed locally on 2026-09-04; publication remains separately gated.
 ## Deferred
 
 - Deepen the highest-demand directory records into reviewed pathway overviews
-- Adsterra account connection, generated banner code, and production activation
+- AdSense approval, certified CMP, ad units, and production activation
+- AdSense earnings reporting (needs the Management API with OAuth, not a static token)
 - Free/paid report boundary and pricing
 - Grounded report data contract and LLM provider
 - Payment, checkout, accounts, transactional email, and report delivery

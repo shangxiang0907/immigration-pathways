@@ -8,7 +8,7 @@ Last updated: 2026-09-04
 2. Add deterministic filtering, a unified questionnaire, and comparison.
 3. Expand structured coverage toward at least 100 countries in coherent batches.
 4. Complete the static-site release sequence and observe the site for one to two weeks.
-5. Activate Adsterra advertising only after account, consent, placement, and owner gates pass.
+5. Activate Google AdSense only after approval, ads.txt, certified-CMP, placement, and owner gates pass.
 6. Define and validate the free/paid report boundary.
 7. Prototype grounded LLM reports only after that validation.
 8. Add payment and optional email delivery only with separate owner authorization.
@@ -48,7 +48,14 @@ Normalized fields, shared questionnaire, generic tri-state evaluation, side-by-s
 
 ### M4 — Static release and advertising — gated
 
-Adsterra has replaced Google AdSense as the selected provider. Only Native Banner and Display Banner formats are approved in principle; Popunder, Social Bar, Interstitial, Smartlink, anti-adblock, forced redirects, and deceptive placements are excluded. Advertising remains disabled until owner-generated code, consent behavior, placements, and production activation are separately reviewed and authorized.
+Google AdSense is the selected provider; Adsterra was withdrawn on 2026-09-05 as a brand and content-quality risk for this audience. Only responsive display units are approved in principle; interstitial, vignette, anchor, auto-ads, anti-adblock, forced redirects, and deceptive placements are excluded by configuration.
+
+AdSense imposes gates a plain ad network does not, and the code enforces them:
+
+- Serving EEA/UK/Swiss traffic requires a Google-certified consent management platform. A hand-rolled consent banner does not satisfy Google's EU user consent policy, so `advertising.cmp` must name a certified provider before activation.
+- `ads.txt` must authorize the publisher account, so it is generated from `site.config.mjs` and authorizes no seller until a publisher ID exists.
+- Ads may not appear on pages without publisher content. Directory-only country records therefore render no ad placement and no AdSense loader.
+- Low-value or scaled content is the most common AdSense rejection reason, so directory-only records are also excluded from indexing and from the sitemap.
 
 ### M5 — Grounded report prototype — deferred
 
@@ -68,7 +75,7 @@ The order is a dependency chain, not a menu:
 4. Verify and submit the production sitemap.
 5. Perform real mobile and desktop live-site QA.
 6. Obtain explicit owner authorization, then enable indexing.
-7. Configure consent and Adsterra owner-generated banner code, review placements, obtain explicit activation authorization, then enable ads.
+7. Obtain AdSense approval, publish `ads.txt`, configure a Google-certified CMP, create ad units, review placements, obtain explicit activation authorization, then enable ads.
 
 If a later step was completed early, record the exception in `PROGRESS.md` and restore the safest reversible state before continuing.
 

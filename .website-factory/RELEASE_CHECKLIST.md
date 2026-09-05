@@ -46,12 +46,24 @@ indexing requests against a failed live test.
 
 ## 7. Advertising (separate activation)
 
-- [ ] Confirm applicable consent requirements and configure the approved consent mechanism.
-- [ ] Obtain explicit authorization for Adsterra account connection/configuration.
-- [ ] Approve only Native Banner or Display Banner formats; reject Popunder, Social Bar, Interstitial, Smartlink, anti-adblock, forced redirects, and deceptive placements.
-- [ ] Configure owner-generated placement code without committing account credentials.
-- [ ] Review ad placement on free surfaces; exclude paid reports and checkout.
-- [ ] Obtain explicit authorization to activate production ads.
+Google AdSense is the selected provider. Adsterra was withdrawn on 2026-09-05.
+
+- [ ] Reduce low-value pages before applying: directory-only records must be
+      non-indexable and excluded from the sitemap, since scaled low-value content
+      is the most common AdSense rejection reason.
+- [ ] Apply for AdSense and obtain account approval for the production domain.
+- [ ] Set `advertising.publisherId` and confirm the generated `/ads.txt`
+      authorizes the account on the live origin.
+- [ ] Configure a Google-certified consent management platform for EEA, UK, and
+      Swiss traffic, and record it in `advertising.cmp`. A self-built consent
+      banner does not satisfy Google's EU user consent policy.
+- [ ] Create the `content` and `results` ad units and record their 10-digit slot IDs.
+- [ ] Approve only responsive display units; reject interstitial, vignette,
+      anchor, auto-ads, anti-adblock, forced redirects, and deceptive placements.
+- [ ] Review ad placement on free surfaces only; exclude directory-only pages,
+      error pages, paid reports, and checkout.
+- [ ] Obtain explicit authorization to activate production ads, then set
+      `advertising.enabled`, `consentReady`, and `integrationReady`.
 - [ ] Deploy and verify that ads do not load on previews or disabled builds.
 
 ## Rollback rule

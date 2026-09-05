@@ -16,6 +16,9 @@ interface Props {
 }
 
 const { country, programs } = Astro.props;
+// Directory records only point at a government portal. They carry no reviewed
+// content of our own, so they stay out of the index and out of advertising.
+const hasReviewedContent = country.data.coverage !== "directory";
 const coverageLabels = {
   directory: "Official directory",
   overview: "Policy overview",
@@ -23,7 +26,7 @@ const coverageLabels = {
 };
 ---
 
-<SiteLayout title={`${country.data.nameEn} immigration information — ${site.name}`} description={country.data.summaryEn}>
+<SiteLayout title={`${country.data.nameEn} immigration information — ${site.name}`} description={country.data.summaryEn} indexable={hasReviewedContent}>
   <article class="prose country-detail">
     <nav class="breadcrumbs" aria-label="Breadcrumb"><a href="/countries">Countries</a><span aria-hidden="true">/</span><span>{country.data.nameEn}</span></nav>
     <p class="eyebrow">{country.data.name}</p>
@@ -42,7 +45,7 @@ const coverageLabels = {
     )}
 
     {programs.length > 0 && <section aria-labelledby="programs-heading"><h2 id="programs-heading">Reviewed programs</h2><ul>{programs.map((program) => <li><a href={`/programs/${program.id}`}>{program.data.nameEn}</a> — {program.data.summaryEn}</li>)}</ul></section>}
-    <AdSlot placement="content" />
+    {hasReviewedContent && <AdSlot placement="content" />}
 
     <section aria-labelledby="sources-heading">
       <h2 id="sources-heading">Official sources</h2>

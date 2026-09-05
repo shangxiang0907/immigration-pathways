@@ -96,14 +96,6 @@ fieldset.question { grid-template-columns: repeat(3, max-content); }
 .footer-inner nav { display: flex; gap: 1rem; }
 .ad-placement { width: 100%; min-height: 7rem; margin-block: 3rem; border-block: 1px solid var(--line); padding-block: 1rem; overflow: hidden; background: var(--surface); }
 .ad-label { display: block; margin-bottom: .5rem; color: var(--muted); font-size: .7rem; letter-spacing: .08em; text-align: center; text-transform: uppercase; }
-.ad-consent { max-width: 42rem; margin-inline: auto; text-align: center; }
-.ad-consent p { margin: .5rem 0; color: var(--muted); font-size: .9rem; }
-.ad-consent-actions { display: flex; align-items: center; justify-content: center; gap: 1rem; }
-.ad-consent .button { border: 0; cursor: pointer; font: inherit; }
-.ad-content { min-height: 5.7rem; text-align: center; }
-.ad-content > iframe { max-width: 100%; }
-.consent-settings { margin-block: 1.5rem; }
-.consent-settings .button { border: 0; cursor: pointer; font: inherit; }
 
 @media (max-width: 44rem) {
   .header-inner, .footer-inner { align-items: flex-start; flex-direction: column; padding-block: 1rem; }

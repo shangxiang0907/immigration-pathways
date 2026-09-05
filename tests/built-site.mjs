@@ -23,12 +23,29 @@ assert.match(previewZhHome, /已复核覆盖 33 个国家/);
 assert.match(previewZhHome, /比较 71 条经过复核的移民及工作居留路径/);
 assert.doesNotMatch(previewZhHome, /预览站不会被搜索引擎索引|加拿大现有三项/);
 const previewPrivacy = await read("privacy/index.html");
-assert.match(previewPrivacy, /Withdraw advertising consent/);
-assert.match(previewPrivacy, /immigration-pathways-ad-consent-v1/);
-assert.match(previewPrivacy, /Adsterra Privacy Policy/);
+assert.match(previewPrivacy, /Google AdSense is the selected advertising provider/);
+assert.match(previewPrivacy, /Google-certified consent management platform/);
+assert.match(previewPrivacy, /policies\.google\.com\/technologies\/partner-sites/);
 const previewZhPrivacy = await read("zh/privacy/index.html");
-assert.match(previewZhPrivacy, /撤回广告同意/);
-assert.match(previewZhPrivacy, /Adsterra 隐私政策/);
+assert.match(previewZhPrivacy, /Google AdSense 作为广告服务商/);
+assert.match(previewZhPrivacy, /经 Google 认证的同意管理平台/);
+
+// ads.txt authorizes no seller until a publisher ID is configured.
+const adsTxt = await read("ads.txt");
+assert.doesNotMatch(adsTxt, /pub-\d/);
+assert.match(adsTxt, /No advertising seller is authorized/);
+
+// Directory-only country records carry no reviewed content of our own. They stay
+// non-indexable in every build mode and never render an ad placement.
+for (const path of ["countries/afghanistan/index.html", "zh/countries/afghanistan/index.html"]) {
+  const html = await read(path);
+  assert.match(html, /<meta name="robots" content="noindex, nofollow, noarchive">/, `${path} must stay non-indexable`);
+  assert.doesNotMatch(html, /ad-placement|adsbygoogle/, `${path} must not render an ad placement`);
+}
+// Reviewed country records follow the build's indexing mode.
+for (const path of ["countries/germany/index.html", "zh/countries/germany/index.html"]) {
+  assert.match(await read(path), new RegExp(`<meta name="robots" content="${expectedRobots}">`), `${path} must follow the build mode`);
+}
 
 for (const [path, language, heading] of [["match/index.html", "en-US", "Fill once, compare countries"], ["zh/match/index.html", "zh-CN", "一次填写，比较多个国家"]]) {
   const html = await read(path);
