@@ -60,18 +60,15 @@ The earlier out-of-order indexable deployment was corrected by restoring `noinde
 
 ## Next actions
 
-1. Raise Australia to `deep` coverage. Blocked on source access: every
-   `immi.homeaffairs.gov.au` page returns HTTP 403 to automated fetches, so the
-   points table and subclass requirements cannot be verified the way Germany's
-   and Canada's were. Options are recorded under "Known defects".
-2. Continue the deep batch with countries whose authorities are reachable:
-   New Zealand, the United Kingdom, the Netherlands, and Ireland all have
-   reviewed program records already.
+1. Keep raising records to `deep` coverage. This is the AdSense-approval path:
+   scaled low-value content is the usual rejection reason, and 164 of 197 records
+   are still directory-only.
+2. Australia stays blocked on source access; see "Known defects".
 3. Apply for AdSense once reviewed coverage is materially deeper, then work
    release gate 7 in order.
 4. Decide on the trailing-slash mismatch recorded under "Known defects".
-5. Deploy the deep-coverage work. Germany and Canada are built and verified
-   locally but not released; deployment needs explicit owner authorization.
+5. Deploy the deep-coverage work. It is built and verified locally but not
+   released; deployment needs explicit owner authorization.
 
 ## Advertising integration checkpoint
 
@@ -196,7 +193,26 @@ Second deep record, following the Germany shape. Not yet deployed.
 - [x] Headless Chromium at 390, 768, and 1440 px in both locales: zero
       horizontal body overflow
 
-Coverage is now 164 directory, 31 overview, and 2 deep across 197 records.
+### United Kingdom and New Zealand raised to `deep` coverage — 2026-09-06
+
+- [x] United Kingdom verified against GOV.UK on 2026-09-06: the sponsorship and
+      Certificate of Sponsorship requirement, the eligible occupation code, the
+      whichever-is-higher salary rule against the going rate, the CEFR B2 English
+      requirement and its exemptions, the five-year visa and settlement timeline,
+      and the in-country restrictions on changing employer and public funds
+- [x] New Zealand verified against Immigration New Zealand on 2026-09-06: the
+      six-point Skilled Migrant Category, where each point band comes from, the
+      age-55 limit, the accredited-employer and 12-month position requirements,
+      and the Accredited Employer Work Visa's experience and duration rules
+- [x] Each page leads with the misconception most likely to waste a reader's
+      time: for the UK, that no personal qualification substitutes for a licensed
+      sponsor; for New Zealand, that six points is not a hundred-point system
+- [x] `npm test` (11 suites), `npm run check`, `npm run build`, and
+      `npm run test:dist` pass
+- [x] Headless Chromium at 390, 768, and 1440 px in both locales: zero
+      horizontal body overflow on all four new pages
+
+Coverage is now 164 directory, 29 overview, and 4 deep across 197 records.
 
 ## Deferred
 

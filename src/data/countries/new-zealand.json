@@ -1,10 +1,208 @@
 {
-  "name": "新西兰", "nameEn": "New Zealand", "region": "Oceania", "coverage": "overview",
-  "summary": "已复核技术移民类别及绿色清单 Tier 1、Tier 2 三条技术居留路径；具体职位、工资及证据仍须在申请时向新西兰移民局确认。",
-  "summaryEn": "Reviewed coverage of the Skilled Migrant Category and Green List Tier 1 and Tier 2 skilled-residence pathways; confirm role, pay and evidence details with Immigration New Zealand when applying.",
-  "reviewedAt": "2026-09-03",
+  "name": "新西兰",
+  "nameEn": "New Zealand",
+  "region": "Oceania",
+  "coverage": "deep",
+  "summary": "新西兰技术移民类别的 6 分制居留路径与认可雇主工作签证，含积分来源、55 岁年龄上限、认可雇主要求，以及与百分制积分国家的关键差异。",
+  "summaryEn": "New Zealand's six-point Skilled Migrant Category residence route and the Accredited Employer Work Visa, with where points come from, the age-55 limit, the accredited-employer requirement, and how this differs from hundred-point systems.",
+  "reviewedAt": "2026-09-06",
+  "deepCoverage": {
+    "scope": "本页覆盖技术移民类别居留签证（SMC）和认可雇主工作签证（AEWV）两条以就业为基础的路径。不覆盖 Straight to Residence、Work to Residence 等绿名单路径的完整条件（见下方项目页）、学签、创业与投资类别、家庭类别和庇护。",
+    "scopeEn": "This page covers two employment-based routes: the Skilled Migrant Category resident visa and the Accredited Employer Work Visa. It does not cover the full conditions of Green List routes such as Straight to Residence and Work to Residence, which have their own program pages below, nor study, business and investment categories, family categories, or asylum.",
+    "steps": [
+      {
+        "title": "第一步：理解新西兰的 6 分制与百分制完全不同",
+        "titleEn": "Step 1: Understand that six points is not a hundred-point system",
+        "body": "技术移民类别只需要 6 个技术居留积分，而不是加拿大或澳大利亚那种几十上百分的累加。积分主要来自三选一的一项主要资格：职业注册（3 至 6 分，取决于所需培训年限）、学历（新西兰学历 5 至 6 分，境外学历 4 至 6 分且须做国际学历评估 IQA），或收入（3 至 6 分，按相对于 SMC 收入门槛的倍数计算）。在此基础上，1 至 2 年新西兰技术工作经验最多再加 3 分。7 级及以下的非学位资格不能用于加分。",
+        "bodyEn": "The Skilled Migrant Category needs six skilled resident points, not a running total in the tens or hundreds as in Canada or Australia. Points come mainly from one principal claim: occupational registration (3 to 6 points depending on the years of training required), qualifications (5 to 6 points for New Zealand qualifications, 4 to 6 for international ones, which need an International Qualification Assessment), or income (3 to 6 points based on multiples of the SMC income threshold). On top of that, one to two years of skilled New Zealand work experience adds up to 3 more points. A non-degree qualification at level 7 or below cannot be claimed.",
+        "sourceUrls": [
+          "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa"
+        ]
+      },
+      {
+        "title": "第二步：确认年龄、雇主与职位条件",
+        "titleEn": "Step 2: Check the age, employer and position conditions",
+        "body": "申请时须年满或不超过 55 岁。你需要来自认可雇主（accredited employer）的工作邀请，或已在为认可雇主工作；该雇主必须在认可雇主名单上。职位须为长期职位，或期限至少 12 个月的固定期限职位。",
+        "bodyEn": "You must be aged 55 or younger when you apply. You need a job offer from an accredited employer, or to be already employed by one, and that employer must appear on the accredited employers list. The position must be permanent, or fixed-term for at least 12 months.",
+        "sourceUrls": [
+          "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa"
+        ]
+      },
+      {
+        "title": "第三步：如果还不满足居留条件，先走认可雇主工作签证",
+        "titleEn": "Step 3: If residence is out of reach yet, start with the work visa",
+        "body": "认可雇主工作签证要求来自认可雇主的全职工作邀请，且该雇主已就此岗位通过职位检查（job check）。申请人须具备至少两年相关工作经验，或新西兰资历框架（NZQCF）4 级及以上的学历。签证按所提供岗位最长五年；连续停留上限为大多数岗位五年，ANZSCO 技能等级 4 或 5 的岗位为三年。",
+        "bodyEn": "The Accredited Employer Work Visa requires a full-time job offer from an accredited employer who holds an approved job check for that role. You need either two years or more of relevant job experience, or a qualification at level 4 or higher on the New Zealand Qualifications and Credentials Framework. The visa runs up to five years based on the job offered, and the maximum continuous stay is five years for most jobs, or three years if the job is ANZSCO skill level 4 or 5.",
+        "sourceUrls": [
+          "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa"
+        ]
+      },
+      {
+        "title": "第四步：准备健康与品格材料",
+        "titleEn": "Step 4: Prepare the health and character evidence",
+        "body": "申请人须身体健康：15 岁及以上须提供胸部 X 光和体检报告。品格方面须为品行良好：17 岁及以上须提供出具时间少于六个月的无犯罪记录证明。这两项常因材料时效过期而拖慢进度，而不是因为不符合条件。",
+        "bodyEn": "You must be in good health: applicants aged 15 and over need a chest X-ray and a medical examination. You must be of good character: applicants aged 17 and over need police certificates less than six months old. These two commonly slow an application down because evidence expires, rather than because the requirement is not met.",
+        "sourceUrls": [
+          "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa"
+        ]
+      }
+    ],
+    "keyFacts": [
+      {
+        "label": "技术移民类别所需积分",
+        "labelEn": "Skilled Migrant Category points needed",
+        "value": "6 个技术居留积分",
+        "valueEn": "Six skilled resident points",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "年龄上限",
+        "labelEn": "Age limit",
+        "value": "申请时 55 岁或以下",
+        "valueEn": "Aged 55 or younger when you apply",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "职业注册积分",
+        "labelEn": "Occupational registration points",
+        "value": "3 至 6 分，取决于所需培训年限（2 至 6 年）",
+        "valueEn": "3 to 6 points depending on the years of training required, from two to six years",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "学历积分",
+        "labelEn": "Qualification points",
+        "value": "新西兰学历 5 至 6 分；境外学历 4 至 6 分，须完成国际学历评估（IQA）；7 级及以下的非学位资格不可加分",
+        "valueEn": "5 to 6 points for New Zealand qualifications; 4 to 6 for international qualifications, which require an International Qualification Assessment; a non-degree qualification at level 7 or below cannot be claimed",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "收入积分",
+        "labelEn": "Income points",
+        "value": "3 至 6 分，按相对于 SMC 收入门槛的倍数计算",
+        "valueEn": "3 to 6 points based on multiples of the Skilled Migrant Category income threshold",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "新西兰工作经验加分",
+        "labelEn": "New Zealand work experience points",
+        "value": "1 至 2 年新西兰技术工作经验最多加 3 分",
+        "valueEn": "Up to 3 additional points for one to two years of skilled New Zealand work experience",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "雇主与职位要求",
+        "labelEn": "Employer and position requirement",
+        "value": "须有认可雇主的工作邀请或已受雇于认可雇主；职位须为长期，或期限至少 12 个月的固定期限职位",
+        "valueEn": "A job offer from, or current employment with, an accredited employer; the position must be permanent or fixed-term for at least 12 months",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "认可雇主工作签证的技能要求",
+        "labelEn": "Accredited Employer Work Visa skill requirement",
+        "value": "至少两年相关工作经验，或 NZQCF 4 级及以上学历",
+        "valueEn": "Two years or more of relevant job experience, or a qualification at level 4 or higher on the New Zealand Qualifications and Credentials Framework",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "认可雇主工作签证期限",
+        "labelEn": "Accredited Employer Work Visa length",
+        "value": "按所提供岗位最长五年；连续停留上限为大多数岗位五年，ANZSCO 技能等级 4 或 5 的岗位为三年",
+        "valueEn": "Up to five years based on the job offered; the maximum continuous stay is five years for most jobs, or three years if the job is ANZSCO skill level 4 or 5",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "健康与品格材料",
+        "labelEn": "Health and character evidence",
+        "value": "15 岁及以上须胸部 X 光和体检；17 岁及以上须提供出具时间少于六个月的无犯罪记录证明",
+        "valueEn": "A chest X-ray and medical examination for applicants aged 15 and over; police certificates less than six months old for applicants aged 17 and over",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+        "reviewedAt": "2026-09-06"
+      }
+    ],
+    "blockers": [
+      {
+        "summary": "雇主不在认可雇主名单上。技术移民类别和认可雇主工作签证都以雇主的认可资格为前提。",
+        "summaryEn": "The employer is not on the accredited employers list. Both the Skilled Migrant Category and the Accredited Employer Work Visa rest on the employer's accreditation.",
+        "sourceUrls": [
+          "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa"
+        ]
+      },
+      {
+        "summary": "申请时已超过 55 岁。技术移民类别有明确年龄上限，不因其他条件优秀而放宽。",
+        "summaryEn": "Being older than 55 at the time of application. The Skilled Migrant Category has a hard age limit that other strengths do not offset.",
+        "sourceUrls": [
+          "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa"
+        ]
+      },
+      {
+        "summary": "用 7 级及以下的非学位资格申报学历积分。该类资格不能用于加分。",
+        "summaryEn": "Claiming qualification points for a non-degree qualification at level 7 or below. That category cannot be claimed.",
+        "sourceUrls": [
+          "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa"
+        ]
+      },
+      {
+        "summary": "境外学历未完成国际学历评估（IQA）就用于申报积分。",
+        "summaryEn": "Using an international qualification for points without a completed International Qualification Assessment.",
+        "sourceUrls": [
+          "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa"
+        ]
+      },
+      {
+        "summary": "职位为期限不足 12 个月的固定期限合同。技术移民类别要求长期职位或至少 12 个月的固定期限职位。",
+        "summaryEn": "A fixed-term contract shorter than 12 months. The Skilled Migrant Category requires a permanent position or a fixed term of at least 12 months.",
+        "sourceUrls": [
+          "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa"
+        ]
+      },
+      {
+        "summary": "无犯罪记录证明或体检报告在审理期间过期。品格材料要求出具时间少于六个月。",
+        "summaryEn": "Police certificates or medical evidence expiring during processing. Character evidence must be less than six months old.",
+        "sourceUrls": [
+          "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa"
+        ]
+      }
+    ],
+    "sourceConflicts": []
+  },
   "sources": [
-    { "authority": "Immigration New Zealand", "title": "Skilled residence pathways in New Zealand", "url": "https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/", "reviewedAt": "2026-09-03" },
-    { "authority": "Immigration New Zealand", "title": "Find and choose a visa", "url": "https://www.immigration.govt.nz/process-to-apply/find-a-visa-tool/", "reviewedAt": "2026-09-03" }
+    {
+      "authority": "Immigration New Zealand",
+      "title": "Skilled residence pathways",
+      "url": "https://www.immigration.govt.nz/live/resident-visas-to-live-in-new-zealand/skilled-residence-pathways-in-new-zealand/",
+      "reviewedAt": "2026-09-03"
+    },
+    {
+      "authority": "Immigration New Zealand",
+      "title": "Skilled Migrant Category Resident Visa",
+      "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "Immigration New Zealand",
+      "title": "Accredited Employer Work Visa",
+      "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+      "reviewedAt": "2026-09-06"
+    }
   ]
 }

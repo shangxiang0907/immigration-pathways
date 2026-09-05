@@ -1,10 +1,214 @@
 {
-  "name": "英国", "nameEn": "United Kingdom", "region": "Europe", "coverage": "overview",
-  "summary": "已复核技术工作、成长型企业工作及全球人才三条主要工作路线；具体职业代码、工资、担保和人才资格须在申请时向 GOV.UK 确认。",
-  "summaryEn": "Reviewed coverage of the Skilled Worker, Scale-up Worker and Global Talent routes; confirm occupation code, salary, sponsorship and talent-route details on GOV.UK when applying.",
-  "reviewedAt": "2026-09-03",
+  "name": "英国",
+  "nameEn": "United Kingdom",
+  "region": "Europe",
+  "coverage": "deep",
+  "summary": "英国以雇主担保为核心的技术工作签证路径，含 2026 年适用的薪资门槛、going rate 规则、B2 英语要求，以及五年转永居的时间线。",
+  "summaryEn": "The United Kingdom's sponsor-led skilled work routes, with the salary thresholds in force, the going-rate rule, the B2 English requirement, and the five-year timeline to settlement.",
+  "reviewedAt": "2026-09-06",
+  "deepCoverage": {
+    "scope": "本页覆盖以就业为目的的技术工作签证（Skilled Worker）路径及其担保机制。不覆盖 Global Talent、Scale-up 等其他工作路径的完整条件（见下方项目页）、学签、家庭类签证、投资类签证和庇护。",
+    "scopeEn": "This page covers the Skilled Worker route taken for employment and the sponsorship machinery behind it. It does not cover the full conditions of other work routes such as Global Talent and Scale-up, which have their own program pages below, nor study, family, investment, or asylum routes.",
+    "steps": [
+      {
+        "title": "第一步：先找到持牌担保雇主，这是整条路径的前提",
+        "titleEn": "Step 1: Find a licensed sponsor first — the route does not exist without one",
+        "body": "英国技术工作签证不能自行申请。你必须先受雇于一家获内政部批准的英国雇主，并由该雇主签发担保证书（Certificate of Sponsorship，CoS）。没有持牌担保雇主，无论学历、经验或薪资多高，这条路径都不成立。这与积分制国家的逻辑根本不同：在英国，雇主资质是第一道门，而不是最后一步。",
+        "bodyEn": "The Skilled Worker route cannot be applied for on your own. You must be employed by a UK employer approved by the Home Office, and that employer must issue you a Certificate of Sponsorship. Without a licensed sponsor the route does not exist, regardless of qualifications, experience or salary. This is structurally different from points-based countries: in the UK the employer's licence is the first gate, not the last step.",
+        "sourceUrls": [
+          "https://www.gov.uk/skilled-worker-visa"
+        ]
+      },
+      {
+        "title": "第二步：确认职业代码符合，并同时满足两个薪资门槛",
+        "titleEn": "Step 2: Check the occupation code, then clear both salary tests at once",
+        "body": "岗位必须对应一个符合条件的四位职业代码，并被归类为高技能或中等技能。薪资要求是「取高者」：一般门槛与该职业的 going rate（行业标准薪资）中较高的那个。这一点最容易被忽略——达到一般门槛但低于该职业的 going rate 同样不符合条件，而 going rate 因职业而异。",
+        "bodyEn": "The job must map to an eligible four-digit occupation code classified as higher skilled or medium skilled. The salary test is a whichever-is-higher rule: the general threshold or the going rate for that specific occupation. This is the part most often missed — clearing the general threshold but falling below your occupation's going rate is still a refusal, and the going rate differs by occupation.",
+        "sourceUrls": [
+          "https://www.gov.uk/skilled-worker-visa/your-job"
+        ]
+      },
+      {
+        "title": "第三步：证明英语达到 CEFR B2",
+        "titleEn": "Step 3: Prove English at CEFR level B2",
+        "body": "读、写、说、听四项均须达到欧洲语言共同参考框架 B2 级。证明方式包括：英国中学学历（GCSE、A Level 或苏格兰国家资格 4 至 5 级）、英国院校的英语授课学位、经 Ecctis 认定的境外英语授课学位，或通过认可机构的安全英语语言考试（SELT）。部分国籍可豁免；已通过所属监管机构认可的英语评估的医生、牙医、护士、助产士和兽医也可豁免。",
+        "bodyEn": "You must prove reading, writing, speaking and understanding at level B2 on the Common European Framework of Reference. Accepted proofs include a UK school qualification (GCSE, A Level, or Scottish National Qualifications level 4 to 5), a degree from a UK institution taught in English, a degree from outside the UK taught in English assessed by Ecctis, or a Secure English Language Test with an approved provider. Some nationalities are exempt, as are doctors, dentists, nurses, midwives and vets who have passed an English assessment accepted by their regulated professional body.",
+        "sourceUrls": [
+          "https://www.gov.uk/skilled-worker-visa/knowledge-of-english"
+        ]
+      },
+      {
+        "title": "第四步：了解在英期间的限制与转永居时间线",
+        "titleEn": "Step 4: Understand the in-country restrictions and the settlement timeline",
+        "body": "签证一次最长五年，到期前需续签。在英国居住满五年后可能可以申请永久居留（indefinite leave to remain）。持签证期间可以学习、可在特定情形下从事额外工作、可携带配偶和子女作为随行家属；但不能在未申请更新签证的情况下更换工作或雇主，也不能申领大多数公共福利和国家养老金。",
+        "bodyEn": "The visa lasts up to five years before it must be extended. After five years living in the UK you may be able to apply for indefinite leave to remain. While on the visa you can study, take additional work in certain circumstances, and bring a partner and children as dependants; you cannot change job or employer without applying to update your visa, and you cannot claim most public funds or the State Pension.",
+        "sourceUrls": [
+          "https://www.gov.uk/skilled-worker-visa",
+          "https://www.gov.uk/skilled-worker-visa/what-you-can-and-cannot-do"
+        ]
+      }
+    ],
+    "keyFacts": [
+      {
+        "label": "担保要求",
+        "labelEn": "Sponsorship requirement",
+        "value": "必须受雇于获内政部批准的英国雇主，并持有该雇主签发的担保证书（CoS）",
+        "valueEn": "You must work for a UK employer approved by the Home Office and hold a Certificate of Sponsorship from that employer",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.gov.uk/skilled-worker-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "一般薪资门槛",
+        "labelEn": "General salary threshold",
+        "value": "每年 41,700 英镑，或该职业的 going rate，取较高者",
+        "valueEn": "£41,700 per year, or the going rate for the occupation, whichever is higher",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.gov.uk/skilled-worker-visa/your-job",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "较低薪资门槛",
+        "labelEn": "Lower salary threshold",
+        "value": "在不适用一般要求且不从事医疗或教育工作的特定情形下，每年 33,400 英镑",
+        "valueEn": "£33,400 per year where the usual requirements do not apply and the work is not in healthcare or education",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.gov.uk/skilled-worker-visa/your-job",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "职业代码要求",
+        "labelEn": "Occupation code requirement",
+        "value": "岗位须对应符合条件的四位职业代码，并归类为高技能或中等技能",
+        "valueEn": "The job must map to an eligible four-digit occupation code classified as higher skilled or medium skilled",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.gov.uk/skilled-worker-visa/your-job",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "英语要求",
+        "labelEn": "English requirement",
+        "value": "读、写、说、听四项均达 CEFR B2 级；部分国籍及已通过监管机构认可评估的特定医疗职业可豁免",
+        "valueEn": "Reading, writing, speaking and understanding at CEFR level B2; some nationalities are exempt, as are certain regulated medical professions that have passed an accepted assessment",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.gov.uk/skilled-worker-visa/knowledge-of-english",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "签证期限",
+        "labelEn": "Visa length",
+        "value": "一次最长五年，到期前需续签",
+        "valueEn": "Up to five years before it must be extended",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.gov.uk/skilled-worker-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "转永久居留",
+        "labelEn": "Settlement",
+        "value": "在英国居住满五年后，可能可以申请永久居留（indefinite leave to remain）",
+        "valueEn": "After five years living in the UK you may be able to apply for indefinite leave to remain",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.gov.uk/skilled-worker-visa",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "更换雇主",
+        "labelEn": "Changing employer",
+        "value": "未申请更新签证前，不得更换工作或雇主",
+        "valueEn": "You cannot change job or employer unless you apply to update your visa",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.gov.uk/skilled-worker-visa/what-you-can-and-cannot-do",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "公共福利",
+        "labelEn": "Public funds",
+        "value": "不得申领大多数福利（公共资金）和国家养老金",
+        "valueEn": "You cannot claim most benefits (public funds) or the State Pension",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.gov.uk/skilled-worker-visa/what-you-can-and-cannot-do",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "随行家属",
+        "labelEn": "Dependants",
+        "value": "符合相关资格要求的，可携带配偶和子女作为随行家属",
+        "valueEn": "You can bring your partner and children as dependants if you meet the eligibility requirements",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.gov.uk/skilled-worker-visa/what-you-can-and-cannot-do",
+        "reviewedAt": "2026-09-06"
+      }
+    ],
+    "blockers": [
+      {
+        "summary": "雇主没有内政部担保牌照。这是最常见也最彻底的阻断——个人条件再好，也无法绕过担保要求自行申请。",
+        "summaryEn": "The employer holds no Home Office sponsor licence. This is the most common and most absolute blocker: no personal qualification substitutes for sponsorship.",
+        "sourceUrls": [
+          "https://www.gov.uk/skilled-worker-visa"
+        ]
+      },
+      {
+        "summary": "薪资达到一般门槛但低于该职业的 going rate。薪资要求是两者取高，不是二选一。",
+        "summaryEn": "Salary clears the general threshold but falls below the occupation's going rate. The requirement is the higher of the two, not either one.",
+        "sourceUrls": [
+          "https://www.gov.uk/skilled-worker-visa/your-job"
+        ]
+      },
+      {
+        "summary": "岗位不在符合条件的职业代码清单上，或未达到所需技能等级。",
+        "summaryEn": "The job does not map to an eligible occupation code, or does not meet the required skill classification.",
+        "sourceUrls": [
+          "https://www.gov.uk/skilled-worker-visa/your-job"
+        ]
+      },
+      {
+        "summary": "英语四项中有一项未达 B2。要求是逐项计算的。",
+        "summaryEn": "One of the four English abilities falls below B2. The requirement applies to each ability.",
+        "sourceUrls": [
+          "https://www.gov.uk/skilled-worker-visa/knowledge-of-english"
+        ]
+      },
+      {
+        "summary": "在未申请更新签证的情况下更换雇主或岗位，会使现有签证的担保基础失效。",
+        "summaryEn": "Changing employer or job without applying to update the visa removes the sponsorship the existing visa rests on.",
+        "sourceUrls": [
+          "https://www.gov.uk/skilled-worker-visa/what-you-can-and-cannot-do"
+        ]
+      }
+    ],
+    "sourceConflicts": []
+  },
   "sources": [
-    { "authority": "UK Home Office — GOV.UK", "title": "Work in the UK", "url": "https://www.gov.uk/browse/visas-immigration/work-visas", "reviewedAt": "2026-09-03" },
-    { "authority": "UK Home Office — GOV.UK", "title": "Skilled Worker visa", "url": "https://www.gov.uk/skilled-worker-visa", "reviewedAt": "2026-09-03" }
+    {
+      "authority": "UK Government",
+      "title": "Work visas",
+      "url": "https://www.gov.uk/browse/visas-immigration/work-visas",
+      "reviewedAt": "2026-09-03"
+    },
+    {
+      "authority": "UK Government",
+      "title": "Skilled Worker visa",
+      "url": "https://www.gov.uk/skilled-worker-visa",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "UK Government",
+      "title": "Skilled Worker visa: your job",
+      "url": "https://www.gov.uk/skilled-worker-visa/your-job",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "UK Government",
+      "title": "Skilled Worker visa: knowledge of English",
+      "url": "https://www.gov.uk/skilled-worker-visa/knowledge-of-english",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "UK Government",
+      "title": "Skilled Worker visa: what you can and cannot do",
+      "url": "https://www.gov.uk/skilled-worker-visa/what-you-can-and-cannot-do",
+      "reviewedAt": "2026-09-06"
+    }
   ]
 }
