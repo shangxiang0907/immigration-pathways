@@ -1,19 +1,19 @@
 # Development progress
 
-Last updated: 2026-09-05
+Last updated: 2026-09-06
 
 ## Current milestone
 
-Last updated: 2026-09-05.
+Last updated: 2026-09-06.
 
 Gate 7 is **reopened**. Adsterra was withdrawn as the advertising provider and
 Google AdSense is now the selected provider, so every advertising gate restarts
-against AdSense requirements. The indexable release is otherwise unchanged.
+against AdSense requirements. Advertising is disabled and the site serves no
+third-party advertising code at all.
 
-**Production still serves Adsterra.** The removal exists in the repository but
-not on the live origin; `npm run deploy:indexable` must be authorized and run to
-retire the live Adsterra scripts. Until then the deployed site and this
-repository disagree about advertising.
+The removal is live. Cloudflare version `b6465612-386a-408b-b2da-ebfc881f63f1`
+was deployed on 2026-09-06 and verified, so the deployed origin and this
+repository now agree.
 
 ## Product and platform completed
 
@@ -59,13 +59,14 @@ The earlier out-of-order indexable deployment was corrected by restoring `noinde
 
 ## Next actions
 
-1. Deploy the Adsterra removal so the live origin matches this repository.
-   Requires explicit owner authorization for `npm run deploy:indexable`.
-2. Deepen high-demand country records from directory links into reviewed pathway
+1. Deepen high-demand country records from directory links into reviewed pathway
    overviews. This is now the prerequisite for AdSense approval, not only a
    content goal: 164 of 197 records are directory-only.
-3. Apply for AdSense once reviewed coverage is materially deeper, then work
+2. Apply for AdSense once reviewed coverage is materially deeper, then work
    release gate 7 in order.
+3. Revoke the Adsterra Publisher API token and remove `ADSTERRA_API_TOKEN` from
+   the local, Git-ignored `.env.traffic.local`.
+4. Decide on the trailing-slash mismatch recorded under "Known defects".
 
 ## Advertising integration checkpoint
 
@@ -82,11 +83,12 @@ that network is not controllable from this repository.
 - [x] Rewrote the bilingual privacy disclosure for AdSense
 - [x] Verified the preview and indexable builds emit no Adsterra host, script, or
       container ID
-- [ ] Deploy so the live origin stops serving Adsterra — requires authorization
-
-Revoke the Adsterra Publisher API token and remove `ADSTERRA_API_TOKEN` from the
-local, Git-ignored `.env.traffic.local`. That file is untracked, so this cannot
-be done from the repository.
+- [x] Deployed on 2026-09-06 as Cloudflare version
+      `b6465612-386a-408b-b2da-ebfc881f63f1`; the live origin serves no
+      advertising code
+- [ ] Revoke the Adsterra Publisher API token and remove `ADSTERRA_API_TOKEN`
+      from the local, Git-ignored `.env.traffic.local`. That file is untracked,
+      so this cannot be done from the repository.
 
 ### AdSense readiness — in progress
 
@@ -160,3 +162,33 @@ Completed locally on 2026-09-04; publication remains separately gated.
 - Free/paid report boundary and pricing
 - Grounded report data contract and LLM provider
 - Payment, checkout, accounts, transactional email, and report delivery
+
+## Advertising-removal deployment — 2026-09-06
+
+Cloudflare version `b6465612-386a-408b-b2da-ebfc881f63f1`. Verified on the live
+origin after deployment:
+
+- [x] `npm test`, `npm run check`, `build:indexable`, and `test:dist:indexable` passed first
+- [x] Home, English and Chinese reviewed country records, and program pages return 200 with `index, follow`
+- [x] Directory-only records return `noindex, nofollow, noarchive` in both locales
+- [x] No page contains an Adsterra host, an `adsbygoogle` reference, or an ad placement
+- [x] `/ads.txt` returns the placeholder that authorizes no seller
+- [x] `robots.txt` allows crawling and references the production sitemap
+- [x] Sitemap returns 200 with 230 URLs; no directory-only record is listed
+- [x] The retired `/api/ad-policy` endpoint returns 404
+- [x] Unknown route returns 404 and stays `noindex, nofollow, noarchive`
+- [x] `www` permanently redirects to the canonical apex domain
+
+Submitted URLs dropped from 559 to 230. Google will drop the 328 excluded
+directory URLs over the coming crawls; that is intended.
+
+## Known defects
+
+- Trailing-slash mismatch, pre-existing since the first Cloudflare deployment.
+  `astro.config.mjs` sets `trailingSlash: "never"`, and canonical URLs and
+  sitemap entries are emitted without a trailing slash, but `wrangler.jsonc`
+  sets `html_handling: "auto-trailing-slash"`, so the origin answers
+  `/countries/germany` with a 307 to `/countries/germany/`. Every canonical and
+  sitemap URL therefore redirects once. Changing `html_handling` to
+  `drop-trailing-slash` would align the origin with the emitted metadata, but it
+  changes live URL behavior and needs its own authorization and verification.
