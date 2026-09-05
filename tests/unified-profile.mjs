@@ -17,3 +17,13 @@ for(const country of ["czechia","poland","greece","malta"]){const projected=proj
 for(const country of ["estonia","latvia","lithuania","luxembourg"]){const projected=projectProfile({...profile,jobOffer:country});assert.equal(Object.values(projected[country])[0],"yes");const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
 for(const country of ["hungary","croatia","cyprus","iceland"]){const projected=projectProfile({...profile,jobOffer:country});assert.equal(Object.values(projected[country])[0],"yes");const result=rankCountries({...profile,jobOffer:country},matchingRuleSets).find(x=>x.countryId===country);assert.equal(result.total,2);}
 console.log("unified profile tests passed");
+
+// A country rule set without programs, or without a profile projection, must be
+// skipped rather than crash the ranking.
+const degenerate = rankCountries({ age: "under45" }, [
+  { countryId: "canada", programs: matchingRuleSets.find((rules) => rules.countryId === "canada").programs },
+  { countryId: "canada-placeholder", programs: [] },
+  { countryId: "unprojected-country", programs: matchingRuleSets.find((rules) => rules.countryId === "canada").programs },
+]);
+assert.deepEqual(degenerate.map((row) => row.countryId), ["canada"]);
+console.log("unified profile degenerate rule-set tests passed");

@@ -36,7 +36,7 @@ export function summarizeCountry(evaluated) {
 export function rankCountries(profile, ruleSets) {
   const projected = projectProfile(profile);
   const reasons = new Proxy({}, { get: (_, key) => String(key) });
-  return ruleSets.map((rules) => {
+  return ruleSets.filter((rules) => rules.programs?.length && projected[rules.countryId]).map((rules) => {
     const evaluated = evaluateProgramRules(projected[rules.countryId], rules.programs, reasons);
     const best = Object.entries(evaluated).sort(([, a], [, b]) => a.fail.length - b.fail.length || a.unknown.length - b.unknown.length)[0];
     const program = rules.programs.find((item) => item.resultKey === best[0]);

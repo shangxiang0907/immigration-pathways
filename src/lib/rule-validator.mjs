@@ -31,6 +31,9 @@ export function validateMatchingRuleSets(ruleSets, profileSchema) {
     countryIds.add(rules.countryId);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(rules.reviewedAt || "")) errors.push(`${at}: reviewedAt must use YYYY-MM-DD`);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(rules.nextReviewAt || "")) errors.push(`${at}: nextReviewAt must use YYYY-MM-DD`);
+    // A country with no programs would rank as having zero barriers, so an empty
+    // or placeholder rule set must fail validation rather than reach the matcher.
+    if (!Array.isArray(rules.programs) || !rules.programs.length) errors.push(`${at}: at least one program is required`);
     for (const program of rules.programs || []) {
       if (programIds.has(program.programId)) errors.push(`${at}: duplicate programId '${program.programId}'`);
       programIds.add(program.programId);
