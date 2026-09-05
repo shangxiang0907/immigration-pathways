@@ -17,6 +17,8 @@
     "deploy:cloudflare": "npm run build:production && wrangler deploy",
     "deploy:indexable": "npm run build:indexable && wrangler deploy",
     "traffic:adsterra": "node scripts/adsterra-report.mjs",
+    "traffic:cloudflare": "node scripts/cloudflare-report.mjs",
+    "traffic:report": "npm run traffic:cloudflare && npm run traffic:adsterra",
     "preview": "ASTRO_TELEMETRY_DISABLED=1 astro preview"
   },
   "devDependencies": {

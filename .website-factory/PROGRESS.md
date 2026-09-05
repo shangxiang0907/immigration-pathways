@@ -74,6 +74,7 @@ Completed and deployed on 2026-09-05 as Cloudflare version `b7dfab1c-7b78-4859-a
 - [x] Verified live Native and Display placements, privacy withdrawal control, and `index, follow` output
 - [x] Headless desktop and mobile checks each issued the expected Adsterra request with no popup, script error, or horizontal overflow
 - [x] Added a local, Git-ignored Adsterra Publisher API token and a read-only seven-day traffic report command
+- [x] Added reusable read-only Cloudflare Analytics access and a combined website/ad traffic report command
 - [ ] Confirm real-user creative fill and impressions in the Adsterra dashboard; headless checks showed reserved ad space but no rendered creative
 
 ## Indexable deployment
