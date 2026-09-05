@@ -42,6 +42,25 @@ for (const path of ["countries/afghanistan/index.html", "zh/countries/afghanista
   assert.match(html, /<meta name="robots" content="noindex, nofollow, noarchive">/, `${path} must stay non-indexable`);
   assert.doesNotMatch(html, /ad-placement|adsbygoogle/, `${path} must not render an ad placement`);
 }
+// Deep-coverage records render the full structure in both locales, including the
+// figures, the period each figure applies to, and the published source conflicts.
+for (const [path, headings, label] of [
+  ["countries/germany/index.html", ["How the system works", "Key requirements and figures", "What commonly blocks an application", "Where official sources disagree"], "Deep coverage"],
+  ["zh/countries/germany/index.html", ["办理流程", "关键要求与数字", "常见的不符合原因", "官方来源分歧"], "深度覆盖"],
+]) {
+  const html = await read(path);
+  for (const heading of headings) assert.ok(html.includes(heading), `${path} must render "${heading}"`);
+  assert.match(html, new RegExp(`status status-deep">${label}`), `${path} must show the deep coverage label`);
+  assert.ok(html.includes("50,700"), `${path} must render the dated Blue Card threshold`);
+  assert.match(html, /class="fact-table"/, `${path} must render the sourced figure table`);
+  assert.match(html, /<div class="table-scroll">/, `${path} must keep the wide table scrollable`);
+  assert.ok(html.includes("arbeitsagentur.de"), `${path} must attribute the figure to its authority`);
+}
+// Records below deep coverage must not render deep structure.
+for (const path of ["countries/canada/index.html", "countries/afghanistan/index.html"]) {
+  assert.doesNotMatch(await read(path), /step-list|fact-table/, `${path} must not render deep-coverage sections`);
+}
+
 // Reviewed country records follow the build's indexing mode.
 for (const path of ["countries/germany/index.html", "zh/countries/germany/index.html"]) {
   assert.match(await read(path), new RegExp(`<meta name="robots" content="${expectedRobots}">`), `${path} must follow the build mode`);

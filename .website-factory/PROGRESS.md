@@ -34,6 +34,7 @@ repository now agree.
 - [x] Advertising disabled pending AdSense approval, `ads.txt`, a certified CMP, ad units, and authorization
 - [x] Directory-only records excluded from indexing, from the sitemap, and from advertising
 - [x] `ads.txt` generated from configuration, authorizing no seller until a publisher ID exists
+- [x] `deep` coverage implemented end to end and applied to Germany as the reference record
 - [x] Production metadata/sitemap generation separated from explicit indexing permission
 - [x] Non-indexable production build deployed and verified on the public domain
 - [x] Cloudflare Email Routing enabled with a verified destination
@@ -59,14 +60,14 @@ The earlier out-of-order indexable deployment was corrected by restoring `noinde
 
 ## Next actions
 
-1. Deepen high-demand country records from directory links into reviewed pathway
-   overviews. This is now the prerequisite for AdSense approval, not only a
-   content goal: 164 of 197 records are directory-only.
+1. Deepen the next batch of high-demand country records using Germany as the
+   reference shape. Canada and Australia are the strongest candidates: both
+   already have reviewed program records and matching rules.
 2. Apply for AdSense once reviewed coverage is materially deeper, then work
    release gate 7 in order.
-3. Revoke the Adsterra Publisher API token and remove `ADSTERRA_API_TOKEN` from
-   the local, Git-ignored `.env.traffic.local`.
-4. Decide on the trailing-slash mismatch recorded under "Known defects".
+3. Decide on the trailing-slash mismatch recorded under "Known defects".
+4. Deploy the deep-coverage work once a batch is ready. It is built and verified
+   locally but not yet released; deployment needs explicit owner authorization.
 
 ## Advertising integration checkpoint
 
@@ -86,9 +87,9 @@ that network is not controllable from this repository.
 - [x] Deployed on 2026-09-06 as Cloudflare version
       `b6465612-386a-408b-b2da-ebfc881f63f1`; the live origin serves no
       advertising code
-- [ ] Revoke the Adsterra Publisher API token and remove `ADSTERRA_API_TOKEN`
-      from the local, Git-ignored `.env.traffic.local`. That file is untracked,
-      so this cannot be done from the repository.
+- [n/a] The owner chose on 2026-09-06 to keep the Adsterra Publisher API token
+      for other projects. It stays only in the local, Git-ignored
+      `.env.traffic.local` and nothing in this repository reads it.
 
 ### AdSense readiness — in progress
 
@@ -143,20 +144,37 @@ Completed 2026-09-04 with headless Chromium at 1440×1000 desktop and 390×844 m
 
 ## Latest content batch
 
-Completed locally on 2026-09-04; publication remains separately gated.
+### Germany raised to `deep` coverage — 2026-09-06
 
-- [x] Added the final eight UN-system country records: Eritrea, Marshall Islands, North Korea, Niger, Sudan, Syria, Tuvalu, and Vatican City
-- [x] Completed directory coverage for 193 UN members plus Palestine and Vatican City; Taiwan and Kosovo remain as two additional records, for 197 total
-- [x] Added equivalent English and Chinese summaries with explicit directory-only limitations
-- [x] Retained an authoritative government URL and 2026-09-04 review date for every record
-- [x] Inspected all eight current authoritative government, official diplomatic, or official legal pages through browser-accessible results
-- [x] `npm test`, `npm run check`, `npm run build`, and preview-output tests passed
-- [x] Generated 559 static pages with all 197 country records represented in English and Chinese
-- [x] Preview output remains non-indexable and advertising remains disabled
+The first record at `deep` coverage, built as the reference shape for the rest.
+Not yet deployed.
+
+- [x] Added a `deepCoverage` schema: ordered process steps, dated key facts,
+      common blockers, and documented source conflicts, each individually sourced
+- [x] The coverage label is enforced against the data. `deep` without a
+      `deepCoverage` block, or a `deepCoverage` block below `deep`, fails the
+      build; verified by temporarily downgrading the record
+- [x] Added `tests/country-records.mjs`, which enforces the provenance rules from
+      `CONTENT_GUIDELINES.md` across all 197 records: bilingual completeness,
+      https-only sources, review dates that are real and not in the future, and a
+      stated applicability period on every published figure
+- [x] Facts verified against the Federal Employment Agency, the Federal Office
+      for Migration and Refugees, and the official recognition portal on
+      2026-09-06, with each figure carrying the year it applies to
+- [x] Published two unresolved conflicts between official sources rather than
+      silently choosing: the Blue Card salary thresholds and the settlement-permit
+      timeline are stated differently by the Federal Foreign Office FAQ
+- [x] Equivalent English and Chinese content, including the limitations and the
+      conflict notes
+- [x] `npm test` (10 suites), `npm run check`, `npm run build`, and
+      `npm run test:dist` pass
+- [x] Headless Chromium at 390, 768, and 1440 px in both locales: zero horizontal
+      body overflow, with the figure table isolated in its own scroll container
+
+Coverage is now 164 directory, 32 overview, and 1 deep across 197 records.
 
 ## Deferred
 
-- Deepen the highest-demand directory records into reviewed pathway overviews
 - AdSense approval, certified CMP, ad units, and production activation
 - AdSense earnings reporting (needs the Management API with OAuth, not a static token)
 - Free/paid report boundary and pricing

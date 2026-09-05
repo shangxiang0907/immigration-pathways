@@ -10,10 +10,72 @@ const labels = { directory: "官网目录", overview: "政策概览", deep: "深
 const format = new Intl.DateTimeFormat("zh-CN", { dateStyle: "long", timeZone: "UTC" });
 // 仅提供官方入口的目录页没有本站复核内容，不进索引也不投放广告。
 const hasReviewedContent = country.data.coverage !== "directory";
+const deep = country.data.deepCoverage;
 ---
 <SiteLayout locale="zh" title={`${country.data.name}移民信息 — ${site.name}`} description={country.data.summary} indexable={hasReviewedContent}>
   <article class="prose country-detail"><nav class="breadcrumbs" aria-label="面包屑导航"><a href="/zh/countries">国家与地区</a><span aria-hidden="true">/</span><span>{country.data.name}</span></nav><p class="eyebrow">{country.data.nameEn}</p><h1>{country.data.name}</h1><div class="card-meta"><span class={`status status-${country.data.coverage}`}>{labels[country.data.coverage]}</span><span>复核于 {format.format(country.data.reviewedAt)}</span></div><p class="lede">{country.data.summary}</p>
     {country.data.coverage === "directory" && <aside class="notice" aria-labelledby="coverage-notice"><h2 id="coverage-notice">当前仅提供官方入口</h2><p>本站尚未完成该国具体项目的资格、费用、期限和流程核验。请直接查阅下方政府来源，不要把本页视为资格判断。</p></aside>}
+    {deep && (
+      <>
+        <aside class="notice" aria-labelledby="scope-notice"><h2 id="scope-notice">本页覆盖范围</h2><p>{deep.scope}</p></aside>
+
+        <section aria-labelledby="steps-heading">
+          <h2 id="steps-heading">办理流程</h2>
+          <ol class="step-list">
+            {deep.steps.map((step) => (
+              <li>
+                <h3>{step.title}</h3>
+                <p>{step.body}</p>
+                <p class="step-sources">{step.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section aria-labelledby="facts-heading">
+          <h2 id="facts-heading">关键要求与数字</h2>
+          <p class="muted">数字会变。下表每一行都标明适用期间和来源出处。</p>
+          <div class="table-scroll">
+            <table class="fact-table">
+              <thead><tr><th scope="col">项目</th><th scope="col">当前数值</th><th scope="col">适用期间</th><th scope="col">来源</th></tr></thead>
+              <tbody>
+                {deep.keyFacts.map((fact) => (
+                  <tr>
+                    <th scope="row">{fact.label}</th>
+                    <td>{fact.value}</td>
+                    <td>{fact.appliesTo}</td>
+                    <td><a href={fact.sourceUrl} rel="external noreferrer">{new URL(fact.sourceUrl).hostname}</a><span class="muted"> · 复核于 {format.format(fact.reviewedAt)}</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section aria-labelledby="blockers-heading">
+          <h2 id="blockers-heading">常见的不符合原因</h2>
+          <p class="muted">以下是路径被关闭的常见原因。没有出现在列表中的问题，并不等于符合条件。</p>
+          <ul class="blocker-list">
+            {deep.blockers.map((blocker) => (
+              <li><p>{blocker.summary}</p><p class="step-sources">{blocker.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p></li>
+            ))}
+          </ul>
+        </section>
+
+        {deep.sourceConflicts.length > 0 && (
+          <section aria-labelledby="conflicts-heading">
+            <h2 id="conflicts-heading">官方来源分歧</h2>
+            <p class="muted">我们照实公布这些分歧，而不是私下选一个。涉及关键决定时，请向主管机关确认。</p>
+            <ul class="blocker-list">
+              {deep.sourceConflicts.map((conflict) => (
+                <li><p>{conflict.summary}</p><p class="step-sources">{conflict.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p></li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </>
+    )}
+
     {programs.length > 0 && <section aria-labelledby="programs-heading"><h2 id="programs-heading">已复核项目</h2><ul>{programs.map((program) => <li><a href={`/zh/programs/${program.id}`}>{program.data.name}</a> — {program.data.summary}</li>)}</ul></section>}
     {hasReviewedContent && <AdSlot placement="content" locale="zh" />}
     <section aria-labelledby="sources-heading"><h2 id="sources-heading">官方来源</h2><ul class="source-list">{country.data.sources.map((source) => <li><a href={source.url} rel="external noreferrer">{source.title}</a><span>{source.authority} · 复核于 {format.format(source.reviewedAt)}</span></li>)}</ul></section><p class="disclaimer">本页提供一般教育信息，不构成个性化移民或法律建议。申请前请以主管政府机构公布的最新要求为准。</p>

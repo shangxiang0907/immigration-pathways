@@ -103,3 +103,17 @@ fieldset.question { grid-template-columns: repeat(3, max-content); }
   .filter-bar { grid-template-columns: 1fr; }
   fieldset.question { grid-template-columns: 1fr; }
 }
+
+/* Deep-coverage sections */
+.step-list { display: grid; gap: 1.6rem; margin: 0; padding-left: 1.3rem; }
+.step-list h3 { margin: 0 0 .4rem; font-size: 1.1rem; }
+.step-list p { margin: 0 0 .5rem; }
+.step-sources { display: flex; flex-wrap: wrap; gap: .3rem 1rem; color: var(--muted); font-size: .85rem; }
+.blocker-list { display: grid; gap: 1.2rem; margin: 0; padding-left: 1.3rem; }
+.blocker-list p { margin: 0 0 .4rem; }
+.table-scroll { overflow-x: auto; }
+.fact-table { width: 100%; min-width: 34rem; border-collapse: collapse; font-size: .95rem; }
+.fact-table th, .fact-table td { border-bottom: 1px solid var(--line); padding: .75rem .6rem; text-align: left; vertical-align: top; }
+.fact-table thead th { color: var(--muted); font-size: .8rem; letter-spacing: .04em; text-transform: uppercase; }
+.fact-table tbody th { font-weight: 600; }
+.fact-table td .muted { font-size: .85rem; }

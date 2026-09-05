@@ -19,6 +19,8 @@ const { country, programs } = Astro.props;
 // Directory records only point at a government portal. They carry no reviewed
 // content of our own, so they stay out of the index and out of advertising.
 const hasReviewedContent = country.data.coverage !== "directory";
+const deep = country.data.deepCoverage;
+const isoDate = (value: Date) => value.toISOString().slice(0, 10);
 const coverageLabels = {
   directory: "Official directory",
   overview: "Policy overview",
@@ -33,7 +35,7 @@ const coverageLabels = {
     <h1>{country.data.nameEn}</h1>
     <div class="card-meta">
       <span class={`status status-${country.data.coverage}`}>{coverageLabels[country.data.coverage]}</span>
-      <span>Reviewed {country.data.reviewedAt.toISOString().slice(0, 10)}</span>
+      <span>Reviewed {isoDate(country.data.reviewedAt)}</span>
     </div>
     <p class="lede">{country.data.summaryEn}</p>
 
@@ -42,6 +44,76 @@ const coverageLabels = {
         <h2 id="coverage-notice">Official entry point only</h2>
         <p>Eligibility, fees, timing, and process details have not yet been reviewed. Consult the government source below and do not treat this page as an eligibility decision.</p>
       </aside>
+    )}
+
+    {deep && (
+      <>
+        <aside class="notice" aria-labelledby="scope-notice">
+          <h2 id="scope-notice">What this page covers</h2>
+          <p>{deep.scopeEn}</p>
+        </aside>
+
+        <section aria-labelledby="steps-heading">
+          <h2 id="steps-heading">How the system works</h2>
+          <ol class="step-list">
+            {deep.steps.map((step) => (
+              <li>
+                <h3>{step.titleEn}</h3>
+                <p>{step.bodyEn}</p>
+                <p class="step-sources">{step.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p>
+              </li>
+            ))}
+          </ol>
+        </section>
+
+        <section aria-labelledby="facts-heading">
+          <h2 id="facts-heading">Key requirements and figures</h2>
+          <p class="muted">Figures change. Each row shows the period it applies to and the source it came from.</p>
+          <div class="table-scroll">
+            <table class="fact-table">
+              <thead><tr><th scope="col">Requirement</th><th scope="col">Current value</th><th scope="col">Applies to</th><th scope="col">Source</th></tr></thead>
+              <tbody>
+                {deep.keyFacts.map((fact) => (
+                  <tr>
+                    <th scope="row">{fact.labelEn}</th>
+                    <td>{fact.valueEn}</td>
+                    <td>{fact.appliesTo}</td>
+                    <td><a href={fact.sourceUrl} rel="external noreferrer">{new URL(fact.sourceUrl).hostname}</a><span class="muted"> · reviewed {isoDate(fact.reviewedAt)}</span></td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section aria-labelledby="blockers-heading">
+          <h2 id="blockers-heading">What commonly blocks an application</h2>
+          <p class="muted">These are frequent reasons a route is closed. Absence of a listed problem is not an eligibility decision.</p>
+          <ul class="blocker-list">
+            {deep.blockers.map((blocker) => (
+              <li>
+                <p>{blocker.summaryEn}</p>
+                <p class="step-sources">{blocker.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {deep.sourceConflicts.length > 0 && (
+          <section aria-labelledby="conflicts-heading">
+            <h2 id="conflicts-heading">Where official sources disagree</h2>
+            <p class="muted">We publish these rather than pick a winner silently. Confirm anything consequential with the responsible authority.</p>
+            <ul class="blocker-list">
+              {deep.sourceConflicts.map((conflict) => (
+                <li>
+                  <p>{conflict.summaryEn}</p>
+                  <p class="step-sources">{conflict.sourceUrls.map((url) => <a href={url} rel="external noreferrer">{new URL(url).hostname}</a>)}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </>
     )}
 
     {programs.length > 0 && <section aria-labelledby="programs-heading"><h2 id="programs-heading">Reviewed programs</h2><ul>{programs.map((program) => <li><a href={`/programs/${program.id}`}>{program.data.nameEn}</a> — {program.data.summaryEn}</li>)}</ul></section>}
@@ -53,7 +125,7 @@ const coverageLabels = {
         {country.data.sources.map((source) => (
           <li>
             <a href={source.url} rel="external noreferrer">{source.title}</a>
-            <span>{source.authority} · Reviewed {source.reviewedAt.toISOString().slice(0, 10)}</span>
+            <span>{source.authority} · Reviewed {isoDate(source.reviewedAt)}</span>
           </li>
         ))}
       </ul>

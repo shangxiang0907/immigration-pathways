@@ -2,16 +2,225 @@
   "name": "德国",
   "nameEn": "Germany",
   "region": "Europe",
-  "coverage": "overview",
-  "summary": "德国政府国际专业人才入口，以及欧盟蓝卡、专业技术人员工作签证和求职机会卡的已复核概览。",
-  "summaryEn": "The German government portal plus reviewed overviews of the EU Blue Card, qualified-professional work visa and opportunity card.",
-  "reviewedAt": "2026-09-03",
+  "coverage": "deep",
+  "summary": "德国面向第三国专业人才的工作与居留路径，含欧盟蓝卡、专业技术人员工作签证和机会卡的已复核概览，以及资格认可流程和 2026 年适用的关键门槛。",
+  "summaryEn": "Germany's work and residence routes for third-country professionals, with reviewed overviews of the EU Blue Card, the qualified-professional work visa and the opportunity card, plus the recognition procedure and the thresholds that apply in 2026.",
+  "reviewedAt": "2026-09-06",
+  "deepCoverage": {
+    "scope": "本页覆盖以就业为目的的主要工作与居留路径，以及资格认可这一前置环节。不覆盖学习、家庭团聚、投资、庇护，也不覆盖各州和各地外国人管理局的具体办理差异。",
+    "scopeEn": "This page covers the principal work and residence routes taken for employment, and the qualification-recognition step that gates them. It does not cover study, family reunification, investment, or asylum, and it does not cover how individual states and local foreigners authorities handle cases.",
+    "steps": [
+      {
+        "title": "第一步：判断你的资格是否需要认可",
+        "titleEn": "Step 1: Find out whether your qualification needs recognition",
+        "body": "德国把职业分为「受监管」和「非受监管」两类。受监管职业（例如医疗和安保领域）必须先取得正式认可才能执业。非受监管职业不要求认可，但认可仍可能带来实际好处。认可程序是把你的资格与对应的德国参照职业逐项比较，并会一并考虑你的工作经验。学历的可比性可通过 anabin 数据库查询。这一步决定了后面所有路径是否可行，通常也是耗时最长的一步。",
+        "bodyEn": "Germany splits occupations into regulated and non-regulated. Regulated professions, for example in healthcare and security, require formal recognition before you may practise. Non-regulated professions do not require it, though recognition may still help in practice. The procedure compares your qualification against the corresponding German reference occupation and also takes your professional experience into account. Academic comparability can be checked in the anabin database. This step determines whether any of the routes below are open to you, and it is usually the slowest one.",
+        "sourceUrls": [
+          "https://www.anerkennung-in-deutschland.de/html/en/skilled-workers.php",
+          "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Arbeit/Fachkraft/fachkraft-node.html"
+        ]
+      },
+      {
+        "title": "第二步：选择与你情况匹配的路径",
+        "titleEn": "Step 2: Choose the route that matches your situation",
+        "body": "已有德国合格岗位邀请且学历达标的人，通常走欧盟蓝卡，其薪资门槛最明确。学历或职业培训资格已获认可、但薪资达不到蓝卡门槛的人，走专业技术人员工作签证。尚无岗位邀请的人，可考虑机会卡：它是求职许可，不是全职工作许可。三条路径的具体要求见下方已复核的项目页。",
+        "bodyEn": "If you already hold an offer of qualified employment in Germany and your degree qualifies, the EU Blue Card is normally the route with the clearest salary thresholds. If your academic or vocational qualification is recognized but the salary does not reach the Blue Card threshold, the qualified-professional work visa applies. If you have no job offer yet, the opportunity card is a job-search permit rather than a permit for full employment. The reviewed program pages below set out each route's requirements.",
+        "sourceUrls": [
+          "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-03-2026/blue-card",
+          "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-02-2026/opportunity-card"
+        ]
+      },
+      {
+        "title": "第三步：先申请签证，入境后再换居留许可",
+        "titleEn": "Step 3: Apply for the visa first, then convert to a residence permit",
+        "body": "需要签证的第三国国民先取得国别签证入境，之后由当地外国人管理局签发欧盟蓝卡等居留许可。蓝卡要求雇佣合同或具约束力的岗位邀请期限至少六个月。使用降低后的薪资门槛时，还需要联邦劳工局批准；按一般门槛申请则不审查雇佣条件。",
+        "bodyEn": "Third-country nationals who need a visa first enter on a national visa, and the local foreigners authority then issues the residence permit such as the EU Blue Card. The Blue Card requires an employment contract or binding job offer of at least six months. Using the reduced salary threshold additionally requires Federal Employment Agency approval; at the general threshold the employment conditions are not reviewed.",
+        "sourceUrls": [
+          "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Migrathek/BlaueKarteEU/blauekarteeu-node.html",
+          "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-03-2026/blue-card"
+        ]
+      },
+      {
+        "title": "第四步：了解转永久居留的时间线",
+        "titleEn": "Step 4: Understand the timeline to permanent residence",
+        "body": "持欧盟蓝卡者，在从事高资格就业并持续缴纳养老保险、且德语达到基本沟通水平的情况下，可在 27 个月后申请永久居留（Niederlassungserlaubnis）；德语达到 B1 水平则为 21 个月。这两个时间点在不同官方页面上的表述并不一致，详见下方「官方来源分歧」。",
+        "bodyEn": "EU Blue Card holders who have been in highly-qualified employment, paid pension contributions throughout, and can make themselves understood in basic German may apply for a settlement permit (Niederlassungserlaubnis) after 27 months; with German at level B1 the period is 21 months. Official pages do not state these periods consistently — see the documented source conflicts below.",
+        "sourceUrls": [
+          "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Migrathek/BlaueKarteEU/blauekarteeu-node.html"
+        ]
+      }
+    ],
+    "keyFacts": [
+      {
+        "label": "欧盟蓝卡一般薪资门槛",
+        "labelEn": "EU Blue Card general salary threshold",
+        "value": "税前年薪 50,700 欧元（每年调整）",
+        "valueEn": "€50,700 gross per year (adjusted annually)",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-03-2026/blue-card",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "欧盟蓝卡降低门槛（紧缺职业与职业起步者）",
+        "labelEn": "EU Blue Card reduced threshold (shortage occupations and career starters)",
+        "value": "税前年薪 45,934.20 欧元，且需联邦劳工局批准",
+        "valueEn": "€45,934.20 gross per year, and Federal Employment Agency approval is required",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-03-2026/blue-card",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "「职业起步者」的定义",
+        "labelEn": "Definition of career starter",
+        "value": "学位取得时间距申请不超过三年",
+        "valueEn": "Degree obtained no more than three years before the application",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-03-2026/blue-card",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "欧盟蓝卡最短合同期限",
+        "labelEn": "EU Blue Card minimum contract length",
+        "value": "雇佣合同或具约束力的岗位邀请至少六个月",
+        "valueEn": "Employment contract or binding job offer of at least six months",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Migrathek/BlaueKarteEU/blauekarteeu-node.html",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "欧盟蓝卡有效期",
+        "labelEn": "EU Blue Card validity",
+        "value": "原则上四年；合同短于四年的，按合同期限加三个月签发",
+        "valueEn": "Four years as a matter of principle; if the contract is shorter, the contract duration plus three months",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Migrathek/BlaueKarteEU/blauekarteeu-node.html",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "机会卡最低积分",
+        "labelEn": "Opportunity card minimum points",
+        "value": "6 分；已被认定为专业技术人员的，无需积分",
+        "valueEn": "Six points; those already counted as skilled workers need no points",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-02-2026/opportunity-card",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "机会卡资金证明",
+        "labelEn": "Opportunity card proof of funds",
+        "value": "每月 1,091 欧元，须覆盖整个停留期间",
+        "valueEn": "€1,091 per month, covering the entire stay",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-02-2026/opportunity-card",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "机会卡语言要求",
+        "labelEn": "Opportunity card language requirement",
+        "value": "德语至少 A1，或英语至少 B2",
+        "valueEn": "German at least A1, or English at least B2",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-02-2026/opportunity-card",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "机会卡有效期与可从事的工作",
+        "labelEn": "Opportunity card validity and permitted work",
+        "value": "求职机会卡最长一年，后续机会卡最长两年；副业平均每周最多 20 小时，试工每次最多两周",
+        "valueEn": "Up to one year as a job-search card, then up to two years as a follow-up card; secondary work averaging at most 20 hours per week, and trial employment of at most two weeks at a time",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-02-2026/opportunity-card",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "持蓝卡转永久居留",
+        "labelEn": "Settlement permit while holding a Blue Card",
+        "value": "27 个月（德语可基本沟通并持续缴纳养老保险），德语达 B1 则为 21 个月",
+        "valueEn": "27 months with basic spoken German and continuous pension contributions, or 21 months with German at level B1",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Migrathek/BlaueKarteEU/blauekarteeu-node.html",
+        "reviewedAt": "2026-09-06"
+      }
+    ],
+    "blockers": [
+      {
+        "summary": "受监管职业未取得正式认可。医疗、安保等受监管职业必须先获得执业许可，工作邀请本身不能替代认可。",
+        "summaryEn": "No formal recognition in a regulated profession. Regulated occupations such as healthcare and security require permission to practise, and a job offer does not substitute for recognition.",
+        "sourceUrls": ["https://www.anerkennung-in-deutschland.de/html/en/skilled-workers.php"]
+      },
+      {
+        "summary": "学历或职业培训资格与德国参照职业不可比。认可程序逐项比较资格内容，学位本身的名称并不决定结果。",
+        "summaryEn": "The qualification is not comparable to the German reference occupation. The recognition procedure compares the content of the qualification; the title of the degree alone does not decide the outcome.",
+        "sourceUrls": [
+          "https://www.anerkennung-in-deutschland.de/html/en/skilled-workers.php",
+          "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Arbeit/Fachkraft/fachkraft-node.html"
+        ]
+      },
+      {
+        "summary": "薪资低于当年适用的蓝卡门槛。门槛每年调整，按往年数字准备会导致不符合条件。",
+        "summaryEn": "Salary below the Blue Card threshold in force that year. The thresholds are adjusted annually, so planning against an earlier year's figure can put an application below the line.",
+        "sourceUrls": ["https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-03-2026/blue-card"]
+      },
+      {
+        "summary": "首次赴德工作且年满 45 岁，薪资未达一般养老保险缴费评估上限的 55%，又无法证明有足够养老保障。具体年度金额见下方德国专业技术人员工作签证页面。",
+        "summaryEn": "First-time employment in Germany at age 45 or over, where the salary does not reach 55 percent of the general pension insurance contribution assessment ceiling and adequate pension provision cannot be shown. The figure for the current year is on the qualified-professional work visa page below.",
+        "sourceUrls": ["https://www.make-it-in-germany.com/en/visa-residence/types/work-qualified-professionals"]
+      },
+      {
+        "summary": "把机会卡当成全职工作许可。持机会卡期间副业平均每周不得超过 20 小时，试工每次不得超过两周。",
+        "summaryEn": "Treating the opportunity card as a permit for full employment. While holding it, secondary work may not exceed an average of 20 hours per week and trial employment may not exceed two weeks at a time.",
+        "sourceUrls": ["https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-02-2026/opportunity-card"]
+      }
+    ],
+    "sourceConflicts": [
+      {
+        "summary": "蓝卡薪资门槛在不同官方页面上不一致。联邦劳工局明确标注 2026 年为 50,700 欧元和 45,934.20 欧元；联邦外交部的常见问题页给出 56,400 欧元和 43,992 欧元，但未标注适用年份。本站采用标注了年份的联邦劳工局数字，并保留此分歧供你核对。",
+        "summaryEn": "Official pages state different Blue Card salary thresholds. The Federal Employment Agency states €50,700 and €45,934.20 and labels them as 2026 figures; the Federal Foreign Office FAQ states €56,400 and €43,992 without naming a year. This site uses the dated Federal Employment Agency figures and leaves the disagreement visible so you can check it.",
+        "sourceUrls": [
+          "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-03-2026/blue-card",
+          "https://www.auswaertiges-amt.de/en/visa-service/buergerservice/faq/02a-what-is-the-blue-card/606754"
+        ]
+      },
+      {
+        "summary": "持蓝卡转永久居留的时长在不同官方页面上不一致。联邦移民与难民局给出 27 个月和 21 个月；联邦外交部常见问题页给出 33 个月和 21 个月。此分歧本站未能解决，请以主管外国人管理局的答复为准。",
+        "summaryEn": "Official pages state different timelines to a settlement permit with a Blue Card. The Federal Office for Migration and Refugees states 27 months and 21 months; the Federal Foreign Office FAQ states 33 months and 21 months. This site could not resolve the disagreement, so confirm it with the responsible foreigners authority.",
+        "sourceUrls": [
+          "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Migrathek/BlaueKarteEU/blauekarteeu-node.html",
+          "https://www.auswaertiges-amt.de/en/visa-service/buergerservice/faq/02a-what-is-the-blue-card/606754"
+        ]
+      }
+    ]
+  },
   "sources": [
     {
       "authority": "German Federal Government",
       "title": "Make it in Germany — Visa & residence",
       "url": "https://www.make-it-in-germany.com/en/visa-residence",
       "reviewedAt": "2026-09-03"
+    },
+    {
+      "authority": "Federal Employment Agency (Bundesagentur für Arbeit)",
+      "title": "EU Blue Card",
+      "url": "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-03-2026/blue-card",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "Federal Employment Agency (Bundesagentur für Arbeit)",
+      "title": "Opportunity Card",
+      "url": "https://www.arbeitsagentur.de/vor-ort/zav/working-and-living-in-germany/iss-en/issue-02-2026/opportunity-card",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "Federal Office for Migration and Refugees (BAMF)",
+      "title": "The EU Blue Card",
+      "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Migrathek/BlaueKarteEU/blauekarteeu-node.html",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "Federal Ministry of Education and Research — Recognition in Germany",
+      "title": "Recognition for skilled workers",
+      "url": "https://www.anerkennung-in-deutschland.de/html/en/skilled-workers.php",
+      "reviewedAt": "2026-09-06"
     }
   ]
 }
