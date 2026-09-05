@@ -27,3 +27,25 @@
   later steps never imply authorization for earlier or external account actions.
 - These repository-local Markdown files are the working source. Do not depend on
   Website Factory skills or copy a second `AGENTS.md` into this repository.
+
+## Working with both Codex and Claude Code
+
+This repository is worked on from more than one coding agent. Keep one set of
+conventions rather than one per tool.
+
+- `AGENTS.md` is the single source of truth. `CLAUDE.md` is a symlink to it.
+  Edit `AGENTS.md` only; never let the two files diverge into real copies.
+- Skills live in `.agents/skills/<name>/SKILL.md`. `.claude/skills` is a symlink
+  to `.agents/skills`, so both tools load the same skill files. Add new skills
+  only under `.agents/skills/`.
+- `.website-factory/` Markdown is the shared working source for scope, plan,
+  progress, content rules, and release gates. Update it from either tool.
+- Tool-specific configuration is not shared and is not a place for project
+  rules: Codex reads `~/.codex/config.toml`, Claude Code reads
+  `.claude/settings.json` and the Git-ignored `.claude/settings.local.json`.
+- Both tools follow the same commit convention: a concise English subject, a
+  blank line, then the equivalent Chinese. See `.agents/skills/git-commits/`.
+- Both tools verify the same way before committing: `npm test`,
+  `npm run check`, `npm run build`, and `npm run test:dist`.
+- Symlinks must survive checkout. Clone on Linux, macOS, or WSL, or enable
+  `git config core.symlinks true` on Windows.
