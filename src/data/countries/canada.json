@@ -2,16 +2,216 @@
   "name": "加拿大",
   "nameEn": "Canada",
   "region": "Americas",
-  "coverage": "overview",
-  "summary": "加拿大政府移民与公民信息入口，以及三项 Express Entry 联邦经济类项目的已复核概览。",
-  "summaryEn": "The Canadian government immigration entry point plus reviewed overviews of the three federal economic programs managed through Express Entry.",
-  "reviewedAt": "2026-09-03",
+  "coverage": "deep",
+  "summary": "加拿大通过 Express Entry 管理的三项联邦经济类移民路径，含各项最低门槛、语言与资金要求，以及「达到最低要求」与「收到邀请」之间的关键区别。",
+  "summaryEn": "Canada's three federal economic immigration routes managed through Express Entry, with each program's minimum requirements, language and funds rules, and the crucial difference between meeting the minimums and receiving an invitation.",
+  "reviewedAt": "2026-09-06",
+  "deepCoverage": {
+    "scope": "本页覆盖通过 Express Entry 管理的三项联邦经济类项目，以及进入候选池与获得邀请之间的机制差异。不覆盖各省提名项目（PNP）的具体条件、魁北克独立的移民体系、学签、工签、家庭团聚和难民类别。",
+    "scopeEn": "This page covers the three federal economic programs managed through Express Entry and the mechanics between entering the pool and receiving an invitation. It does not cover the specific conditions of individual Provincial Nominee Programs, Quebec's separate immigration system, study permits, work permits, family sponsorship, or refugee streams.",
+    "steps": [
+      {
+        "title": "第一步：确认你符合哪个项目的最低要求",
+        "titleEn": "Step 1: Check which program's minimum requirements you meet",
+        "body": "Express Entry 管理三个联邦项目。联邦技术移民（FSW）要求近十年内至少一年 TEER 0 至 3 类的技术工作经验、四项语言能力均达 CLB 7、境外学历须完成学历认证（ECA），并在选择因素评分表上达到 67 分。加拿大经验类（CEC）要求申请前三年内在加拿大合法工作满一年，TEER 0 或 1 类要求 CLB 7，TEER 2 或 3 类要求 CLB 5。联邦技工类（FST）的语言要求最低：听说 CLB 5、读写 CLB 4。三个项目都要求计划定居在魁北克省以外。",
+        "bodyEn": "Express Entry manages three federal programs. The Federal Skilled Worker Program requires at least one year of TEER 0 to 3 skilled work experience in the last ten years, CLB 7 in all four language abilities, an Educational Credential Assessment for foreign education, and 67 points on the selection-factor grid. The Canadian Experience Class requires one year of authorized Canadian work in the three years before applying, with CLB 7 for TEER 0 or 1 and CLB 5 for TEER 2 or 3. The Federal Skilled Trades Program has the lowest language floor: CLB 5 for speaking and listening, CLB 4 for reading and writing. All three require that you plan to live outside Quebec.",
+        "sourceUrls": [
+          "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html",
+          "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/canadian-experience-class.html",
+          "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html"
+        ]
+      },
+      {
+        "title": "第二步：准备语言成绩、学历认证和资金证明",
+        "titleEn": "Step 2: Prepare language results, credential assessment and proof of funds",
+        "body": "语言成绩必须来自指定考试并满足四项能力的最低分。境外学历用于 FSW 时须先做学历认证。资金证明只在 FSW 和 FST 需要；申请 CEC 无需资金证明，此外持有效工作邀请且获准在加拿大工作的人也可豁免，但须上传说明豁免理由的信函。",
+        "bodyEn": "Language results must come from a designated test and meet the minimum in all four abilities. Foreign education used for the Federal Skilled Worker Program needs an Educational Credential Assessment first. Proof of funds applies only to the Federal Skilled Worker and Federal Skilled Trades programs; it is not required under the Canadian Experience Class, and it is also waived if you are authorized to work in Canada and hold a valid job offer, though a letter explaining the exemption must be uploaded.",
+        "sourceUrls": [
+          "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+          "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html"
+        ]
+      },
+      {
+        "title": "第三步：进入候选池，并理解邀请是如何发出的",
+        "titleEn": "Step 3: Enter the pool, and understand how invitations are issued",
+        "body": "符合最低要求只是让你进入候选池，本身不产生任何申请资格。加拿大移民、难民及公民部按综合排名系统（CRS）分数对池中候选人排序，并在每轮邀请中向排名靠前的候选人发出申请永久居留的邀请。邀请轮次分为综合轮、单一项目轮和类别定向轮三种。这意味着分数相同的人在不同轮次里结果可能完全不同。",
+        "bodyEn": "Meeting the minimum requirements only puts you in the pool; on its own it creates no entitlement to apply. Immigration, Refugees and Citizenship Canada ranks candidates in the pool by their Comprehensive Ranking System score and invites top-ranking candidates to apply for permanent residence in each round. Rounds are general, program-specific, or category-based. The same score can therefore produce entirely different outcomes depending on the round.",
+        "sourceUrls": [
+          "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html"
+        ]
+      },
+      {
+        "title": "第四步：收到邀请后再提交永久居留申请",
+        "titleEn": "Step 4: Submit the permanent residence application only after an invitation",
+        "body": "只有收到邀请（ITA）之后才能提交永久居留申请。此时资料必须与候选池中申报的内容一致，包括工作经验的时长、语言成绩和资金。申报与证明不一致是常见的失败原因，而不是分数不够。",
+        "bodyEn": "A permanent residence application can only be submitted after an invitation to apply. At that point the evidence must match what was declared in the pool, including the length of work experience, the language results, and the funds. A mismatch between what was declared and what can be proven is a common reason applications fail, rather than the score itself.",
+        "sourceUrls": [
+          "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html"
+        ]
+      }
+    ],
+    "keyFacts": [
+      {
+        "label": "联邦技术移民（FSW）工作经验",
+        "labelEn": "Federal Skilled Worker work experience",
+        "value": "近十年内至少连续一年，或累计 1,560 小时（每周 30 小时），且属 TEER 0、1、2 或 3 类",
+        "valueEn": "At least one year continuous, or 1,560 hours total at 30 hours per week, within the last ten years, in TEER 0, 1, 2 or 3",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "联邦技术移民（FSW）选择因素分数线",
+        "labelEn": "Federal Skilled Worker selection-factor pass mark",
+        "value": "67 分",
+        "valueEn": "67 points",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "联邦技术移民（FSW）语言要求",
+        "labelEn": "Federal Skilled Worker language requirement",
+        "value": "第一官方语言四项能力均达 CLB／NCLC 7；如计入第二官方语言，四项均需达 CLB／NCLC 5",
+        "valueEn": "CLB or NCLC 7 in all four abilities in the first official language; if a second official language is counted, CLB or NCLC 5 in all four",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "加拿大经验类（CEC）工作经验",
+        "labelEn": "Canadian Experience Class work experience",
+        "value": "申请前三年内在加拿大工作满一年，或累计 1,560 小时，且须为持临时居民身份获准工作期间取得",
+        "valueEn": "One year of work in Canada, or 1,560 hours total, in the three years before applying, gained while authorized to work under temporary resident status",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/canadian-experience-class.html",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "加拿大经验类（CEC）语言要求",
+        "labelEn": "Canadian Experience Class language requirement",
+        "value": "TEER 0 或 1 类需 CLB／NCLC 7；TEER 2 或 3 类需 CLB／NCLC 5",
+        "valueEn": "CLB or NCLC 7 for TEER 0 or 1; CLB or NCLC 5 for TEER 2 or 3",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "联邦技工类（FST）语言要求",
+        "labelEn": "Federal Skilled Trades language requirement",
+        "value": "听说 CLB／NCLC 5，读写 CLB／NCLC 4",
+        "valueEn": "CLB or NCLC 5 for speaking and listening, CLB or NCLC 4 for reading and writing",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "资金证明（单人）",
+        "labelEn": "Proof of funds, single applicant",
+        "value": "15,263 加元；两人 19,001 加元，三人 23,360 加元，每增加一人加 4,112 加元。此为移民部于 2025 年 7 月 7 日公布的金额，每年更新",
+        "valueEn": "CAD 15,263; CAD 19,001 for two people and CAD 23,360 for three, plus CAD 4,112 for each additional person. These are the amounts IRCC published on 7 July 2025 and they are updated annually",
+        "appliesTo": "移民部 2025-07-07 公布 / IRCC table published 2025-07-07",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "哪些项目需要资金证明",
+        "labelEn": "Which programs require proof of funds",
+        "value": "FSW 和 FST 需要；CEC 不需要；已获准在加拿大工作且持有效工作邀请者豁免，但须上传说明信",
+        "valueEn": "Required for the Federal Skilled Worker and Federal Skilled Trades programs; not required for the Canadian Experience Class; waived if authorized to work in Canada with a valid job offer, with an explanatory letter uploaded instead",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "邀请如何发出",
+        "labelEn": "How invitations are issued",
+        "value": "按综合排名系统（CRS）分数排序，向排名靠前者发出邀请；轮次分为综合轮、单一项目轮和类别定向轮",
+        "valueEn": "Candidates are ranked by their Comprehensive Ranking System score and top-ranking candidates are invited; rounds are general, program-specific, or category-based",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html",
+        "reviewedAt": "2026-09-06"
+      },
+      {
+        "label": "魁北克",
+        "labelEn": "Quebec",
+        "value": "三个联邦项目都要求计划定居在魁北克省以外；CEC 可计入在魁北克取得的工作经验，前提是能证明不打算在该省定居",
+        "valueEn": "All three federal programs require that you plan to live outside Quebec; the Canadian Experience Class can count work experience gained in Quebec if you can prove you do not plan to settle there",
+        "appliesTo": "2026",
+        "sourceUrl": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/canadian-experience-class.html",
+        "reviewedAt": "2026-09-06"
+      }
+    ],
+    "blockers": [
+      {
+        "summary": "把「达到最低要求」当成「能拿到邀请」。最低要求只决定能否进入候选池，邀请取决于当轮的 CRS 排名，而不同轮次针对的人群不同。",
+        "summaryEn": "Treating the minimum requirements as an entitlement to an invitation. The minimums only decide whether you enter the pool; the invitation depends on your Comprehensive Ranking System rank in a given round, and different rounds target different candidates.",
+        "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html"]
+      },
+      {
+        "summary": "四项语言能力中有一项低于门槛。语言要求是逐项计算的，某一项不足即不符合，总分高不能弥补。",
+        "summaryEn": "One of the four language abilities falls below the floor. The requirement applies to each ability separately, so a shortfall in one is disqualifying and a high overall score does not compensate.",
+        "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html"]
+      },
+      {
+        "summary": "境外学历未完成学历认证（ECA）就用于联邦技术移民。",
+        "summaryEn": "Using foreign education for the Federal Skilled Worker Program without a completed Educational Credential Assessment.",
+        "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html"]
+      },
+      {
+        "summary": "把志愿服务或无薪实习计入技术工作经验。只有有薪工作才计入。",
+        "summaryEn": "Counting volunteer work or unpaid internships as skilled work experience. Only paid work counts.",
+        "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html"]
+      },
+      {
+        "summary": "在加拿大境内无工作许可的情况下取得的工作经验用于 CEC。该经验必须是在持临时居民身份获准工作期间取得的。",
+        "summaryEn": "Using Canadian work experience gained without work authorization for the Canadian Experience Class. The experience must have been gained while authorized to work under temporary resident status.",
+        "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/canadian-experience-class.html"]
+      },
+      {
+        "summary": "按往年的资金证明金额准备。该金额每年更新，且须在移民部规定的截止日前更新到候选资料中。",
+        "summaryEn": "Preparing against an earlier year's proof-of-funds amount. The figures are updated annually and must be updated in the profile by the deadline IRCC sets.",
+        "sourceUrls": ["https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html"]
+      }
+    ],
+    "sourceConflicts": []
+  },
   "sources": [
     {
       "authority": "Government of Canada",
       "title": "Immigration and citizenship",
       "url": "https://www.canada.ca/en/services/immigration-citizenship.html",
       "reviewedAt": "2026-09-03"
+    },
+    {
+      "authority": "Immigration, Refugees and Citizenship Canada",
+      "title": "Federal Skilled Worker Program: Who can apply",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "Immigration, Refugees and Citizenship Canada",
+      "title": "Canadian Experience Class: Who can apply",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/canadian-experience-class.html",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "Immigration, Refugees and Citizenship Canada",
+      "title": "Express Entry language requirements",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "Immigration, Refugees and Citizenship Canada",
+      "title": "Proof of funds for Express Entry",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+      "reviewedAt": "2026-09-06"
+    },
+    {
+      "authority": "Immigration, Refugees and Citizenship Canada",
+      "title": "Express Entry rounds of invitations",
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/submit-profile/rounds-invitations.html",
+      "reviewedAt": "2026-09-06"
     }
   ]
 }

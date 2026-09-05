@@ -60,14 +60,18 @@ The earlier out-of-order indexable deployment was corrected by restoring `noinde
 
 ## Next actions
 
-1. Deepen the next batch of high-demand country records using Germany as the
-   reference shape. Canada and Australia are the strongest candidates: both
-   already have reviewed program records and matching rules.
-2. Apply for AdSense once reviewed coverage is materially deeper, then work
+1. Raise Australia to `deep` coverage. Blocked on source access: every
+   `immi.homeaffairs.gov.au` page returns HTTP 403 to automated fetches, so the
+   points table and subclass requirements cannot be verified the way Germany's
+   and Canada's were. Options are recorded under "Known defects".
+2. Continue the deep batch with countries whose authorities are reachable:
+   New Zealand, the United Kingdom, the Netherlands, and Ireland all have
+   reviewed program records already.
+3. Apply for AdSense once reviewed coverage is materially deeper, then work
    release gate 7 in order.
-3. Decide on the trailing-slash mismatch recorded under "Known defects".
-4. Deploy the deep-coverage work once a batch is ready. It is built and verified
-   locally but not yet released; deployment needs explicit owner authorization.
+4. Decide on the trailing-slash mismatch recorded under "Known defects".
+5. Deploy the deep-coverage work. Germany and Canada are built and verified
+   locally but not released; deployment needs explicit owner authorization.
 
 ## Advertising integration checkpoint
 
@@ -171,7 +175,28 @@ Not yet deployed.
 - [x] Headless Chromium at 390, 768, and 1440 px in both locales: zero horizontal
       body overflow, with the figure table isolated in its own scroll container
 
-Coverage is now 164 directory, 32 overview, and 1 deep across 197 records.
+### Canada raised to `deep` coverage — 2026-09-06
+
+Second deep record, following the Germany shape. Not yet deployed.
+
+- [x] Facts verified against Immigration, Refugees and Citizenship Canada on
+      2026-09-06: the three Express Entry programs' minimum requirements, the
+      per-ability language floors, the proof-of-funds table, and how rounds of
+      invitations work
+- [x] Leads with the distinction that matters most and is most often missed:
+      meeting the minimums only enters the pool, while an invitation depends on
+      the Comprehensive Ranking System rank in a given round
+- [x] The proof-of-funds figures carry the date IRCC published them
+      (2025-07-07) in the applicability column, so their vintage is visible
+      rather than implied to be current
+- [x] No conflicts between official sources were found, so the conflicts section
+      is omitted rather than rendered empty; covered by a contract test
+- [x] `npm test` (11 suites), `npm run check`, `npm run build`, and
+      `npm run test:dist` pass
+- [x] Headless Chromium at 390, 768, and 1440 px in both locales: zero
+      horizontal body overflow
+
+Coverage is now 164 directory, 31 overview, and 2 deep across 197 records.
 
 ## Deferred
 
@@ -201,6 +226,14 @@ Submitted URLs dropped from 559 to 230. Google will drop the 328 excluded
 directory URLs over the coming crawls; that is intended.
 
 ## Known defects
+
+- Australian Department of Home Affairs pages return HTTP 403 to automated
+  fetches, so `immi.homeaffairs.gov.au` cannot be used to verify facts the way
+  other authorities were. Australia therefore stays at `overview` coverage.
+  Resolving it means either verifying against the Migration Regulations 1994 on
+  legislation.gov.au, which carries the points test in Schedule 6D, or having
+  the owner check the department pages manually and supply the figures. Do not
+  write these facts from memory.
 
 - Trailing-slash mismatch, pre-existing since the first Cloudflare deployment.
   `astro.config.mjs` sets `trailingSlash: "never"`, and canonical URLs and

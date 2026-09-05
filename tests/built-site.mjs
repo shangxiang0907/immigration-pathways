@@ -56,8 +56,20 @@ for (const [path, headings, label] of [
   assert.match(html, /<div class="table-scroll">/, `${path} must keep the wide table scrollable`);
   assert.ok(html.includes("arbeitsagentur.de"), `${path} must attribute the figure to its authority`);
 }
+// Canada is deep as well, and having no documented conflicts it must omit that
+// section rather than render an empty heading.
+for (const [path, heading, conflicts] of [
+  ["countries/canada/index.html", "How the system works", "Where official sources disagree"],
+  ["zh/countries/canada/index.html", "办理流程", "官方来源分歧"],
+]) {
+  const html = await read(path);
+  assert.ok(html.includes(heading), `${path} must render deep-coverage sections`);
+  assert.ok(!html.includes(conflicts), `${path} must omit the conflicts section when there are none`);
+  assert.match(html, /class="fact-table"/, `${path} must render the sourced figure table`);
+}
+
 // Records below deep coverage must not render deep structure.
-for (const path of ["countries/canada/index.html", "countries/afghanistan/index.html"]) {
+for (const path of ["countries/australia/index.html", "countries/afghanistan/index.html"]) {
   assert.doesNotMatch(await read(path), /step-list|fact-table/, `${path} must not render deep-coverage sections`);
 }
 
