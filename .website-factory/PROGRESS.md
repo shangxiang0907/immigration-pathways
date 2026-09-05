@@ -72,6 +72,8 @@ Completed and deployed on 2026-09-05 as Cloudflare version `b7dfab1c-7b78-4859-a
 - [x] Owner reviewed the monetization tradeoff and explicitly authorized production activation
 - [x] Verified the live regional policy endpoint returns direct loading outside prior-consent regions
 - [x] Verified live Native and Display placements, privacy withdrawal control, and `index, follow` output
+- [x] Headless desktop and mobile checks each issued the expected Adsterra request with no popup, script error, or horizontal overflow
+- [ ] Confirm real-user creative fill and impressions in the Adsterra dashboard; headless checks showed reserved ad space but no rendered creative
 
 ## Indexable deployment
 
